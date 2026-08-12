@@ -136,28 +136,10 @@ body {
     letter-spacing: 1.2px;
     color: var(--pl-muted-3);
     text-transform: uppercase;
-}
-
-.pl-comp-link {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    font-family: 'Archivo', sans-serif;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 1.2px;
-    color: var(--pl-muted-3);
-    text-transform: uppercase;
-    text-align: left;
-    cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 100%;
 }
-
-.pl-comp-link:hover { color: var(--pl-muted); }
 
 .pl-info-btn {
     margin-left: auto;
@@ -569,6 +551,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.pl-comp-list {
+    justify-content: center;
 }
 
 .pl-team-option {
