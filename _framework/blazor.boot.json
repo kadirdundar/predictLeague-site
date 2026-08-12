@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "PredictLeague",
   "resources": {
-    "hash": "sha256-Gf94Y+h1dojfIO5IPESIdOt6eZUcSS0v6/Lf/2gOKcA=",
+    "hash": "sha256-cwiBDE406ec0xSoa42O6cKBwha05wNxCEN4vf44fPNU=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.n8f7hndwmh.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.jcafy9fy3t.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -24,7 +24,7 @@
       "System.Console.xqtscl4j9l.wasm": "System.Console.wasm",
       "System.Diagnostics.DiagnosticSource.mtflw9mg2d.wasm": "System.Diagnostics.DiagnosticSource.wasm",
       "System.IO.Pipelines.9d8z48tcc6.wasm": "System.IO.Pipelines.wasm",
-      "System.Linq.6kkylh9rzd.wasm": "System.Linq.wasm",
+      "System.Linq.1uppm920m4.wasm": "System.Linq.wasm",
       "System.Memory.2lkescxrdi.wasm": "System.Memory.wasm",
       "System.Net.Http.Json.8nohg8xuaz.wasm": "System.Net.Http.Json.wasm",
       "System.Net.Http.zlm4roxd34.wasm": "System.Net.Http.wasm",
@@ -36,7 +36,7 @@
       "System.Text.Json.05fgot3d2k.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.vmxr9zqpk1.wasm": "System.Text.RegularExpressions.wasm",
       "System.Private.CoreLib.a8qam8d4ud.wasm": "System.Private.CoreLib.wasm",
-      "PredictLeague.x1iziiyrid.wasm": "PredictLeague.wasm",
+      "PredictLeague.rmxm0wdquk.wasm": "PredictLeague.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.mf92lzu2d1.js": "dotnet.native.js",
       "dotnet.native.6sm8j8phll.wasm": "dotnet.native.wasm",
@@ -85,7 +85,7 @@
       "System.Console.xqtscl4j9l.wasm": "sha256-Z3ogKfPqNTyR87gT+vPmtpQ6YzNUU4h36ZlS5OHlFbk=",
       "System.Diagnostics.DiagnosticSource.mtflw9mg2d.wasm": "sha256-pnjH4HUNf7zoCpPV2f9zQqCGbLEQYvsLcD08SKMe0Cs=",
       "System.IO.Pipelines.9d8z48tcc6.wasm": "sha256-HYkYhkZSipct0OgAjDNJUWvpDesLV9bQA9eJ6BiixR0=",
-      "System.Linq.6kkylh9rzd.wasm": "sha256-avp4BwhSxHK64fttkM3KHbEGCZXuoCyJhUXByAOrbSI=",
+      "System.Linq.1uppm920m4.wasm": "sha256-9/bVyZRX5UDmyRvfOCnqMqngsmGoxNQfv4Cp+k0mJ+Y=",
       "System.Memory.2lkescxrdi.wasm": "sha256-tns+Ob9CkI1EKQzehOHLZI3CPitQAhgfMjgYRPET9Yc=",
       "System.Net.Http.Json.8nohg8xuaz.wasm": "sha256-BFe+Fvh1WqRzDBv4Ml9d1EGkg+mjtqUYR1AMglfhPBA=",
       "System.Net.Http.zlm4roxd34.wasm": "sha256-iQlMWnVLMBvp/BOT0NCXnDJOlIAtsGOMHbCczEYUmMo=",
@@ -95,7 +95,7 @@
       "System.Text.Encodings.Web.joi63staf9.wasm": "sha256-E8dBRyFrcc8hIem1Bi12hG1ya444o2DHB9owUPXMsH0=",
       "System.Text.Json.05fgot3d2k.wasm": "sha256-pMw/OUY360UE+MPMlTCM9rRTPJiznG/YZIRItmE9A+Y=",
       "System.Text.RegularExpressions.vmxr9zqpk1.wasm": "sha256-B9hS8DvRPE4xvO/CZFWk0VaqpGb+Ut3r/iwmpPj5CFY=",
-      "PredictLeague.x1iziiyrid.wasm": "sha256-2/+y49MvG/DlvtEzIZs3ifRp5CKkbFaJM6OdXT/WQ8Y="
+      "PredictLeague.rmxm0wdquk.wasm": "sha256-Pdx22g2RGeDMthDCEwmjyDXEmHdZ+5Yr6xun7DapDMU="
     }
   },
   "cacheBootResources": true,
