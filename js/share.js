@@ -327,9 +327,9 @@ window.predictLeagueShare = {
         return false;
     },
 
-    // X (Twitter) için hem panoya kopyalama hem Tweet penceresi açma
+    // X (Twitter) için hem panoya kopyalama hem Tweet penceresini direkt açma
     shareToX: async function (cardData, tweetUrl) {
-        let copied = false;
+        // 1. Görseli panoya kopyalamayı dene (destekleyen cihazlarda)
         try {
             const canvas = await this.drawCardCanvas(cardData);
             const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
@@ -337,18 +337,22 @@ window.predictLeagueShare = {
             if (blob && navigator.clipboard && window.ClipboardItem) {
                 const item = new ClipboardItem({ "image/png": blob });
                 await navigator.clipboard.write([item]);
-                copied = true;
-            } else if (blob) {
-                this.downloadBlob(blob, "tahmin-kartim.png");
             }
         } catch (e) {
-            console.warn("Görsel panoya kopyalanamadı, indirme deneniyor...", e);
-            const canvas = await this.drawCardCanvas(cardData);
-            const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
-            if (blob) this.downloadBlob(blob, "tahmin-kartim.png");
+            console.warn("Görsel kopyalanamadı:", e);
         }
-        window.open(tweetUrl, '_blank');
-        return copied;
+
+        // 2. Mobil cihazlarda açılır pencere (popup blocker) engeline takılmamak için direkt yönlendir
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile) {
+            window.location.href = tweetUrl;
+        } else {
+            const win = window.open(tweetUrl, '_blank');
+            if (!win) {
+                window.location.href = tweetUrl;
+            }
+        }
+        return true;
     },
 
     // Blob indirme
