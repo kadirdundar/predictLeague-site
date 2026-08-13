@@ -812,6 +812,505 @@ body {
     display: inline-block;
 }
 
+.sim-spinner.small {
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+    border-top-color: #FFFFFF;
+}
+
 @keyframes pl-spin {
     to { transform: rotate(360deg); }
+}
+
+/* ---------- Social Share Header & Footer Buttons ---------- */
+.pl-share-btn-header {
+    background: rgba(255, 255, 255, 0.15);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    margin-left: auto;
+    transition: all 0.2s ease;
+}
+
+.pl-share-btn-header:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.pl-footer-btn-group {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.pl-footer-btn-group .pl-btn-primary {
+    flex: 1;
+}
+
+.pl-btn-share {
+    flex: 1;
+    background: #0045B5;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.pl-btn-share:hover {
+    background: #003694;
+}
+
+.pl-btn-share:active {
+    transform: scale(0.98);
+}
+
+/* ---------- Share Modal Bottom Sheet ---------- */
+.pl-share-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 9999;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    animation: pl-fade-in 0.25s ease-out;
+}
+
+@keyframes pl-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.pl-share-modal {
+    width: 100%;
+    max-width: 480px;
+    background: #03091E;
+    border-radius: 28px 28px 0 0;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    animation: pl-slide-up 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    color: #FFFFFF;
+}
+
+@keyframes pl-slide-up {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+
+.pl-share-modal-header {
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pl-share-modal-header .modal-title {
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+}
+
+.pl-share-modal-header .close-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #A1A1AA;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pl-share-modal-body {
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ---------- Share Card (Graphic Generator Element) ---------- */
+.pl-share-card-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pl-share-card-preview-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.1);
+    display: block;
+}
+
+.pl-share-card-loading {
+    width: 100%;
+    min-height: 360px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: #94A3B8;
+}
+
+.pl-share-card {
+    width: 100%;
+    background: linear-gradient(145deg, #03091e 0%, #0a183d 50%, #03081a 100%);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+    position: relative;
+    overflow: hidden;
+    color: #FFFFFF;
+}
+
+.pl-share-card .card-glow-bg {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(0, 102, 255, 0.3) 0%, rgba(0,0,0,0) 70%);
+    pointer-events: none;
+}
+
+.pl-share-card .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 12px;
+}
+
+.pl-share-card .comp-logo {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
+
+.pl-share-card .comp-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.pl-share-card .comp-name {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+    color: #FFFFFF;
+}
+
+.pl-share-card .comp-sub {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #00D4FF;
+}
+
+.pl-share-card .card-team-hero {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.pl-share-card .team-badge {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+}
+
+.pl-share-card .team-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.pl-share-card .team-name {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    color: #FFFFFF;
+    line-height: 1.1;
+}
+
+.pl-share-card .rank-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: #16150F;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.pl-share-card .rank-num {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 14px;
+}
+
+.pl-share-card .rank-band {
+    font-size: 12px;
+}
+
+.pl-share-card .card-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.pl-share-card .stat-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pl-share-card .stat-val {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 18px;
+    color: #00D4FF;
+}
+
+.pl-share-card .stat-lbl {
+    font-size: 11px;
+    color: #94A3B8;
+    margin-top: 2px;
+}
+
+.pl-share-card .card-probs {
+    margin-bottom: 18px;
+}
+
+.pl-share-card .prob-bar {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.pl-share-card .prob-fill.top8 { background: #34D399; }
+.pl-share-card .prob-fill.playoff { background: #FBBF24; }
+.pl-share-card .prob-fill.elim { background: #F87171; }
+
+.pl-share-card .prob-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    font-weight: 600;
+    color: #CBD5E1;
+}
+
+.pl-share-card .card-matches-summary {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 16px;
+}
+
+.pl-share-card .summary-title {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #64748B;
+    margin-bottom: 8px;
+}
+
+.pl-share-card .matches-mini-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+}
+
+.pl-share-card .mini-match {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.pl-share-card .mini-match .t-name {
+    color: #E2E8F0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 55px;
+}
+
+.pl-share-card .mini-match .mini-score {
+    font-weight: 800;
+    color: #00D4FF;
+    padding: 0 4px;
+}
+
+.pl-share-card .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 12px;
+    font-size: 11px;
+}
+
+.pl-share-card .card-footer .brand {
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.pl-share-card .card-footer .url {
+    color: #00D4FF;
+    font-weight: 600;
+}
+
+/* ---------- Share Actions ---------- */
+.pl-share-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-share-main {
+    width: 100%;
+    background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+    transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.btn-share-main:hover {
+    background: linear-gradient(135deg, #1D4ED8 0%, #1E40AF 100%);
+}
+
+.btn-share-main:active {
+    transform: scale(0.98);
+}
+
+.share-grid-actions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.share-icon-btn {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 12px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.share-icon-btn i {
+    font-size: 20px;
+}
+
+.share-icon-btn.whatsapp i { color: #25D366; }
+.share-icon-btn.twitter i { color: #FFFFFF; }
+.share-icon-btn.download i { color: #00D4FF; }
+.share-icon-btn.copy i { color: #F59E0B; }
+
+.share-icon-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #FFFFFF;
+}
+
+/* ---------- Toast Notification ---------- */
+.pl-toast-notification {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0F172A;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    z-index: 10000;
+    animation: pl-toast-slide 0.25s ease-out;
+}
+
+.pl-toast-notification i {
+    color: #10B981;
+    font-size: 18px;
+}
+
+@keyframes pl-toast-slide {
+    from { opacity: 0; transform: translate(-50%, 20px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
 }
