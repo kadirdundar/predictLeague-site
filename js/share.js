@@ -316,42 +316,45 @@ window.predictLeagueShare = {
         }
     },
 
-    // Instagram Hikaye Paylaşımı
+    // Instagram Hikaye Paylaşımı (İşletim sistemi paylaşım menüsünü KESİNLİKLE ATLAYIP direkt Instagram Story Kamerasını açar)
     shareToInstagram: async function (cardData) {
         try {
             const canvas = await this.drawCardCanvas(cardData);
             const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
             if (!blob) return false;
 
-            const file = new File([blob], "tahmin-kartim-instagram.png", { type: "image/png" });
+            // 1. Görseli galerine/dosyalarına 1. sırada yerleşecek şekilde indir
+            this.downloadBlob(blob, "tahmin-kartim-instagram.png");
 
-            // 1. Mobil cihazlarda Web Share API (Instagram Stories / Feed doğrudan seçenek olarak çıkar)
-            if (navigator.canShare && navigator.canShare({ files: [file] })) {
-                await navigator.share({
-                    files: [file],
-                    title: "PredictLeague Tahmini"
-                });
-                return true;
+            // 2. Panoya da görsel kopyalamayı dene
+            try {
+                if (navigator.clipboard && window.ClipboardItem) {
+                    const item = new ClipboardItem({ "image/png": blob });
+                    await navigator.clipboard.write([item]);
+                }
+            } catch (e) {
+                console.warn("Panoya kopyalama atlandı:", e);
             }
 
-            // 2. Özel Instagram URL Scheme'lerini dene
+            // 3. Telefonun varsayılan paylaşım menüsünü (navigator.share) açma!
+            // Doğrudan Instagram Story Kamerasını başlat
             const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
             if (isMobile) {
-                this.downloadBlob(blob, "tahmin-kartim-instagram.png");
                 const start = Date.now();
                 window.location.href = "instagram-stories://share";
+
+                // Eğer instagram-stories şeması yanıt vermezse story-camera şemasını dene
                 setTimeout(() => {
-                    if (Date.now() - start < 2000) {
+                    if (Date.now() - start < 1800) {
                         window.location.href = "instagram://story-camera";
                     }
-                }, 1000);
-                return true;
+                }, 800);
             } else {
-                this.downloadBlob(blob, "tahmin-kartim-instagram.png");
-                return false;
+                window.open("https://www.instagram.com/", "_blank");
             }
+            return true;
         } catch (e) {
-            if (e.name !== 'AbortError') console.warn("Instagram paylaşım hatası:", e);
+            console.warn("Instagram paylaşım hatası:", e);
             return false;
         }
     },
