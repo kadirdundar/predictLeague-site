@@ -327,8 +327,8 @@ window.predictLeagueShare = {
         return false;
     },
 
-    // X (Twitter) için hem panoya kopyalama hem Tweet penceresini direkt açma
-    shareToX: async function (cardData, tweetUrl) {
+    // X (Twitter) için hem panoya kopyalama hem yerel X UYGULAMASINI direkt başlatma
+    shareToX: async function (cardData, tweetUrl, fullText) {
         // 1. Görseli panoya kopyalamayı dene (destekleyen cihazlarda)
         try {
             const canvas = await this.drawCardCanvas(cardData);
@@ -342,10 +342,21 @@ window.predictLeagueShare = {
             console.warn("Görsel kopyalanamadı:", e);
         }
 
-        // 2. Mobil cihazlarda açılır pencere (popup blocker) engeline takılmamak için direkt yönlendir
+        // 2. Mobil cihazlarda doğrudan X (Twitter) NATIVE UYGULAMASINI başlatma (twitter:// URI Scheme)
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         if (isMobile) {
-            window.location.href = tweetUrl;
+            const textToUse = fullText || tweetUrl;
+            const nativeAppUrl = `twitter://post?message=${encodeURIComponent(textToUse)}`;
+
+            const start = Date.now();
+            window.location.href = nativeAppUrl;
+
+            // Eğer telefonda X uygulaması yüklü değilse 1.2 sn sonra varsayılan web adresine düş
+            setTimeout(() => {
+                if (Date.now() - start < 2000) {
+                    window.location.href = tweetUrl;
+                }
+            }, 1200);
         } else {
             const win = window.open(tweetUrl, '_blank');
             if (!win) {
