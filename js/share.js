@@ -316,6 +316,46 @@ window.predictLeagueShare = {
         }
     },
 
+    // Instagram Hikaye Paylaşımı
+    shareToInstagram: async function (cardData) {
+        try {
+            const canvas = await this.drawCardCanvas(cardData);
+            const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
+            if (!blob) return false;
+
+            const file = new File([blob], "tahmin-kartim-instagram.png", { type: "image/png" });
+
+            // 1. Mobil cihazlarda Web Share API (Instagram Stories / Feed doğrudan seçenek olarak çıkar)
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                await navigator.share({
+                    files: [file],
+                    title: "PredictLeague Tahmini"
+                });
+                return true;
+            }
+
+            // 2. Özel Instagram URL Scheme'lerini dene
+            const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            if (isMobile) {
+                this.downloadBlob(blob, "tahmin-kartim-instagram.png");
+                const start = Date.now();
+                window.location.href = "instagram-stories://share";
+                setTimeout(() => {
+                    if (Date.now() - start < 2000) {
+                        window.location.href = "instagram://story-camera";
+                    }
+                }, 1000);
+                return true;
+            } else {
+                this.downloadBlob(blob, "tahmin-kartim-instagram.png");
+                return false;
+            }
+        } catch (e) {
+            if (e.name !== 'AbortError') console.warn("Instagram paylaşım hatası:", e);
+            return false;
+        }
+    },
+
     // Görsel İndirme
     downloadCard: async function (cardData, filename) {
         const canvas = await this.drawCardCanvas(cardData);

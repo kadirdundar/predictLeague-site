@@ -1249,8 +1249,14 @@ body {
 
 .share-grid-actions {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+@media (max-width: 440px) {
+    .share-grid-actions {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .share-icon-btn {
@@ -1274,6 +1280,7 @@ body {
     font-size: 20px;
 }
 
+.share-icon-btn.instagram i { color: #E1306C; }
 .share-icon-btn.whatsapp i { color: #25D366; }
 .share-icon-btn.twitter i { color: #FFFFFF; }
 .share-icon-btn.download i { color: #00D4FF; }
