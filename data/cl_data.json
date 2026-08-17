@@ -7,7 +7,7 @@
       "country": "DEU",
       "rating": 91,
       "primaryColor": "#DC052D",
-      "logoUrl": "https://crests.football-data.org/3.png"
+      "logoUrl": "images/logos/team_3.png"
     },
     {
       "id": 4,
@@ -16,7 +16,7 @@
       "country": "DEU",
       "rating": 90,
       "primaryColor": "#004D98",
-      "logoUrl": "https://crests.football-data.org/4.png"
+      "logoUrl": "images/logos/team_4.png"
     },
     {
       "id": 5,
@@ -25,7 +25,7 @@
       "country": "DEU",
       "rating": 89,
       "primaryColor": "#EF0107",
-      "logoUrl": "https://crests.football-data.org/5.png"
+      "logoUrl": "images/logos/team_5.png"
     },
     {
       "id": 19,
@@ -34,7 +34,7 @@
       "country": "DEU",
       "rating": 81,
       "primaryColor": "#FF0000",
-      "logoUrl": "https://crests.football-data.org/19.png"
+      "logoUrl": "images/logos/team_19.png"
     },
     {
       "id": 57,
@@ -43,7 +43,7 @@
       "country": "ENG",
       "rating": 89,
       "primaryColor": "#EF0107",
-      "logoUrl": "https://crests.football-data.org/57.png"
+      "logoUrl": "images/logos/team_57.png"
     },
     {
       "id": 61,
@@ -52,7 +52,7 @@
       "country": "ENG",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/61.png"
+      "logoUrl": "images/logos/team_61.png"
     },
     {
       "id": 64,
@@ -61,7 +61,7 @@
       "country": "ENG",
       "rating": 90,
       "primaryColor": "#C8102E",
-      "logoUrl": "https://crests.football-data.org/64.png"
+      "logoUrl": "images/logos/team_64.png"
     },
     {
       "id": 65,
@@ -70,7 +70,7 @@
       "country": "ENG",
       "rating": 94,
       "primaryColor": "#6CABDD",
-      "logoUrl": "https://crests.football-data.org/65.png"
+      "logoUrl": "images/logos/team_65.png"
     },
     {
       "id": 67,
@@ -79,7 +79,7 @@
       "country": "ENG",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/67.png"
+      "logoUrl": "images/logos/team_67.png"
     },
     {
       "id": 73,
@@ -88,7 +88,7 @@
       "country": "ENG",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/73.png"
+      "logoUrl": "images/logos/team_73.png"
     },
     {
       "id": 77,
@@ -97,7 +97,7 @@
       "country": "ESP",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/77.png"
+      "logoUrl": "images/logos/team_77.png"
     },
     {
       "id": 78,
@@ -106,7 +106,7 @@
       "country": "ESP",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/78.png"
+      "logoUrl": "images/logos/team_78.png"
     },
     {
       "id": 81,
@@ -115,7 +115,7 @@
       "country": "ESP",
       "rating": 90,
       "primaryColor": "#004D98",
-      "logoUrl": "https://crests.football-data.org/81.png"
+      "logoUrl": "images/logos/team_81.png"
     },
     {
       "id": 86,
@@ -124,7 +124,7 @@
       "country": "ESP",
       "rating": 93,
       "primaryColor": "#FEBE10",
-      "logoUrl": "https://crests.football-data.org/86.png"
+      "logoUrl": "images/logos/team_86.png"
     },
     {
       "id": 94,
@@ -133,7 +133,7 @@
       "country": "ESP",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/94.png"
+      "logoUrl": "images/logos/team_94.png"
     },
     {
       "id": 102,
@@ -142,7 +142,7 @@
       "country": "ITA",
       "rating": 84,
       "primaryColor": "#1E71B8",
-      "logoUrl": "https://crests.football-data.org/102.png"
+      "logoUrl": "images/logos/team_102.png"
     },
     {
       "id": 108,
@@ -151,7 +151,7 @@
       "country": "ITA",
       "rating": 89,
       "primaryColor": "#0066B3",
-      "logoUrl": "https://crests.football-data.org/108.png"
+      "logoUrl": "images/logos/team_108.png"
     },
     {
       "id": 109,
@@ -160,7 +160,7 @@
       "country": "ITA",
       "rating": 85,
       "primaryColor": "#000000",
-      "logoUrl": "https://crests.football-data.org/109.png"
+      "logoUrl": "images/logos/team_109.png"
     },
     {
       "id": 113,
@@ -169,7 +169,7 @@
       "country": "ITA",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/113.png"
+      "logoUrl": "images/logos/team_113.png"
     },
     {
       "id": 498,
@@ -178,7 +178,7 @@
       "country": "POR",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/498.png"
+      "logoUrl": "images/logos/team_498.png"
     },
     {
       "id": 516,
@@ -187,7 +187,7 @@
       "country": "FRA",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/516.png"
+      "logoUrl": "images/logos/team_516.png"
     },
     {
       "id": 524,
@@ -196,7 +196,7 @@
       "country": "FRA",
       "rating": 88,
       "primaryColor": "#004170",
-      "logoUrl": "https://crests.football-data.org/524.png"
+      "logoUrl": "images/logos/team_524.png"
     },
     {
       "id": 548,
@@ -205,7 +205,7 @@
       "country": "MCO",
       "rating": 81,
       "primaryColor": "#ED1C24",
-      "logoUrl": "https://crests.football-data.org/548.png"
+      "logoUrl": "images/logos/team_548.png"
     },
     {
       "id": 610,
@@ -214,7 +214,7 @@
       "country": "TUR",
       "rating": 78,
       "primaryColor": "#A90429",
-      "logoUrl": "https://crests.football-data.org/610.png"
+      "logoUrl": "images/logos/team_610.png"
     },
     {
       "id": 611,
@@ -223,7 +223,7 @@
       "country": "AZE",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/611.png"
+      "logoUrl": "images/logos/team_611.png"
     },
     {
       "id": 654,
@@ -232,7 +232,7 @@
       "country": "GRC",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/654.png"
+      "logoUrl": "images/logos/team_654.png"
     },
     {
       "id": 674,
@@ -241,7 +241,7 @@
       "country": "NLD",
       "rating": 81,
       "primaryColor": "#FF0000",
-      "logoUrl": "https://crests.football-data.org/674.png"
+      "logoUrl": "images/logos/team_674.png"
     },
     {
       "id": 678,
@@ -250,7 +250,7 @@
       "country": "NLD",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/678.png"
+      "logoUrl": "images/logos/team_678.png"
     },
     {
       "id": 851,
@@ -259,7 +259,7 @@
       "country": "BEL",
       "rating": 77,
       "primaryColor": "#00A3E0",
-      "logoUrl": "https://crests.football-data.org/851.png"
+      "logoUrl": "images/logos/team_851.png"
     },
     {
       "id": 930,
@@ -268,7 +268,7 @@
       "country": "CZE",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/930.png"
+      "logoUrl": "images/logos/team_930.png"
     },
     {
       "id": 1876,
@@ -277,7 +277,7 @@
       "country": "DNK",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/1876.png"
+      "logoUrl": "images/logos/team_1876.png"
     },
     {
       "id": 1903,
@@ -286,7 +286,7 @@
       "country": "POR",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/1903.png"
+      "logoUrl": "images/logos/team_1903.png"
     },
     {
       "id": 3929,
@@ -295,7 +295,7 @@
       "country": "BEL",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/3929.png"
+      "logoUrl": "images/logos/team_3929.png"
     },
     {
       "id": 5721,
@@ -304,7 +304,7 @@
       "country": "NOR",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/5721.png"
+      "logoUrl": "images/logos/team_5721.png"
     },
     {
       "id": 10601,
@@ -313,7 +313,7 @@
       "country": "KAZ",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/10601.png"
+      "logoUrl": "images/logos/team_10601.png"
     },
     {
       "id": 11034,
@@ -322,7 +322,7 @@
       "country": "CYP",
       "rating": 80,
       "primaryColor": "#1a365d",
-      "logoUrl": "https://crests.football-data.org/11034.png"
+      "logoUrl": "images/logos/team_11034.png"
     }
   ],
   "matches": [
