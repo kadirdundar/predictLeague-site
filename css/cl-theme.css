@@ -816,6 +816,7 @@ body {
     font-size: 16px;
     font-weight: 700;
     color: var(--pl-ink);
+    flex: 1;
 }
 
 .pl-search-wrap {
@@ -1007,6 +1008,14 @@ body {
     letter-spacing: 0.04em;
     color: #94A3B8;
     text-transform: uppercase;
+    flex: 1;
+}
+
+.pl-table-header-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .pl-my-rank-row {
@@ -1472,3 +1481,77 @@ body {
     from { opacity: 0; transform: translate(-50%, 20px); }
     to { opacity: 1; transform: translate(-50%, 0); }
 }
+
+/* ---------- Language Switcher ---------- */
+.pl-lang-switcher {
+    display: inline-flex;
+    align-items: center;
+    background: var(--pl-card-bg);
+    border: 1px solid var(--pl-border);
+    border-radius: var(--pl-radius-pill);
+    padding: 2px 4px;
+    box-shadow: var(--pl-shadow-sm);
+    user-select: none;
+    transition: var(--pl-transition);
+}
+
+.pl-lang-switcher .lang-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--pl-muted);
+    padding: 3px 6px;
+    border-radius: var(--pl-radius-pill);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    line-height: 1;
+    transition: var(--pl-transition);
+}
+
+.pl-lang-switcher .lang-btn .flag {
+    font-size: 13px;
+    line-height: 1;
+}
+
+.pl-lang-switcher .lang-btn.active {
+    background: var(--pl-accent-subtle);
+    color: var(--pl-accent);
+    font-weight: 800;
+}
+
+.pl-lang-switcher .divider {
+    font-size: 10px;
+    color: var(--pl-border-2);
+    margin: 0 1px;
+}
+
+.pl-lang-switcher.compact {
+    padding: 1px 3px;
+}
+
+.pl-lang-switcher.compact .lang-btn {
+    padding: 2px 4px;
+    font-size: 10px;
+}
+
+.pl-lang-switcher.dark-theme {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+.pl-lang-switcher.dark-theme .lang-btn {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.pl-lang-switcher.dark-theme .lang-btn.active {
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+}
+
+.pl-lang-switcher.dark-theme .divider {
+    color: rgba(255, 255, 255, 0.2);
+}
+

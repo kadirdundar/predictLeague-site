@@ -144,9 +144,9 @@ window.predictLeagueShare = {
         const statGap = 22;
 
         const stats = [
-            { val: data.points || '0.0', lbl: 'Tahmini Puan' },
-            { val: data.record || '0G 0B 0M', lbl: 'Derece' },
-            { val: data.gd || '0.0', lbl: 'Averaj' }
+            { val: data.points || '0.0', lbl: data.pointsLabel || 'Tahmini Puan' },
+            { val: data.record || '0G 0B 0M', lbl: data.recordLabel || 'Derece' },
+            { val: data.gd || '0.0', lbl: data.gdLabel || 'Averaj' }
         ];
 
         stats.forEach((s, idx) => {
@@ -192,14 +192,18 @@ window.predictLeagueShare = {
         ctx.font = '700 20px "Archivo", sans-serif';
         ctx.fillStyle = '#CBD5E1';
 
+        const top8Lbl = data.top8Label || 'Top 8';
+        const playoffLbl = data.playoffLabel || 'Play-off';
+        const elimLbl = data.elimLabel || 'Elimination';
+
         ctx.textAlign = 'left';
-        ctx.fillText(`İlk 8: %${Math.round(data.top8Prob || 0)}`, probX, probY + 50);
+        ctx.fillText(`${top8Lbl}: %${Math.round(data.top8Prob || 0)}`, probX, probY + 50);
 
         ctx.textAlign = 'center';
-        ctx.fillText(`Play-off: %${Math.round(data.playoffProb || 0)}`, probX + probW / 2, probY + 50);
+        ctx.fillText(`${playoffLbl}: %${Math.round(data.playoffProb || 0)}`, probX + probW / 2, probY + 50);
 
         ctx.textAlign = 'right';
-        ctx.fillText(`Elenme: %${Math.round(data.elimProb || 0)}`, probX + probW, probY + 50);
+        ctx.fillText(`${elimLbl}: %${Math.round(data.elimProb || 0)}`, probX + probW, probY + 50);
 
         // 6. Maç Tahminleri Listesi (2 Kolon x 4 Satır)
         const matchBoxY = 660;
@@ -209,7 +213,7 @@ window.predictLeagueShare = {
         ctx.fillStyle = '#64748B';
         ctx.font = '800 20px "Archivo", sans-serif';
         ctx.textAlign = 'left';
-        ctx.fillText('MAÇ TAHMİNLERİ', 110, matchBoxY + 45);
+        ctx.fillText((data.matchPredictionsLabel || 'MATCH PREDICTIONS').toUpperCase(), 110, matchBoxY + 45);
 
         const matches = data.matches || [];
         const colW = 430;
