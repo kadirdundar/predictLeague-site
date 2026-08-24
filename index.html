@@ -4,19 +4,44 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>PredictLeague — European League Phase Predictor</title>
-    <meta name="description" content="Predict UEFA Champions League, Europa League & Conference League standings with 1,000 Monte Carlo simulation runs." />
-    <meta property="og:title" content="PredictLeague — League Phase Predictor" />
-    <meta property="og:description" content="Select your team, predict match results, and simulate European tournament standings." />
+    
+    <!-- Primary Meta Tags -->
+    <title>PredictLeague — Champions League, Europa League & Conference League Simulator</title>
+    <meta name="title" content="PredictLeague — Champions League, Europa League & Conference League Simulator" />
+    <meta name="description" content="Predict UEFA Champions League, Europa League & Conference League standings, draw scenarios and match results with 1,000 Monte Carlo simulation runs." />
+    <meta name="keywords" content="Champions League draw simulator, UCL simulator, Şampiyonlar Ligi kura simülatörü, Europa League predictor, Conference League simulator, UEFA league phase predictor, Monte Carlo football simulator, UEFA kura çekimi simülasyonu, puan durumu hesaplama" />
+    <meta name="author" content="PredictLeague" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://www.stagesimulator.com/" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="icon-192.png" />
-    <meta name="theme-color" content="#FFFFFF" />
+    <meta property="og:url" content="https://www.stagesimulator.com/" />
+    <meta property="og:site_name" content="PredictLeague" />
+    <meta property="og:title" content="PredictLeague — UEFA League Phase Simulator & Predictor" />
+    <meta property="og:description" content="Simulate UEFA Champions League, Europa League & Conference League standings with 1,000 Monte Carlo runs. Predict match results and analyze qualification chances." />
+    <meta property="og:image" content="https://www.stagesimulator.com/icon-192.png" />
+    <meta property="og:image:alt" content="PredictLeague Simulator Logo" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="tr_TR" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://www.stagesimulator.com/" />
+    <meta name="twitter:title" content="PredictLeague — UEFA League Phase Simulator & Predictor" />
+    <meta name="twitter:description" content="Simulate UEFA Champions League, Europa League & Conference League standings with 1,000 Monte Carlo runs." />
+    <meta name="twitter:image" content="https://www.stagesimulator.com/icon-192.png" />
+
+    <!-- Mobile & PWA Configuration -->
+    <meta name="theme-color" content="#040b20" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="PredictLeague" />
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" href="icon-192.png" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    
     <base href="/" />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
@@ -25,24 +50,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/cl-theme.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
     <link href="PredictLeague.styles.css" rel="stylesheet" />
+
+    <!-- Schema.org JSON-LD Structured Data for Google Rich Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "PredictLeague",
+      "url": "https://www.stagesimulator.com/",
+      "description": "UEFA Champions League, Europa League & Conference League standings predictor and draw simulator using Monte Carlo simulation algorithms.",
+      "applicationCategory": "SportsApplication",
+      "operatingSystem": "All",
+      "inLanguage": ["en", "tr"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "UEFA Champions League 36-team League Phase Simulator",
+        "UEFA Europa League Simulator",
+        "UEFA Conference League Simulator",
+        "1,000 Monte Carlo Simulation Engine",
+        "Custom Match Score Predictions & Standings Calculation",
+        "Shareable Prediction Cards"
+      ]
+    }
+    </script>
 </head>
 
 <body>
     <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
-        </svg>
-        <div class="loading-progress-text"></div>
+        <!-- Pre-hydration & Fallback Content for Search Crawlers & Initial Loading -->
+        <div class="pl-loading-container" style="display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:80vh; color:#fff; font-family:'Plus Jakarta Sans', sans-serif; text-align:center; padding:20px;">
+            <svg class="loading-progress" aria-hidden="true">
+                <circle r="40%" cx="50%" cy="50%" />
+                <circle r="40%" cx="50%" cy="50%" />
+            </svg>
+            <div class="loading-progress-text" style="margin-top:12px; font-weight:600;">PredictLeague Loading...</div>
+            
+            <!-- Accessible Semantic Text for Search Bots (Googlebot, Bingbot) -->
+            <div style="max-width:600px; margin-top:24px; opacity:0.85; font-size:14px; line-height:1.6;">
+                <h1 style="font-size:20px; font-weight:800; margin-bottom:8px; color:#ffffff;">PredictLeague — European League Phase Predictor</h1>
+                <p style="margin:0 0 8px 0;">Simulate UEFA Champions League, Europa League & Conference League standings with 1,000 Monte Carlo simulation runs.</p>
+                <p style="font-size:12px; opacity:0.75; margin:0;">Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi yeni format lig aşaması puan ve kura simülatörü.</p>
+            </div>
+        </div>
     </div>
+
+    <noscript>
+        <div style="background:#0a1026; color:#fff; padding:24px; text-align:center; font-family:sans-serif;">
+            <h2>PredictLeague — UEFA League Phase Simulator</h2>
+            <p>Please enable JavaScript in your browser to interact with the UEFA Champions League, Europa League & Conference League simulator.</p>
+        </div>
+    </noscript>
 
     <div id="blazor-error-ui">
         An unhandled error has occurred.
         <a href="." class="reload">Reload</a>
         <span class="dismiss">🗙</span>
     </div>
+    
     <script>
       (function (l) {
         if (l.search[1] === '/') {

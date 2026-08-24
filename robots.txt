@@ -1,0 +1,10 @@
+# Robots.txt for PredictLeague / StageSimulator
+# https://www.stagesimulator.com
+
+User-agent: *
+Allow: /
+Allow: /data/
+Allow: /images/
+
+# Sitemaps
+Sitemap: https://www.stagesimulator.com/sitemap.xml
