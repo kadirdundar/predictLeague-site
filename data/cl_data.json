@@ -271,13 +271,13 @@
       "logoUrl": "images/logos/team_550.png"
     },
     {
-      "id": 656,
-      "name": "Slovan Bratislava",
-      "shortName": "SLO",
-      "country": "",
-      "rating": 72,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_656.png"
+      "id": 645,
+      "name": "Galatasaray",
+      "shortName": "GS",
+      "country": "TR",
+      "rating": 82,
+      "primaryColor": "#A90432",
+      "logoUrl": "images/logos/team_645.png"
     },
     {
       "id": 628,
@@ -391,7 +391,7 @@
     },
     {
       "id": 8,
-      "homeTeamId": 628,
+      "homeTeamId": 645,
       "awayTeamId": 571,
       "week": 1,
       "homeGoals": null,
@@ -491,7 +491,7 @@
     {
       "id": 19,
       "homeTeamId": 172,
-      "awayTeamId": 628,
+      "awayTeamId": 645,
       "week": 2,
       "homeGoals": null,
       "awayGoals": null,
@@ -752,7 +752,7 @@
     {
       "id": 48,
       "homeTeamId": 50,
-      "awayTeamId": 628,
+      "awayTeamId": 645,
       "week": 3,
       "homeGoals": null,
       "awayGoals": null,
@@ -967,7 +967,7 @@
     },
     {
       "id": 72,
-      "homeTeamId": 628,
+      "homeTeamId": 645,
       "awayTeamId": 106,
       "week": 4,
       "homeGoals": null,
@@ -976,7 +976,7 @@
     },
     {
       "id": 73,
-      "homeTeamId": 628,
+      "homeTeamId": 645,
       "awayTeamId": 530,
       "week": 5,
       "homeGoals": null,
@@ -1265,7 +1265,7 @@
     {
       "id": 105,
       "homeTeamId": 209,
-      "awayTeamId": 628,
+      "awayTeamId": 645,
       "week": 6,
       "homeGoals": null,
       "awayGoals": null,
@@ -1453,7 +1453,7 @@
     },
     {
       "id": 126,
-      "homeTeamId": 628,
+      "homeTeamId": 645,
       "awayTeamId": 505,
       "week": 7,
       "homeGoals": null,
@@ -1517,7 +1517,7 @@
     {
       "id": 133,
       "homeTeamId": 168,
-      "awayTeamId": 628,
+      "awayTeamId": 645,
       "week": 8,
       "homeGoals": null,
       "awayGoals": null,
