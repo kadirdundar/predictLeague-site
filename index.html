@@ -45,38 +45,86 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     
     <base href="/" />
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    
+    <!-- Performance & Preload Optimizations -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="css/app.css" as="style" />
+    <link rel="preload" href="css/cl-theme.css" as="style" />
+    
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/cl-theme.css" />
     <link href="PredictLeague.styles.css" rel="stylesheet" />
 
-    <!-- Schema.org JSON-LD Structured Data for Google Rich Results -->
+    <!-- Schema.org JSON-LD (WebApplication + FAQPage for Google Rich Snippets) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "PredictLeague",
-      "url": "https://www.stagesimulator.com/",
-      "description": "UEFA Champions League, Europa League & Conference League standings predictor and draw simulator using Monte Carlo simulation algorithms.",
-      "applicationCategory": "SportsApplication",
-      "operatingSystem": "All",
-      "inLanguage": ["en", "tr"],
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "featureList": [
-        "UEFA Champions League 36-team League Phase Simulator",
-        "UEFA Europa League Simulator",
-        "UEFA Conference League Simulator",
-        "1,000 Monte Carlo Simulation Engine",
-        "Custom Match Score Predictions & Standings Calculation",
-        "Shareable Prediction Cards"
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://www.stagesimulator.com/#webapp",
+          "name": "PredictLeague",
+          "url": "https://www.stagesimulator.com/",
+          "description": "UEFA Champions League, Europa League & Conference League standings predictor and draw simulator using Monte Carlo simulation algorithms.",
+          "applicationCategory": "SportsApplication",
+          "operatingSystem": "All",
+          "inLanguage": ["en", "tr"],
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "featureList": [
+            "UEFA Champions League 36-team League Phase Simulator",
+            "UEFA Europa League Simulator",
+            "UEFA Conference League Simulator",
+            "1,000 Monte Carlo Simulation Engine",
+            "Custom Match Score Predictions & Standings Calculation",
+            "Shareable Prediction Cards"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.stagesimulator.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How does the UEFA Champions League, Europa League & Conference League Predictor work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PredictLeague allows football fans to predict custom match scores for each fixture in the new 36-team single league stage. Our Monte Carlo engine simulates unplayed fixtures 1,000 times using team power ratings to calculate accurate final rankings, points, and qualification probabilities for the Top 8 and Play-offs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How many points are needed to qualify for the Top 8 in the UEFA Champions League?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "In the new 36-team Swiss-model league stage, simulations indicate that 15 to 16 points generally guarantee direct Round of 16 qualification (places 1 to 8), while 9 to 10 points typically suffice to secure a knockout play-off spot (places 9 to 24)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the Monte Carlo simulation method used for predicting league standings?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Monte Carlo simulation runs 1,000 iterations of all remaining tournament matches based on team ratings and goal probability distributions. This models match variance and home advantage to provide realistic finishing positions, average points, and qualification percentages."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I simulate individual team paths like Real Madrid, Galatasaray, Arsenal or Fenerbahçe?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! You can select any participating team across the Champions League, Europa League, and Conference League to predict their specific 8 matchday outcomes and immediately see how your predictions impact their projected final ranking."
+              }
+            }
+          ]
+        }
       ]
     }
     </script>
