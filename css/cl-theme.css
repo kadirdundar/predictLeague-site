@@ -760,13 +760,111 @@ body {
     border-color: var(--pl-loss);
 }
 
-/* ---------- Sticky footer / rank bar ---------- */
-/* ---------- Table View Probability Chips ---------- */
-.pl-table-probs-bar {
+/* ---------- Large Bottom Standings Table CTA ---------- */
+.pl-bottom-cta-wrap {
+    margin-top: 4px;
+    padding-bottom: 24px;
     display: flex;
+    flex-direction: column;
+}
+
+.pl-btn-large-table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 60px;
+    padding: 12px 16px;
+    border-radius: var(--pl-radius-lg);
+    border: 1px solid var(--pl-border);
+    background: var(--pl-card-bg);
+    box-shadow: var(--pl-shadow-sm);
+    cursor: pointer;
+    font-family: inherit;
+    transition: var(--pl-transition);
+    text-align: left;
+}
+
+.pl-btn-large-table:hover {
+    background: var(--pl-card-hover);
+    border-color: var(--pl-accent-border);
+    box-shadow: var(--pl-shadow-md);
+    transform: translateY(-2px);
+}
+
+.pl-btn-large-table:active {
+    transform: scale(0.98);
+}
+
+.cta-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.cta-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: var(--pl-radius-md);
+    background: var(--pl-accent-subtle);
+    color: var(--pl-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    flex-shrink: 0;
+    transition: var(--pl-transition);
+}
+
+.pl-btn-large-table:hover .cta-icon {
+    background: var(--pl-accent);
+    color: #FFFFFF;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    min-width: 0;
+}
+
+.cta-title {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--pl-ink);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+.cta-subtitle {
+    font-size: 11px;
+    color: var(--pl-muted);
+    line-height: 1.2;
+}
+
+.cta-action-pill {
+    display: inline-flex;
+    align-items: center;
     gap: 6px;
-    margin-top: 10px;
-    flex-wrap: wrap;
+    padding: 6px 12px;
+    border-radius: var(--pl-radius-pill);
+    background: var(--pl-card-subtle);
+    color: var(--pl-ink-soft);
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: var(--pl-transition);
+    border: 1px solid var(--pl-border);
+}
+
+.pl-btn-large-table:hover .cta-action-pill {
+    background: var(--pl-accent);
+    color: #FFFFFF;
+    border-color: var(--pl-accent);
 }
 
 
