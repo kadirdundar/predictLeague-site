@@ -260,12 +260,12 @@ window.predictLeagueShare = {
         ctx.fillStyle = '#FFFFFF';
         ctx.font = '900 32px "Archivo", sans-serif';
         ctx.textAlign = 'left';
-        ctx.fillText('PREDICTLEAGUE', 75, 1300);
+        ctx.fillText('STAGESIMULATOR', 75, 1300);
 
         ctx.fillStyle = '#00D4FF';
         ctx.font = '700 26px "Archivo", sans-serif';
         ctx.textAlign = 'right';
-        ctx.fillText('predictleague.app', W - 75, 1300);
+        ctx.fillText('stagesimulator.com', W - 75, 1300);
 
         this.cachedCanvas = canvas;
         return canvas;
@@ -294,24 +294,24 @@ window.predictLeagueShare = {
             const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
             if (!blob) return false;
 
-            const file = new File([blob], "tahmin-kartim.png", { type: "image/png" });
+            const file = new File([blob], "stagesimulator-prediction.png", { type: "image/png" });
 
             if (navigator.canShare && navigator.canShare({ files: [file] })) {
                 await navigator.share({
-                    title: title || "PredictLeague Tahminim",
-                    text: text || "Şampiyonlar Ligi tahminime göz at!",
+                    title: title || "StageSimulator",
+                    text: text || "Check out my European league phase prediction on StageSimulator!",
                     files: [file]
                 });
                 return true;
             } else if (navigator.share) {
                 await navigator.share({
-                    title: title || "PredictLeague Tahminim",
-                    text: text || "Şampiyonlar Ligi tahminime göz at!",
+                    title: title || "StageSimulator",
+                    text: text || "Check out my European league phase prediction on StageSimulator!",
                     url: window.location.href
                 });
                 return true;
             } else {
-                this.downloadBlob(blob, "tahmin-kartim.png");
+                this.downloadBlob(blob, "stagesimulator-prediction.png");
                 return false;
             }
         } catch (err) {
