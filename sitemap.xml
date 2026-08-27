@@ -4,682 +4,1241 @@
     <!-- Home / Main Simulator -->
     <url>
         <loc>https://www.stagesimulator.com/</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/" />
-        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?lang=fr" />
     </url>
 
     <!-- Competition: CL -->
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=ac-milan</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=ac-milan&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=ac-milan&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=ac-milan&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=ac-milan&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=ac-milan&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=arsenal</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=arsenal&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=arsenal&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=arsenal&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=arsenal&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=arsenal&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=aston-villa</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=aston-villa&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=aston-villa&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=aston-villa&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=aston-villa&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=aston-villa&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=atalanta</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=atalanta&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=atalanta&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=atalanta&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=atalanta&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=atalanta&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=atletico-madrid</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=atletico-madrid&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=atletico-madrid&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=atletico-madrid&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=atletico-madrid&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=atletico-madrid&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=bsc-young-boys</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=bsc-young-boys&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=bsc-young-boys&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=bsc-young-boys&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=bsc-young-boys&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=bsc-young-boys&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=barcelona</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=barcelona&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=barcelona&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=barcelona&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=barcelona&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=barcelona&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=bayer-leverkusen</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=bayer-leverkusen&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=bayer-leverkusen&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=bayer-leverkusen&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=bayer-leverkusen&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=bayer-leverkusen&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=bayern-munchen</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=bayern-munchen&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=bayern-munchen&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=bayern-munchen&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=bayern-munchen&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=bayern-munchen&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=benfica</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=benfica&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=benfica&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=benfica&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=benfica&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=benfica&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=bologna</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=bologna&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=bologna&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=bologna&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=bologna&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=bologna&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=borussia-dortmund</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=borussia-dortmund&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=borussia-dortmund&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=borussia-dortmund&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=borussia-dortmund&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=borussia-dortmund&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=celtic</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=celtic&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=celtic&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=celtic&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=celtic&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=celtic&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=club-brugge-kv</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=club-brugge-kv&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=club-brugge-kv&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=club-brugge-kv&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=club-brugge-kv&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=club-brugge-kv&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=dinamo-zagreb</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=dinamo-zagreb&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=dinamo-zagreb&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=dinamo-zagreb&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=dinamo-zagreb&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=dinamo-zagreb&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=fk-crvena-zvezda</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=fk-crvena-zvezda&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=fk-crvena-zvezda&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=fk-crvena-zvezda&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=fk-crvena-zvezda&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=fk-crvena-zvezda&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=feyenoord</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=feyenoord&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=feyenoord&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=feyenoord&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=feyenoord&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=feyenoord&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=girona</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=girona&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=girona&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=girona&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=girona&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=girona&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=inter</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=inter&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=inter&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=inter&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=inter&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=inter&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=juventus</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=juventus&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=juventus&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=juventus&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=juventus&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=juventus&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=lille</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=lille&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=lille&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=lille&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=lille&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=lille&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=liverpool</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=liverpool&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=liverpool&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=liverpool&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=liverpool&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=liverpool&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=manchester-city</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=manchester-city&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=manchester-city&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=manchester-city&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=manchester-city&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=manchester-city&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=monaco</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=monaco&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=monaco&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=monaco&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=monaco&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=monaco&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=psv-eindhoven</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=psv-eindhoven&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=psv-eindhoven&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=psv-eindhoven&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=psv-eindhoven&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=psv-eindhoven&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=paris-saint-germain</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=paris-saint-germain&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=paris-saint-germain&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=paris-saint-germain&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=paris-saint-germain&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=paris-saint-germain&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=rb-leipzig</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=rb-leipzig&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=rb-leipzig&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=rb-leipzig&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=rb-leipzig&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=rb-leipzig&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=real-madrid</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=real-madrid&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=real-madrid&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=real-madrid&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=real-madrid&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=real-madrid&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=red-bull-salzburg</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=red-bull-salzburg&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=red-bull-salzburg&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=red-bull-salzburg&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=red-bull-salzburg&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=red-bull-salzburg&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=shakhtar-donetsk</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=shakhtar-donetsk&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=shakhtar-donetsk&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=shakhtar-donetsk&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=shakhtar-donetsk&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=shakhtar-donetsk&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=slovan-bratislava</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=slovan-bratislava&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=slovan-bratislava&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=slovan-bratislava&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=slovan-bratislava&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=slovan-bratislava&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=sparta-praha</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=sparta-praha&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=sparta-praha&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=sparta-praha&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=sparta-praha&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=sparta-praha&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=sporting-cp</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=sporting-cp&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=sporting-cp&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=sporting-cp&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=sporting-cp&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=sporting-cp&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=stade-brestois-29</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=stade-brestois-29&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=stade-brestois-29&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=stade-brestois-29&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=stade-brestois-29&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=stade-brestois-29&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=sturm-graz</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=sturm-graz&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=sturm-graz&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=sturm-graz&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=sturm-graz&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=sturm-graz&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=cl&amp;team=vfb-stuttgart</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=cl&amp;team=vfb-stuttgart&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=cl&amp;team=vfb-stuttgart&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=cl&amp;team=vfb-stuttgart&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=cl&amp;team=vfb-stuttgart&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=cl&amp;team=vfb-stuttgart&amp;lang=fr" />
     </url>
 
     <!-- Competition: EL -->
     <url>
         <loc>https://www.stagesimulator.com/?comp=el</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=1899-hoffenheim</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=1899-hoffenheim&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=1899-hoffenheim&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=1899-hoffenheim&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=1899-hoffenheim&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=1899-hoffenheim&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=as-roma</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=as-roma&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=as-roma&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=as-roma&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=as-roma&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=as-roma&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=az-alkmaar</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=az-alkmaar&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=az-alkmaar&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=az-alkmaar&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=az-alkmaar&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=az-alkmaar&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=ajax</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=ajax&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=ajax&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=ajax&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=ajax&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=ajax&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=anderlecht</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=anderlecht&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=anderlecht&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=anderlecht&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=anderlecht&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=anderlecht&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=athletic-club</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=athletic-club&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=athletic-club&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=athletic-club&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=athletic-club&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=athletic-club&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=besiktas</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=besiktas&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=besiktas&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=besiktas&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=besiktas&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=besiktas&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=bodo-glimt</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=bodo-glimt&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=bodo-glimt&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=bodo-glimt&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=bodo-glimt&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=bodo-glimt&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=dynamo-kyiv</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=dynamo-kyiv&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=dynamo-kyiv&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=dynamo-kyiv&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=dynamo-kyiv&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=dynamo-kyiv&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=eintracht-frankfurt</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=eintracht-frankfurt&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=eintracht-frankfurt&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=eintracht-frankfurt&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=eintracht-frankfurt&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=eintracht-frankfurt&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=fc-midtjylland</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=fc-midtjylland&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=fc-midtjylland&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=fc-midtjylland&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=fc-midtjylland&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=fc-midtjylland&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=fc-porto</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=fc-porto&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=fc-porto&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=fc-porto&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=fc-porto&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=fc-porto&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=fcsb</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=fcsb&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=fcsb&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=fcsb&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=fcsb&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=fcsb&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=fenerbahce</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=fenerbahce&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=fenerbahce&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=fenerbahce&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=fenerbahce&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=fenerbahce&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=ferencvarosi-tc</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=ferencvarosi-tc&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=ferencvarosi-tc&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=ferencvarosi-tc&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=ferencvarosi-tc&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=ferencvarosi-tc&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=galatasaray</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=galatasaray&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=galatasaray&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=galatasaray&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=galatasaray&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=galatasaray&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=if-elfsborg</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=if-elfsborg&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=if-elfsborg&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=if-elfsborg&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=if-elfsborg&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=if-elfsborg&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=lazio</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=lazio&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=lazio&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=lazio&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=lazio&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=lazio&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=ludogorets</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=ludogorets&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=ludogorets&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=ludogorets&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=ludogorets&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=ludogorets&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=lyon</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=lyon&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=lyon&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=lyon&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=lyon&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=lyon&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=maccabi-tel-aviv</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=maccabi-tel-aviv&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=maccabi-tel-aviv&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=maccabi-tel-aviv&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=maccabi-tel-aviv&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=maccabi-tel-aviv&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=malmo-ff</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=malmo-ff&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=malmo-ff&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=malmo-ff&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=malmo-ff&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=malmo-ff&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=manchester-united</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=manchester-united&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=manchester-united&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=manchester-united&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=manchester-united&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=manchester-united&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=nice</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=nice&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=nice&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=nice&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=nice&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=nice&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=olympiakos-piraeus</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=olympiakos-piraeus&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=olympiakos-piraeus&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=olympiakos-piraeus&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=olympiakos-piraeus&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=olympiakos-piraeus&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=paok</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=paok&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=paok&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=paok&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=paok&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=paok&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=plzen</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=plzen&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=plzen&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=plzen&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=plzen&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=plzen&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=qarabag</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=qarabag&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=qarabag&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=qarabag&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=qarabag&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=qarabag&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=rangers</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=rangers&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=rangers&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=rangers&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=rangers&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=rangers&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=real-sociedad</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=real-sociedad&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=real-sociedad&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=real-sociedad&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=real-sociedad&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=real-sociedad&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=r-gas-fs</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=r-gas-fs&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=r-gas-fs&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=r-gas-fs&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=r-gas-fs&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=r-gas-fs&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=sc-braga</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=sc-braga&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=sc-braga&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=sc-braga&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=sc-braga&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=sc-braga&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=slavia-praha</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=slavia-praha&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=slavia-praha&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=slavia-praha&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=slavia-praha&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=slavia-praha&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=tottenham</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=tottenham&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=tottenham&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=tottenham&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=tottenham&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=tottenham&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=twente</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=twente&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=twente&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=twente&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=twente&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=twente&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=el&amp;team=union-st-gilloise</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=el&amp;team=union-st-gilloise&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=el&amp;team=union-st-gilloise&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=el&amp;team=union-st-gilloise&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=el&amp;team=union-st-gilloise&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=el&amp;team=union-st-gilloise&amp;lang=fr" />
     </url>
 
     <!-- Competition: ECL -->
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=1-fc-heidenheim</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=1-fc-heidenheim&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=1-fc-heidenheim&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=1-fc-heidenheim&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=1-fc-heidenheim&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=1-fc-heidenheim&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=apoel-nicosia</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=apoel-nicosia&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=apoel-nicosia&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=apoel-nicosia&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=apoel-nicosia&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=apoel-nicosia&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=basaksehir</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=basaksehir&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=basaksehir&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=basaksehir&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=basaksehir&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=basaksehir&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=borac-banja-luka</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=borac-banja-luka&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=borac-banja-luka&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=borac-banja-luka&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=borac-banja-luka&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=borac-banja-luka&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=celje</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=celje&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=celje&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=celje&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=celje&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=celje&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=cercle-brugge</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=cercle-brugge&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=cercle-brugge&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=cercle-brugge&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=cercle-brugge&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=cercle-brugge&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=chelsea</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=chelsea&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=chelsea&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=chelsea&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=chelsea&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=chelsea&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=dinamo-minsk</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=dinamo-minsk&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=dinamo-minsk&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=dinamo-minsk&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=dinamo-minsk&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=dinamo-minsk&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=djurgardens-if</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=djurgardens-if&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=djurgardens-if&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=djurgardens-if&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=djurgardens-if&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=djurgardens-if&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=fc-astana</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-astana&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-astana&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-astana&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-astana&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-astana&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=fc-copenhagen</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-copenhagen&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-copenhagen&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-copenhagen&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-copenhagen&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-copenhagen&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=fc-lugano</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-lugano&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-lugano&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-lugano&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-lugano&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-lugano&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=fc-noah</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-noah&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-noah&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-noah&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-noah&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-noah&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=fc-st-gallen</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-st-gallen&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-st-gallen&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-st-gallen&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-st-gallen&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fc-st-gallen&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=fiorentina</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fiorentina&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fiorentina&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fiorentina&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fiorentina&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=fiorentina&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=gent</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=gent&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=gent&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=gent&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=gent&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=gent&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=hjk-helsinki</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=hjk-helsinki&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=hjk-helsinki&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=hjk-helsinki&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=hjk-helsinki&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=hjk-helsinki&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=heart-of-midlothian</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=heart-of-midlothian&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=heart-of-midlothian&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=heart-of-midlothian&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=heart-of-midlothian&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=heart-of-midlothian&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=jagiellonia</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=jagiellonia&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=jagiellonia&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=jagiellonia&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=jagiellonia&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=jagiellonia&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=larne</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=larne&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=larne&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=larne&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=larne&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=larne&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=lask-linz</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=lask-linz&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=lask-linz&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=lask-linz&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=lask-linz&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=lask-linz&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=legia-warszawa</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=legia-warszawa&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=legia-warszawa&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=legia-warszawa&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=legia-warszawa&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=legia-warszawa&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=mlada-boleslav</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=mlada-boleslav&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=mlada-boleslav&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=mlada-boleslav&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=mlada-boleslav&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=mlada-boleslav&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=molde</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=molde&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=molde&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=molde&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=molde&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=molde&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=olimpija-ljubljana</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=olimpija-ljubljana&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=olimpija-ljubljana&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=olimpija-ljubljana&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=olimpija-ljubljana&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=olimpija-ljubljana&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=omonia-nicosia</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=omonia-nicosia&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=omonia-nicosia&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=omonia-nicosia&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=omonia-nicosia&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=omonia-nicosia&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=pafos</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=pafos&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=pafos&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=pafos&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=pafos&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=pafos&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=panathinaikos</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=panathinaikos&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=panathinaikos&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=panathinaikos&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=panathinaikos&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=panathinaikos&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=petrocub</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=petrocub&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=petrocub&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=petrocub&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=petrocub&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=petrocub&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=rapid-vienna</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=rapid-vienna&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=rapid-vienna&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=rapid-vienna&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=rapid-vienna&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=rapid-vienna&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=real-betis</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=real-betis&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=real-betis&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=real-betis&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=real-betis&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=real-betis&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=shamrock-rovers</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=shamrock-rovers&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=shamrock-rovers&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=shamrock-rovers&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=shamrock-rovers&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=shamrock-rovers&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=tsc-backa-topola</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=tsc-backa-topola&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=tsc-backa-topola&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=tsc-backa-topola&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=tsc-backa-topola&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=tsc-backa-topola&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=the-new-saints</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=the-new-saints&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=the-new-saints&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=the-new-saints&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=the-new-saints&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=the-new-saints&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=vikingur-reykjavik</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=vikingur-reykjavik&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=vikingur-reykjavik&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=vikingur-reykjavik&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=vikingur-reykjavik&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=vikingur-reykjavik&amp;lang=fr" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/?comp=ecl&amp;team=vit-ria-sc</loc>
-        <lastmod>2026-08-26</lastmod>
+        <lastmod>2026-08-27</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/?comp=ecl&amp;team=vit-ria-sc&amp;lang=en" />
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=vit-ria-sc&amp;lang=tr" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/?comp=ecl&amp;team=vit-ria-sc&amp;lang=es" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/?comp=ecl&amp;team=vit-ria-sc&amp;lang=de" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/?comp=ecl&amp;team=vit-ria-sc&amp;lang=fr" />
     </url>
 </urlset>
