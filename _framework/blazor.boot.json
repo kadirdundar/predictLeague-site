@@ -1,10 +1,10 @@
 {
   "mainAssemblyName": "PredictLeague",
   "resources": {
-    "hash": "sha256-sBcM43bmiI2u+PpehF8I+o3c3CBolVvFuZ1Mo2D5/Rs=",
+    "hash": "sha256-RafEadzQa+jMnYQ8zD/Kk+AAX5H89wgsU405IBZdCA4=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.f57ea9ke54.wasm": "Microsoft.AspNetCore.Components.wasm",
-      "Microsoft.AspNetCore.Components.Web.cmljeg18ta.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
+      "Microsoft.AspNetCore.Components.Web.8nz5wh3k2t.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.0prlth0hc4.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
       "Microsoft.Extensions.Configuration.7sm4vp77d1.wasm": "Microsoft.Extensions.Configuration.wasm",
       "Microsoft.Extensions.Configuration.Abstractions.n3roazub70.wasm": "Microsoft.Extensions.Configuration.Abstractions.wasm",
@@ -39,7 +39,7 @@
       "System.Text.RegularExpressions.nx73kmrs9d.wasm": "System.Text.RegularExpressions.wasm",
       "System.Threading.9veevijhzj.wasm": "System.Threading.wasm",
       "System.Private.CoreLib.u69x39uavu.wasm": "System.Private.CoreLib.wasm",
-      "PredictLeague.lho7sv5akr.wasm": "PredictLeague.wasm",
+      "PredictLeague.7t55zw18tq.wasm": "PredictLeague.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.wlvwu26j41.js": "dotnet.native.js",
       "dotnet.native.kiufslnrq2.wasm": "dotnet.native.wasm",
@@ -64,7 +64,7 @@
     },
     "assembly": {
       "Microsoft.AspNetCore.Components.f57ea9ke54.wasm": "sha256-TRbsb4bJQOTL//oin1CMaVFg40eqTpvB4ns9B16VopY=",
-      "Microsoft.AspNetCore.Components.Web.cmljeg18ta.wasm": "sha256-zO36Aw/sz1P4qjaPTcHYg4Dp/tBc1gQD5MSdXWVk0Zs=",
+      "Microsoft.AspNetCore.Components.Web.8nz5wh3k2t.wasm": "sha256-tHdNCLckGew1/NtFWoSOKz76HvByXjaH3S736Imk+gc=",
       "Microsoft.AspNetCore.Components.WebAssembly.0prlth0hc4.wasm": "sha256-jB/Gf1i7eXuQqAzqY/ZONe+hrW3x94pYZlL+G0Cv7Co=",
       "Microsoft.Extensions.Configuration.7sm4vp77d1.wasm": "sha256-V/8lrAHQfJYsJtV+bKRHL6fmMFhJhAOyoTNfGTbwTdQ=",
       "Microsoft.Extensions.Configuration.Abstractions.n3roazub70.wasm": "sha256-M/V9DIZ9otM7/qEt+xn3wagkoRiLOf4JMPyDoo6WUM8=",
@@ -97,7 +97,7 @@
       "System.Text.Json.92r9oekt5z.wasm": "sha256-QYGOJff7O2M5e0wkaXcp13OhPD2kfMfKaW4icSi+gRE=",
       "System.Text.RegularExpressions.nx73kmrs9d.wasm": "sha256-FVlQhZOTFhS6RX8Bd7ulBgips4mGmRGAxWixue4XkDY=",
       "System.Threading.9veevijhzj.wasm": "sha256-O0a8Ue3axdOo1i5r++ozyb2t84Npo8ZIsNvMukHhhvY=",
-      "PredictLeague.lho7sv5akr.wasm": "sha256-R0A5sDRYgpLe1dLdgCuwVbpxBebOu+lN7PW1zmwAQn0="
+      "PredictLeague.7t55zw18tq.wasm": "sha256-VcCgUjWpWeTZzzMufWB5ykxEx7Hk05/HYdTTo9oGW7k="
     }
   },
   "cacheBootResources": true,
