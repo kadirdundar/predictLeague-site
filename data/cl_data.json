@@ -1,13 +1,13 @@
 {
   "teams": [
     {
-      "id": 489,
-      "name": "AC Milan",
-      "shortName": "AC ",
-      "country": "",
-      "rating": 84,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_489.png"
+      "id": 606,
+      "name": "AEK Athens",
+      "shortName": "AEK",
+      "country": "GRC",
+      "rating": 76,
+      "primaryColor": "#FFCC00",
+      "logoUrl": "images/logos/team_606.png"
     },
     {
       "id": 42,
@@ -21,83 +21,47 @@
     {
       "id": 66,
       "name": "Aston Villa",
-      "shortName": "AST",
-      "country": "",
+      "shortName": "AVL",
+      "country": "ENG",
       "rating": 83,
-      "primaryColor": "#1a365d",
+      "primaryColor": "#670E36",
       "logoUrl": "images/logos/team_66.png"
-    },
-    {
-      "id": 499,
-      "name": "Atalanta",
-      "shortName": "ATA",
-      "country": "ITA",
-      "rating": 84,
-      "primaryColor": "#1E71B8",
-      "logoUrl": "images/logos/team_499.png"
     },
     {
       "id": 530,
       "name": "Atletico Madrid",
-      "shortName": "ATL",
-      "country": "",
+      "shortName": "ATM",
+      "country": "ESP",
       "rating": 87,
-      "primaryColor": "#1a365d",
+      "primaryColor": "#CB3524",
       "logoUrl": "images/logos/team_530.png"
-    },
-    {
-      "id": 565,
-      "name": "BSC Young Boys",
-      "shortName": "BSC",
-      "country": "",
-      "rating": 75,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_565.png"
     },
     {
       "id": 529,
       "name": "Barcelona",
-      "shortName": "FCB",
+      "shortName": "BAR",
       "country": "ESP",
-      "rating": 90,
+      "rating": 91,
       "primaryColor": "#004D98",
       "logoUrl": "images/logos/team_529.png"
-    },
-    {
-      "id": 168,
-      "name": "Bayer Leverkusen",
-      "shortName": "BAY",
-      "country": "",
-      "rating": 87,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_168.png"
     },
     {
       "id": 157,
       "name": "Bayern München",
       "shortName": "FCB",
       "country": "DEU",
-      "rating": 91,
-      "primaryColor": "#EF0107",
+      "rating": 92,
+      "primaryColor": "#DC052D",
       "logoUrl": "images/logos/team_157.png"
     },
     {
-      "id": 211,
-      "name": "Benfica",
-      "shortName": "BEN",
-      "country": "POR",
-      "rating": 83,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_211.png"
-    },
-    {
-      "id": 500,
-      "name": "Bologna",
-      "shortName": "BOL",
-      "country": "",
-      "rating": 79,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_500.png"
+      "id": 327,
+      "name": "Bodø/Glimt",
+      "shortName": "BOD",
+      "country": "NOR",
+      "rating": 76,
+      "primaryColor": "#FFCC00",
+      "logoUrl": "images/logos/team_327.png"
     },
     {
       "id": 165,
@@ -105,62 +69,53 @@
       "shortName": "BVB",
       "country": "DEU",
       "rating": 86,
-      "primaryColor": "#004D98",
+      "primaryColor": "#FDE100",
       "logoUrl": "images/logos/team_165.png"
-    },
-    {
-      "id": 247,
-      "name": "Celtic",
-      "shortName": "CEL",
-      "country": "",
-      "rating": 78,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_247.png"
     },
     {
       "id": 569,
       "name": "Club Brugge KV",
-      "shortName": "BRU",
+      "shortName": "CLU",
       "country": "BEL",
-      "rating": 78,
-      "primaryColor": "#00A3E0",
+      "rating": 79,
+      "primaryColor": "#002B49",
       "logoUrl": "images/logos/team_569.png"
     },
     {
-      "id": 620,
-      "name": "Dinamo Zagreb",
-      "shortName": "DIN",
-      "country": "",
-      "rating": 76,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_620.png"
+      "id": 897,
+      "name": "Como",
+      "shortName": "COM",
+      "country": "ITA",
+      "rating": 77,
+      "primaryColor": "#003A70",
+      "logoUrl": "images/logos/team_897.png"
     },
     {
-      "id": 598,
-      "name": "FK Crvena Zvezda",
-      "shortName": "FK ",
-      "country": "",
-      "rating": 75,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_598.png"
+      "id": 611,
+      "name": "Fenerbahçe",
+      "shortName": "FB",
+      "country": "TUR",
+      "rating": 82,
+      "primaryColor": "#002D72",
+      "logoUrl": "images/logos/team_611.png"
     },
     {
       "id": 209,
       "name": "Feyenoord",
       "shortName": "FEY",
-      "country": "",
+      "country": "NLD",
       "rating": 80,
-      "primaryColor": "#1a365d",
+      "primaryColor": "#E30613",
       "logoUrl": "images/logos/team_209.png"
     },
     {
-      "id": 547,
-      "name": "Girona",
-      "shortName": "GIR",
-      "country": "",
-      "rating": 80,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_547.png"
+      "id": 645,
+      "name": "Galatasaray",
+      "shortName": "GS",
+      "country": "TUR",
+      "rating": 82,
+      "primaryColor": "#A90432",
+      "logoUrl": "images/logos/team_645.png"
     },
     {
       "id": 505,
@@ -172,21 +127,30 @@
       "logoUrl": "images/logos/team_505.png"
     },
     {
-      "id": 496,
-      "name": "Juventus",
-      "shortName": "JUV",
-      "country": "ITA",
-      "rating": 86,
+      "id": 1026,
+      "name": "LASK",
+      "shortName": "LAS",
+      "country": "AUT",
+      "rating": 75,
       "primaryColor": "#000000",
-      "logoUrl": "images/logos/team_496.png"
+      "logoUrl": "images/logos/team_1026.png"
+    },
+    {
+      "id": 116,
+      "name": "Lens",
+      "shortName": "RCL",
+      "country": "FRA",
+      "rating": 79,
+      "primaryColor": "#ED1C24",
+      "logoUrl": "images/logos/team_116.png"
     },
     {
       "id": 79,
       "name": "Lille",
-      "shortName": "LIL",
-      "country": "",
-      "rating": 80,
-      "primaryColor": "#1a365d",
+      "shortName": "LOSC",
+      "country": "FRA",
+      "rating": 81,
+      "primaryColor": "#E01E12",
       "logoUrl": "images/logos/team_79.png"
     },
     {
@@ -194,7 +158,7 @@
       "name": "Liverpool",
       "shortName": "LIV",
       "country": "ENG",
-      "rating": 90,
+      "rating": 91,
       "primaryColor": "#C8102E",
       "logoUrl": "images/logos/team_40.png"
     },
@@ -208,1419 +172,1455 @@
       "logoUrl": "images/logos/team_50.png"
     },
     {
-      "id": 91,
-      "name": "Monaco",
-      "shortName": "ASM",
-      "country": "MCO",
-      "rating": 82,
-      "primaryColor": "#ED1C24",
-      "logoUrl": "images/logos/team_91.png"
+      "id": 33,
+      "name": "Manchester United",
+      "shortName": "MUN",
+      "country": "ENG",
+      "rating": 85,
+      "primaryColor": "#DA291C",
+      "logoUrl": "images/logos/team_33.png"
+    },
+    {
+      "id": 492,
+      "name": "Napoli",
+      "shortName": "NAP",
+      "country": "ITA",
+      "rating": 86,
+      "primaryColor": "#12A0D7",
+      "logoUrl": "images/logos/team_492.png"
     },
     {
       "id": 197,
       "name": "PSV Eindhoven",
       "shortName": "PSV",
       "country": "NLD",
-      "rating": 81,
-      "primaryColor": "#FF0000",
+      "rating": 82,
+      "primaryColor": "#DA291C",
       "logoUrl": "images/logos/team_197.png"
     },
     {
       "id": 85,
       "name": "Paris Saint Germain",
-      "shortName": "PAR",
-      "country": "",
-      "rating": 88,
-      "primaryColor": "#1a365d",
+      "shortName": "PSG",
+      "country": "FRA",
+      "rating": 92,
+      "primaryColor": "#004170",
       "logoUrl": "images/logos/team_85.png"
+    },
+    {
+      "id": 212,
+      "name": "Porto",
+      "shortName": "FCP",
+      "country": "POR",
+      "rating": 83,
+      "primaryColor": "#003882",
+      "logoUrl": "images/logos/team_212.png"
     },
     {
       "id": 173,
       "name": "RB Leipzig",
-      "shortName": "RB ",
-      "country": "",
-      "rating": 83,
-      "primaryColor": "#1a365d",
+      "shortName": "RBL",
+      "country": "DEU",
+      "rating": 84,
+      "primaryColor": "#DD013F",
       "logoUrl": "images/logos/team_173.png"
+    },
+    {
+      "id": 543,
+      "name": "Real Betis",
+      "shortName": "BET",
+      "country": "ESP",
+      "rating": 82,
+      "primaryColor": "#00954C",
+      "logoUrl": "images/logos/team_543.png"
     },
     {
       "id": 541,
       "name": "Real Madrid",
       "shortName": "RMA",
       "country": "ESP",
-      "rating": 93,
+      "rating": 94,
       "primaryColor": "#FEBE10",
       "logoUrl": "images/logos/team_541.png"
     },
     {
-      "id": 571,
-      "name": "Red Bull Salzburg",
-      "shortName": "RED",
-      "country": "",
-      "rating": 77,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_571.png"
+      "id": 497,
+      "name": "Roma",
+      "shortName": "ASR",
+      "country": "ITA",
+      "rating": 84,
+      "primaryColor": "#8E1F2F",
+      "logoUrl": "images/logos/team_497.png"
+    },
+    {
+      "id": 4160,
+      "name": "Sabah",
+      "shortName": "SAB",
+      "country": "AZE",
+      "rating": 72,
+      "primaryColor": "#003366",
+      "logoUrl": "images/logos/team_4160.png"
     },
     {
       "id": 550,
       "name": "Shakhtar Donetsk",
       "shortName": "SHA",
-      "country": "",
-      "rating": 77,
-      "primaryColor": "#1a365d",
+      "country": "UKR",
+      "rating": 78,
+      "primaryColor": "#FF6600",
       "logoUrl": "images/logos/team_550.png"
     },
     {
-      "id": 656,
-      "name": "Slovan Bratislava",
-      "shortName": "SPA",
-      "country": "",
-      "rating": 76,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_656.png"
+      "id": 560,
+      "name": "Slavia Praha",
+      "shortName": "SLA",
+      "country": "CZE",
+      "rating": 78,
+      "primaryColor": "#D81E05",
+      "logoUrl": "images/logos/team_560.png"
     },
     {
-      "id": 628,
-      "name": "Sparta Praha",
-      "shortName": "SPA",
-      "country": "",
-      "rating": 76,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_628.png"
+      "id": 571,
+      "name": "Slovan Bratislava",
+      "shortName": "SLO",
+      "country": "SVK",
+      "rating": 74,
+      "primaryColor": "#009EE0",
+      "logoUrl": "images/logos/team_571.png"
     },
     {
       "id": 228,
       "name": "Sporting CP",
-      "shortName": "SPO",
-      "country": "",
-      "rating": 83,
-      "primaryColor": "#1a365d",
+      "shortName": "SCP",
+      "country": "POR",
+      "rating": 84,
+      "primaryColor": "#008057",
       "logoUrl": "images/logos/team_228.png"
-    },
-    {
-      "id": 106,
-      "name": "Stade Brestois 29",
-      "shortName": "STA",
-      "country": "",
-      "rating": 76,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_106.png"
-    },
-    {
-      "id": 637,
-      "name": "Sturm Graz",
-      "shortName": "STU",
-      "country": "",
-      "rating": 74,
-      "primaryColor": "#1a365d",
-      "logoUrl": "images/logos/team_637.png"
     },
     {
       "id": 172,
       "name": "VfB Stuttgart",
       "shortName": "VFB",
-      "country": "",
-      "rating": 80,
-      "primaryColor": "#1a365d",
+      "country": "DEU",
+      "rating": 81,
+      "primaryColor": "#E30613",
       "logoUrl": "images/logos/team_172.png"
+    },
+    {
+      "id": 339,
+      "name": "Viking",
+      "shortName": "VIK",
+      "country": "NOR",
+      "rating": 74,
+      "primaryColor": "#002B49",
+      "logoUrl": "images/logos/team_339.png"
+    },
+    {
+      "id": 533,
+      "name": "Villarreal",
+      "shortName": "VIL",
+      "country": "ESP",
+      "rating": 82,
+      "primaryColor": "#FFD100",
+      "logoUrl": "images/logos/team_533.png"
     }
   ],
   "matches": [
     {
       "id": 1,
-      "homeTeamId": 496,
+      "homeTeamId": 50,
       "awayTeamId": 197,
       "week": 1,
-      "homeGoals": 3,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 2,
-      "homeTeamId": 565,
-      "awayTeamId": 66,
+      "homeTeamId": 1026,
+      "awayTeamId": 543,
       "week": 1,
-      "homeGoals": 0,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 3,
-      "homeTeamId": 157,
-      "awayTeamId": 620,
+      "homeTeamId": 497,
+      "awayTeamId": 611,
       "week": 1,
-      "homeGoals": 9,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 4,
-      "homeTeamId": 228,
-      "awayTeamId": 79,
+      "homeTeamId": 209,
+      "awayTeamId": 505,
       "week": 1,
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 5,
-      "homeTeamId": 489,
-      "awayTeamId": 40,
+      "homeTeamId": 157,
+      "awayTeamId": 4160,
       "week": 1,
-      "homeGoals": 1,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 6,
-      "homeTeamId": 541,
-      "awayTeamId": 172,
+      "homeTeamId": 897,
+      "awayTeamId": 541,
       "week": 1,
-      "homeGoals": 3,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 7,
-      "homeTeamId": 500,
-      "awayTeamId": 550,
+      "homeTeamId": 173,
+      "awayTeamId": 560,
       "week": 1,
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 8,
-      "homeTeamId": 628,
-      "awayTeamId": 571,
+      "homeTeamId": 116,
+      "awayTeamId": 339,
       "week": 1,
-      "homeGoals": 3,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 9,
-      "homeTeamId": 50,
-      "awayTeamId": 505,
+      "homeTeamId": 645,
+      "awayTeamId": 165,
       "week": 1,
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 10,
-      "homeTeamId": 85,
-      "awayTeamId": 547,
+      "homeTeamId": 228,
+      "awayTeamId": 42,
       "week": 1,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 11,
-      "homeTeamId": 247,
-      "awayTeamId": 656,
+      "homeTeamId": 530,
+      "awayTeamId": 172,
       "week": 1,
-      "homeGoals": 5,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 12,
-      "homeTeamId": 569,
-      "awayTeamId": 165,
+      "homeTeamId": 85,
+      "awayTeamId": 569,
       "week": 1,
-      "homeGoals": 0,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 13,
-      "homeTeamId": 209,
-      "awayTeamId": 168,
+      "homeTeamId": 33,
+      "awayTeamId": 327,
       "week": 1,
-      "homeGoals": 0,
-      "awayGoals": 4,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 14,
-      "homeTeamId": 598,
-      "awayTeamId": 211,
+      "homeTeamId": 66,
+      "awayTeamId": 533,
       "week": 1,
-      "homeGoals": 1,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 15,
-      "homeTeamId": 91,
-      "awayTeamId": 529,
+      "homeTeamId": 492,
+      "awayTeamId": 40,
       "week": 1,
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 16,
-      "homeTeamId": 106,
-      "awayTeamId": 637,
+      "homeTeamId": 606,
+      "awayTeamId": 571,
       "week": 1,
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 17,
-      "homeTeamId": 499,
-      "awayTeamId": 42,
+      "homeTeamId": 550,
+      "awayTeamId": 529,
       "week": 1,
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 18,
-      "homeTeamId": 530,
-      "awayTeamId": 173,
+      "homeTeamId": 79,
+      "awayTeamId": 212,
       "week": 1,
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 19,
       "homeTeamId": 172,
-      "awayTeamId": 628,
+      "awayTeamId": 85,
       "week": 2,
-      "homeGoals": 1,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 20,
-      "homeTeamId": 571,
-      "awayTeamId": 106,
+      "homeTeamId": 197,
+      "awayTeamId": 79,
       "week": 2,
-      "homeGoals": 0,
-      "awayGoals": 4,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 21,
-      "homeTeamId": 42,
-      "awayTeamId": 85,
+      "homeTeamId": 33,
+      "awayTeamId": 505,
       "week": 2,
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 22,
-      "homeTeamId": 165,
-      "awayTeamId": 247,
+      "homeTeamId": 42,
+      "awayTeamId": 550,
       "week": 2,
-      "homeGoals": 7,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 23,
-      "homeTeamId": 168,
-      "awayTeamId": 489,
+      "homeTeamId": 529,
+      "awayTeamId": 1026,
       "week": 2,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 24,
-      "homeTeamId": 197,
-      "awayTeamId": 228,
+      "homeTeamId": 116,
+      "awayTeamId": 165,
       "week": 2,
-      "homeGoals": 1,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 25,
-      "homeTeamId": 505,
-      "awayTeamId": 598,
+      "homeTeamId": 533,
+      "awayTeamId": 209,
       "week": 2,
-      "homeGoals": 4,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 26,
-      "homeTeamId": 529,
-      "awayTeamId": 565,
+      "homeTeamId": 497,
+      "awayTeamId": 530,
       "week": 2,
-      "homeGoals": 5,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 27,
-      "homeTeamId": 656,
-      "awayTeamId": 50,
+      "homeTeamId": 897,
+      "awayTeamId": 327,
       "week": 2,
-      "homeGoals": 0,
-      "awayGoals": 4,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 28,
-      "homeTeamId": 547,
-      "awayTeamId": 209,
+      "homeTeamId": 4160,
+      "awayTeamId": 569,
       "week": 2,
-      "homeGoals": 2,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 29,
-      "homeTeamId": 550,
-      "awayTeamId": 499,
+      "homeTeamId": 611,
+      "awayTeamId": 541,
       "week": 2,
-      "homeGoals": 0,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 30,
-      "homeTeamId": 40,
-      "awayTeamId": 500,
+      "homeTeamId": 492,
+      "awayTeamId": 339,
       "week": 2,
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 31,
-      "homeTeamId": 66,
+      "homeTeamId": 543,
       "awayTeamId": 157,
       "week": 2,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 32,
-      "homeTeamId": 79,
-      "awayTeamId": 541,
+      "homeTeamId": 560,
+      "awayTeamId": 606,
       "week": 2,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 33,
-      "homeTeamId": 173,
-      "awayTeamId": 496,
+      "homeTeamId": 645,
+      "awayTeamId": 173,
       "week": 2,
-      "homeGoals": 2,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 34,
-      "homeTeamId": 211,
-      "awayTeamId": 530,
+      "homeTeamId": 571,
+      "awayTeamId": 40,
       "week": 2,
-      "homeGoals": 4,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 35,
-      "homeTeamId": 620,
-      "awayTeamId": 91,
+      "homeTeamId": 228,
+      "awayTeamId": 66,
       "week": 2,
-      "homeGoals": 2,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 36,
-      "homeTeamId": 637,
-      "awayTeamId": 569,
+      "homeTeamId": 212,
+      "awayTeamId": 50,
       "week": 2,
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 37,
-      "homeTeamId": 91,
-      "awayTeamId": 598,
+      "homeTeamId": 505,
+      "awayTeamId": 42,
       "week": 3,
-      "homeGoals": 5,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 38,
-      "homeTeamId": 489,
-      "awayTeamId": 569,
+      "homeTeamId": 541,
+      "awayTeamId": 40,
       "week": 3,
-      "homeGoals": 3,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 39,
-      "homeTeamId": 42,
-      "awayTeamId": 550,
+      "homeTeamId": 339,
+      "awayTeamId": 50,
       "week": 3,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 40,
-      "homeTeamId": 66,
-      "awayTeamId": 500,
+      "homeTeamId": 533,
+      "awayTeamId": 1026,
       "week": 3,
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 41,
-      "homeTeamId": 85,
-      "awayTeamId": 197,
+      "homeTeamId": 543,
+      "awayTeamId": 116,
       "week": 3,
-      "homeGoals": 1,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 42,
-      "homeTeamId": 496,
-      "awayTeamId": 172,
+      "homeTeamId": 611,
+      "awayTeamId": 33,
       "week": 3,
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 43,
-      "homeTeamId": 541,
-      "awayTeamId": 165,
+      "homeTeamId": 157,
+      "awayTeamId": 497,
       "week": 3,
-      "homeGoals": 5,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 44,
-      "homeTeamId": 547,
-      "awayTeamId": 656,
+      "homeTeamId": 165,
+      "awayTeamId": 212,
       "week": 3,
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 45,
-      "homeTeamId": 637,
-      "awayTeamId": 228,
+      "homeTeamId": 569,
+      "awayTeamId": 172,
       "week": 3,
-      "homeGoals": 0,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 46,
-      "homeTeamId": 106,
-      "awayTeamId": 168,
+      "homeTeamId": 560,
+      "awayTeamId": 209,
       "week": 3,
-      "homeGoals": 1,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 47,
-      "homeTeamId": 499,
-      "awayTeamId": 247,
+      "homeTeamId": 492,
+      "awayTeamId": 645,
       "week": 3,
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 48,
-      "homeTeamId": 50,
-      "awayTeamId": 628,
+      "homeTeamId": 4160,
+      "awayTeamId": 529,
       "week": 3,
-      "homeGoals": 5,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 49,
-      "homeTeamId": 173,
-      "awayTeamId": 40,
+      "homeTeamId": 530,
+      "awayTeamId": 85,
       "week": 3,
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 50,
-      "homeTeamId": 211,
-      "awayTeamId": 209,
+      "homeTeamId": 197,
+      "awayTeamId": 897,
       "week": 3,
-      "homeGoals": 1,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 51,
-      "homeTeamId": 529,
-      "awayTeamId": 157,
+      "homeTeamId": 327,
+      "awayTeamId": 228,
       "week": 3,
-      "homeGoals": 4,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 52,
-      "homeTeamId": 530,
-      "awayTeamId": 79,
+      "homeTeamId": 606,
+      "awayTeamId": 550,
       "week": 3,
-      "homeGoals": 1,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 53,
-      "homeTeamId": 565,
-      "awayTeamId": 505,
+      "homeTeamId": 173,
+      "awayTeamId": 79,
       "week": 3,
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 54,
-      "homeTeamId": 571,
-      "awayTeamId": 620,
+      "homeTeamId": 66,
+      "awayTeamId": 571,
       "week": 3,
-      "homeGoals": 0,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 55,
-      "homeTeamId": 197,
-      "awayTeamId": 547,
+      "homeTeamId": 209,
+      "awayTeamId": 492,
       "week": 4,
-      "homeGoals": 4,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 56,
-      "homeTeamId": 656,
-      "awayTeamId": 620,
+      "homeTeamId": 42,
+      "awayTeamId": 560,
       "week": 4,
-      "homeGoals": 1,
-      "awayGoals": 4,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 57,
-      "homeTeamId": 40,
-      "awayTeamId": 168,
+      "homeTeamId": 339,
+      "awayTeamId": 33,
       "week": 4,
-      "homeGoals": 4,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 58,
-      "homeTeamId": 79,
-      "awayTeamId": 496,
+      "homeTeamId": 505,
+      "awayTeamId": 228,
       "week": 4,
-      "homeGoals": 1,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 59,
-      "homeTeamId": 165,
-      "awayTeamId": 637,
+      "homeTeamId": 172,
+      "awayTeamId": 611,
       "week": 4,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 60,
-      "homeTeamId": 228,
-      "awayTeamId": 50,
+      "homeTeamId": 116,
+      "awayTeamId": 157,
       "week": 4,
-      "homeGoals": 4,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 61,
-      "homeTeamId": 247,
-      "awayTeamId": 173,
+      "homeTeamId": 327,
+      "awayTeamId": 530,
       "week": 4,
-      "homeGoals": 3,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 62,
-      "homeTeamId": 500,
-      "awayTeamId": 91,
+      "homeTeamId": 569,
+      "awayTeamId": 197,
       "week": 4,
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 63,
-      "homeTeamId": 541,
-      "awayTeamId": 489,
+      "homeTeamId": 571,
+      "awayTeamId": 533,
       "week": 4,
-      "homeGoals": 1,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 64,
-      "homeTeamId": 550,
-      "awayTeamId": 565,
+      "homeTeamId": 165,
+      "awayTeamId": 529,
       "week": 4,
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 65,
-      "homeTeamId": 569,
-      "awayTeamId": 66,
+      "homeTeamId": 541,
+      "awayTeamId": 173,
       "week": 4,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 66,
-      "homeTeamId": 85,
-      "awayTeamId": 530,
+      "homeTeamId": 40,
+      "awayTeamId": 543,
       "week": 4,
-      "homeGoals": 1,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 67,
-      "homeTeamId": 157,
-      "awayTeamId": 211,
+      "homeTeamId": 550,
+      "awayTeamId": 66,
       "week": 4,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 68,
-      "homeTeamId": 172,
-      "awayTeamId": 499,
+      "homeTeamId": 79,
+      "awayTeamId": 50,
       "week": 4,
-      "homeGoals": 0,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 69,
-      "homeTeamId": 209,
-      "awayTeamId": 571,
+      "homeTeamId": 497,
+      "awayTeamId": 1026,
       "week": 4,
-      "homeGoals": 1,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 70,
-      "homeTeamId": 505,
-      "awayTeamId": 42,
+      "homeTeamId": 85,
+      "awayTeamId": 645,
       "week": 4,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 71,
-      "homeTeamId": 598,
-      "awayTeamId": 529,
+      "homeTeamId": 212,
+      "awayTeamId": 606,
       "week": 4,
-      "homeGoals": 2,
-      "awayGoals": 5,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 72,
-      "homeTeamId": 628,
-      "awayTeamId": 106,
+      "homeTeamId": 897,
+      "awayTeamId": 4160,
       "week": 4,
-      "homeGoals": 1,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 73,
-      "homeTeamId": 628,
-      "awayTeamId": 530,
+      "homeTeamId": 33,
+      "awayTeamId": 560,
       "week": 5,
-      "homeGoals": 0,
-      "awayGoals": 6,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 74,
-      "homeTeamId": 656,
-      "awayTeamId": 489,
+      "homeTeamId": 1026,
+      "awayTeamId": 172,
       "week": 5,
-      "homeGoals": 2,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 75,
-      "homeTeamId": 50,
-      "awayTeamId": 209,
+      "homeTeamId": 212,
+      "awayTeamId": 497,
       "week": 5,
-      "homeGoals": 3,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 76,
       "homeTeamId": 157,
-      "awayTeamId": 85,
+      "awayTeamId": 530,
       "week": 5,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 77,
-      "homeTeamId": 168,
-      "awayTeamId": 571,
+      "homeTeamId": 116,
+      "awayTeamId": 173,
       "week": 5,
-      "homeGoals": 5,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 78,
-      "homeTeamId": 228,
-      "awayTeamId": 42,
+      "homeTeamId": 492,
+      "awayTeamId": 543,
       "week": 5,
-      "homeGoals": 1,
-      "awayGoals": 5,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 79,
-      "homeTeamId": 505,
-      "awayTeamId": 173,
+      "homeTeamId": 197,
+      "awayTeamId": 85,
       "week": 5,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 80,
-      "homeTeamId": 529,
-      "awayTeamId": 106,
+      "homeTeamId": 569,
+      "awayTeamId": 550,
       "week": 5,
-      "homeGoals": 3,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 81,
-      "homeTeamId": 565,
-      "awayTeamId": 499,
+      "homeTeamId": 505,
+      "awayTeamId": 611,
       "week": 5,
-      "homeGoals": 1,
-      "awayGoals": 6,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 82,
-      "homeTeamId": 598,
-      "awayTeamId": 172,
+      "homeTeamId": 42,
+      "awayTeamId": 541,
       "week": 5,
-      "homeGoals": 5,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 83,
-      "homeTeamId": 637,
-      "awayTeamId": 547,
+      "homeTeamId": 4160,
+      "awayTeamId": 79,
       "week": 5,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 84,
-      "homeTeamId": 40,
-      "awayTeamId": 541,
+      "homeTeamId": 897,
+      "awayTeamId": 228,
       "week": 5,
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 85,
-      "homeTeamId": 66,
-      "awayTeamId": 496,
+      "homeTeamId": 327,
+      "awayTeamId": 571,
       "week": 5,
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 86,
-      "homeTeamId": 91,
-      "awayTeamId": 211,
+      "homeTeamId": 529,
+      "awayTeamId": 209,
       "week": 5,
-      "homeGoals": 2,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 87,
-      "homeTeamId": 197,
-      "awayTeamId": 550,
+      "homeTeamId": 50,
+      "awayTeamId": 533,
       "week": 5,
-      "homeGoals": 3,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 88,
-      "homeTeamId": 247,
-      "awayTeamId": 569,
+      "homeTeamId": 339,
+      "awayTeamId": 645,
       "week": 5,
-      "homeGoals": 1,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 89,
-      "homeTeamId": 500,
-      "awayTeamId": 79,
+      "homeTeamId": 40,
+      "awayTeamId": 606,
       "week": 5,
-      "homeGoals": 1,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 90,
-      "homeTeamId": 620,
+      "homeTeamId": 66,
       "awayTeamId": 165,
       "week": 5,
-      "homeGoals": 0,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 91,
-      "homeTeamId": 547,
-      "awayTeamId": 40,
+      "homeTeamId": 1026,
+      "awayTeamId": 505,
       "week": 6,
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 92,
-      "homeTeamId": 620,
-      "awayTeamId": 247,
+      "homeTeamId": 165,
+      "awayTeamId": 339,
       "week": 6,
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 93,
-      "homeTeamId": 106,
-      "awayTeamId": 197,
+      "homeTeamId": 209,
+      "awayTeamId": 569,
       "week": 6,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 94,
-      "homeTeamId": 168,
-      "awayTeamId": 505,
+      "homeTeamId": 550,
+      "awayTeamId": 533,
       "week": 6,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 95,
-      "homeTeamId": 173,
-      "awayTeamId": 66,
+      "homeTeamId": 228,
+      "awayTeamId": 4160,
       "week": 6,
-      "homeGoals": 2,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 96,
-      "homeTeamId": 499,
-      "awayTeamId": 541,
+      "homeTeamId": 560,
+      "awayTeamId": 530,
       "week": 6,
-      "homeGoals": 2,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 97,
-      "homeTeamId": 550,
-      "awayTeamId": 157,
+      "homeTeamId": 85,
+      "awayTeamId": 897,
       "week": 6,
-      "homeGoals": 1,
-      "awayGoals": 5,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 98,
-      "homeTeamId": 569,
-      "awayTeamId": 228,
+      "homeTeamId": 172,
+      "awayTeamId": 116,
       "week": 6,
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 99,
-      "homeTeamId": 571,
-      "awayTeamId": 85,
+      "homeTeamId": 611,
+      "awayTeamId": 327,
       "week": 6,
-      "homeGoals": 0,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 100,
-      "homeTeamId": 79,
-      "awayTeamId": 637,
+      "homeTeamId": 497,
+      "awayTeamId": 33,
       "week": 6,
-      "homeGoals": 3,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 101,
-      "homeTeamId": 530,
-      "awayTeamId": 656,
+      "homeTeamId": 543,
+      "awayTeamId": 173,
       "week": 6,
-      "homeGoals": 3,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 102,
-      "homeTeamId": 42,
-      "awayTeamId": 91,
+      "homeTeamId": 606,
+      "awayTeamId": 42,
       "week": 6,
-      "homeGoals": 3,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 103,
-      "homeTeamId": 165,
-      "awayTeamId": 529,
+      "homeTeamId": 645,
+      "awayTeamId": 157,
       "week": 6,
-      "homeGoals": 2,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 104,
-      "homeTeamId": 172,
-      "awayTeamId": 565,
+      "homeTeamId": 212,
+      "awayTeamId": 492,
       "week": 6,
-      "homeGoals": 5,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 105,
-      "homeTeamId": 209,
-      "awayTeamId": 628,
+      "homeTeamId": 50,
+      "awayTeamId": 529,
       "week": 6,
-      "homeGoals": 4,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 106,
-      "homeTeamId": 211,
-      "awayTeamId": 500,
+      "homeTeamId": 40,
+      "awayTeamId": 79,
       "week": 6,
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 107,
-      "homeTeamId": 489,
-      "awayTeamId": 598,
+      "homeTeamId": 571,
+      "awayTeamId": 197,
       "week": 6,
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 108,
-      "homeTeamId": 496,
-      "awayTeamId": 50,
+      "homeTeamId": 66,
+      "awayTeamId": 541,
       "week": 6,
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 109,
-      "homeTeamId": 91,
-      "awayTeamId": 66,
+      "homeTeamId": 645,
+      "awayTeamId": 606,
       "week": 7,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 110,
-      "homeTeamId": 499,
-      "awayTeamId": 637,
+      "homeTeamId": 533,
+      "awayTeamId": 197,
       "week": 7,
-      "homeGoals": 5,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 111,
-      "homeTeamId": 40,
-      "awayTeamId": 79,
+      "homeTeamId": 165,
+      "awayTeamId": 209,
       "week": 7,
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 112,
-      "homeTeamId": 211,
-      "awayTeamId": 529,
+      "homeTeamId": 541,
+      "awayTeamId": 571,
       "week": 7,
-      "homeGoals": 4,
-      "awayGoals": 5,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 113,
-      "homeTeamId": 500,
-      "awayTeamId": 165,
+      "homeTeamId": 550,
+      "awayTeamId": 116,
       "week": 7,
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 114,
-      "homeTeamId": 530,
-      "awayTeamId": 168,
+      "homeTeamId": 1026,
+      "awayTeamId": 492,
       "week": 7,
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 115,
-      "homeTeamId": 569,
-      "awayTeamId": 496,
+      "homeTeamId": 530,
+      "awayTeamId": 33,
       "week": 7,
-      "homeGoals": 0,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 116,
-      "homeTeamId": 598,
-      "awayTeamId": 197,
+      "homeTeamId": 569,
+      "awayTeamId": 40,
       "week": 7,
-      "homeGoals": 2,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 117,
-      "homeTeamId": 656,
-      "awayTeamId": 172,
+      "homeTeamId": 172,
+      "awayTeamId": 212,
       "week": 7,
-      "homeGoals": 1,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 118,
       "homeTeamId": 173,
-      "awayTeamId": 228,
+      "awayTeamId": 42,
       "week": 7,
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 119,
-      "homeTeamId": 550,
-      "awayTeamId": 106,
+      "homeTeamId": 79,
+      "awayTeamId": 897,
       "week": 7,
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 120,
-      "homeTeamId": 42,
-      "awayTeamId": 620,
+      "homeTeamId": 505,
+      "awayTeamId": 339,
       "week": 7,
-      "homeGoals": 3,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 121,
-      "homeTeamId": 85,
-      "awayTeamId": 50,
+      "homeTeamId": 543,
+      "awayTeamId": 228,
       "week": 7,
-      "homeGoals": 4,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 122,
-      "homeTeamId": 209,
-      "awayTeamId": 157,
+      "homeTeamId": 560,
+      "awayTeamId": 497,
       "week": 7,
-      "homeGoals": 3,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 123,
-      "homeTeamId": 247,
-      "awayTeamId": 565,
+      "homeTeamId": 157,
+      "awayTeamId": 327,
       "week": 7,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 124,
-      "homeTeamId": 489,
-      "awayTeamId": 547,
+      "homeTeamId": 529,
+      "awayTeamId": 66,
       "week": 7,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 125,
-      "homeTeamId": 541,
-      "awayTeamId": 571,
+      "homeTeamId": 611,
+      "awayTeamId": 4160,
       "week": 7,
-      "homeGoals": 5,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 126,
-      "homeTeamId": 628,
-      "awayTeamId": 505,
+      "homeTeamId": 85,
+      "awayTeamId": 50,
       "week": 7,
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 127,
-      "homeTeamId": 50,
-      "awayTeamId": 569,
+      "homeTeamId": 541,
+      "awayTeamId": 165,
       "week": 8,
-      "homeGoals": 3,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 128,
-      "homeTeamId": 66,
-      "awayTeamId": 247,
+      "homeTeamId": 571,
+      "awayTeamId": 1026,
       "week": 8,
-      "homeGoals": 4,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 129,
-      "homeTeamId": 79,
-      "awayTeamId": 209,
+      "homeTeamId": 4160,
+      "awayTeamId": 560,
       "week": 8,
-      "homeGoals": 6,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 130,
-      "homeTeamId": 106,
-      "awayTeamId": 541,
+      "homeTeamId": 173,
+      "awayTeamId": 497,
       "week": 8,
-      "homeGoals": 0,
-      "awayGoals": 3,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 131,
-      "homeTeamId": 157,
-      "awayTeamId": 656,
+      "homeTeamId": 50,
+      "awayTeamId": 116,
       "week": 8,
-      "homeGoals": 3,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 132,
-      "homeTeamId": 165,
-      "awayTeamId": 550,
+      "homeTeamId": 33,
+      "awayTeamId": 569,
       "week": 8,
-      "homeGoals": 3,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 133,
-      "homeTeamId": 168,
-      "awayTeamId": 628,
+      "homeTeamId": 209,
+      "awayTeamId": 172,
       "week": 8,
-      "homeGoals": 2,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 134,
-      "homeTeamId": 172,
-      "awayTeamId": 85,
+      "homeTeamId": 530,
+      "awayTeamId": 492,
       "week": 8,
-      "homeGoals": 1,
-      "awayGoals": 4,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 135,
-      "homeTeamId": 197,
-      "awayTeamId": 40,
+      "homeTeamId": 79,
+      "awayTeamId": 611,
       "week": 8,
-      "homeGoals": 3,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 136,
-      "homeTeamId": 228,
-      "awayTeamId": 500,
+      "homeTeamId": 339,
+      "awayTeamId": 897,
       "week": 8,
-      "homeGoals": 1,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 137,
-      "homeTeamId": 496,
-      "awayTeamId": 211,
+      "homeTeamId": 42,
+      "awayTeamId": 212,
       "week": 8,
-      "homeGoals": 0,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 138,
-      "homeTeamId": 505,
-      "awayTeamId": 91,
+      "homeTeamId": 40,
+      "awayTeamId": 157,
       "week": 8,
-      "homeGoals": 3,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 139,
-      "homeTeamId": 529,
-      "awayTeamId": 499,
+      "homeTeamId": 327,
+      "awayTeamId": 550,
       "week": 8,
-      "homeGoals": 2,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 140,
-      "homeTeamId": 547,
-      "awayTeamId": 42,
+      "homeTeamId": 606,
+      "awayTeamId": 66,
       "week": 8,
-      "homeGoals": 1,
-      "awayGoals": 2,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 141,
-      "homeTeamId": 565,
-      "awayTeamId": 598,
+      "homeTeamId": 529,
+      "awayTeamId": 505,
       "week": 8,
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 142,
-      "homeTeamId": 571,
-      "awayTeamId": 530,
+      "homeTeamId": 533,
+      "awayTeamId": 85,
       "week": 8,
-      "homeGoals": 1,
-      "awayGoals": 4,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 143,
-      "homeTeamId": 620,
-      "awayTeamId": 489,
+      "homeTeamId": 228,
+      "awayTeamId": 645,
       "week": 8,
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     },
     {
       "id": 144,
-      "homeTeamId": 637,
-      "awayTeamId": 173,
+      "homeTeamId": 197,
+      "awayTeamId": 543,
       "week": 8,
-      "homeGoals": 1,
-      "awayGoals": 0,
-      "isFinished": true
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
     }
   ]
 }
