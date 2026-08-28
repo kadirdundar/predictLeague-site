@@ -50,6 +50,10 @@ window.predictLeagueShare = {
 
     // Piksel hassasiyetinde HTML5 Canvas kart çizici (1080 x 1350 HD)
     drawCardCanvas: async function (data) {
+        if (document.fonts && document.fonts.ready) {
+            try { await document.fonts.ready; } catch (e) { }
+        }
+
         const W = 1080;
         const H = 1350;
         const canvas = document.createElement('canvas');
@@ -79,11 +83,12 @@ window.predictLeagueShare = {
         ctx.fillStyle = '#FFFFFF';
         ctx.font = '700 38px "Archivo", system-ui, sans-serif';
         ctx.textAlign = 'left';
-        ctx.fillText((data.competitionName || 'Şampiyonlar Ligi').toUpperCase(), 75, 105);
+        ctx.textBaseline = 'alphabetic';
+        ctx.fillText((data.competitionName || 'Champions League').toUpperCase(), 75, 105);
 
         ctx.fillStyle = '#00D4FF';
         ctx.font = '800 20px "Archivo", system-ui, sans-serif';
-        ctx.fillText((data.competitionSub || '2024/25 MONTE CARLO PUAN TAHMİNİ').toUpperCase(), 75, 142);
+        ctx.fillText((data.competitionSub || '2024/25 MONTE CARLO PREDICTION').toUpperCase(), 75, 142);
 
         // Ayırıcı çizgi
         ctx.strokeStyle = 'rgba(255, 255, 255, 0.12)';
@@ -106,36 +111,71 @@ window.predictLeagueShare = {
             ctx.restore();
         } else {
             // Logo yüklenemezse şık takım harf rozeti
-            const shortName = (data.teamShortName || data.teamName.substring(0, 3)).toUpperCase();
+            const shortName = (data.teamShortName || (data.teamName || 'TM').substring(0, 3)).toUpperCase();
             this.drawRoundRect(ctx, logoX, logoY, logoSize, logoSize, 24, '#0045B5', 'rgba(255,255,255,0.2)', 2);
             ctx.fillStyle = '#FFFFFF';
             ctx.font = '800 36px "Archivo", sans-serif';
             ctx.textAlign = 'center';
-            ctx.fillText(shortName, logoX + logoSize / 2, logoY + 72);
+            ctx.textBaseline = 'middle';
+            ctx.fillText(shortName, logoX + logoSize / 2, logoY + logoSize / 2);
+            ctx.textBaseline = 'alphabetic';
         }
 
         // Takım Adı
         ctx.fillStyle = '#FFFFFF';
-        ctx.font = '900 58px "Archivo", system-ui, sans-serif';
+        ctx.font = '900 54px "Archivo", system-ui, sans-serif';
         ctx.textAlign = 'left';
+        ctx.textBaseline = 'alphabetic';
         const teamNameText = this.truncateText(ctx, data.teamName || 'Takım', 700);
-        ctx.fillText(teamNameText, 225, 268);
+        ctx.fillText(teamNameText, 225, 266);
 
-        // Sıralama Rozeti (Pill)
-        const rankPillW = 560;
-        const rankPillH = 54;
+        // Sıralama Rozeti (Pill) - Dinamik genişlik ve tam metin hizalama
         const rankPillX = 225;
-        const rankPillY = 290;
+        const rankPillY = 288;
+        const rankPillH = 50;
         const bandBg = data.bandBg || '#9BE3BE';
 
-        this.drawRoundRect(ctx, rankPillX, rankPillY, rankPillW, rankPillH, 16, bandBg, null, 0);
+        const rankText = (data.rankText || '1. SIRA').trim();
+        const bandLabel = data.bandLabel ? data.bandLabel.trim() : '';
 
-        ctx.fillStyle = '#16150F';
-        ctx.font = '900 24px "Archivo", sans-serif';
-        ctx.fillText(`${data.rankText || '1. SIRA'}`, rankPillX + 20, rankPillY + 36);
+        // Metin genişliklerini doğru fontla ölç
+        ctx.font = '900 22px "Archivo", system-ui, sans-serif';
+        const rankW = ctx.measureText(rankText).width;
 
-        ctx.font = '700 21px "Archivo", sans-serif';
-        ctx.fillText(`· ${data.bandLabel || ''}`, rankPillX + 135, rankPillY + 36);
+        ctx.font = '700 20px "Archivo", system-ui, sans-serif';
+        const dotText = '•  ';
+        const dotW = bandLabel ? ctx.measureText(dotText).width : 0;
+        const bandTextW = bandLabel ? ctx.measureText(bandLabel).width : 0;
+
+        const padX = 18;
+        const gap = 8;
+        const totalContentW = padX * 2 + rankW + (bandLabel ? (gap + dotW + bandTextW) : 0);
+        const maxPillW = W - rankPillX - 75; // 780px
+        const rankPillW = Math.min(maxPillW, Math.max(160, totalContentW));
+
+        this.drawRoundRect(ctx, rankPillX, rankPillY, rankPillW, rankPillH, 14, bandBg, null, 0);
+
+        // Rozet metinlerini dikeyde ortalayarak çiz
+        ctx.save();
+        ctx.textBaseline = 'middle';
+        const pillCenterY = rankPillY + rankPillH / 2 + 1;
+
+        ctx.fillStyle = '#111827';
+        ctx.font = '900 22px "Archivo", system-ui, sans-serif';
+        ctx.textAlign = 'left';
+        const rankStartX = rankPillX + padX;
+        ctx.fillText(rankText, rankStartX, pillCenterY);
+
+        if (bandLabel) {
+            const bandStartX = rankStartX + rankW + gap;
+            const availableBandW = (rankPillX + rankPillW - padX) - bandStartX;
+
+            ctx.font = '700 20px "Archivo", system-ui, sans-serif';
+            const fullBandStr = `${dotText}${bandLabel}`;
+            const bandTextToDraw = this.truncateText(ctx, fullBandStr, Math.max(60, availableBandW));
+            ctx.fillText(bandTextToDraw, bandStartX, pillCenterY);
+        }
+        ctx.restore();
 
         // 4. İstatistik Kutuları (3'lü Grid)
         const statY = 385;
@@ -144,9 +184,9 @@ window.predictLeagueShare = {
         const statGap = 22;
 
         const stats = [
-            { val: data.points || '0.0', lbl: data.pointsLabel || 'Tahmini Puan' },
-            { val: data.record || '0G 0B 0M', lbl: data.recordLabel || 'Derece' },
-            { val: data.gd || '0.0', lbl: data.gdLabel || 'Averaj' }
+            { val: data.points || '0.0', lbl: data.pointsLabel || 'Expected Pts' },
+            { val: data.record || '0W 0D 0L', lbl: data.recordLabel || 'Record' },
+            { val: data.gd || '0.0', lbl: data.gdLabel || 'Goal Diff' }
         ];
 
         stats.forEach((s, idx) => {
@@ -156,6 +196,7 @@ window.predictLeagueShare = {
             ctx.fillStyle = '#00D4FF';
             ctx.font = '900 42px "Archivo", sans-serif';
             ctx.textAlign = 'center';
+            ctx.textBaseline = 'alphabetic';
             ctx.fillText(s.val, sx + statW / 2, statY + 70);
 
             ctx.fillStyle = '#94A3B8';
@@ -169,7 +210,16 @@ window.predictLeagueShare = {
         const probH = 16;
         const probX = 75;
 
+        // Arka plan ve segmentleri klip ile pürüzsüz çiz
+        ctx.save();
         this.drawRoundRect(ctx, probX, probY, probW, probH, 8, 'rgba(255, 255, 255, 0.1)', null, 0);
+        ctx.beginPath();
+        if (ctx.roundRect) {
+            ctx.roundRect(probX, probY, probW, probH, 8);
+        } else {
+            ctx.rect(probX, probY, probW, probH);
+        }
+        ctx.clip();
 
         let currX = probX;
         const top8W = (probW * (data.top8Prob || 0)) / 100;
@@ -177,33 +227,41 @@ window.predictLeagueShare = {
         const elimW = (probW * (data.elimProb || 0)) / 100;
 
         if (top8W > 0) {
-            this.drawRoundRect(ctx, currX, probY, top8W, probH, 8, '#34D399', null, 0);
+            ctx.fillStyle = '#34D399';
+            ctx.fillRect(currX, probY, top8W, probH);
             currX += top8W;
         }
         if (playoffW > 0) {
-            this.drawRoundRect(ctx, currX, probY, playoffW, probH, 8, '#FBBF24', null, 0);
+            ctx.fillStyle = '#FBBF24';
+            ctx.fillRect(currX, probY, playoffW, probH);
             currX += playoffW;
         }
         if (elimW > 0) {
-            this.drawRoundRect(ctx, currX, probY, elimW, probH, 8, '#F87171', null, 0);
+            ctx.fillStyle = '#F87171';
+            ctx.fillRect(currX, probY, elimW, probH);
         }
+        ctx.restore();
 
-        // Olasılık Etiketleri
+        // Olasılık Etiketleri (Dile duyarlı yüzde gösterimi)
         ctx.font = '700 20px "Archivo", sans-serif';
         ctx.fillStyle = '#CBD5E1';
+        ctx.textBaseline = 'alphabetic';
+
+        const isTr = (data.top8Label || '').includes('İlk') || (data.competitionSub || '').includes('PUAN');
+        const formatPct = (val) => isTr ? `%${Math.round(val || 0)}` : `${Math.round(val || 0)}%`;
 
         const top8Lbl = data.top8Label || 'Top 8';
         const playoffLbl = data.playoffLabel || 'Play-off';
-        const elimLbl = data.elimLabel || 'Elimination';
+        const elimLbl = data.elimLabel || 'Eliminated';
 
         ctx.textAlign = 'left';
-        ctx.fillText(`${top8Lbl}: %${Math.round(data.top8Prob || 0)}`, probX, probY + 50);
+        ctx.fillText(`${top8Lbl}: ${formatPct(data.top8Prob)}`, probX, probY + 48);
 
         ctx.textAlign = 'center';
-        ctx.fillText(`${playoffLbl}: %${Math.round(data.playoffProb || 0)}`, probX + probW / 2, probY + 50);
+        ctx.fillText(`${playoffLbl}: ${formatPct(data.playoffProb)}`, probX + probW / 2, probY + 48);
 
         ctx.textAlign = 'right';
-        ctx.fillText(`${elimLbl}: %${Math.round(data.elimProb || 0)}`, probX + probW, probY + 50);
+        ctx.fillText(`${elimLbl}: ${formatPct(data.elimProb)}`, probX + probW, probY + 48);
 
         // 6. Maç Tahminleri Listesi (2 Kolon x 4 Satır)
         const matchBoxY = 660;
@@ -228,25 +286,30 @@ window.predictLeagueShare = {
 
             this.drawRoundRect(ctx, mx, my, colW, 82, 14, 'rgba(255, 255, 255, 0.04)', 'rgba(255, 255, 255, 0.06)', 1);
 
+            ctx.save();
+            ctx.textBaseline = 'middle';
+            const rowCenterY = my + 41;
+
             // Ev sahibi
             ctx.fillStyle = '#E2E8F0';
             ctx.font = '600 21px "Archivo", sans-serif';
             ctx.textAlign = 'left';
-            const homeName = this.truncateText(ctx, m.home, 140);
-            ctx.fillText(homeName, mx + 16, my + 48);
+            const homeName = this.truncateText(ctx, m.home, 145);
+            ctx.fillText(homeName, mx + 18, rowCenterY);
 
             // Skor
             ctx.fillStyle = '#00D4FF';
             ctx.font = '900 26px "Archivo", sans-serif';
             ctx.textAlign = 'center';
-            ctx.fillText(m.score || '– : –', mx + colW / 2, my + 50);
+            ctx.fillText(m.score || '– : –', mx + colW / 2, rowCenterY);
 
             // Deplasman
             ctx.fillStyle = '#E2E8F0';
             ctx.font = '600 21px "Archivo", sans-serif';
             ctx.textAlign = 'right';
-            const awayName = this.truncateText(ctx, m.away, 140);
-            ctx.fillText(awayName, mx + colW - 16, my + 48);
+            const awayName = this.truncateText(ctx, m.away, 145);
+            ctx.fillText(awayName, mx + colW - 18, rowCenterY);
+            ctx.restore();
         });
 
         // 7. Alt Footer (Brand & URL)
@@ -260,6 +323,7 @@ window.predictLeagueShare = {
         ctx.fillStyle = '#FFFFFF';
         ctx.font = '900 32px "Archivo", sans-serif';
         ctx.textAlign = 'left';
+        ctx.textBaseline = 'alphabetic';
         ctx.fillText('STAGESIMULATOR', 75, 1300);
 
         ctx.fillStyle = '#00D4FF';
