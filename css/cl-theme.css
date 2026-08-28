@@ -80,6 +80,8 @@ html, body {
     margin: 0;
     overflow: hidden;
     overscroll-behavior: none;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
@@ -180,9 +182,32 @@ body {
     z-index: 10;
 }
 
+.pl-comp-card .comp-badge {
+    width: 48px;
+    height: 48px;
+    aspect-ratio: 1 / 1;
+    border-radius: var(--pl-radius-md);
+    background: #FFFFFF;
+    border: 1px solid var(--pl-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    transition: var(--pl-transition);
+}
+
+.pl-comp-card .comp-badge img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+
 .pl-team-badge {
     width: 38px;
     height: 38px;
+    aspect-ratio: 1 / 1;
     border-radius: var(--pl-radius-md);
     background: var(--pl-card-subtle);
     border: 1px solid var(--pl-border);
@@ -197,6 +222,7 @@ body {
 .pl-team-badge img {
     width: 26px;
     height: 26px;
+    aspect-ratio: 1 / 1;
     object-fit: contain;
 }
 
@@ -544,6 +570,7 @@ body {
 .pl-match-team-logo {
     width: 26px;
     height: 26px;
+    aspect-ratio: 1 / 1;
     border-radius: 6px;
     background: var(--pl-card-subtle);
     border: 1px solid var(--pl-border);
@@ -557,6 +584,7 @@ body {
 .pl-match-team-logo img {
     width: 18px;
     height: 18px;
+    aspect-ratio: 1 / 1;
     object-fit: contain;
 }
 
@@ -944,12 +972,20 @@ body {
     border: 1px solid var(--pl-border);
     background: var(--pl-card-bg);
     padding: 0 36px 0 38px;
-    font-size: 14px;
+    font-size: 16px; /* iOS Safari otomatik zoom'u önlemek için minimum 16px olmalıdır */
     font-family: inherit;
     color: var(--pl-ink);
     outline: none;
     box-sizing: border-box;
     transition: var(--pl-transition);
+    -webkit-appearance: none;
+}
+
+/* Mobil cihazlarda input/textarea/select odaklanmalarında otomatik zoom'u önleme */
+@media screen and (max-width: 768px) {
+    input, select, textarea, .pl-search-input {
+        font-size: 16px !important;
+    }
 }
 
 .pl-search-input:focus {
@@ -1138,6 +1174,7 @@ body {
 .pl-team-option .badge {
     width: 36px;
     height: 36px;
+    aspect-ratio: 1 / 1;
     border-radius: var(--pl-radius-sm);
     background: var(--pl-card-subtle);
     border: 1px solid var(--pl-border);
@@ -1151,6 +1188,7 @@ body {
 .pl-team-option .badge img {
     width: 24px;
     height: 24px;
+    aspect-ratio: 1 / 1;
     object-fit: contain;
 }
 

@@ -444,5 +444,24 @@ window.predictLeagueShare = {
             console.error("Kopyalama hatası:", err);
             return false;
         }
+    },
+
+    // Mobil cihazlarda ekranın yakınlaşmış kalmasını önlemek ve klavyeyi kapatmak için viewport sıfırlayıcı
+    resetViewport: function () {
+        try {
+            if (document.activeElement && typeof document.activeElement.blur === 'function') {
+                document.activeElement.blur();
+            }
+            window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+            
+            // Viewport meta etiketini tazeleyerek tarayıcının zoom'unu 1.0 seviyesine döndürme
+            const viewportMeta = document.querySelector('meta[name="viewport"]');
+            if (viewportMeta) {
+                const currentContent = viewportMeta.getAttribute('content');
+                viewportMeta.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover');
+            }
+        } catch (e) {
+            console.warn("Viewport resetleme atlandı:", e);
+        }
     }
 };
