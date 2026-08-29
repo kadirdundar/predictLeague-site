@@ -3,6 +3,9 @@
 
 User-agent: *
 Allow: /
+Allow: /teams/
+Allow: /fixtures/
+Allow: /guide/
 Allow: /data/
 Allow: /images/
 

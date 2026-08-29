@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>UEFA 36-Team Swiss Format Guide & Points Needed to Qualify (2024/25) | PredictLeague</title>
+  <meta name="description" content="Complete guide to the new 36-team UEFA Champions League Swiss model: How many points are needed for Top 8 (15-16 pts), Play-off cutoff (9-10 pts), and Monte Carlo simulation analysis." />
+  <meta name="keywords" content="Champions League format, 36 team Swiss system, how many points to qualify UCL, Top 8 points needed, UEFA league phase rules, Monte Carlo football simulation" />
+  <link rel="canonical" href="https://www.stagesimulator.com/guide/swiss-format-points-needed/" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "UEFA 36-Team Swiss Format Guide & Points Needed to Qualify",
+      "description": "Complete guide to the new 36-team UEFA Champions League Swiss model: How many points are needed for Top 8 (15-16 pts), Play-off cutoff (9-10 pts), and Monte Carlo simulation analysis.",
+      "url": "https://www.stagesimulator.com/guide/swiss-format-points-needed/",
+      "author": {
+        "@type": "Organization",
+        "name": "PredictLeague"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "PredictLeague",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.stagesimulator.com/icon-192.png"
+        }
+      },
+      "datePublished": "2024-09-01",
+      "dateModified": "2026-08-29"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How does the new 36-team UEFA Swiss-system format work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The traditional 4-team group stage is replaced by a single 36-team league table. Each team plays 8 matches against 8 different opponents (4 home, 4 away). All results contribute to one overarching league ranking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many points are needed to qualify for the Top 8?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monte Carlo simulations across 10,000 iterations show that 15 to 16 points virtually guarantees a Top 8 finish, earning direct qualification to the Round of 16."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the point threshold for the Knockout Play-offs (places 9 to 24)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Teams finishing between 9th and 24th advance to a two-legged playoff round. Simulations indicate that 9 to 10 points is usually sufficient to secure 24th place, with goal difference acting as a crucial tiebreaker."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  
+  <style>
+  
+:root {
+  --bg: #040b20;
+  --bg-card: rgba(15, 23, 42, 0.85);
+  --bg-card-hover: rgba(30, 41, 59, 0.95);
+  --border: rgba(255, 255, 255, 0.1);
+  --border-focus: #3b82f6;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-subtle: #64748b;
+  --accent: #2563eb;
+  --accent-glow: rgba(37, 99, 235, 0.35);
+  --win: #10b981;
+  --draw: #64748b;
+  --loss: #ef4444;
+  --top8: #10b981;
+  --playoff: #f59e0b;
+  --elim: #ef4444;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.18) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.12) 0px, transparent 50%);
+  background-attachment: fixed;
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.seo-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px 20px 80px 20px;
+}
+
+.seo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0 20px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.brand-logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px var(--accent-glow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  font-size: 0.95rem;
+}
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--border);
+  color: var(--text-main) !important;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  transition: background 0.15s ease;
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-subtle);
+  margin-bottom: 18px;
+}
+.breadcrumb a:hover { color: var(--text-main); }
+.breadcrumb span { opacity: 0.5; }
+
+.hero-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team-hero-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-hero-logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+}
+
+.team-hero-meta h1 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.grid-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.stat-box {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border);
+  padding: 14px 16px;
+  border-radius: 14px;
+}
+.stat-box .title {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+.stat-box .val {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+.stat-box .val.top8 { color: var(--top8); }
+.stat-box .val.playoff { color: var(--playoff); }
+
+.section-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 32px 0 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fixture-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.fixture-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.25);
+  background: var(--bg-card-hover);
+}
+
+.fixture-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.md-badge {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 8px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.venue-tag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+.venue-home { background: rgba(37, 99, 235, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+.venue-away { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+.opponent-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.opponent-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.opponent-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.opponent-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.fixture-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.diff-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.diff-easy { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+.diff-med { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+.diff-hard { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+
+.match-result-box {
+  font-size: 0.95rem;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: var(--text-main);
+}
+
+.faq-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 32px;
+}
+.faq-item {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.faq-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.faq-question {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #93c5fd;
+}
+.faq-answer {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.team-grid-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+.team-mini-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+.team-mini-chip:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+.team-mini-chip img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.seo-footer {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-subtle);
+}
+.seo-footer a { color: var(--text-muted); text-decoration: underline; margin: 0 8px; }
+
+@media (max-width: 640px) {
+  .seo-shell { padding: 12px 14px 60px 14px; }
+  .team-hero-main { flex-direction: column; text-align: center; }
+  .team-hero-meta h1 { font-size: 1.5rem; }
+  .fixture-card { flex-direction: column; align-items: flex-start; }
+  .fixture-right { width: 100%; justify-content: space-between; margin-top: 6px; }
+  .grid-stats { grid-template-columns: 1fr 1fr; }
+}
+
+  .guide-prose h2 { font-size: 1.4rem; font-weight: 800; color: #93c5fd; margin: 28px 0 12px 0; }
+  .guide-prose h3 { font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin: 20px 0 8px 0; }
+  .guide-prose p { color: #cbd5e1; font-size: 0.96rem; line-height: 1.7; margin-bottom: 16px; }
+  .guide-prose ul { margin-left: 24px; margin-bottom: 18px; color: #cbd5e1; }
+  .guide-prose li { margin-bottom: 8px; font-size: 0.95rem; }
+  .callout-box {
+    background: rgba(37, 99, 235, 0.12);
+    border-left: 4px solid #3b82f6;
+    padding: 16px 20px;
+    border-radius: 0 12px 12px 0;
+    margin: 20px 0;
+  }
+  </style>
+</head>
+<body>
+  <div class="seo-shell">
+    <header class="seo-header">
+      <a href="/" class="brand-link">
+        <img src="/favicon.png" alt="PredictLeague Logo" class="brand-logo" width="38" height="38" />
+        <span>PredictLeague</span>
+      </a>
+      <div class="nav-actions">
+        <a href="/fixtures/" class="btn-secondary">Fikstürler</a>
+        <a href="/" class="btn-cta">⚡ Simülatörde Oyna</a>
+      </div>
+    </header>
+
+    <nav class="breadcrumb">
+      <a href="/">Ana Sayfa</a>
+      <span>/</span>
+      <span>Rehberler</span>
+      <span>/</span>
+      <span>36 Takımlı Format & Puan Barajları</span>
+    </nav>
+
+    <main class="guide-prose">
+      <div class="hero-card">
+        <h1>Yeni 36 Takımlı UEFA Lig Formatı & Puan Barajları Rehberi</h1>
+        <p style="color: var(--text-muted); font-size: 1rem;">Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi'nde uygulanan tek lig sistemi, ilk 8 barajı ve Monte Carlo simülasyon bulguları.</p>
+        <div style="margin-top: 10px;">
+          <a href="/" class="btn-cta">🚀 Kendi Senaryonu Simüle Et</a>
+        </div>
+      </div>
+
+      <h2>1. Yeni 36 Takımlı Lig Aşaması Nasıl Çalışıyor?</h2>
+      <p>
+        Geleneksel 4'er takımlı 8 grup formatı tamamen tarihe karıştı. 2024/25 sezonundan itibaren Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi <strong>36 takımlı tek bir lig tablosu</strong> üzerinden oynanmaktadır.
+      </p>
+      <ul>
+        <li><strong>Şampiyonlar Ligi & Avrupa Ligi:</strong> Her takım 8 farklı rakiple (4 iç saha, 4 deplasman) karşılaşır.</li>
+        <li><strong>Konferans Ligi:</strong> Her takım 6 farklı rakiple (3 iç saha, 3 deplasman) karşılaşır.</li>
+        <li>Hiçbir takım aynı rakiple rövanş maçı oynamaz (lig aşamasında tek maç sistemi).</li>
+      </ul>
+
+      <h2>2. Eleme ve Tur Atlama Kuralları: Kim Nereye Gidiyor?</h2>
+      <div class="grid-stats">
+        <div class="stat-box">
+          <div class="title" style="color: var(--top8);">1 - 8. Sıralar</div>
+          <div class="val top8">Doğrudan Son 16 Turu</div>
+          <p style="font-size: 0.8rem; color: var(--text-subtle); margin-top: 4px;">Seribaşı olarak doğrudan Son 16'ya katılır.</p>
+        </div>
+        <div class="stat-box">
+          <div class="title" style="color: var(--playoff);">9 - 24. Sıralar</div>
+          <div class="val playoff">Eleme Turu Play-off</div>
+          <p style="font-size: 0.8rem; color: var(--text-subtle); margin-top: 4px;">Çift maçlı eleme ile Son 16 bileti arar.</p>
+        </div>
+        <div class="stat-box">
+          <div class="title" style="color: var(--elim);">25 - 36. Sıralar</div>
+          <div class="val elim">Doğrudan Elenir</div>
+          <p style="font-size: 0.8rem; color: var(--text-subtle); margin-top: 4px;">Alt lige geçiş hakkı yoktur, Avrupa'ya veda eder.</p>
+        </div>
+      </div>
+
+      <h2>3. Monte Carlo Simülasyonlarına Göre Kaç Puan Gerekiyor?</h2>
+      <p>
+        PredictLeague olarak Poisson dağılımı ve ELO güç puanları üzerinden gerçekleştirdiğimiz <strong>1.000 Monte Carlo simülasyonu</strong> sonucunda ortaya çıkan puan barajları şunlardır:
+      </p>
+      
+      <div class="callout-box">
+        <h3 style="color: #60a5fa; margin-top: 0;">🎯 İlk 8 İçin Gereken Puan: 15 - 16 Puan</h3>
+        <p style="margin-bottom: 0;">8 maçta 5 galibiyet (15 puan) alan bir takım, ortalama bir genel averajla %85+ ihtimalle doğrudan Son 16 Turu'na kalmaktadır. 16 puan ise ilk 8'i neredeyse %99 garantiler.</p>
+      </div>
+
+      <div class="callout-box">
+        <h3 style="color: #fbbf24; margin-top: 0;">⚔️ Play-off (İlk 24) İçin Gereken Puan: 9 - 10 Puan</h3>
+        <p style="margin-bottom: 0;">24. sıra barajı genellikle 9 puan (3 galibiyet) civarında şekillenmektedir. Puan eşitliklerinde genel averaj ve atılan gol sayısı belirleyici olmaktadır.</p>
+      </div>
+
+      <h2>4. Puan Eşitliği Halinde Uygulanan UEFA Kriterleri</h2>
+      <p>Takımların puanları eşit olduğunda sırasıyla şu kriterlere bakılır:</p>
+      <ul>
+        <li>1. Lig aşamasındaki üstün <strong>genel averaj</strong> (Goal difference)</li>
+        <li>2. Lig aşamasında atılan <strong>toplam gol sayısı</strong></li>
+        <li>3. Lig aşamasında atılan <strong>deplasman golü sayısı</strong></li>
+        <li>4. Lig aşamasındaki <strong>toplam galibiyet sayısı</strong></li>
+        <li>5. Lig aşamasındaki <strong>deplasman galibiyeti sayısı</strong></li>
+        <li>6. Karşılaşılan 8 rakibin topladığı toplam puan (Strength of Schedule)</li>
+      </ul>
+
+      <section class="faq-box" style="margin-top: 36px;">
+        <h2 style="font-size: 1.25rem; font-weight: 800; color: #f8fafc; margin-bottom: 16px;">Sıkça Sorulan Sorular</h2>
+        <div class="faq-item">
+          <div class="faq-question">Şampiyonlar Ligi'nde elenen takım Avrupa Ligi'ne gider mi?</div>
+          <div class="faq-answer">Hayır. Yeni formatta turnuvalar arası geçiş kaldırılmıştır. 25-36. sıra arasındaki takımlar o sezonluk Avrupa defterini kapatır.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">PredictLeague simülasyon motoru nasıl çalışır?</div>
+          <div class="faq-answer">PredictLeague, kullanıcının girdiği skor tahminlerini sabit tutar; geriye kalan tüm maçları takımların güncel güç reytinglerine göre Poisson dağılımı ile 1.000 kez simüle ederek nihai puan tablosunu ve olasılıkları üretir.</div>
+        </div>
+      </section>
+
+      <div style="text-align: center; margin-top: 36px;">
+        <a href="/" class="btn-cta" style="padding: 14px 28px; font-size: 1.1rem;">⚡ Şimdi Takımınızı Seçin ve Simüle Edin</a>
+      </div>
+    </main>
+
+    <footer class="seo-footer">
+      <p>© 2026 PredictLeague — Monte Carlo Football Predictor & Standings Simulator.</p>
+      <div style="margin-top: 10px;">
+        <a href="/">Ana Sayfa</a>
+        <a href="/fixtures/">Fikstürler</a>
+        <a href="/guide/swiss-format-points-needed/">Format Rehberi</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

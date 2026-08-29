@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>All Teams & Club Fixtures 2024/25 | PredictLeague</title>
+  <meta name="description" content="Explore 100+ European football club fixture schedules and tournament simulators for UEFA Champions League, Europa League, and Conference League." />
+  <link rel="canonical" href="https://www.stagesimulator.com/teams/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <style>
+:root {
+  --bg: #040b20;
+  --bg-card: rgba(15, 23, 42, 0.85);
+  --bg-card-hover: rgba(30, 41, 59, 0.95);
+  --border: rgba(255, 255, 255, 0.1);
+  --border-focus: #3b82f6;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-subtle: #64748b;
+  --accent: #2563eb;
+  --accent-glow: rgba(37, 99, 235, 0.35);
+  --win: #10b981;
+  --draw: #64748b;
+  --loss: #ef4444;
+  --top8: #10b981;
+  --playoff: #f59e0b;
+  --elim: #ef4444;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.18) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.12) 0px, transparent 50%);
+  background-attachment: fixed;
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.seo-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px 20px 80px 20px;
+}
+
+.seo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0 20px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.brand-logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff !important;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px var(--accent-glow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  font-size: 0.95rem;
+}
+.btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px var(--accent-glow);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--border);
+  color: var(--text-main) !important;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  transition: background 0.15s ease;
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-subtle);
+  margin-bottom: 18px;
+}
+.breadcrumb a:hover { color: var(--text-main); }
+.breadcrumb span { opacity: 0.5; }
+
+.hero-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.team-hero-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-hero-logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+}
+
+.team-hero-meta h1 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.grid-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.stat-box {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border);
+  padding: 14px 16px;
+  border-radius: 14px;
+}
+.stat-box .title {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+.stat-box .val {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+.stat-box .val.top8 { color: var(--top8); }
+.stat-box .val.playoff { color: var(--playoff); }
+
+.section-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 32px 0 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fixture-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.fixture-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.25);
+  background: var(--bg-card-hover);
+}
+
+.fixture-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.md-badge {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 8px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.venue-tag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+.venue-home { background: rgba(37, 99, 235, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+.venue-away { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+
+.opponent-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.opponent-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+.opponent-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.opponent-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.fixture-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.diff-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.diff-easy { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+.diff-med { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+.diff-hard { background: rgba(239, 68, 68, 0.15); color: #f87171; }
+
+.match-result-box {
+  font-size: 0.95rem;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: var(--text-main);
+}
+
+.faq-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 32px;
+}
+.faq-item {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.faq-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.faq-question {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #93c5fd;
+}
+.faq-answer {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.team-grid-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+.team-mini-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+.team-mini-chip:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+.team-mini-chip img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.seo-footer {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-subtle);
+}
+.seo-footer a { color: var(--text-muted); text-decoration: underline; margin: 0 8px; }
+
+@media (max-width: 640px) {
+  .seo-shell { padding: 12px 14px 60px 14px; }
+  .team-hero-main { flex-direction: column; text-align: center; }
+  .team-hero-meta h1 { font-size: 1.5rem; }
+  .fixture-card { flex-direction: column; align-items: flex-start; }
+  .fixture-right { width: 100%; justify-content: space-between; margin-top: 6px; }
+  .grid-stats { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+  <div class="seo-shell">
+    <header class="seo-header">
+      <a href="/" class="brand-link">
+        <img src="/favicon.png" alt="PredictLeague Logo" class="brand-logo" width="38" height="38" />
+        <span>PredictLeague</span>
+      </a>
+      <div class="nav-actions">
+        <a href="/guide/swiss-format-points-needed/" class="btn-secondary">Format Rehberi</a>
+        <a href="/" class="btn-cta">⚡ Simülatör</a>
+      </div>
+    </header>
+
+    <nav class="breadcrumb">
+      <a href="/">Ana Sayfa</a>
+      <span>/</span>
+      <span>Takımlar</span>
+    </nav>
+
+    <main>
+      <div class="hero-card">
+        <h1>Tüm Takımlar & Fikstür Rehberi (2024/25)</h1>
+        <p style="color: var(--text-muted);">Avrupa Kupaları'nda mücadele eden 100'ü aşkın takımın özel fikstür sayfalarına ve simülasyonlarına ulaşın.</p>
+      </div>
+
+      <section>
+        
+        <div style="margin-bottom: 32px;">
+          <h2 style="font-size: 1.25rem; font-weight: 800; color: #93c5fd; margin-bottom: 12px;">🏆 UEFA Champions League (36 Takım)</h2>
+          <div class="team-grid-links">
+            
+            <a href="/teams/cl/aek-athens/" class="team-mini-chip">
+              <img src="/images/logos/team_606.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>AEK Athens</span>
+            </a>
+            
+            <a href="/teams/cl/arsenal/" class="team-mini-chip">
+              <img src="/images/logos/team_42.png" alt="Arsenal" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Arsenal</span>
+            </a>
+            
+            <a href="/teams/cl/aston-villa/" class="team-mini-chip">
+              <img src="/images/logos/team_66.png" alt="Aston Villa" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Aston Villa</span>
+            </a>
+            
+            <a href="/teams/cl/atletico-madrid/" class="team-mini-chip">
+              <img src="/images/logos/team_530.png" alt="Atletico Madrid" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Atletico Madrid</span>
+            </a>
+            
+            <a href="/teams/cl/barcelona/" class="team-mini-chip">
+              <img src="/images/logos/team_529.png" alt="Barcelona" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Barcelona</span>
+            </a>
+            
+            <a href="/teams/cl/bayern-munchen/" class="team-mini-chip">
+              <img src="/images/logos/team_157.png" alt="Bayern München" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Bayern München</span>
+            </a>
+            
+            <a href="/teams/cl/bodo-glimt/" class="team-mini-chip">
+              <img src="/images/logos/team_327.png" alt="Bodø/Glimt" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Bodø/Glimt</span>
+            </a>
+            
+            <a href="/teams/cl/borussia-dortmund/" class="team-mini-chip">
+              <img src="/images/logos/team_165.png" alt="Borussia Dortmund" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Borussia Dortmund</span>
+            </a>
+            
+            <a href="/teams/cl/club-brugge-kv/" class="team-mini-chip">
+              <img src="/images/logos/team_569.png" alt="Club Brugge KV" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Club Brugge KV</span>
+            </a>
+            
+            <a href="/teams/cl/como/" class="team-mini-chip">
+              <img src="/images/logos/team_897.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Como</span>
+            </a>
+            
+            <a href="/teams/cl/fenerbahce/" class="team-mini-chip">
+              <img src="/images/logos/team_611.png" alt="Fenerbahçe" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Fenerbahçe</span>
+            </a>
+            
+            <a href="/teams/cl/feyenoord/" class="team-mini-chip">
+              <img src="/images/logos/team_209.png" alt="Feyenoord" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Feyenoord</span>
+            </a>
+            
+            <a href="/teams/cl/galatasaray/" class="team-mini-chip">
+              <img src="/images/logos/team_645.png" alt="Galatasaray" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Galatasaray</span>
+            </a>
+            
+            <a href="/teams/cl/inter/" class="team-mini-chip">
+              <img src="/images/logos/team_505.png" alt="Inter" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Inter</span>
+            </a>
+            
+            <a href="/teams/cl/lask/" class="team-mini-chip">
+              <img src="/images/logos/team_1026.png" alt="LASK" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>LASK</span>
+            </a>
+            
+            <a href="/teams/cl/lens/" class="team-mini-chip">
+              <img src="/images/logos/team_116.png" alt="Lens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Lens</span>
+            </a>
+            
+            <a href="/teams/cl/lille/" class="team-mini-chip">
+              <img src="/images/logos/team_79.png" alt="Lille" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Lille</span>
+            </a>
+            
+            <a href="/teams/cl/liverpool/" class="team-mini-chip">
+              <img src="/images/logos/team_40.png" alt="Liverpool" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Liverpool</span>
+            </a>
+            
+            <a href="/teams/cl/manchester-city/" class="team-mini-chip">
+              <img src="/images/logos/team_50.png" alt="Manchester City" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Manchester City</span>
+            </a>
+            
+            <a href="/teams/cl/manchester-united/" class="team-mini-chip">
+              <img src="/images/logos/team_33.png" alt="Manchester United" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Manchester United</span>
+            </a>
+            
+            <a href="/teams/cl/napoli/" class="team-mini-chip">
+              <img src="/images/logos/team_492.png" alt="Napoli" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Napoli</span>
+            </a>
+            
+            <a href="/teams/cl/psv-eindhoven/" class="team-mini-chip">
+              <img src="/images/logos/team_197.png" alt="PSV Eindhoven" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>PSV Eindhoven</span>
+            </a>
+            
+            <a href="/teams/cl/paris-saint-germain/" class="team-mini-chip">
+              <img src="/images/logos/team_85.png" alt="Paris Saint Germain" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Paris Saint Germain</span>
+            </a>
+            
+            <a href="/teams/cl/porto/" class="team-mini-chip">
+              <img src="/images/logos/team_212.png" alt="Porto" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Porto</span>
+            </a>
+            
+            <a href="/teams/cl/rb-leipzig/" class="team-mini-chip">
+              <img src="/images/logos/team_173.png" alt="RB Leipzig" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>RB Leipzig</span>
+            </a>
+            
+            <a href="/teams/cl/real-betis/" class="team-mini-chip">
+              <img src="/images/logos/team_543.png" alt="Real Betis" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Real Betis</span>
+            </a>
+            
+            <a href="/teams/cl/real-madrid/" class="team-mini-chip">
+              <img src="/images/logos/team_541.png" alt="Real Madrid" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Real Madrid</span>
+            </a>
+            
+            <a href="/teams/cl/roma/" class="team-mini-chip">
+              <img src="/images/logos/team_497.png" alt="Roma" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Roma</span>
+            </a>
+            
+            <a href="/teams/cl/sabah/" class="team-mini-chip">
+              <img src="/images/logos/team_4160.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Sabah</span>
+            </a>
+            
+            <a href="/teams/cl/shakhtar-donetsk/" class="team-mini-chip">
+              <img src="/images/logos/team_550.png" alt="Shakhtar Donetsk" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Shakhtar Donetsk</span>
+            </a>
+            
+            <a href="/teams/cl/slavia-praha/" class="team-mini-chip">
+              <img src="/images/logos/team_560.png" alt="Slavia Praha" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Slavia Praha</span>
+            </a>
+            
+            <a href="/teams/cl/slovan-bratislava/" class="team-mini-chip">
+              <img src="/images/logos/team_571.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Slovan Bratislava</span>
+            </a>
+            
+            <a href="/teams/cl/sporting-cp/" class="team-mini-chip">
+              <img src="/images/logos/team_228.png" alt="Sporting CP" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Sporting CP</span>
+            </a>
+            
+            <a href="/teams/cl/vfb-stuttgart/" class="team-mini-chip">
+              <img src="/images/logos/team_172.png" alt="VfB Stuttgart" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>VfB Stuttgart</span>
+            </a>
+            
+            <a href="/teams/cl/viking/" class="team-mini-chip">
+              <img src="/images/logos/team_339.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Viking</span>
+            </a>
+            
+            <a href="/teams/cl/villarreal/" class="team-mini-chip">
+              <img src="/images/logos/team_533.png" alt="Villarreal" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Villarreal</span>
+            </a>
+            
+          </div>
+        </div>
+        
+        <div style="margin-bottom: 32px;">
+          <h2 style="font-size: 1.25rem; font-weight: 800; color: #93c5fd; margin-bottom: 12px;">🏆 UEFA Europa League (36 Takım)</h2>
+          <div class="team-grid-links">
+            
+            <a href="/teams/el/1899-hoffenheim/" class="team-mini-chip">
+              <img src="/images/logos/team_167.png" alt="1899 Hoffenheim" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>1899 Hoffenheim</span>
+            </a>
+            
+            <a href="/teams/el/as-roma/" class="team-mini-chip">
+              <img src="/images/logos/team_497.png" alt="AS Roma" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>AS Roma</span>
+            </a>
+            
+            <a href="/teams/el/az-alkmaar/" class="team-mini-chip">
+              <img src="/images/logos/team_201.png" alt="AZ Alkmaar" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>AZ Alkmaar</span>
+            </a>
+            
+            <a href="/teams/el/ajax/" class="team-mini-chip">
+              <img src="/images/logos/team_194.png" alt="Ajax" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Ajax</span>
+            </a>
+            
+            <a href="/teams/el/anderlecht/" class="team-mini-chip">
+              <img src="/images/logos/team_554.png" alt="Anderlecht" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Anderlecht</span>
+            </a>
+            
+            <a href="/teams/el/athletic-club/" class="team-mini-chip">
+              <img src="/images/logos/team_531.png" alt="Athletic Club" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Athletic Club</span>
+            </a>
+            
+            <a href="/teams/el/besiktas/" class="team-mini-chip">
+              <img src="/images/logos/team_549.png" alt="Beşiktaş" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Beşiktaş</span>
+            </a>
+            
+            <a href="/teams/el/bodo-glimt/" class="team-mini-chip">
+              <img src="/images/logos/team_327.png" alt="Bodo/Glimt" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Bodo/Glimt</span>
+            </a>
+            
+            <a href="/teams/el/dynamo-kyiv/" class="team-mini-chip">
+              <img src="/images/logos/team_572.png" alt="Dynamo Kyiv" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Dynamo Kyiv</span>
+            </a>
+            
+            <a href="/teams/el/eintracht-frankfurt/" class="team-mini-chip">
+              <img src="/images/logos/team_169.png" alt="Eintracht Frankfurt" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Eintracht Frankfurt</span>
+            </a>
+            
+            <a href="/teams/el/fc-midtjylland/" class="team-mini-chip">
+              <img src="/images/logos/team_397.png" alt="FC Midtjylland" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>FC Midtjylland</span>
+            </a>
+            
+            <a href="/teams/el/fc-porto/" class="team-mini-chip">
+              <img src="/images/logos/team_212.png" alt="FC Porto" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>FC Porto</span>
+            </a>
+            
+            <a href="/teams/el/fcsb/" class="team-mini-chip">
+              <img src="/images/logos/team_559.png" alt="FCSB" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>FCSB</span>
+            </a>
+            
+            <a href="/teams/el/fenerbahce/" class="team-mini-chip">
+              <img src="/images/logos/team_611.png" alt="Fenerbahçe" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Fenerbahçe</span>
+            </a>
+            
+            <a href="/teams/el/ferencvarosi-tc/" class="team-mini-chip">
+              <img src="/images/logos/team_651.png" alt="Ferencvarosi TC" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Ferencvarosi TC</span>
+            </a>
+            
+            <a href="/teams/el/galatasaray/" class="team-mini-chip">
+              <img src="/images/logos/team_645.png" alt="Galatasaray" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Galatasaray</span>
+            </a>
+            
+            <a href="/teams/el/if-elfsborg/" class="team-mini-chip">
+              <img src="/images/logos/team_372.png" alt="IF Elfsborg" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>IF Elfsborg</span>
+            </a>
+            
+            <a href="/teams/el/lazio/" class="team-mini-chip">
+              <img src="/images/logos/team_487.png" alt="Lazio" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Lazio</span>
+            </a>
+            
+            <a href="/teams/el/ludogorets/" class="team-mini-chip">
+              <img src="/images/logos/team_566.png" alt="Ludogorets" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Ludogorets</span>
+            </a>
+            
+            <a href="/teams/el/lyon/" class="team-mini-chip">
+              <img src="/images/logos/team_80.png" alt="Lyon" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Lyon</span>
+            </a>
+            
+            <a href="/teams/el/maccabi-tel-aviv/" class="team-mini-chip">
+              <img src="/images/logos/team_604.png" alt="Maccabi Tel Aviv" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Maccabi Tel Aviv</span>
+            </a>
+            
+            <a href="/teams/el/malmo-ff/" class="team-mini-chip">
+              <img src="/images/logos/team_375.png" alt="Malmo FF" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Malmo FF</span>
+            </a>
+            
+            <a href="/teams/el/manchester-united/" class="team-mini-chip">
+              <img src="/images/logos/team_33.png" alt="Manchester United" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Manchester United</span>
+            </a>
+            
+            <a href="/teams/el/nice/" class="team-mini-chip">
+              <img src="/images/logos/team_84.png" alt="Nice" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Nice</span>
+            </a>
+            
+            <a href="/teams/el/olympiakos-piraeus/" class="team-mini-chip">
+              <img src="/images/logos/team_553.png" alt="Olympiakos Piraeus" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Olympiakos Piraeus</span>
+            </a>
+            
+            <a href="/teams/el/paok/" class="team-mini-chip">
+              <img src="/images/logos/team_619.png" alt="PAOK" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>PAOK</span>
+            </a>
+            
+            <a href="/teams/el/plzen/" class="team-mini-chip">
+              <img src="/images/logos/team_567.png" alt="Plzen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Plzen</span>
+            </a>
+            
+            <a href="/teams/el/qarabag/" class="team-mini-chip">
+              <img src="/images/logos/team_556.png" alt="Qarabag" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Qarabag</span>
+            </a>
+            
+            <a href="/teams/el/rangers/" class="team-mini-chip">
+              <img src="/images/logos/team_257.png" alt="Rangers" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Rangers</span>
+            </a>
+            
+            <a href="/teams/el/real-sociedad/" class="team-mini-chip">
+              <img src="/images/logos/team_548.png" alt="Real Sociedad" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Real Sociedad</span>
+            </a>
+            
+            <a href="/teams/el/rgas-fs/" class="team-mini-chip">
+              <img src="/images/logos/team_4160.png" alt="Rīgas FS" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Rīgas FS</span>
+            </a>
+            
+            <a href="/teams/el/sc-braga/" class="team-mini-chip">
+              <img src="/images/logos/team_217.png" alt="SC Braga" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>SC Braga</span>
+            </a>
+            
+            <a href="/teams/el/slavia-praha/" class="team-mini-chip">
+              <img src="/images/logos/team_560.png" alt="Slavia Praha" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Slavia Praha</span>
+            </a>
+            
+            <a href="/teams/el/tottenham/" class="team-mini-chip">
+              <img src="/images/logos/team_47.png" alt="Tottenham" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Tottenham</span>
+            </a>
+            
+            <a href="/teams/el/twente/" class="team-mini-chip">
+              <img src="/images/logos/team_415.png" alt="Twente" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Twente</span>
+            </a>
+            
+            <a href="/teams/el/union-st-gilloise/" class="team-mini-chip">
+              <img src="/images/logos/team_1393.png" alt="Union St. Gilloise" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Union St. Gilloise</span>
+            </a>
+            
+          </div>
+        </div>
+        
+        <div style="margin-bottom: 32px;">
+          <h2 style="font-size: 1.25rem; font-weight: 800; color: #93c5fd; margin-bottom: 12px;">🏆 UEFA Conference League (36 Takım)</h2>
+          <div class="team-grid-links">
+            
+            <a href="/teams/ecl/agf-aarhus/" class="team-mini-chip">
+              <img src="/images/logos/team_399.png" alt="AGF Aarhus" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>AGF Aarhus</span>
+            </a>
+            
+            <a href="/teams/ecl/as-monaco/" class="team-mini-chip">
+              <img src="/images/logos/team_91.png" alt="AS Monaco" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>AS Monaco</span>
+            </a>
+            
+            <a href="/teams/ecl/ajax/" class="team-mini-chip">
+              <img src="/images/logos/team_194.png" alt="Ajax" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Ajax</span>
+            </a>
+            
+            <a href="/teams/ecl/atalanta/" class="team-mini-chip">
+              <img src="/images/logos/team_499.png" alt="Atalanta" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Atalanta</span>
+            </a>
+            
+            <a href="/teams/ecl/borac-banja-luka/" class="team-mini-chip">
+              <img src="/images/logos/team_3364.png" alt="Borac Banja Luka" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Borac Banja Luka</span>
+            </a>
+            
+            <a href="/teams/ecl/brighton/" class="team-mini-chip">
+              <img src="/images/logos/team_51.png" alt="Brighton" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Brighton</span>
+            </a>
+            
+            <a href="/teams/ecl/cska-sofia/" class="team-mini-chip">
+              <img src="/images/logos/team_585.png" alt="CSKA Sofia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>CSKA Sofia</span>
+            </a>
+            
+            <a href="/teams/ecl/crvena-zvezda/" class="team-mini-chip">
+              <img src="/images/logos/team_598.png" alt="Crvena Zvezda" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Crvena Zvezda</span>
+            </a>
+            
+            <a href="/teams/ecl/fc-copenhagen/" class="team-mini-chip">
+              <img src="/images/logos/team_400.png" alt="FC Copenhagen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>FC Copenhagen</span>
+            </a>
+            
+            <a href="/teams/ecl/fc-lugano/" class="team-mini-chip">
+              <img src="/images/logos/team_606.png" alt="FC Lugano" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>FC Lugano</span>
+            </a>
+            
+            <a href="/teams/ecl/fc-midtjylland/" class="team-mini-chip">
+              <img src="/images/logos/team_397.png" alt="FC Midtjylland" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>FC Midtjylland</span>
+            </a>
+            
+            <a href="/teams/ecl/fc-thun/" class="team-mini-chip">
+              <img src="/images/logos/team_1009.png" alt="FC Thun" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>FC Thun</span>
+            </a>
+            
+            <a href="/teams/ecl/fc-twente/" class="team-mini-chip">
+              <img src="/images/logos/team_415.png" alt="FC Twente" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>FC Twente</span>
+            </a>
+            
+            <a href="/teams/ecl/fk-jablonec/" class="team-mini-chip">
+              <img src="/images/logos/team_641.png" alt="FK Jablonec" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>FK Jablonec</span>
+            </a>
+            
+            <a href="/teams/ecl/getafe/" class="team-mini-chip">
+              <img src="/images/logos/team_546.png" alt="Getafe" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Getafe</span>
+            </a>
+            
+            <a href="/teams/ecl/hajduk-split/" class="team-mini-chip">
+              <img src="/images/logos/team_622.png" alt="Hajduk Split" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Hajduk Split</span>
+            </a>
+            
+            <a href="/teams/ecl/hearts/" class="team-mini-chip">
+              <img src="/images/logos/team_254.png" alt="Hearts" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Hearts</span>
+            </a>
+            
+            <a href="/teams/ecl/iberia-1999/" class="team-mini-chip">
+              <img src="/images/logos/team_4799.png" alt="Iberia 1999" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Iberia 1999</span>
+            </a>
+            
+            <a href="/teams/ecl/inter-escaldes/" class="team-mini-chip">
+              <img src="/images/logos/team_7464.png" alt="Inter Escaldes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Inter Escaldes</span>
+            </a>
+            
+            <a href="/teams/ecl/kaa-gent/" class="team-mini-chip">
+              <img src="/images/logos/team_631.png" alt="KAA Gent" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>KAA Gent</span>
+            </a>
+            
+            <a href="/teams/ecl/kf-egnatia/" class="team-mini-chip">
+              <img src="/images/logos/team_7856.png" alt="KF Egnatia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>KF Egnatia</span>
+            </a>
+            
+            <a href="/teams/ecl/kairat-almaty/" class="team-mini-chip">
+              <img src="/images/logos/team_563.png" alt="Kairat Almaty" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Kairat Almaty</span>
+            </a>
+            
+            <a href="/teams/ecl/kauno-zalgiris/" class="team-mini-chip">
+              <img src="/images/logos/team_3496.png" alt="Kauno Zalgiris" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Kauno Zalgiris</span>
+            </a>
+            
+            <a href="/teams/ecl/kups-kuopio/" class="team-mini-chip">
+              <img src="/images/logos/team_650.png" alt="KuPS Kuopio" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>KuPS Kuopio</span>
+            </a>
+            
+            <a href="/teams/ecl/lincoln-red-imps/" class="team-mini-chip">
+              <img src="/images/logos/team_1903.png" alt="Lincoln Red Imps" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Lincoln Red Imps</span>
+            </a>
+            
+            <a href="/teams/ecl/mjallby-aif/" class="team-mini-chip">
+              <img src="/images/logos/team_365.png" alt="Mjällby AIF" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Mjällby AIF</span>
+            </a>
+            
+            <a href="/teams/ecl/nordsjlland/" class="team-mini-chip">
+              <img src="/images/logos/team_398.png" alt="Nordsjælland" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Nordsjælland</span>
+            </a>
+            
+            <a href="/teams/ecl/pafos-fc/" class="team-mini-chip">
+              <img src="/images/logos/team_3403.png" alt="Pafos FC" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Pafos FC</span>
+            </a>
+            
+            <a href="/teams/ecl/panathinaikos/" class="team-mini-chip">
+              <img src="/images/logos/team_617.png" alt="Panathinaikos" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Panathinaikos</span>
+            </a>
+            
+            <a href="/teams/ecl/riga-fc/" class="team-mini-chip">
+              <img src="/images/logos/team_4158.png" alt="Riga FC" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Riga FC</span>
+            </a>
+            
+            <a href="/teams/ecl/sc-braga/" class="team-mini-chip">
+              <img src="/images/logos/team_217.png" alt="SC Braga" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>SC Braga</span>
+            </a>
+            
+            <a href="/teams/ecl/sc-freiburg/" class="team-mini-chip">
+              <img src="/images/logos/team_160.png" alt="SC Freiburg" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>SC Freiburg</span>
+            </a>
+            
+            <a href="/teams/ecl/sk-brann/" class="team-mini-chip">
+              <img src="/images/logos/team_328.png" alt="SK Brann" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>SK Brann</span>
+            </a>
+            
+            <a href="/teams/ecl/sint-truidense/" class="team-mini-chip">
+              <img src="/images/logos/team_742.png" alt="Sint-Truidense" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Sint-Truidense</span>
+            </a>
+            
+            <a href="/teams/ecl/trabzonspor/" class="team-mini-chip">
+              <img src="/images/logos/team_610.png" alt="Trabzonspor" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Trabzonspor</span>
+            </a>
+            
+            <a href="/teams/ecl/univ-craiova/" class="team-mini-chip">
+              <img src="/images/logos/team_638.png" alt="Univ. Craiova" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              <span>Univ. Craiova</span>
+            </a>
+            
+          </div>
+        </div>
+        
+      </section>
+    </main>
+
+    <footer class="seo-footer">
+      <p>© 2026 PredictLeague — Monte Carlo Football Predictor & Standings Simulator.</p>
+    </footer>
+  </div>
+</body>
+</html>
