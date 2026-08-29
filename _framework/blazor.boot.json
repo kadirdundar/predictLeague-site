@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "PredictLeague",
   "resources": {
-    "hash": "sha256-HwWtmO3WBm029R2FmvoNFuIba8V9s5on6ZbWsmFLZkY=",
+    "hash": "sha256-Q8/FcfbyGLMgTO9zSYYLt6Vw6sO+KLwJEmBc+RBHjiQ=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.f57ea9ke54.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.8nz5wh3k2t.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -39,7 +39,7 @@
       "System.Text.RegularExpressions.yjpcwwiypp.wasm": "System.Text.RegularExpressions.wasm",
       "System.Threading.9veevijhzj.wasm": "System.Threading.wasm",
       "System.Private.CoreLib.dhmfaatvim.wasm": "System.Private.CoreLib.wasm",
-      "PredictLeague.haggxtiqho.wasm": "PredictLeague.wasm",
+      "PredictLeague.r12yockfhk.wasm": "PredictLeague.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.wlvwu26j41.js": "dotnet.native.js",
       "dotnet.native.kiufslnrq2.wasm": "dotnet.native.wasm",
@@ -97,7 +97,7 @@
       "System.Text.Json.92r9oekt5z.wasm": "sha256-QYGOJff7O2M5e0wkaXcp13OhPD2kfMfKaW4icSi+gRE=",
       "System.Text.RegularExpressions.yjpcwwiypp.wasm": "sha256-XkzCnkSan/ZVA60GmlmpwnrvKpizesPGZsxCYQm4Wh0=",
       "System.Threading.9veevijhzj.wasm": "sha256-O0a8Ue3axdOo1i5r++ozyb2t84Npo8ZIsNvMukHhhvY=",
-      "PredictLeague.haggxtiqho.wasm": "sha256-h1Qv5Yc1zs+1Ihqpn5xgtkV1msk2UMpmGLNSrYnHtGk="
+      "PredictLeague.r12yockfhk.wasm": "sha256-IflsZ7fhOuyEIQpVqMFXggpSXrVoo3dLRQfjtw3vyg0="
     }
   },
   "cacheBootResources": true,
