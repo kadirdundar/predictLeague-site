@@ -3,14 +3,100 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>UEFA Conference League 2024/25 Fikstür & Maç Programı | PredictLeague</title>
-  <meta name="description" content="UEFA Conference League 36 takımlı lig aşaması haftalık tüm maç programı ve doğrudan simülasyon bağlantıları." />
+  <title>UEFA Conference League 2024/25 Fikstürü, Maç Programı & Puan Durumu Simülatörü | PredictLeague</title>
+  <meta name="description" content="2024/25 UEFA Conference League 36 takımlı lig aşaması haftalık tüm maç programı, fikstür takvimi ve 1.000 Monte Carlo simülasyonu ile puan durumu hesaplayıcı." />
+  <meta name="keywords" content="UEFA Conference League fikstürü, UECL maç programı, UEFA Conference League simülatörü, puan durumu hesaplama" />
   <link rel="canonical" href="https://www.stagesimulator.com/fixtures/conference-league/" />
+  
+  <link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/fixtures/conference-league/" />
+  <link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/fixtures/conference-league/?lang=tr" />
+  <link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/fixtures/conference-league/?lang=en" />
+  <link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/fixtures/conference-league/?lang=es" />
+  <link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/fixtures/conference-league/?lang=de" />
+  <link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/fixtures/conference-league/?lang=fr" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.stagesimulator.com/fixtures/conference-league/" />
+  <meta property="og:title" content="UEFA Conference League 2024/25 Fikstürü, Maç Programı & Puan Durumu Simülatörü | PredictLeague" />
+  <meta property="og:description" content="2024/25 UEFA Conference League 36 takımlı lig aşaması haftalık tüm maç programı, fikstür takvimi ve 1.000 Monte Carlo simülasyonu ile puan durumu hesaplayıcı." />
+  <meta property="og:image" content="https://www.stagesimulator.com/icon-192.png" />
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="UEFA Conference League 2024/25 Fikstürü, Maç Programı & Puan Durumu Simülatörü | PredictLeague" />
+  <meta name="twitter:description" content="2024/25 UEFA Conference League 36 takımlı lig aşaması haftalık tüm maç programı, fikstür takvimi ve 1.000 Monte Carlo simülasyonu ile puan durumu hesaplayıcı." />
   
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="/favicon.png" />
+  
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SportsOrganization",
+      "@id": "https://www.stagesimulator.com/fixtures/conference-league/#league",
+      "name": "UEFA Conference League",
+      "sport": "Soccer",
+      "url": "https://www.stagesimulator.com/fixtures/conference-league/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "PredictLeague",
+          "item": "https://www.stagesimulator.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Fikstürler",
+          "item": "https://www.stagesimulator.com/fixtures/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "UEFA Conference League",
+          "item": "https://www.stagesimulator.com/fixtures/conference-league/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "UEFA Conference League 36 takımlı yeni lig formatı nasıl işler?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "36 takım tek bir lig tablosunda yer alır. Her takım 4 iç saha ve 4 deplasman olmak üzere 8 farklı rakiple karşılaşır. İlk 8 doğrudan Son 16'ya kalırken, 9-24 arası Play-off oynar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "UEFA Conference League lig aşamasında ilk 8 ve play-off için kaç puan gerekir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1.000 Monte Carlo simülasyonuna göre 15-16 puan doğrudan Son 16 (İlk 8) turuna yükselmek için yeterlidir. 9-10 puan ise Play-off (9-24) barajını geçmek için gereken eşiktir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "UEFA Conference League maç sonuçlarını nasıl tahmin edebilir ve puan durumunu hesaplayabilirim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PredictLeague simülatöründe dilediğiniz maçlara skor tahminlerinizi girebilirsiniz. Sistem diğer maçları Poisson Monte Carlo algoritmasıyla 1.000 kez simüle ederek 36 takımlı nihai lig tablosunu oluşturur."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  
   <style>
 :root {
   --pl-bg: #F1F3F6;
@@ -596,9 +682,9 @@ a { color: inherit; text-decoration: none; }
       </nav>
 
       <section class="pl-hero-card">
-        <h1 style="font-size: 16px; font-weight: 800; color: var(--pl-ink);">UEFA Conference League Fikstürü</h1>
-        <p style="font-size: 12.5px; color: var(--pl-muted);">36 takımlı lig aşamasında oynanacak tüm haftalık maç programı ve sonuçlar.</p>
-        <a href="https://www.stagesimulator.com/?comp=ecl" class="pl-large-cta">⚡ UECL Simülatörünü Aç</a>
+        <h1 style="font-size: 16px; font-weight: 800; color: var(--pl-ink);">UEFA Conference League Fikstürü & Puan Durumu</h1>
+        <p style="font-size: 12.5px; color: var(--pl-muted);">36 takımlı lig aşamasında oynanacak tüm haftalık maç programı, fikstür takvimi ve Monte Carlo simülasyonu.</p>
+        <a href="https://www.stagesimulator.com/?comp=ecl" class="pl-large-cta">⚡ UECL Monte Carlo Simülatörünü Aç</a>
       </section>
 
       <section>
@@ -2158,6 +2244,22 @@ a { color: inherit; text-decoration: none; }
         </div>
         
       </section>
+
+      <div class="pl-section-title">❓ Sıkça Sorulan Sorular</div>
+      <div class="pl-faq-box">
+        <div class="pl-faq-unit">
+          <div class="pl-faq-q">UEFA Conference League lig aşaması formatı nasıldır?</div>
+          <div class="pl-faq-a">Yeni sistemde 36 takım tek bir lig tablosunda yer alır. Her takım 8 farklı rakiple 4 iç saha ve 4 deplasman maçı yapar.</div>
+        </div>
+        <div class="pl-faq-unit">
+          <div class="pl-faq-q">İlk 8 ve Play-off için kaç puan gerekir?</div>
+          <div class="pl-faq-a">Monte Carlo simülasyonlarına göre 15-16 puan doğrudan Son 16 (İlk 8) turunu garantilerken, 9-10 puan Play-off (9-24) için yeterli olmaktadır.</div>
+        </div>
+        <div class="pl-faq-unit">
+          <div class="pl-faq-q">Maç sonuçları nasıl simüle edilir?</div>
+          <div class="pl-faq-a">Yukarıdaki <strong>'⚡ Simülatörü Aç'</strong> butonuna tıklayarak maç tahminlerinizi yapabilir ve 1.000 simülasyon tekrarıyla hesaplanan tahmini puan tablosunu görebilirsiniz.</div>
+        </div>
+      </div>
     </div>
 
     <footer class="pl-footer">
