@@ -88,7 +88,7 @@ window.predictLeagueShare = {
 
         ctx.fillStyle = '#00D4FF';
         ctx.font = '800 20px "Archivo", system-ui, sans-serif';
-        ctx.fillText((data.competitionSub || '2024/25 MONTE CARLO PREDICTION').toUpperCase(), 75, 142);
+        ctx.fillText((data.competitionSub || '2026/27 MONTE CARLO PREDICTION').toUpperCase(), 75, 142);
 
         // Ayırıcı çizgi
         ctx.strokeStyle = 'rgba(255, 255, 255, 0.12)';
