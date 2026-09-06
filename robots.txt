@@ -6,6 +6,7 @@ Allow: /
 Allow: /teams/
 Allow: /fixtures/
 Allow: /guide/
+Allow: /finance/
 Allow: /data/
 Allow: /images/
 

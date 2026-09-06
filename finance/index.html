@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Harcama & Finans Simülatörü — Spend It All | Bileşik Getiri & Bütçe Simülasyonu</title>
+  <meta name="description" content="Aylık birikimlerinizin bileşik getirisini simüle edin, enflasyondan arındırılmış reel alım gücünüzü görün veya bir milyarderin servetini 28 lüks ürünle sıfırlamaya çalışın!" />
+  <meta name="keywords" content="finansal simülatör, harcama simülatörü, bileşik faiz hesaplama, servet harcama oyunu, spend it all simulator, compound interest calculator, reverse budgeting, future value calculator, billionaire net worth simulator" />
+  <link rel="canonical" href="https://www.stagesimulator.com/finance/" />
+  
+  <link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/finance/" />
+  <link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/?lang=tr" />
+  <link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/finance/?lang=en" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.stagesimulator.com/finance/" />
+  <meta property="og:title" content="Harcama & Finans Simülatörü — Spend It All | Bileşik Getiri & Bütçe Simülasyonu" />
+  <meta property="og:description" content="Aylık birikimlerinizin bileşik getirisini simüle edin, enflasyondan arındırılmış reel alım gücünüzü görün veya bir milyarderin servetini 28 lüks ürünle sıfırlamaya çalışın!" />
+  <meta property="og:image" content="https://www.stagesimulator.com/icon-192.png" />
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Harcama & Finans Simülatörü — Spend It All | Bileşik Getiri & Bütçe Simülasyonu" />
+  <meta name="twitter:description" content="Aylık birikimlerinizin bileşik getirisini simüle edin, enflasyondan arındırılmış reel alım gücünüzü görün veya bir milyarderin servetini 28 lüks ürünle sıfırlamaya çalışın!" />
+  <meta name="twitter:image" content="https://www.stagesimulator.com/icon-192.png" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://www.stagesimulator.com/finance/#app",
+      "name": "Spend It All — Financial Gamification Simulator",
+      "url": "https://www.stagesimulator.com/finance/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Monthly Compound Interest Simulator",
+        "Real Purchasing Power & Inflation Forecaster",
+        "Reverse Budgeting Billionaire Net Worth Mode",
+        "28 Luxury & Investment Items Store",
+        "Itemized Spending Receipt & Financial Analysis"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Bileşik getiri simülatörü nasıl çalışır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aylık birikim, başlangıç sermayesi, vade ve yıllık getiri oranıyla gelecekteki portföy değerini ve reel alım gücünü hesaplar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Zengin Modu (Get Rich Mode) nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elon Musk, Jeff Bezos gibi milyarderlerin servetlerini seçip, 28 farklı lüks ve çılgın ürünü satın alarak parayı sıfırlamaya çalıştığınız tersine bütçeleme simülatörüdür."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  
+  <style>
+:root {
+  --pl-bg: #F1F3F6;
+  --pl-screen-bg: #FAFAFC;
+  --pl-card-bg: #FFFFFF;
+  --pl-card-subtle: #F6F7FA;
+  --pl-card-hover: #F1F3F8;
+
+  --pl-ink: #0F172A;
+  --pl-ink-soft: #334155;
+  --pl-muted: #64748B;
+  --pl-muted-2: #94A3B8;
+  --pl-muted-3: #CBD5E1;
+  --pl-faint: #E2E8F0;
+
+  --pl-border: #E8EAEE;
+  --pl-border-2: #DCDFE6;
+  --pl-border-3: #F1F3F7;
+  --pl-border-focus: #3B82F6;
+
+  --pl-accent: #2563EB;
+  --pl-accent-dark: #1D4ED8;
+  --pl-accent-subtle: #EFF6FF;
+  --pl-accent-border: #BFDBFE;
+
+  --pl-win: #10B981;
+  --pl-win-bg: #ECFDF5;
+  --pl-win-border: #A7F3D0;
+
+  --pl-draw: #64748B;
+  --pl-draw-bg: #F1F5F9;
+  --pl-draw-border: #E2E8F0;
+
+  --pl-loss: #EF4444;
+  --pl-loss-bg: #FEF2F2;
+  --pl-loss-border: #FECACA;
+
+  --pl-top8: #10B981;
+  --pl-top8-bg: #D1FAE5;
+  --pl-playoff: #D97706;
+  --pl-playoff-bg: #FEF3C7;
+  --pl-elim: #EF4444;
+  --pl-elim-bg: #FEE2E2;
+
+  --pl-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
+  --pl-shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
+  --pl-shell-shadow: 0 20px 50px -12px rgba(15, 23, 42, 0.10), 0 0 0 1px rgba(15, 23, 42, 0.05);
+
+  --pl-radius-sm: 8px;
+  --pl-radius-md: 12px;
+  --pl-radius-lg: 16px;
+  --pl-radius-xl: 20px;
+  --pl-radius-pill: 9999px;
+  --pl-transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--pl-bg);
+  color: var(--pl-ink);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 12px 10px 48px;
+}
+
+@media (min-width: 560px) {
+  body {
+    padding: 24px 16px 64px;
+  }
+}
+
+a { color: inherit; text-decoration: none; }
+
+.pl-shell {
+  width: 100%;
+  max-width: 560px;
+  background: var(--pl-screen-bg);
+  border-radius: var(--pl-radius-xl);
+  box-shadow: var(--pl-shell-shadow);
+  border: 1px solid var(--pl-border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Topbar */
+.pl-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--pl-card-bg);
+  border-bottom: 1px solid var(--pl-border);
+}
+
+.pl-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+  color: var(--pl-ink);
+}
+
+.pl-brand-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--pl-radius-md);
+  background: var(--pl-card-subtle);
+  border: 1px solid var(--pl-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.pl-brand-badge img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.pl-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pl-btn-ghost {
+  height: 32px;
+  padding: 0 12px;
+  border-radius: var(--pl-radius-pill);
+  border: 1px solid var(--pl-border);
+  background: var(--pl-card-subtle);
+  color: var(--pl-ink-soft);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: var(--pl-transition);
+}
+.pl-btn-ghost:hover {
+  background: var(--pl-card-bg);
+  border-color: var(--pl-border-2);
+  color: var(--pl-ink);
+  box-shadow: var(--pl-shadow-sm);
+}
+
+.pl-btn-primary {
+  height: 32px;
+  padding: 0 14px;
+  border-radius: var(--pl-radius-pill);
+  background: var(--pl-accent);
+  color: #FFFFFF !important;
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+  transition: var(--pl-transition);
+}
+.pl-btn-primary:hover {
+  background: var(--pl-accent-dark);
+  transform: translateY(-1px);
+}
+
+/* Main Body */
+.pl-main {
+  padding: 14px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pl-breadcrumb {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 11px;
+  color: var(--pl-muted);
+  font-weight: 600;
+}
+.pl-breadcrumb a:hover { color: var(--pl-accent); }
+.pl-breadcrumb span { opacity: 0.45; }
+
+/* Hero Card */
+.pl-hero-card {
+  background: var(--pl-card-bg);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-lg);
+  padding: 16px;
+  box-shadow: var(--pl-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pl-hero-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pl-team-crest {
+  width: 48px;
+  height: 48px;
+  aspect-ratio: 1/1;
+  border-radius: var(--pl-radius-md);
+  background: var(--pl-card-subtle);
+  border: 1px solid var(--pl-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 6px;
+}
+.pl-team-crest img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pl-hero-meta h1 {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--pl-ink);
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.pl-tags-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.pl-tag {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--pl-muted);
+  background: var(--pl-card-subtle);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-pill);
+  padding: 2px 8px;
+}
+
+/* Stat Grid */
+.pl-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.pl-stat-box {
+  background: var(--pl-card-subtle);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-md);
+  padding: 8px 10px;
+  text-align: center;
+}
+.pl-stat-box .lbl {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--pl-muted);
+  margin-bottom: 2px;
+}
+.pl-stat-box .val {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--pl-ink);
+}
+.pl-stat-box .val.top8 { color: var(--pl-top8); }
+.pl-stat-box .val.playoff { color: var(--pl-playoff); }
+
+.pl-large-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--pl-accent);
+  color: #FFFFFF !important;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 11px 16px;
+  border-radius: var(--pl-radius-md);
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.2);
+  transition: var(--pl-transition);
+}
+.pl-large-cta:hover {
+  background: var(--pl-accent-dark);
+  transform: translateY(-1px);
+}
+
+/* Section Titles */
+.pl-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--pl-muted);
+  margin: 4px 0 0 2px;
+}
+
+/* Match Items */
+.pl-match-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pl-match-card {
+  background: var(--pl-card-bg);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-lg);
+  padding: 10px 12px;
+  box-shadow: var(--pl-shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  transition: var(--pl-transition);
+}
+.pl-match-card:hover {
+  border-color: var(--pl-border-2);
+  box-shadow: var(--pl-shadow-md);
+}
+
+.pl-match-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+}
+
+.pl-week-pill {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--pl-muted);
+  background: var(--pl-card-subtle);
+  border: 1px solid var(--pl-border);
+  border-radius: 6px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+}
+
+.pl-venue-tag {
+  font-size: 9px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+.pl-venue-tag.home {
+  background: var(--pl-accent-subtle);
+  color: var(--pl-accent);
+  border: 1px solid var(--pl-accent-border);
+}
+.pl-venue-tag.away {
+  background: #FEF3C7;
+  color: #D97706;
+  border: 1px solid #FDE68A;
+}
+
+.pl-opp-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.pl-opp-crest {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.pl-opp-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--pl-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pl-opp-name:hover {
+  color: var(--pl-accent);
+}
+
+.pl-diff-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--pl-radius-pill);
+  flex-shrink: 0;
+}
+.pl-diff-badge.diff-easy {
+  background: var(--pl-win-bg);
+  color: var(--pl-win);
+  border: 1px solid var(--pl-win-border);
+}
+.pl-diff-badge.diff-med {
+  background: #FEF3C7;
+  color: #D97706;
+  border: 1px solid #FDE68A;
+}
+.pl-diff-badge.diff-hard {
+  background: var(--pl-loss-bg);
+  color: var(--pl-loss);
+  border: 1px solid var(--pl-loss-border);
+}
+
+.pl-score-box {
+  font-size: 12px;
+  font-weight: 800;
+  background: var(--pl-card-subtle);
+  border: 1px solid var(--pl-border);
+  padding: 2px 8px;
+  border-radius: 6px;
+  color: var(--pl-ink);
+}
+
+/* FAQ Card */
+.pl-faq-box {
+  background: var(--pl-card-bg);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-lg);
+  padding: 14px 16px;
+  box-shadow: var(--pl-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pl-faq-unit {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--pl-border-3);
+}
+.pl-faq-unit:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.pl-faq-q {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--pl-ink);
+}
+.pl-faq-a {
+  font-size: 12px;
+  color: var(--pl-muted);
+  line-height: 1.5;
+}
+
+/* Teams Chips Grid */
+.pl-chips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  gap: 6px;
+}
+.pl-mini-chip {
+  background: var(--pl-card-bg);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-md);
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--pl-ink);
+  box-shadow: var(--pl-shadow-sm);
+  transition: var(--pl-transition);
+}
+.pl-mini-chip:hover {
+  background: var(--pl-card-subtle);
+  border-color: var(--pl-border-2);
+  color: var(--pl-accent);
+}
+.pl-mini-chip img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* Guide prose styles */
+.pl-prose h2 {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--pl-ink);
+  margin: 16px 0 6px;
+}
+.pl-prose p {
+  font-size: 12.5px;
+  color: var(--pl-muted);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.pl-prose ul {
+  margin-left: 18px;
+  margin-bottom: 12px;
+  color: var(--pl-muted);
+  font-size: 12px;
+}
+.pl-prose li { margin-bottom: 4px; }
+.pl-callout {
+  background: var(--pl-accent-subtle);
+  border-left: 3px solid var(--pl-accent);
+  padding: 10px 14px;
+  border-radius: 0 var(--pl-radius-sm) var(--pl-radius-sm) 0;
+  margin: 10px 0;
+}
+.pl-callout h3 {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--pl-accent);
+  margin-bottom: 2px;
+}
+.pl-callout p {
+  font-size: 12px;
+  color: var(--pl-ink-soft);
+  margin: 0;
+}
+
+/* Footer */
+.pl-footer {
+  margin-top: 6px;
+  padding: 14px 16px;
+  background: var(--pl-card-bg);
+  border-top: 1px solid var(--pl-border);
+  text-align: center;
+  font-size: 11px;
+  color: var(--pl-muted);
+}
+.pl-footer a {
+  color: var(--pl-accent);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 4px;
+}
+.pl-footer a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+  <div class="pl-shell" style="max-width: 580px; margin: 0 auto; padding: 24px 20px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; border-bottom: 2px solid #E2E8F0; padding-bottom: 12px;">
+      <a href="/" style="font-size: 13px; font-weight: 700; color: #2563EB; text-decoration: none;">← PredictLeague Ana Sayfa</a>
+      <span style="font-size: 11px; font-weight: 800; text-transform: uppercase; color: #EC3013;">Finansal Simülatör</span>
+    </div>
+
+    <h1 style="font-family: 'Archivo', sans-serif; font-size: 28px; font-weight: 800; color: #0F172A; margin: 0 0 8px 0; line-height: 1.15;">
+      Harcama & Finans Simülatörü — Spend It All
+    </h1>
+    <p style="font-size: 14px; color: #475569; line-height: 1.6; margin-bottom: 20px;">
+      Büyük bir serveti eritmenin iki farklı yolu: Biri 10 yıl sonraki birikiminiz, diğeri ise roket şirketi olan bir milyarderin cüzdanı!
+    </p>
+
+    <div style="background: #F8FAFC; border: 1.5px solid #E2E8F0; border-radius: 16px; padding: 20px; margin-bottom: 24px;">
+      <h2 style="font-size: 18px; font-weight: 700; color: #0F172A; margin-top: 0;">🎮 Simülasyon Modları</h2>
+      <ul style="padding-left: 20px; color: #334155; font-size: 13.5px; line-height: 1.8;">
+        <li><strong>Future Me (Gelecekteki Ben):</strong> Aylık tasarruf, başlangıç birikimi, vade ve getiri oranını belirleyerek yıllık bileşik büyüme grafiğini inceleyin. Enflasyondan arındırılmış reel alım gücünüzü görün ve paranızı 28 farklı ürün içeren mağazada harcayın.</li>
+        <li><strong>Get Rich Mode (Zengin Modu):</strong> Elon Musk ($415B), Jeff Bezos ($245B), Mark Zuckerberg ($205B) ve diğer milyarderlerin servetlerini seçerek tersine bütçeleme ile bakiyeyi sıfırlamaya çalışın.</li>
+      </ul>
+      <div style="margin-top: 16px;">
+        <a href="/finance" style="display: inline-block; background: #EC3013; color: #FFFFFF; font-weight: 800; padding: 12px 24px; border-radius: 10px; text-decoration: none; font-size: 14px;">
+          🚀 İnteraktif Simülatörü Başlat →
+        </a>
+      </div>
+    </div>
+
+    <div style="border-top: 1px solid #E2E8F0; padding-top: 20px; margin-bottom: 24px;">
+      <h2 style="font-size: 18px; font-weight: 700; color: #0F172A;">📊 Bileşik Faiz Formülü & Hesaplama Mantığı</h2>
+      <p style="font-size: 13px; color: #475569; line-height: 1.6;">
+        Simülatörümüz klasik anüite ve gelecekteki değer (Future Value) formülü kullanır:
+        <br />
+        <code style="background: #EEF2F6; padding: 2px 6px; border-radius: 4px; font-family: monospace;">FV = P*(1+r/n)^(nt) + PMT * [((1+r/n)^(nt) - 1) / (r/n)]</code>
+        <br />
+        Burada <strong>P</strong> başlangıç anaparası, <strong>PMT</strong> aylık tasarruf, <strong>r</strong> yıllık getiri oranı, <strong>t</strong> yıl sayısıdır.
+      </p>
+    </div>
+
+    <footer class="pl-footer">
+      <p>© 2026 PredictLeague · Finansal Oyunlaştırma Simülatörü</p>
+      <div style="margin-top: 6px;">
+        <a href="/">PredictLeague Ana Sayfa</a> ·
+        <a href="/finance">Finans Simülatörü</a> ·
+        <a href="/guide/swiss-format-points-needed/">UEFA Rehberi</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

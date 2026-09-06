@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-49cbf6fb-f29d-4cab-aa1b-8bb5fe68d96f/styles.css">
+<style>
+body{margin:0;background:#d7d3d3}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:2px;background:#201e1d66;accent-color:#ec3013;margin:14px 0 6px}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;background:#ec3013;border:0;cursor:grab}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;background:#ec3013;border:0;border-radius:0;cursor:grab}
+</style>
+</helmet>
+<div style="min-height:100vh;background:#d7d3d3;display:flex;justify-content:center;font-family:var(--font-body)">
+<div style="width:100%;max-width:440px;background:var(--color-bg);min-height:100vh;position:relative">
+
+<div style="position:sticky;top:0;z-index:40;background:var(--color-bg);border-bottom:2px solid var(--color-divider)">
+<div style="display:flex;align-items:center;gap:12px;padding:14px 18px 12px">
+<button class="btn btn-ghost" onClick="{{ back }}" style="padding:0;font-size:11px;letter-spacing:.1em;text-transform:uppercase;background:none;border:0">← Back</button>
+<span style="margin-left:auto;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#201e1d8c">{{ stepLabel }}</span>
+</div>
+<sc-if value="{{ showBudget }}" hint-placeholder-val="{{ true }}">
+<div style="padding:0 18px 14px;border-top:1px solid var(--color-divider)">
+<div style="display:flex;align-items:baseline;justify-content:space-between;padding-top:12px">
+<span style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#201e1d8c">Money left</span>
+<span style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#201e1d8c">{{ spentPct }} spent</span>
+</div>
+<div style="font-family:var(--font-heading);font-weight:800;font-size:30px;line-height:1.05;letter-spacing:-.02em;color:var(--color-accent-700);font-variant-numeric:tabular-nums">{{ remainingStr }}</div>
+<div style="height:8px;background:var(--color-neutral-300);margin-top:10px">
+<div style="height:100%;background:var(--color-accent);width:{{ spentPct }}"></div>
+</div>
+</div>
+</sc-if>
+</div>
+
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<div style="padding:26px 18px 40px">
+<div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-700)">Financial simulator</div>
+<h1 style="font-size:52px;line-height:.92;letter-spacing:-.035em;margin:10px 0 14px">SPEND<br>IT ALL</h1>
+<p style="font-size:14px;color:#201e1dcc;max-width:34ch;margin-bottom:22px">Two ways to blow a fortune. One is yours, in ten years. The other belongs to somebody with a rocket company.</p>
+<hr class="hr">
+<button onClick="{{ pickFuture }}" style="display:block;width:100%;text-align:left;border:0;border-top:2px solid var(--color-divider);background:none;padding:20px 0;cursor:pointer;font-family:inherit;color:inherit" style-hover="background:#201e1d0a">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-family:var(--font-heading);font-weight:800;font-size:13px;color:var(--color-accent)">01</span>
+<span style="font-family:var(--font-heading);font-weight:800;font-size:26px;letter-spacing:-.02em">Future Me</span>
+<span style="margin-left:auto;font-size:22px;color:var(--color-accent)">→</span>
+</div>
+<p style="font-size:13px;color:#201e1d99;margin:8px 0 0;padding-right:30px">Set your monthly saving, watch compound interest do its thing, then spend the pile.</p>
+</button>
+<button onClick="{{ pickRich }}" style="display:block;width:100%;text-align:left;border:0;border-top:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider);background:none;padding:20px 0;cursor:pointer;font-family:inherit;color:inherit" style-hover="background:#201e1d0a">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-family:var(--font-heading);font-weight:800;font-size:13px;color:var(--color-accent)">02</span>
+<span style="font-family:var(--font-heading);font-weight:800;font-size:26px;letter-spacing:-.02em">Get Rich Mode</span>
+<span style="margin-left:auto;font-size:22px;color:var(--color-accent)">→</span>
+</div>
+<p style="font-size:13px;color:#201e1d99;margin:8px 0 0;padding-right:30px">Borrow a billionaire's balance sheet and try to hit zero. Yachts included.</p>
+</button>
+<div style="display:flex;gap:0;margin-top:26px;border:2px solid var(--color-divider)">
+<div style="flex:1;padding:14px;border-right:2px solid var(--color-divider)">
+<div style="font-family:var(--font-heading);font-weight:800;font-size:20px">31</div>
+<div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#201e1d8c">Things to buy</div>
+</div>
+<div style="flex:1;padding:14px">
+<div style="font-family:var(--font-heading);font-weight:800;font-size:20px">6</div>
+<div style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#201e1d8c">Fortunes</div>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isSim }}" hint-placeholder-val="{{ true }}">
+<div style="padding:22px 18px 40px">
+<h2 style="font-size:32px;letter-spacing:-.03em;margin-bottom:4px">Future Me</h2>
+<p style="font-size:13px;color:#201e1d99;margin-bottom:20px">Drag the dials. The number at the bottom is your shopping budget.</p>
+
+<div style="border-top:2px solid var(--color-divider);padding:16px 0">
+<div style="display:flex;align-items:baseline;justify-content:space-between">
+<label style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#201e1d99">Monthly saving</label>
+<span style="font-family:var(--font-heading);font-weight:800;font-size:19px;font-variant-numeric:tabular-nums">{{ monthlyStr }}</span>
+</div>
+<input type="range" min="50" max="5000" step="50" value="{{ monthly }}" onChange="{{ setMonthly }}">
+</div>
+
+<div style="border-top:1px solid var(--color-divider);padding:16px 0">
+<div style="display:flex;align-items:baseline;justify-content:space-between">
+<label style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#201e1d99">Starting capital</label>
+<span style="font-family:var(--font-heading);font-weight:800;font-size:19px;font-variant-numeric:tabular-nums">{{ startStr }}</span>
+</div>
+<input type="range" min="0" max="100000" step="1000" value="{{ start }}" onChange="{{ setStart }}">
+</div>
+
+<div style="border-top:1px solid var(--color-divider);padding:16px 0">
+<div style="display:flex;align-items:baseline;justify-content:space-between">
+<label style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#201e1d99">Time horizon</label>
+<span style="font-family:var(--font-heading);font-weight:800;font-size:19px;font-variant-numeric:tabular-nums">{{ yearsStr }}</span>
+</div>
+<input type="range" min="1" max="40" step="1" value="{{ years }}" onChange="{{ setYears }}">
+</div>
+
+<div style="border-top:1px solid var(--color-divider);padding:16px 0">
+<div style="display:flex;align-items:baseline;justify-content:space-between">
+<label style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#201e1d99">Annual return</label>
+<span style="font-family:var(--font-heading);font-weight:800;font-size:19px;font-variant-numeric:tabular-nums">{{ rateStr }}</span>
+</div>
+<input type="range" min="0" max="15" step="0.5" value="{{ rate }}" onChange="{{ setRate }}">
+<div style="display:flex;gap:8px;margin-top:6px">
+<button class="tag tag-outline" onClick="{{ presetCash }}" style="border:1px solid var(--color-divider);background:none;color:#201e1d99;cursor:pointer;font-family:inherit">Plain cash 0%</button>
+<button class="tag tag-outline" onClick="{{ presetFund }}" style="background:none;cursor:pointer;font-family:inherit">Index fund 7%</button>
+</div>
+</div>
+
+<div style="border-top:1px solid var(--color-divider);border-bottom:2px solid var(--color-divider);padding:16px 0">
+<div style="display:flex;align-items:baseline;justify-content:space-between">
+<label style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#201e1d99">Inflation</label>
+<span style="font-family:var(--font-heading);font-weight:800;font-size:19px;font-variant-numeric:tabular-nums">{{ inflStr }}</span>
+</div>
+<input type="range" min="0" max="20" step="0.5" value="{{ infl }}" onChange="{{ setInfl }}">
+</div>
+
+<sc-if value="{{ chartOn }}" hint-placeholder-val="{{ true }}">
+<div style="padding:22px 0 0">
+<div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:10px">
+<span style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#201e1d99">Growth by year</span>
+<span style="font-size:11px;color:var(--color-accent-700)">■ nominal · ▨ contributions</span>
+</div>
+<div style="display:flex;align-items:flex-end;gap:3px;height:130px;border-bottom:2px solid var(--color-divider);padding-bottom:0">
+<sc-for list="{{ bars }}" as="bar" hint-placeholder-count="10">
+<div style="flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:100%;min-width:0">
+<div style="width:100%;background:var(--color-accent);height:{{ bar.gain }}"></div>
+<div style="width:100%;background:var(--color-neutral-500);height:{{ bar.paid }}"></div>
+</div>
+</sc-for>
+</div>
+<div style="display:flex;justify-content:space-between;font-size:10px;color:#201e1d8c;padding-top:6px">
+<span>Year 1</span><span>Year {{ years }}</span>
+</div>
+</div>
+</sc-if>
+
+<div style="margin-top:26px;border:2px solid var(--color-divider);padding:16px">
+<div style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#201e1d8c">Portfolio in {{ yearsStr }}</div>
+<div style="font-family:var(--font-heading);font-weight:800;font-size:40px;line-height:1;letter-spacing:-.03em;margin:6px 0 2px;font-variant-numeric:tabular-nums">{{ fvStr }}</div>
+<div style="font-size:12px;color:#201e1d99">You put in {{ contribStr }} · interest did {{ interestStr }}</div>
+<hr class="hr" style="margin:14px 0">
+<div style="display:flex;justify-content:space-between;font-size:12px">
+<span style="color:#201e1d99">Worth in today's money</span>
+<span style="font-weight:600;font-variant-numeric:tabular-nums">{{ realStr }}</span>
+</div>
+</div>
+
+<div style="margin-top:20px">
+<div style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#201e1d99;margin-bottom:10px">That buys you</div>
+<sc-for list="{{ afford }}" as="a" hint-placeholder-count="3">
+<div style="display:flex;align-items:baseline;gap:10px;border-top:1px solid var(--color-divider);padding:10px 0">
+<span style="font-family:var(--font-heading);font-weight:800;font-size:22px;color:var(--color-accent);min-width:46px;font-variant-numeric:tabular-nums">{{ a.n }}</span>
+<span style="font-size:14px">{{ a.label }}</span>
+</div>
+</sc-for>
+</div>
+
+<button class="btn btn-primary btn-block" onClick="{{ toStore }}" style="margin-top:24px;padding:16px;font-size:15px">Take the money to the store →</button>
+</div>
+</sc-if>
+
+<sc-if value="{{ isCelebs }}" hint-placeholder-val="{{ true }}">
+<div style="padding:22px 18px 40px">
+<h2 style="font-size:32px;letter-spacing:-.03em;margin-bottom:4px">Get Rich Mode</h2>
+<p style="font-size:13px;color:#201e1d99;margin-bottom:18px">Pick a wallet. Estimated net worth, September 2026 — nobody is checking receipts.</p>
+<sc-for list="{{ celebs }}" as="c" hint-placeholder-count="6">
+<button onClick="{{ c.pick }}" style="display:block;width:100%;text-align:left;border:0;border-top:2px solid var(--color-divider);background:none;padding:16px 0;cursor:pointer;font-family:inherit;color:inherit" style-hover="background:#201e1d0a">
+<div style="display:flex;align-items:baseline;gap:10px">
+<span style="font-family:var(--font-heading);font-weight:800;font-size:20px;letter-spacing:-.02em">{{ c.name }}</span>
+<span style="margin-left:auto;font-family:var(--font-heading);font-weight:800;font-size:20px;color:var(--color-accent-700);font-variant-numeric:tabular-nums">{{ c.worthStr }}</span>
+</div>
+<div style="font-size:12px;color:#201e1d99;margin-top:4px">{{ c.note }}</div>
+</button>
+</sc-for>
+<div style="border-top:2px solid var(--color-divider)"></div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isStore }}" hint-placeholder-val="{{ true }}">
+<div style="padding:18px 0 40px">
+<div style="padding:0 18px">
+<h2 style="font-size:28px;letter-spacing:-.03em;margin-bottom:2px">{{ storeTitle }}</h2>
+<p style="font-size:13px;color:#201e1d99;margin-bottom:16px">{{ storeSub }}</p>
+</div>
+<div style="display:flex;gap:0;border-top:2px solid var(--color-divider);border-bottom:2px solid var(--color-divider);position:sticky;top:0;background:var(--color-bg);z-index:20">
+<sc-for list="{{ tabs }}" as="t" hint-placeholder-count="4">
+<button onClick="{{ t.pick }}" class="{{ t.cls }}" style="flex:1;border:0;border-right:1px solid var(--color-divider);padding:12px 4px;cursor:pointer;font-family:var(--font-heading);font-weight:800;font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:{{ t.bg }};color:{{ t.fg }}">{{ t.label }}</button>
+</sc-for>
+</div>
+<sc-for list="{{ items }}" as="it" hint-placeholder-count="6">
+<div style="display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--color-divider);background:{{ it.rowBg }}">
+<div style="flex:1;min-width:0">
+<div style="font-family:var(--font-heading);font-weight:800;font-size:15px;line-height:1.15">{{ it.name }}</div>
+<div style="font-size:12px;color:#201e1d99;font-variant-numeric:tabular-nums">{{ it.priceStr }}</div>
+</div>
+<div style="display:flex;align-items:center;gap:0;border:1px solid var(--color-divider)">
+<button onClick="{{ it.dec }}" disabled="{{ it.noDec }}" style="width:38px;height:38px;border:0;background:none;cursor:pointer;font-family:var(--font-heading);font-weight:800;font-size:18px;color:inherit;opacity:{{ it.decOp }}">−</button>
+<div style="width:34px;text-align:center;font-family:var(--font-heading);font-weight:800;font-size:15px;font-variant-numeric:tabular-nums;border-left:1px solid var(--color-divider);border-right:1px solid var(--color-divider);line-height:38px">{{ it.qty }}</div>
+<button onClick="{{ it.inc }}" disabled="{{ it.noInc }}" style="width:38px;height:38px;border:0;cursor:pointer;font-family:var(--font-heading);font-weight:800;font-size:18px;background:{{ it.incBg }};color:{{ it.incFg }};opacity:{{ it.incOp }}">+</button>
+</div>
+</div>
+</sc-for>
+<div style="padding:20px 18px 0">
+<sc-if value="{{ cartCount }}" hint-placeholder-val="{{ true }}">
+<button class="btn btn-primary btn-block" onClick="{{ toSummary }}" style="padding:16px;font-size:15px">See the receipt · {{ cartCount }} items →</button>
+</sc-if>
+<p style="font-size:12px;color:#201e1d8c;margin-top:14px">{{ hint }}</p>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isSummary }}" hint-placeholder-val="{{ true }}">
+<div style="padding:22px 18px 40px">
+<div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-700)">Receipt</div>
+<h2 style="font-size:34px;letter-spacing:-.03em;margin:8px 0 16px">{{ verdict }}</h2>
+<div style="border-top:2px solid var(--color-divider)"></div>
+<sc-for list="{{ lines }}" as="l" hint-placeholder-count="4">
+<div style="display:flex;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px solid var(--color-divider)">
+<span style="font-family:var(--font-heading);font-weight:800;font-size:13px;color:var(--color-accent);min-width:26px">{{ l.qty }}×</span>
+<span style="font-size:14px;flex:1">{{ l.name }}</span>
+<span style="font-size:13px;font-variant-numeric:tabular-nums;color:#201e1dcc">{{ l.totalStr }}</span>
+</div>
+</sc-for>
+<div style="display:flex;justify-content:space-between;padding:16px 0;border-bottom:2px solid var(--color-divider)">
+<span style="font-family:var(--font-heading);font-weight:800;font-size:16px">Total spent</span>
+<span style="font-family:var(--font-heading);font-weight:800;font-size:16px;font-variant-numeric:tabular-nums">{{ spentStr }}</span>
+</div>
+<div style="background:var(--color-accent);color:var(--color-bg);padding:20px;margin-top:22px">
+<div style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;opacity:.85">Still in the account</div>
+<div style="font-family:var(--font-heading);font-weight:800;font-size:38px;line-height:1.05;letter-spacing:-.03em;margin-top:4px;font-variant-numeric:tabular-nums">{{ remainingStr }}</div>
+<p style="font-size:13px;margin:10px 0 0;opacity:.95">{{ closing }}</p>
+</div>
+<div style="display:flex;gap:10px;margin-top:20px">
+<button class="btn btn-secondary" onClick="{{ toStore }}" style="flex:1;padding:14px;justify-content:flex-start">Keep spending</button>
+<button class="btn btn-secondary" onClick="{{ restart }}" style="flex:1;padding:14px;justify-content:flex-start">Start over</button>
+</div>
+</div>
+</sc-if>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:440,&quot;height&quot;:900},&quot;hardMode&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Rules&quot;},&quot;showChart&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Rules&quot;}}">
+const CATS = ["Everyday", "Life & Invest", "Ultra Luxury"];
+const ITEMS = [
+  { id: "phone", name: "Next-gen smartphone", price: 1200, cat: 0 },
+  { id: "console", name: "Game console + 5 games", price: 800, cat: 0 },
+  { id: "sneakers", name: "Limited sneakers", price: 350, cat: 0 },
+  { id: "espresso", name: "Espresso machine", price: 900, cat: 0 },
+  { id: "bike", name: "Carbon road bike", price: 2400, cat: 0 },
+  { id: "drone", name: "Cinema drone", price: 1800, cat: 0 },
+  { id: "laptop", name: "Loaded laptop", price: 3200, cat: 0 },
+  { id: "watch", name: "Swiss dive watch", price: 6500, cat: 0 },
+  { id: "car", name: "Brand-new car", price: 35000, cat: 1 },
+  { id: "tour", name: "Round-the-world trip", price: 25000, cat: 1 },
+  { id: "downpay", name: "House down payment", price: 80000, cat: 1 },
+  { id: "ev", name: "Electric performance sedan", price: 95000, cat: 1 },
+  { id: "mba", name: "MBA tuition, two years", price: 140000, cat: 1 },
+  { id: "flat", name: "City apartment, cash", price: 320000, cat: 1 },
+  { id: "house", name: "Detached house", price: 500000, cat: 1 },
+  { id: "vineyard", name: "Small vineyard", price: 1400000, cat: 1 },
+  { id: "supercar", name: "Hypercar", price: 3000000, cat: 2 },
+  { id: "jet", name: "Private jet", price: 15000000, cat: 2 },
+  { id: "island", name: "Private island", price: 50000000, cat: 2 },
+  { id: "rocket", name: "One rocket launch", price: 67000000, cat: 2 },
+  { id: "picasso", name: "A Picasso", price: 120000000, cat: 2 },
+  { id: "yacht", name: "Mega yacht, 110m", price: 300000000, cat: 2 },
+  { id: "tower", name: "Downtown skyscraper", price: 800000000, cat: 2 },
+  { id: "f1", name: "Formula 1 team", price: 900000000, cat: 2 },
+  { id: "club", name: "European football club", price: 1200000000, cat: 2 },
+  { id: "nba", name: "NBA franchise", price: 4000000000, cat: 2 },
+  { id: "airline", name: "Regional airline", price: 6500000000, cat: 2 },
+  { id: "moon", name: "Moon base, phase one", price: 25000000000, cat: 2 },
+];
+const CELEBS = [
+  { id: "musk", name: "Elon Musk", worth: 415000000000, note: "Cars, rockets, a social network he bought on a whim." },
+  { id: "bezos", name: "Jeff Bezos", worth: 245000000000, note: "Two-day shipping, one very large yacht." },
+  { id: "zuck", name: "Mark Zuckerberg", worth: 205000000000, note: "Runs a metaverse and a Hawaii compound." },
+  { id: "arnault", name: "Bernard Arnault", worth: 180000000000, note: "Owns the luggage you cannot afford." },
+  { id: "swift", name: "Taylor Swift", worth: 1600000000, note: "Re-recorded her way to a billion." },
+  { id: "ronaldo", name: "Cristiano Ronaldo", worth: 1400000000, note: "Goals, sit-ups, Saudi salary." },
+];
+
+class Component extends DCLogic {
+  state = {
+    screen: "home", mode: null, celeb: null, tab: 0, cart: {},
+    monthly: 500, start: 5000, years: 10, rate: 7, infl: 4,
+  };
+
+  money(v) {
+    const a = Math.round(v);
+    if (a >= 1e9) return "$" + (a / 1e9).toFixed(a >= 1e11 ? 0 : 1).replace(/\.0$/, "") + "B";
+    if (a >= 1e6) return "$" + (a / 1e6).toFixed(a >= 1e8 ? 0 : 1).replace(/\.0$/, "") + "M";
+    return "$" + a.toLocaleString("en-US");
+  }
+  exact(v) { return "$" + Math.round(v).toLocaleString("en-US"); }
+
+  fv() {
+    const { monthly, start, years, rate } = this.state;
+    const i = rate / 100 / 12, n = years * 12;
+    const g = i === 0 ? 1 : Math.pow(1 + i, n);
+    const contrib = i === 0 ? monthly * n : monthly * ((g - 1) / i);
+    return start * g + contrib;
+  }
+  yearValue(y) {
+    const { monthly, start, rate } = this.state;
+    const i = rate / 100 / 12, n = y * 12;
+    const g = i === 0 ? 1 : Math.pow(1 + i, n);
+    return start * g + (i === 0 ? monthly * n : monthly * ((g - 1) / i));
+  }
+
+  budget() {
+    if (this.state.mode === "rich") {
+      const c = CELEBS.find(c => c.id === this.state.celeb);
+      return c ? c.worth : 0;
+    }
+    return this.fv();
+  }
+  spent() {
+    return Object.entries(this.state.cart).reduce((s, [id, q]) => {
+      const it = ITEMS.find(i => i.id === id);
+      return s + (it ? it.price * q : 0);
+    }, 0);
+  }
+
+  bump(id, d) {
+    this.setState(s => {
+      const q = (s.cart[id] || 0) + d;
+      const cart = { ...s.cart };
+      if (q <= 0) delete cart[id]; else cart[id] = q;
+      return { cart };
+    });
+  }
+
+  renderVals() {
+    const s = this.state;
+    const hard = this.props.hardMode ?? true;
+    const budget = this.budget();
+    const spent = this.spent();
+    const remaining = budget - spent;
+    const pct = budget > 0 ? Math.min(100, (spent / budget) * 100) : 0;
+    const fv = this.fv();
+    const contrib = s.start + s.monthly * 12 * s.years;
+    const total = budget;
+
+    const barCount = Math.min(s.years, 20);
+    const stepY = s.years / barCount;
+    const maxV = this.yearValue(s.years) || 1;
+    const bars = Array.from({ length: barCount }, (_, k) => {
+      const y = (k + 1) * stepY;
+      const v = this.yearValue(y);
+      const paid = s.start + s.monthly * 12 * y;
+      return {
+        gain: Math.max(0, ((v - paid) / maxV) * 100) + "%",
+        paid: Math.min(100, (paid / maxV) * 100) + "%",
+      };
+    });
+
+    const affordRefs = [
+      { id: "car", label: "brand-new cars" },
+      { id: "downpay", label: "house down payments" },
+      { id: "tour", label: "round-the-world trips" },
+      { id: "phone", label: "smartphones" },
+    ];
+    const afford = affordRefs
+      .map(r => {
+        const it = ITEMS.find(i => i.id === r.id);
+        return { n: Math.floor(fv / it.price), label: r.label };
+      })
+      .filter(a => a.n >= 1)
+      .slice(0, 3);
+    if (!afford.length) afford.push({ n: Math.floor(fv / 350), label: "pairs of limited sneakers" });
+
+    const items = ITEMS.filter(i => i.cat === s.tab).map(it => {
+      const qty = s.cart[it.id] || 0;
+      const blocked = hard && it.price > remaining;
+      return {
+        ...it, qty,
+        priceStr: this.exact(it.price),
+        rowBg: qty ? "var(--color-surface)" : "transparent",
+        noDec: qty === 0, decOp: qty === 0 ? "0.3" : "1",
+        noInc: blocked, incOp: blocked ? "0.3" : "1",
+        incBg: blocked ? "transparent" : "var(--color-accent)",
+        incFg: blocked ? "var(--color-text)" : "var(--color-bg)",
+        inc: () => !blocked && this.bump(it.id, 1),
+        dec: () => this.bump(it.id, -1),
+      };
+    });
+
+    const lines = Object.entries(s.cart).map(([id, q]) => {
+      const it = ITEMS.find(i => i.id === id);
+      return { name: it.name, qty: q, totalStr: this.exact(it.price * q) };
+    }).sort((a, b) => b.qty - a.qty);
+
+    const cartCount = Object.values(s.cart).reduce((a, b) => a + b, 0);
+    const leftPct = total > 0 ? (remaining / total) * 100 : 0;
+    const celebName = (CELEBS.find(c => c.id === s.celeb) || {}).name;
+
+    return {
+      isHome: s.screen === "home",
+      isSim: s.screen === "sim",
+      isCelebs: s.screen === "celebs",
+      isStore: s.screen === "store",
+      isSummary: s.screen === "summary",
+      showBudget: s.screen === "store" || s.screen === "summary",
+      chartOn: this.props.showChart ?? true,
+      stepLabel: { home: "Start", sim: "Step 1 / 2", celebs: "Step 1 / 2", store: "Step 2 / 2", summary: "Done" }[s.screen],
+
+      monthly: s.monthly, start: s.start, years: s.years, rate: s.rate, infl: s.infl,
+      monthlyStr: this.exact(s.monthly) + "/mo",
+      startStr: this.exact(s.start),
+      yearsStr: s.years + (s.years === 1 ? " year" : " years"),
+      rateStr: s.rate + "%",
+      inflStr: s.infl + "%",
+      fvStr: this.money(fv),
+      contribStr: this.money(contrib),
+      interestStr: this.money(Math.max(0, fv - contrib)),
+      realStr: this.money(fv / Math.pow(1 + s.infl / 100, s.years)),
+      bars, afford,
+
+      celebs: CELEBS.map(c => ({
+        ...c, worthStr: this.money(c.worth),
+        pick: () => this.setState({ celeb: c.id, cart: {}, tab: 2, screen: "store" }),
+      })),
+
+      tabs: CATS.map((label, k) => ({
+        label,
+        bg: s.tab === k ? "var(--color-accent)" : "transparent",
+        fg: s.tab === k ? "var(--color-bg)" : "var(--color-text)",
+        cls: s.tab === k ? "tab-on" : "tab-off",
+        pick: () => this.setState({ tab: k }),
+      })),
+      items,
+      storeTitle: s.mode === "rich" ? celebName + "'s money" : "Your " + s.years + "-year pile",
+      storeSub: s.mode === "rich"
+        ? "Reverse budgeting: get it to zero. Good luck."
+        : "Real money, earned slowly. Spend it carefully — or don't.",
+      hint: hard
+        ? "Anything you cannot afford is greyed out. No credit here."
+        : "Overspending is allowed. Consequences are not simulated.",
+
+      remainingStr: this.money(remaining),
+      spentStr: this.exact(spent),
+      spentPct: pct.toFixed(pct < 10 ? 1 : 0) + "%",
+      cartCount,
+      lines,
+      verdict: leftPct <= 0.5 ? "Wiped it clean."
+        : leftPct < 25 ? "Almost nothing left."
+        : leftPct < 90 ? "A decent dent."
+        : "Barely scratched it.",
+      closing: s.mode === "rich"
+        ? "That is what a fortune looks like after a shopping spree: mostly intact."
+        : "Every dollar here came from a monthly transfer you actually have to make.",
+
+      back: () => this.setState(st => ({
+        screen: st.screen === "summary" ? "store"
+          : st.screen === "store" ? (st.mode === "rich" ? "celebs" : "sim")
+          : "home",
+      })),
+      pickFuture: () => this.setState({ mode: "future", screen: "sim", cart: {}, tab: 0 }),
+      pickRich: () => this.setState({ mode: "rich", screen: "celebs", cart: {} }),
+      toStore: () => this.setState({ screen: "store" }),
+      toSummary: () => this.setState({ screen: "summary" }),
+      restart: () => this.setState({ screen: "home", cart: {}, mode: null, celeb: null, tab: 0 }),
+      setMonthly: e => this.setState({ monthly: +e.target.value }),
+      setStart: e => this.setState({ start: +e.target.value }),
+      setYears: e => this.setState({ years: +e.target.value }),
+      setRate: e => this.setState({ rate: +e.target.value }),
+      setInfl: e => this.setState({ infl: +e.target.value }),
+      presetCash: () => this.setState({ rate: 0 }),
+      presetFund: () => this.setState({ rate: 7 }),
+    };
+  }
+}
+</script>
+</body>
+</html>
