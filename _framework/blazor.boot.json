@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "PredictLeague",
   "resources": {
-    "hash": "sha256-kZiEJfuNzaknBGf+NUZ//PypuzfFuQ6pCiYwqujXtMA=",
+    "hash": "sha256-v7urxQI9MA5eetrJR25mhlMG126KZfp91G4A8r0o4Ug=",
     "fingerprinting": {
-      "Microsoft.AspNetCore.Components.xywiqnse67.wasm": "Microsoft.AspNetCore.Components.wasm",
+      "Microsoft.AspNetCore.Components.c1mzbr0rfy.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.8nz5wh3k2t.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
       "Microsoft.AspNetCore.Components.WebAssembly.0prlth0hc4.wasm": "Microsoft.AspNetCore.Components.WebAssembly.wasm",
       "Microsoft.Extensions.Configuration.7sm4vp77d1.wasm": "Microsoft.Extensions.Configuration.wasm",
@@ -39,7 +39,7 @@
       "System.Text.RegularExpressions.yjpcwwiypp.wasm": "System.Text.RegularExpressions.wasm",
       "System.Threading.9veevijhzj.wasm": "System.Threading.wasm",
       "System.Private.CoreLib.6k0y1m0dvm.wasm": "System.Private.CoreLib.wasm",
-      "PredictLeague.t7v62z50c4.wasm": "PredictLeague.wasm",
+      "PredictLeague.78304j6x2u.wasm": "PredictLeague.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.wlvwu26j41.js": "dotnet.native.js",
       "dotnet.native.kiufslnrq2.wasm": "dotnet.native.wasm",
@@ -63,7 +63,7 @@
       "System.Private.CoreLib.6k0y1m0dvm.wasm": "sha256-qs/Dpe3w6EHvRCpxvu2CyODCLwBIEswJHn+yWc4JiQQ="
     },
     "assembly": {
-      "Microsoft.AspNetCore.Components.xywiqnse67.wasm": "sha256-lzLEm+jkyneZ75yser5n3HdBKp9SOuPgJ6rF8HtnxqA=",
+      "Microsoft.AspNetCore.Components.c1mzbr0rfy.wasm": "sha256-UFFqt85aMzx/eNhi4P0G/sE425iaa21tCVY1w544k0s=",
       "Microsoft.AspNetCore.Components.Web.8nz5wh3k2t.wasm": "sha256-tHdNCLckGew1/NtFWoSOKz76HvByXjaH3S736Imk+gc=",
       "Microsoft.AspNetCore.Components.WebAssembly.0prlth0hc4.wasm": "sha256-jB/Gf1i7eXuQqAzqY/ZONe+hrW3x94pYZlL+G0Cv7Co=",
       "Microsoft.Extensions.Configuration.7sm4vp77d1.wasm": "sha256-V/8lrAHQfJYsJtV+bKRHL6fmMFhJhAOyoTNfGTbwTdQ=",
@@ -97,7 +97,7 @@
       "System.Text.Json.92r9oekt5z.wasm": "sha256-QYGOJff7O2M5e0wkaXcp13OhPD2kfMfKaW4icSi+gRE=",
       "System.Text.RegularExpressions.yjpcwwiypp.wasm": "sha256-XkzCnkSan/ZVA60GmlmpwnrvKpizesPGZsxCYQm4Wh0=",
       "System.Threading.9veevijhzj.wasm": "sha256-O0a8Ue3axdOo1i5r++ozyb2t84Npo8ZIsNvMukHhhvY=",
-      "PredictLeague.t7v62z50c4.wasm": "sha256-dx5M5cx3BZDqAyvGz91xYXuZ7vjdb8PzQXdbtRzabzs="
+      "PredictLeague.78304j6x2u.wasm": "sha256-qZ+0/zcAynfQ+SehDuvlOeYDs+0r4lJ6ZRI9CzXpyKY="
     }
   },
   "cacheBootResources": true,
