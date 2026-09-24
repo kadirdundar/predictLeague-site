@@ -351,6 +351,35 @@ body {
     flex-direction: column;
 }
 
+.pl-shared-banner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 16px 0;
+    padding: 8px 8px 8px 12px;
+    border-radius: var(--pl-radius-md);
+    background: var(--pl-accent-subtle);
+    border: 1px solid var(--pl-accent-border);
+    color: var(--pl-accent-dark);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.pl-shared-banner .bi {
+    font-size: 16px;
+}
+
+.pl-shared-banner .text {
+    flex: 1;
+    min-width: 0;
+}
+
+.pl-shared-banner .pl-text-btn {
+    flex-shrink: 0;
+    color: var(--pl-accent);
+    font-weight: 700;
+}
+
 .pl-toolbar {
     flex-shrink: 0;
     display: flex;
@@ -788,6 +817,58 @@ body {
     color: #FFFFFF;
     border-color: var(--pl-loss);
 }
+
+/* What-if impact of each outcome, aligned under the quick-outcome buttons */
+.pl-impact {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-top: 6px;
+    transition: opacity 0.2s ease;
+}
+
+.pl-impact.pending {
+    opacity: 0.45;
+}
+
+.pl-impact-caption {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--pl-muted-2);
+}
+
+.pl-impact-flag {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 1px 6px;
+    border-radius: var(--pl-radius-pill);
+    background: var(--pl-playoff-bg);
+    color: #B45309;
+    letter-spacing: 0.02em;
+    /* uppercase would turn Turkish "i" into a dotless "I" without a lang attribute */
+    text-transform: none;
+}
+
+.pl-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--pl-muted);
+}
+
+.pl-impact-grid .win.active { color: var(--pl-win); }
+.pl-impact-grid .draw.active { color: var(--pl-ink-soft); }
+.pl-impact-grid .loss.active { color: var(--pl-loss); }
 
 /* ---------- Large Bottom Standings Table CTA ---------- */
 .pl-bottom-cta-wrap {
