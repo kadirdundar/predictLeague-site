@@ -1324,6 +1324,73 @@ body {
     color: var(--pl-ink);
 }
 
+/* Simulation outlook (league zones + knockout path) */
+.pl-outlook {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.pl-outlook-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #94A3B8;
+}
+
+.pl-outlook-title:not(:first-child) {
+    margin-top: 6px;
+}
+
+.pl-outlook-grid {
+    display: grid;
+    gap: 6px;
+}
+
+.pl-outlook-grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pl-outlook-grid.cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+
+.pl-outlook-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-width: 0;
+    padding: 8px 3px;
+    border-radius: var(--pl-radius-md);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pl-outlook-cell .v {
+    font-size: 15px;
+    font-weight: 800;
+    color: #FFFFFF;
+    font-variant-numeric: tabular-nums;
+}
+
+.pl-outlook-cell .k {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.15;
+    color: #94A3B8;
+    text-align: center;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.pl-outlook-cell.tier-top8 .v { color: #34D399; }
+.pl-outlook-cell.tier-playoff .v { color: #FBBF24; }
+.pl-outlook-cell.tier-elim .v { color: #F87171; }
+.pl-outlook-cell.champion {
+    background: rgba(251, 191, 36, 0.12);
+    border-color: rgba(251, 191, 36, 0.35);
+}
+.pl-outlook-cell.champion .v { color: #FBBF24; }
+
 /* Column headers */
 .pl-table-col-headers {
     display: grid;
