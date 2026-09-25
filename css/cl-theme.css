@@ -1539,6 +1539,212 @@ body {
 .pl-row-divider.div-elim { border-left: 3px solid var(--pl-elim); }
 .pl-row-divider.div-points { border-left: 3px solid var(--pl-accent); margin-top: 12px; }
 
+/* Table / probabilities switch in the standings view */
+.pl-view-toggle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    margin: 12px 16px;
+    padding: 4px;
+    border-radius: var(--pl-radius-md);
+    background: var(--pl-card-subtle);
+    border: 1px solid var(--pl-border);
+}
+
+.pl-view-toggle button {
+    height: 34px;
+    border: none;
+    border-radius: var(--pl-radius-sm);
+    background: transparent;
+    color: var(--pl-muted);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: var(--pl-transition);
+}
+
+.pl-view-toggle button.active {
+    background: var(--pl-card-bg);
+    color: var(--pl-accent);
+    box-shadow: var(--pl-shadow-sm);
+}
+
+/* Rank-probability heatmap: one row per team, one cell per finishing position */
+.pl-heat {
+    padding-bottom: 24px;
+}
+
+.pl-heat-head,
+.pl-heat-row {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+.pl-heat-head {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: var(--pl-card-bg);
+    border-bottom: 1px solid var(--pl-border);
+}
+
+.pl-heat-head .nm {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--pl-muted);
+}
+
+.pl-heat-head .zones {
+    display: grid;
+    gap: 1px;
+}
+
+.pl-heat-head .z {
+    padding: 3px 0;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.pl-heat-head .z.top8 { background: var(--pl-top8-bg); color: #047857; }
+.pl-heat-head .z.po { background: var(--pl-playoff-bg); color: #B45309; }
+.pl-heat-head .z.el { background: var(--pl-elim-bg); color: #B91C1C; }
+
+.pl-heat-row {
+    width: 100%;
+    min-height: 30px;
+    border: none;
+    border-bottom: 1px solid var(--pl-border-3);
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.pl-heat-row .nm {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--pl-ink-soft);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pl-heat-row .cells {
+    display: grid;
+    gap: 1px;
+}
+
+.pl-heat-row .cells i {
+    height: 16px;
+    border-radius: 2px;
+}
+
+.pl-heat-row .cells i.zb {
+    margin-right: 2px;
+}
+
+.pl-heat-row.me {
+    background: var(--pl-me-bg);
+    box-shadow: inset 3px 0 0 var(--pl-accent);
+}
+
+.pl-heat-row.me .nm {
+    color: var(--pl-accent);
+    font-weight: 800;
+}
+
+.pl-heat-row.open {
+    border-bottom-color: transparent;
+}
+
+.pl-heat-detail {
+    padding: 10px 16px 14px;
+    background: var(--pl-card-subtle);
+    border-bottom: 1px solid var(--pl-border);
+}
+
+.pl-heat-detail .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: var(--pl-muted);
+}
+
+.pl-heat-detail .stats b {
+    color: var(--pl-ink);
+}
+
+.pl-heat-detail .bars {
+    display: grid;
+    align-items: end;
+    gap: 1px;
+    height: 72px;
+}
+
+.pl-heat-detail .bar {
+    border-radius: 2px 2px 0 0;
+}
+
+.pl-heat-detail .bar.top8 { background: var(--pl-top8); }
+.pl-heat-detail .bar.po { background: var(--pl-playoff); }
+.pl-heat-detail .bar.el { background: var(--pl-elim); }
+
+.pl-heat-detail .axis {
+    position: relative;
+    height: 16px;
+    margin-top: 2px;
+    border-top: 1px solid var(--pl-border-2);
+}
+
+.pl-heat-detail .axis span {
+    position: absolute;
+    top: 2px;
+    transform: translateX(-50%);
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--pl-muted-2);
+}
+
+.pl-heat-detail .zones-sum {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.pl-heat-detail .zones-sum span {
+    padding: 3px 8px;
+    border-radius: var(--pl-radius-pill);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.pl-heat-detail .zones-sum .top8 { background: var(--pl-top8-bg); color: #047857; }
+.pl-heat-detail .zones-sum .po { background: var(--pl-playoff-bg); color: #B45309; }
+.pl-heat-detail .zones-sum .el { background: var(--pl-elim-bg); color: #B91C1C; }
+
+.pl-heat-hint {
+    margin: 12px 16px 0;
+    font-size: 12px;
+    color: var(--pl-muted);
+}
+
 /* "How many points are enough?" breakdown under the standings */
 .pl-points-needed {
     padding: 10px 16px 24px;
