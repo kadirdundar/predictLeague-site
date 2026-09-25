@@ -851,7 +851,7 @@ body {
     background: var(--pl-playoff-bg);
     color: #B45309;
     letter-spacing: 0.02em;
-    /* uppercase would turn Turkish "i" into a dotless "I" without a lang attribute */
+    /* sentence case keeps the flag distinct from the uppercase caption it sits in */
     text-transform: none;
 }
 
@@ -1318,6 +1318,27 @@ body {
 }
 
 /* ---------- Table view ---------- */
+/* Header, outlook panels and standings scroll as one page; only the column headers stick */
+.pl-table-view {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background: var(--pl-card-bg);
+}
+
+.pl-table-view .pl-rows {
+    flex: none;
+    overflow: visible;
+}
+
+.pl-table-view .pl-table-col-headers {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
 .pl-table-header {
     flex-shrink: 0;
     padding: calc(16px + env(safe-area-inset-top, 0px)) 16px 16px;
@@ -1432,6 +1453,7 @@ body {
 
 .pl-outlook-grid.cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .pl-outlook-grid.cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.pl-outlook-grid.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 .pl-outlook-cell {
     display: flex;
@@ -1515,6 +1537,99 @@ body {
 .pl-row-divider.div-top8 { border-left: 3px solid var(--pl-win); }
 .pl-row-divider.div-playoff { border-left: 3px solid var(--pl-playoff); }
 .pl-row-divider.div-elim { border-left: 3px solid var(--pl-elim); }
+.pl-row-divider.div-points { border-left: 3px solid var(--pl-accent); margin-top: 12px; }
+
+/* "How many points are enough?" breakdown under the standings */
+.pl-points-needed {
+    padding: 10px 16px 24px;
+}
+
+.pl-points-needed .note {
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 1.45;
+    color: var(--pl-muted);
+}
+
+.pl-pn-row {
+    display: grid;
+    grid-template-columns: 64px 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 6px;
+    border-radius: var(--pl-radius-sm);
+}
+
+.pl-pn-row.head {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--pl-muted-2);
+}
+
+.pl-pn-row.me {
+    background: var(--pl-me-bg);
+    box-shadow: inset 3px 0 0 var(--pl-accent);
+}
+
+.pl-pn-row .pts {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--pl-ink);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.pl-pn-row.head .pts {
+    font-size: 10px;
+    color: var(--pl-muted-2);
+}
+
+.pl-pn-row .pts em {
+    margin-left: 4px;
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--pl-accent);
+}
+
+.pl-pn-bar {
+    position: relative;
+    height: 22px;
+    border-radius: 6px;
+    background: var(--pl-card-subtle);
+    overflow: hidden;
+}
+
+.pl-pn-bar i {
+    position: absolute;
+    inset: 0 auto 0 0;
+    border-radius: 6px;
+}
+
+.pl-pn-bar.top8 i { background: var(--pl-top8-bg); }
+.pl-pn-bar.top24 i { background: var(--pl-playoff-bg); }
+
+.pl-pn-bar b {
+    position: relative;
+    display: block;
+    padding: 0 8px;
+    line-height: 22px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--pl-ink-soft);
+    font-variant-numeric: tabular-nums;
+}
+
+.pl-pn-guide {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--pl-accent);
+    text-decoration: none;
+}
 
 .pl-row-divider .label {
     font-size: 10px;
