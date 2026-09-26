@@ -8,12 +8,6 @@
   <meta name="keywords" content="RB Leipzig fikstürü, RB Leipzig UCL maçları, RB Leipzig rakipleri, RB Leipzig puan durumu, UEFA Champions League simülatörü, puan durumu hesaplama" />
   <link rel="canonical" href="https://www.stagesimulator.com/teams/cl/rb-leipzig/" />
   
-  <link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/teams/cl/rb-leipzig/" />
-  <link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/teams/cl/rb-leipzig/?lang=tr" />
-  <link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/teams/cl/rb-leipzig/?lang=en" />
-  <link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/teams/cl/rb-leipzig/?lang=es" />
-  <link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/teams/cl/rb-leipzig/?lang=de" />
-  <link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/teams/cl/rb-leipzig/?lang=fr" />
   
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.stagesimulator.com/teams/cl/rb-leipzig/" />
@@ -29,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="/favicon.png" />
+  <script src="/js/analytics.js" async></script>
   
   <script type="application/ld+json">
   {
@@ -80,10 +75,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "RB Leipzig'in UEFA Champions League lig aşamasındaki 8 rakibi kimlerdir?",
+          "name": "RB Leipzig'in UEFA Champions League 2026/27 lig aşamasındaki rakipleri kimler?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "2026/27 UEFA Champions League lig aşamasında RB Leipzig şu rakiplerle oynayacaktır: Como, Feyenoord, Shakhtar Donetsk, Real Madrid, Lens, Manchester City, Manchester United, PSV Eindhoven (4 İç Saha, 4 Deplasman)."
+            "text": "RB Leipzig'in 8 rakibi: Como, Feyenoord, Shakhtar Donetsk, Real Madrid, Lens, Manchester City, Manchester United, PSV Eindhoven (4 iç saha, 4 deplasman)."
           }
         },
         {
@@ -91,23 +86,23 @@
           "name": "RB Leipzig ilk 8 veya play-off için kaç puana ihtiyaç duyar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "1.000 Monte Carlo simülasyonuna göre 15-16 puan doğrudan Son 16 (İlk 8) garantisi verirken, 9-10 puan Play-off (9-24) için yeterli olmaktadır."
+            "text": "UEFA Champions League lig aşamasında (8 maç, en fazla 24 puan) İlk 8 için 17 puan, Play-off (9-24) için 10 puan %90 ihtimalle yeterlidir. 15 puan İlk 8, 9 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-09-26)."
           }
         },
         {
           "@type": "Question",
-          "name": "RB Leipzig maç sonuçlarını nasıl tahmin edebilir ve lig tablosunu simüle edebilirim?",
+          "name": "RB Leipzig'in maç sonuçlarını nasıl tahmin edebilirim?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "PredictLeague simülatöründe RB Leipzig'in 8 maçına kendi skor veya sonuç tahminlerinizi girebilirsiniz. Kalan tüm maçlar Poisson Monte Carlo algoritmasıyla 1.000 kez simüle edilir ve takımınızın beklenen sırası hesaplanır."
+            "text": "Simülatörde RB Leipzig'in 8 maçına kendi skor tahminlerinizi girin; kalan tüm maçlar 1.000 kez simüle edilir ve RB Leipzig'in beklenen sırası, İlk 8 ve Play-off ihtimali anında hesaplanır."
           }
         },
         {
           "@type": "Question",
-          "name": "RB Leipzig'in güç puanı (Rating) nedir?",
+          "name": "RB Leipzig'in güç puanı (rating) kaç?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "RB Leipzig'in güç puanı 100 üzerinden 84'dir. Simülasyon motoru bu gücü ve iç saha avantajını kullanarak maç gol olasılıklarını Poisson dağılımı ile belirler."
+            "text": "RB Leipzig'in güç puanı 100 üzerinden 84. Simülasyon motoru bu puanı ve iç saha avantajını kullanarak her maçın gol olasılıklarını Poisson dağılımıyla belirler."
           }
         }
       ]
@@ -579,11 +574,18 @@ a { color: inherit; text-decoration: none; }
   font-size: 12.5px;
   font-weight: 700;
   color: var(--pl-ink);
+  margin: 0;
+}
+.pl-thr-table th, .pl-thr-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--pl-border);
+  text-align: left;
 }
 .pl-faq-a {
   font-size: 12px;
   color: var(--pl-muted);
   line-height: 1.5;
+  margin: 0;
 }
 
 /* Teams Chips Grid */
@@ -720,12 +722,12 @@ a { color: inherit; text-decoration: none; }
 
         <div class="pl-stats-row">
           <div class="pl-stat-box">
-            <div class="lbl">İlk 8 Barajı</div>
-            <div class="val top8">~15-16 Puan</div>
+            <div class="lbl">İlk 8 (%90)</div>
+            <div class="val top8">17 Puan</div>
           </div>
           <div class="pl-stat-box">
-            <div class="lbl">Play-off</div>
-            <div class="val playoff">~9-10 Puan</div>
+            <div class="lbl">Play-off (%90)</div>
+            <div class="val playoff">10 Puan</div>
           </div>
           <div class="pl-stat-box">
             <div class="lbl">Saha</div>
@@ -738,8 +740,8 @@ a { color: inherit; text-decoration: none; }
         </a>
       </section>
 
-      <div class="pl-section-title">📅 8 Maçlık Lig Aşaması Fikstürü</div>
-      
+      <h2 class="pl-section-title">📅 RB Leipzig UCL Fikstürü (8 Maç)</h2>
+
       <div class="pl-match-list">
         
         <div class="pl-match-card">
@@ -856,25 +858,30 @@ a { color: inherit; text-decoration: none; }
         
       </div>
 
-      <div class="pl-section-title">❓ Sıkça Sorulan Sorular</div>
+      <h2 class="pl-section-title">❓ Sıkça Sorulan Sorular</h2>
       <div class="pl-faq-box">
+        
         <div class="pl-faq-unit">
-          <div class="pl-faq-q">RB Leipzig'in 8 rakibi kimlerdir?</div>
-          <div class="pl-faq-a">RB Leipzig, yeni 36 takımlı lig formatında şu 8 takımla oynayacaktır: <strong>Como, Feyenoord, Shakhtar Donetsk, Real Madrid, Lens, Manchester City, Manchester United, PSV Eindhoven</strong> (4 İç Saha, 4 Deplasman).</div>
+          <h3 class="pl-faq-q">RB Leipzig'in UEFA Champions League 2026/27 lig aşamasındaki rakipleri kimler?</h3>
+          <p class="pl-faq-a">RB Leipzig'in 8 rakibi: <strong>Como, Feyenoord, Shakhtar Donetsk, Real Madrid, Lens, Manchester City, Manchester United, PSV Eindhoven</strong> (4 iç saha, 4 deplasman).</p>
         </div>
         <div class="pl-faq-unit">
-          <div class="pl-faq-q">RB Leipzig ilk 8 veya play-off için kaç puana ihtiyaç duyar?</div>
-          <div class="pl-faq-a">Monte Carlo simülasyonlarına göre 15-16 puan doğrudan Son 16 (İlk 8) garantisi sağlarken, 9-10 puan Play-off (9-24) sıraları için yeterli olmaktadır.</div>
+          <h3 class="pl-faq-q">RB Leipzig ilk 8 veya play-off için kaç puana ihtiyaç duyar?</h3>
+          <p class="pl-faq-a">UEFA Champions League lig aşamasında (8 maç, en fazla 24 puan) İlk 8 için 17 puan, Play-off (9-24) için 10 puan %90 ihtimalle yeterlidir. 15 puan İlk 8, 9 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-09-26).</p>
         </div>
         <div class="pl-faq-unit">
-          <div class="pl-faq-q">RB Leipzig maç sonuçlarını nasıl tahmin edebilirim?</div>
-          <div class="pl-faq-a">Yukarıdaki <strong>'⚡ Simüle Et'</strong> butonuna tıklayarak RB Leipzig'in maç skorlarını değiştirebilir, simülatörün 1.000 Monte Carlo tekrarıyla hesapladığı tahmini sıralamayı anında görebilirsiniz.</div>
+          <h3 class="pl-faq-q">RB Leipzig'in maç sonuçlarını nasıl tahmin edebilirim?</h3>
+          <p class="pl-faq-a"><a href="https://www.stagesimulator.com/?comp=cl&team=rb-leipzig">Simülatörde</a> RB Leipzig'in 8 maçına kendi skor tahminlerinizi girin; kalan tüm maçlar 1.000 kez simüle edilir ve RB Leipzig'in beklenen sırası, İlk 8 ve Play-off ihtimali anında hesaplanır.</p>
         </div>
         <div class="pl-faq-unit">
-          <div class="pl-faq-q">Simülasyon motoru nasıl çalışır?</div>
-          <div class="pl-faq-a">Simülasyon motoru her takımın güç puanını (84/100) ve iç saha avantajını dikkate alarak Poisson dağılımı ile 1.000 olası lig senaryosu üretir ve ortalama puan/sıralama çıkarır.</div>
+          <h3 class="pl-faq-q">RB Leipzig'in güç puanı (rating) kaç?</h3>
+          <p class="pl-faq-a">RB Leipzig'in güç puanı 100 üzerinden 84. Simülasyon motoru bu puanı ve iç saha avantajını kullanarak her maçın gol olasılıklarını Poisson dağılımıyla belirler.</p>
         </div>
       </div>
+
+      <a href="https://www.stagesimulator.com/?comp=cl&team=rb-leipzig" class="pl-large-cta" style="margin-top: 14px;">
+        <span>⚡ RB Leipzig Senaryonu Simüle Et</span>
+      </a>
 
       <div class="pl-section-title">🌍 UCL Diğer Takımlar</div>
       <div class="pl-chips-grid">
@@ -1062,7 +1069,8 @@ a { color: inherit; text-decoration: none; }
       <div style="margin-top: 6px;">
         <a href="/">Simülatör</a> ·
         <a href="/fixtures/">Tüm Fikstürler</a> ·
-        <a href="/guide/swiss-format-points-needed/">Format Rehberi</a>
+        <a href="/guide/swiss-format-points-needed/">Format Rehberi</a> ·
+        <a href="/privacy/">Gizlilik</a>
       </div>
     </footer>
   </div>

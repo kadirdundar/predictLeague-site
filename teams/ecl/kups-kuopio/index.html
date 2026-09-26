@@ -8,12 +8,6 @@
   <meta name="keywords" content="KuPS Kuopio fikstürü, KuPS Kuopio UECL maçları, KuPS Kuopio rakipleri, KuPS Kuopio puan durumu, UEFA Conference League simülatörü, puan durumu hesaplama" />
   <link rel="canonical" href="https://www.stagesimulator.com/teams/ecl/kups-kuopio/" />
   
-  <link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/teams/ecl/kups-kuopio/" />
-  <link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/teams/ecl/kups-kuopio/?lang=tr" />
-  <link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/teams/ecl/kups-kuopio/?lang=en" />
-  <link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/teams/ecl/kups-kuopio/?lang=es" />
-  <link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/teams/ecl/kups-kuopio/?lang=de" />
-  <link rel="alternate" hreflang="fr" href="https://www.stagesimulator.com/teams/ecl/kups-kuopio/?lang=fr" />
   
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.stagesimulator.com/teams/ecl/kups-kuopio/" />
@@ -29,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="/favicon.png" />
+  <script src="/js/analytics.js" async></script>
   
   <script type="application/ld+json">
   {
@@ -80,10 +75,10 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "KuPS Kuopio'in UEFA Conference League lig aşamasındaki 8 rakibi kimlerdir?",
+          "name": "KuPS Kuopio'in UEFA Conference League 2026/27 lig aşamasındaki rakipleri kimler?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "2026/27 UEFA Conference League lig aşamasında KuPS Kuopio şu rakiplerle oynayacaktır: Trabzonspor, FC Twente, FC Midtjylland, FC Copenhagen, CSKA Sofia, Ajax (1 İç Saha, 5 Deplasman)."
+            "text": "KuPS Kuopio'in 6 rakibi: Trabzonspor, FC Twente, FC Midtjylland, FC Copenhagen, CSKA Sofia, Ajax (1 iç saha, 5 deplasman)."
           }
         },
         {
@@ -91,23 +86,23 @@
           "name": "KuPS Kuopio ilk 8 veya play-off için kaç puana ihtiyaç duyar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "1.000 Monte Carlo simülasyonuna göre 15-16 puan doğrudan Son 16 (İlk 8) garantisi verirken, 9-10 puan Play-off (9-24) için yeterli olmaktadır."
+            "text": "UEFA Conference League lig aşamasında (6 maç, en fazla 18 puan) İlk 8 için 14 puan, Play-off (9-24) için 8 puan %90 ihtimalle yeterlidir. 13 puan İlk 8, 7 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-09-26)."
           }
         },
         {
           "@type": "Question",
-          "name": "KuPS Kuopio maç sonuçlarını nasıl tahmin edebilir ve lig tablosunu simüle edebilirim?",
+          "name": "KuPS Kuopio'in maç sonuçlarını nasıl tahmin edebilirim?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "PredictLeague simülatöründe KuPS Kuopio'in 8 maçına kendi skor veya sonuç tahminlerinizi girebilirsiniz. Kalan tüm maçlar Poisson Monte Carlo algoritmasıyla 1.000 kez simüle edilir ve takımınızın beklenen sırası hesaplanır."
+            "text": "Simülatörde KuPS Kuopio'in 6 maçına kendi skor tahminlerinizi girin; kalan tüm maçlar 1.000 kez simüle edilir ve KuPS Kuopio'in beklenen sırası, İlk 8 ve Play-off ihtimali anında hesaplanır."
           }
         },
         {
           "@type": "Question",
-          "name": "KuPS Kuopio'in güç puanı (Rating) nedir?",
+          "name": "KuPS Kuopio'in güç puanı (rating) kaç?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "KuPS Kuopio'in güç puanı 100 üzerinden 70'dir. Simülasyon motoru bu gücü ve iç saha avantajını kullanarak maç gol olasılıklarını Poisson dağılımı ile belirler."
+            "text": "KuPS Kuopio'in güç puanı 100 üzerinden 70. Simülasyon motoru bu puanı ve iç saha avantajını kullanarak her maçın gol olasılıklarını Poisson dağılımıyla belirler."
           }
         }
       ]
@@ -579,11 +574,18 @@ a { color: inherit; text-decoration: none; }
   font-size: 12.5px;
   font-weight: 700;
   color: var(--pl-ink);
+  margin: 0;
+}
+.pl-thr-table th, .pl-thr-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--pl-border);
+  text-align: left;
 }
 .pl-faq-a {
   font-size: 12px;
   color: var(--pl-muted);
   line-height: 1.5;
+  margin: 0;
 }
 
 /* Teams Chips Grid */
@@ -720,12 +722,12 @@ a { color: inherit; text-decoration: none; }
 
         <div class="pl-stats-row">
           <div class="pl-stat-box">
-            <div class="lbl">İlk 8 Barajı</div>
-            <div class="val top8">~15-16 Puan</div>
+            <div class="lbl">İlk 8 (%90)</div>
+            <div class="val top8">14 Puan</div>
           </div>
           <div class="pl-stat-box">
-            <div class="lbl">Play-off</div>
-            <div class="val playoff">~9-10 Puan</div>
+            <div class="lbl">Play-off (%90)</div>
+            <div class="val playoff">8 Puan</div>
           </div>
           <div class="pl-stat-box">
             <div class="lbl">Saha</div>
@@ -738,8 +740,8 @@ a { color: inherit; text-decoration: none; }
         </a>
       </section>
 
-      <div class="pl-section-title">📅 8 Maçlık Lig Aşaması Fikstürü</div>
-      
+      <h2 class="pl-section-title">📅 KuPS Kuopio UECL Fikstürü (6 Maç)</h2>
+
       <div class="pl-match-list">
         
         <div class="pl-match-card">
@@ -828,25 +830,30 @@ a { color: inherit; text-decoration: none; }
         
       </div>
 
-      <div class="pl-section-title">❓ Sıkça Sorulan Sorular</div>
+      <h2 class="pl-section-title">❓ Sıkça Sorulan Sorular</h2>
       <div class="pl-faq-box">
+        
         <div class="pl-faq-unit">
-          <div class="pl-faq-q">KuPS Kuopio'in 8 rakibi kimlerdir?</div>
-          <div class="pl-faq-a">KuPS Kuopio, yeni 36 takımlı lig formatında şu 8 takımla oynayacaktır: <strong>Trabzonspor, FC Twente, FC Midtjylland, FC Copenhagen, CSKA Sofia, Ajax</strong> (1 İç Saha, 5 Deplasman).</div>
+          <h3 class="pl-faq-q">KuPS Kuopio'in UEFA Conference League 2026/27 lig aşamasındaki rakipleri kimler?</h3>
+          <p class="pl-faq-a">KuPS Kuopio'in 6 rakibi: <strong>Trabzonspor, FC Twente, FC Midtjylland, FC Copenhagen, CSKA Sofia, Ajax</strong> (1 iç saha, 5 deplasman).</p>
         </div>
         <div class="pl-faq-unit">
-          <div class="pl-faq-q">KuPS Kuopio ilk 8 veya play-off için kaç puana ihtiyaç duyar?</div>
-          <div class="pl-faq-a">Monte Carlo simülasyonlarına göre 15-16 puan doğrudan Son 16 (İlk 8) garantisi sağlarken, 9-10 puan Play-off (9-24) sıraları için yeterli olmaktadır.</div>
+          <h3 class="pl-faq-q">KuPS Kuopio ilk 8 veya play-off için kaç puana ihtiyaç duyar?</h3>
+          <p class="pl-faq-a">UEFA Conference League lig aşamasında (6 maç, en fazla 18 puan) İlk 8 için 14 puan, Play-off (9-24) için 8 puan %90 ihtimalle yeterlidir. 13 puan İlk 8, 7 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-09-26).</p>
         </div>
         <div class="pl-faq-unit">
-          <div class="pl-faq-q">KuPS Kuopio maç sonuçlarını nasıl tahmin edebilirim?</div>
-          <div class="pl-faq-a">Yukarıdaki <strong>'⚡ Simüle Et'</strong> butonuna tıklayarak KuPS Kuopio'in maç skorlarını değiştirebilir, simülatörün 1.000 Monte Carlo tekrarıyla hesapladığı tahmini sıralamayı anında görebilirsiniz.</div>
+          <h3 class="pl-faq-q">KuPS Kuopio'in maç sonuçlarını nasıl tahmin edebilirim?</h3>
+          <p class="pl-faq-a"><a href="https://www.stagesimulator.com/?comp=ecl&team=kups-kuopio">Simülatörde</a> KuPS Kuopio'in 6 maçına kendi skor tahminlerinizi girin; kalan tüm maçlar 1.000 kez simüle edilir ve KuPS Kuopio'in beklenen sırası, İlk 8 ve Play-off ihtimali anında hesaplanır.</p>
         </div>
         <div class="pl-faq-unit">
-          <div class="pl-faq-q">Simülasyon motoru nasıl çalışır?</div>
-          <div class="pl-faq-a">Simülasyon motoru her takımın güç puanını (70/100) ve iç saha avantajını dikkate alarak Poisson dağılımı ile 1.000 olası lig senaryosu üretir ve ortalama puan/sıralama çıkarır.</div>
+          <h3 class="pl-faq-q">KuPS Kuopio'in güç puanı (rating) kaç?</h3>
+          <p class="pl-faq-a">KuPS Kuopio'in güç puanı 100 üzerinden 70. Simülasyon motoru bu puanı ve iç saha avantajını kullanarak her maçın gol olasılıklarını Poisson dağılımıyla belirler.</p>
         </div>
       </div>
+
+      <a href="https://www.stagesimulator.com/?comp=ecl&team=kups-kuopio" class="pl-large-cta" style="margin-top: 14px;">
+        <span>⚡ KuPS Kuopio Senaryonu Simüle Et</span>
+      </a>
 
       <div class="pl-section-title">🌍 UECL Diğer Takımlar</div>
       <div class="pl-chips-grid">
@@ -1034,7 +1041,8 @@ a { color: inherit; text-decoration: none; }
       <div style="margin-top: 6px;">
         <a href="/">Simülatör</a> ·
         <a href="/fixtures/">Tüm Fikstürler</a> ·
-        <a href="/guide/swiss-format-points-needed/">Format Rehberi</a>
+        <a href="/guide/swiss-format-points-needed/">Format Rehberi</a> ·
+        <a href="/privacy/">Gizlilik</a>
       </div>
     </footer>
   </div>

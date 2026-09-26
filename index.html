@@ -20,11 +20,13 @@
         var params = new URLSearchParams(window.location.search);
         var comp = params.get('comp');
         var team = params.get('team');
-        if (comp && team) {
-          var canLink = document.querySelector("link[rel='canonical']");
-          if (canLink) {
-            canLink.setAttribute("href", "https://www.stagesimulator.com/teams/" + encodeURIComponent(comp) + "/" + encodeURIComponent(team) + "/");
-          }
+        var lang = params.get('lang');
+        var canLink = document.querySelector("link[rel='canonical']");
+        if (canLink && comp && team) {
+          canLink.setAttribute("href", "https://www.stagesimulator.com/teams/" + encodeURIComponent(comp) + "/" + encodeURIComponent(team) + "/");
+        } else if (canLink && /^(tr|en|es|de|fr)$/.test(lang || '')) {
+          // Each language variant listed in hreflang must be its own canonical, or Google drops the alternates
+          canLink.setAttribute("href", "https://www.stagesimulator.com/?lang=" + lang);
         }
       } catch(e){}
     </script>
@@ -69,6 +71,7 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
     <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+    <script src="js/analytics.js" async></script>
     
     <base href="/" />
     
@@ -253,7 +256,7 @@
                         <!-- END_TEAMS_INDEX -->
 
                         <div style="border-top: 1px solid #EEF2F6; padding-top: 8px; font-size: 11.5px; color: #64748B;">
-                            <p style="margin-bottom: 4px;"><strong>Monte Carlo Simülatörü Nasıl Çalışır?</strong> 1.000 simülasyon iterasyonunda takım güç puanları (ELO) ve Poisson gol dağılımı kullanılarak kalan maçlar simüle edilir. 15-16 puan doğrudan Son 16 (İlk 8), 9-10 puan Play-off (9-24) sıralamasını garantiler.</p>
+                            <p style="margin-bottom: 4px;"><strong>Monte Carlo Simülatörü Nasıl Çalışır?</strong> 1.000 simülasyon iterasyonunda takım güç puanları (ELO) ve Poisson gol dağılımı kullanılarak kalan maçlar simüle edilir. Hangi puanın İlk 8 ve Play-off için yettiğini <a href="/guide/swiss-format-points-needed/">puan barajları rehberinde</a> görebilirsiniz. · <a href="/privacy/">Gizlilik</a></p>
                         </div>
                     </div>
                 </div>
