@@ -23,7 +23,15 @@
         var lang = params.get('lang');
         var canLink = document.querySelector("link[rel='canonical']");
         if (canLink && comp && team) {
-          canLink.setAttribute("href", "https://www.stagesimulator.com/teams/" + encodeURIComponent(comp) + "/" + encodeURIComponent(team) + "/");
+          // Point at the team's static page only if it exists: old share links can name teams from past
+          // seasons, and a canonical to a 404 is worse than the home page. The pre-hydration shell below
+          // links every current team page, so check it once the HTML is parsed (before Blazor replaces it).
+          document.addEventListener('DOMContentLoaded', function () {
+            var path = "/teams/" + comp + "/" + team + "/";
+            if (document.querySelector('#app a[href="' + path.replace(/"/g, '') + '"]')) {
+              canLink.setAttribute("href", "https://www.stagesimulator.com" + path);
+            }
+          });
         } else if (canLink && /^(tr|en|es|de|fr)$/.test(lang || '')) {
           // Each language variant listed in hreflang must be its own canonical, or Google drops the alternates
           canLink.setAttribute("href", "https://www.stagesimulator.com/?lang=" + lang);
