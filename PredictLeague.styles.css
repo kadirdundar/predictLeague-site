@@ -945,3 +945,61 @@ input[type=range][b-sqmwahb4xx]::-moz-range-thumb {
     color: rgba(32, 30, 29, 0.7);
     margin: 0 0 10px;
 }
+
+/* Guide section under the home screen (crawlable how-it-works, prices and FAQ) */
+.fs-guide[b-sqmwahb4xx] {
+    margin-top: 34px;
+    border-top: 2px solid rgba(32, 30, 29, 0.4);
+    padding-top: 6px;
+}
+
+.fs-guide h2[b-sqmwahb4xx] {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -.01em;
+    color: #201e1d;
+    margin: 22px 0 8px;
+}
+
+.fs-guide h3[b-sqmwahb4xx] {
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: #ae1800;
+    font-weight: 800;
+    margin: 16px 0 6px;
+}
+
+.fs-guide p[b-sqmwahb4xx] {
+    font-size: 13px;
+    line-height: 1.55;
+    color: rgba(32, 30, 29, 0.8);
+    margin: 0 0 10px;
+}
+
+.fs-guide-table[b-sqmwahb4xx] {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.fs-guide-table th[b-sqmwahb4xx],
+.fs-guide-table td[b-sqmwahb4xx] {
+    text-align: left;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(32, 30, 29, 0.2);
+}
+
+.fs-guide-table th[b-sqmwahb4xx] {
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: rgba(32, 30, 29, 0.55);
+}
+
+.fs-guide-table td:not(:first-child)[b-sqmwahb4xx],
+.fs-guide-table th:not(:first-child)[b-sqmwahb4xx] {
+    text-align: right;
+    font-weight: 700;
+}

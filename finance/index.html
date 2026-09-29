@@ -60,6 +60,15 @@
     body { margin: 0; background: #d7d3d3; font-family: 'Archivo', system-ui, -apple-system, sans-serif; color: #201e1d; }
     .fs-outer { min-height: 100vh; background: #d7d3d3; display: flex; justify-content: center; }
     .fs-shell { width: 100%; max-width: 480px; background: #f3f2f2; min-height: 100vh; box-shadow: 0 0 35px rgba(0,0,0,0.12); display: flex; flex-direction: column; }
+    /* Mirrors .fs-guide in Pages/FinanceSimulator.razor.css (scoped CSS does not reach this static shell) */
+    .fs-guide { margin-top: 34px; border-top: 2px solid rgba(32, 30, 29, 0.4); padding-top: 6px; }
+    .fs-guide h2 { font-size: 18px; font-weight: 800; letter-spacing: -.01em; color: #201e1d; margin: 22px 0 8px; }
+    .fs-guide h3 { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #ae1800; font-weight: 800; margin: 16px 0 6px; }
+    .fs-guide p { font-size: 13px; line-height: 1.55; color: rgba(32, 30, 29, 0.8); margin: 0 0 10px; }
+    .fs-guide-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 8px; }
+    .fs-guide-table th, .fs-guide-table td { text-align: left; padding: 7px 0; border-bottom: 1px solid rgba(32, 30, 29, 0.2); }
+    .fs-guide-table th { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: rgba(32, 30, 29, 0.55); }
+    .fs-guide-table td:not(:first-child), .fs-guide-table th:not(:first-child) { text-align: right; font-weight: 700; }
   </style>
 </head>
 <body>
@@ -117,6 +126,30 @@
               <div style="font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: rgba(32, 30, 29, 0.55); font-weight: 700;">Milyarder Cüzdanı</div>
             </div>
           </div>
+
+          <section class="fs-guide">
+            <h2>Spend It All nasıl oynanır?</h2>
+            <p>İki modu var. Gelecekteki Ben'de aylık birikimini, başlangıç paranı, süreyi, yıllık getiriyi ve enflasyonu seçersin; bileşik getiriyle biriken tutar mağazadaki bütçen olur. Zengin Modu'nda bir milyarderin servetini alır ve 28 ürünlük mağazada sıfırlamaya çalışırsın. Sonunda harcamalarının dökümünü gösteren bir fiş alırsın.</p>
+
+            <h2>Bileşik getiri nasıl hesaplanır?</h2>
+            <p>Yıllık getiri 12'ye bölünüp her ay uygulanır: gelecekteki değer = başlangıç × (1 + i)ⁿ + aylık × ((1 + i)ⁿ − 1) / i. Örneğin $5,000 başlangıç ve ayda $500 birikimle, yıllık %7 getiriyle 10 yıl sonra $96,591 birikir. Bunun $65,000 kadarı senin yatırdığın para, $31,591 kadarı getiri. Yıllık %4 enflasyonla bugünkü alım gücü karşılığı $65,253 olur.</p>
+
+            <h2>1 milyar dolar ne kadar para?</h2>
+            <p>Her gün 10.000 dolar harcasan 1 milyar doları bitirmen 274 yıl sürer. Oyundaki fiyatlarla 1 milyar dolar; 28.571 sıfır araba, 66 özel jet ya da 3 tane 110 metrelik mega yat eder.</p>
+
+            <h2>Oyundaki milyarderlerin serveti ne kadar?</h2>
+            <p>Oyunda kullanılan yaklaşık servet değerleri ve her birinin kaç özel jete denk geldiği:</p>
+            <table class="fs-guide-table">
+              <thead><tr><th>Kişi</th><th>Servet</th><th>Özel jet</th></tr></thead>
+              <tbody><tr><td>Elon Musk</td><td>$415B</td><td>27,666</td></tr><tr><td>Jeff Bezos</td><td>$245B</td><td>16,333</td></tr><tr><td>Mark Zuckerberg</td><td>$205B</td><td>13,666</td></tr><tr><td>Bernard Arnault</td><td>$180B</td><td>12,000</td></tr><tr><td>Taylor Swift</td><td>$1.6B</td><td>106</td></tr><tr><td>Cristiano Ronaldo</td><td>$1.4B</td><td>93</td></tr></tbody>
+            </table>
+
+            <h2>Mağazada neler var, fiyatları ne kadar?</h2>
+            <h3>Günlük</h3><table class="fs-guide-table"><tbody><tr><td>Yeni nesil akıllı telefon</td><td>$1,200</td></tr><tr><td>Oyun konsolu + 5 oyun</td><td>$800</td></tr><tr><td>Koleksiyon spor ayakkabı</td><td>$350</td></tr><tr><td>Profesyonel espresso makinesi</td><td>$900</td></tr><tr><td>Karbon yol bisikleti</td><td>$2,400</td></tr><tr><td>Sinema çekim dronu</td><td>$1,800</td></tr><tr><td>Üst seviye iş/oyun bilgisayarı</td><td>$3,200</td></tr><tr><td>İsviçre dalgıç saati</td><td>$6,500</td></tr></tbody></table><h3>Yaşam & Yatırım</h3><table class="fs-guide-table"><tbody><tr><td>Sıfır kilometre araba</td><td>$35,000</td></tr><tr><td>Dünya turu seyahati</td><td>$25,000</td></tr><tr><td>Ev peşinatı</td><td>$80,000</td></tr><tr><td>Elektrikli lüks sedan</td><td>$95,000</td></tr><tr><td>2 Yıllık MBA eğitimi</td><td>$140,000</td></tr><tr><td>Şehir merkezinde daire</td><td>$320,000</td></tr><tr><td>Müstakil villa</td><td>$500,000</td></tr><tr><td>Butik üzüm bağı</td><td>$1,400,000</td></tr></tbody></table><h3>Ultra Lüks</h3><table class="fs-guide-table"><tbody><tr><td>Hiper otomobil</td><td>$3,000,000</td></tr><tr><td>Özel jet</td><td>$15,000,000</td></tr><tr><td>Özel ada</td><td>$50,000,000</td></tr><tr><td>Özel lüks tatil köyü</td><td>$67,000,000</td></tr><tr><td>Orijinal bir Picasso tablosu</td><td>$120,000,000</td></tr><tr><td>110 metre mega yat</td><td>$300,000,000</td></tr><tr><td>Şehir merkezinde gökdelen</td><td>$800,000,000</td></tr><tr><td>Formula 1 takımı</td><td>$900,000,000</td></tr><tr><td>Avrupa futbol kulübü</td><td>$1,200,000,000</td></tr><tr><td>NBA kulübü</td><td>$4,000,000,000</td></tr><tr><td>Bölgesel havayolu şirketi</td><td>$6,500,000,000</td></tr><tr><td>Küresel yatırım bankası</td><td>$25,000,000,000</td></tr></tbody></table>
+
+            <h2>Fiyatlar ve servetler gerçek mi?</h2>
+            <p>Hepsi ABD doları cinsinden, yuvarlanmış ve temsili tahminlerdir; gerçek fiyatlar ve servetler zamanla değişir. Bu bir oyundur, yatırım tavsiyesi değildir.</p>
+          </section>
         </div>
 
       </div>
