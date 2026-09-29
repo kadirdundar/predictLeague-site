@@ -1003,3 +1003,29 @@ input[type=range][b-sqmwahb4xx]::-moz-range-thumb {
     text-align: right;
     font-weight: 700;
 }
+
+/* "How long on minimum wage?" comparisons (Turkish UI) */
+.fs-wage-line[b-sqmwahb4xx] {
+    font-size: 11px;
+    font-weight: 700;
+    color: #ae1800;
+    margin-top: 3px;
+}
+
+.fs-wage-receipt[b-sqmwahb4xx] {
+    font-size: 14px;
+    line-height: 1.45;
+    color: #201e1d;
+    margin: 14px 0 4px;
+}
+
+.fs-wage-receipt strong[b-sqmwahb4xx] {
+    color: #ae1800;
+}
+
+.fs-wage-source[b-sqmwahb4xx] {
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: rgba(32, 30, 29, 0.55);
+    margin: 0 0 12px;
+}
