@@ -53,6 +53,10 @@ window.predictLeagueShare = {
         if (document.fonts && document.fonts.ready) {
             try { await document.fonts.ready; } catch (e) { }
         }
+        // The finance game's receipt card reuses every share path below (Instagram, X, download)
+        if (data && data.kind === 'receipt') {
+            return this.drawReceiptCanvas(data);
+        }
 
         const W = 1080;
         const H = 1350;
@@ -335,6 +339,205 @@ window.predictLeagueShare = {
         return canvas;
     },
 
+    // Splits text into lines that fit maxWidth (at most maxLines, the last one truncated)
+    wrapText: function (ctx, text, maxWidth, maxLines) {
+        const words = (text || '').split(' ');
+        const lines = [];
+        let line = '';
+        for (const word of words) {
+            const test = line ? line + ' ' + word : word;
+            if (ctx.measureText(test).width > maxWidth && line) {
+                lines.push(line);
+                line = word;
+            } else {
+                line = test;
+            }
+        }
+        if (line) lines.push(line);
+        if (lines.length > maxLines) {
+            lines.length = maxLines;
+            lines[maxLines - 1] = this.truncateText(ctx, lines[maxLines - 1] + '…', maxWidth);
+        }
+        return lines;
+    },
+
+    // Person next to a cube of banknotes, to scale; same layout as Components/MoneyScale.razor
+    drawMoneyScale: function (ctx, x, y, w, h, sideM, labels) {
+        const personH = 1.75;
+        const groundY = y + h - 10;
+        const gap = Math.max(0.35, sideM * 0.25);
+        const k = Math.min((h - 60) / Math.max(personH, sideM * 1.3), (w - 40) / (0.6 + gap + sideM * 1.35));
+        const Y = (m) => groundY - m * k;
+        const personCx = x + 20 + 0.3 * k;
+        const cubeX = x + 20 + (0.6 + gap) * k;
+        const sidePx = Math.max(2, sideM * k);
+        const depth = sidePx * 0.3;
+
+        ctx.strokeStyle = 'rgba(32, 30, 29, 0.45)';
+        ctx.lineWidth = 3;
+        ctx.beginPath(); ctx.moveTo(x, groundY); ctx.lineTo(x + w, groundY); ctx.stroke();
+
+        // Person
+        ctx.fillStyle = '#201e1d';
+        const rect = (cx, top, width, height) => {
+            this.drawRoundRect(ctx, cx, Y(top), width * k, height * k, Math.min(0.05 * k, 12), '#201e1d');
+        };
+        ctx.beginPath(); ctx.arc(personCx, Y(personH - 0.11), 0.11 * k, 0, Math.PI * 2); ctx.fill();
+        rect(personCx - 0.18 * k, 1.50, 0.36, 0.66);
+        rect(personCx - 0.28 * k, 1.47, 0.09, 0.60);
+        rect(personCx + 0.19 * k, 1.47, 0.09, 0.60);
+        rect(personCx - 0.15 * k, 0.86, 0.13, 0.86);
+        rect(personCx + 0.02 * k, 0.86, 0.13, 0.86);
+
+        // Cube: top, side, front with band lines
+        const top = Y(sideM);
+        ctx.lineWidth = 2;
+        ctx.strokeStyle = '#3f5e33';
+        const poly = (pts, fill) => {
+            ctx.beginPath();
+            pts.forEach(([px, py], i) => i ? ctx.lineTo(px, py) : ctx.moveTo(px, py));
+            ctx.closePath();
+            ctx.fillStyle = fill; ctx.fill(); ctx.stroke();
+        };
+        poly([[cubeX, top], [cubeX + depth, top - depth], [cubeX + sidePx + depth, top - depth], [cubeX + sidePx, top]], '#a9cb95');
+        poly([[cubeX + sidePx, top], [cubeX + sidePx + depth, top - depth], [cubeX + sidePx + depth, groundY - depth], [cubeX + sidePx, groundY]], '#5e8a4c');
+        poly([[cubeX, top], [cubeX + sidePx, top], [cubeX + sidePx, groundY], [cubeX, groundY]], '#7fa96a');
+        const bands = Math.max(1, Math.min(14, Math.floor(sidePx / 14)));
+        ctx.strokeStyle = 'rgba(47, 74, 38, 0.45)';
+        ctx.lineWidth = 1.5;
+        for (let i = 1; i < bands; i++) {
+            const by = top + sidePx * i / bands;
+            ctx.beginPath(); ctx.moveTo(cubeX, by); ctx.lineTo(cubeX + sidePx, by); ctx.stroke();
+        }
+
+        // Labels
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#201e1d';
+        ctx.font = '800 26px "Archivo", sans-serif';
+        ctx.fillText(labels.side, cubeX + sidePx / 2, Math.min(top - depth - 12, groundY - 16));
+        ctx.font = '700 22px "Archivo", sans-serif';
+        ctx.fillStyle = 'rgba(32, 30, 29, 0.7)';
+        if (personH * k < 40) {
+            ctx.strokeStyle = '#201e1d';
+            ctx.setLineDash([5, 5]);
+            ctx.beginPath(); ctx.moveTo(personCx, Y(personH) - 8); ctx.lineTo(personCx, groundY - 90); ctx.stroke();
+            ctx.setLineDash([]);
+            ctx.fillText(labels.person, personCx, groundY - 100);
+        } else {
+            ctx.fillText(labels.personHeight, personCx, Y(personH) - 12);
+        }
+    },
+
+    // Finance game receipt card (1080 x 1350), in the game's own look: paper grey, ink, red accents
+    drawReceiptCanvas: function (d) {
+        const W = 1080, H = 1350, M = 72;
+        const canvas = document.createElement('canvas');
+        canvas.width = W;
+        canvas.height = H;
+        const ctx = canvas.getContext('2d');
+        const ink = '#201e1d', red = '#ae1800', muted = 'rgba(32, 30, 29, 0.6)', rule = 'rgba(32, 30, 29, 0.4)';
+        const font = (weight, size) => `${weight} ${size}px "Archivo", system-ui, sans-serif`;
+        const hr = (y, width) => { ctx.fillStyle = rule; ctx.fillRect(M, y, W - 2 * M, width || 3); };
+
+        ctx.fillStyle = '#f3f2f2';
+        ctx.fillRect(0, 0, W, H);
+
+        // Header
+        ctx.textBaseline = 'alphabetic';
+        ctx.fillStyle = ink;
+        ctx.font = font(800, 34);
+        ctx.textAlign = 'left';
+        ctx.fillText(d.brand, M, 118);
+        ctx.fillStyle = red;
+        ctx.font = font(800, 26);
+        ctx.textAlign = 'right';
+        ctx.fillText(d.badge, W - M, 116);
+        hr(146);
+
+        // Verdict and whose money
+        let y = 236;
+        ctx.textAlign = 'left';
+        ctx.fillStyle = ink;
+        ctx.font = font(800, 72);
+        for (const line of this.wrapText(ctx, d.verdict, W - 2 * M, 2)) {
+            ctx.fillText(line, M, y);
+            y += 80;
+        }
+        ctx.fillStyle = muted;
+        ctx.font = font(600, 32);
+        ctx.fillText(this.truncateText(ctx, d.subtitle, W - 2 * M), M, y);
+        y += 40;
+        hr(y);
+        y += 62;
+
+        // Receipt lines
+        ctx.font = font(600, 32);
+        for (const l of d.lines) {
+            ctx.fillStyle = red;
+            ctx.font = font(800, 32);
+            ctx.textAlign = 'left';
+            ctx.fillText(l.qty, M, y);
+            ctx.fillStyle = ink;
+            ctx.textAlign = 'right';
+            ctx.fillText(l.total, W - M, y);
+            const totalW = ctx.measureText(l.total).width;
+            ctx.font = font(600, 32);
+            ctx.textAlign = 'left';
+            ctx.fillText(this.truncateText(ctx, l.name, W - 2 * M - totalW - 130), M + 100, y);
+            y += 58;
+        }
+        if (d.moreLine) {
+            ctx.fillStyle = muted;
+            ctx.font = font(600, 28);
+            ctx.fillText(d.moreLine, M + 100, y - 8);
+            y += 44;
+        }
+        hr(y - 30, 2);
+        y += 22;
+        ctx.fillStyle = ink;
+        ctx.font = font(800, 38);
+        ctx.textAlign = 'left';
+        ctx.fillText(d.totalLabel, M, y);
+        ctx.textAlign = 'right';
+        ctx.fillText(d.total, W - M, y);
+        y += 40;
+        hr(y);
+
+        // Bottom block: minimum wage punchline (Turkish) on the left, to-scale drawing on the right
+        const blockTop = y + 40, blockBottom = H - 150;
+        const drawX = d.wage ? 560 : M, drawW = W - M - drawX;
+        if (d.wage) {
+            ctx.textAlign = 'left';
+            ctx.fillStyle = muted;
+            ctx.font = font(700, 28);
+            let wy = blockTop + 50;
+            for (const line of this.wrapText(ctx, d.wageLabel, 440, 3)) { ctx.fillText(line, M, wy); wy += 36; }
+            ctx.fillStyle = red;
+            ctx.font = font(800, 76);
+            for (const line of this.wrapText(ctx, d.wage, 440, 2)) { wy += 70; ctx.fillText(line, M, wy); }
+        }
+        ctx.textAlign = 'left';
+        ctx.fillStyle = red;
+        ctx.font = font(800, 22);
+        ctx.fillText(d.scaleTitle, drawX, blockTop + 10);
+        this.drawMoneyScale(ctx, drawX, blockTop + 20, drawW, blockBottom - blockTop - 20, d.scaleSideM,
+            { side: d.scaleSide, person: d.personLabel, personHeight: d.personHeight });
+
+        // Footer: call to action on red
+        ctx.fillStyle = '#ec3013';
+        ctx.fillRect(0, H - 118, W, 118);
+        ctx.fillStyle = '#ffffff';
+        ctx.font = font(800, 36);
+        ctx.textAlign = 'left';
+        ctx.fillText(d.cta, M, H - 48);
+        ctx.font = font(700, 28);
+        ctx.textAlign = 'right';
+        ctx.fillText(d.url, W - M, H - 50);
+
+        this.cachedCanvas = canvas;
+        return canvas;
+    },
+
     // Kart önizlemesini render edip DataURL olarak döndürme
     renderCardPreview: async function (cardData) {
         const canvas = await this.drawCardCanvas(cardData);
@@ -495,15 +698,22 @@ window.predictLeagueShare = {
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 await navigator.clipboard.writeText(text);
                 return true;
-            } else {
-                const textArea = document.createElement("textarea");
-                textArea.value = text;
-                document.body.appendChild(textArea);
-                textArea.select();
-                document.execCommand("copy");
-                document.body.removeChild(textArea);
-                return true;
             }
+        } catch (err) {
+            // In-app browsers (Instagram, X) often deny the async clipboard API; fall back below
+            console.warn("Clipboard API reddedildi, eski yöntem deneniyor:", err);
+        }
+        try {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            textArea.setAttribute("readonly", "");
+            textArea.style.position = "fixed";
+            textArea.style.opacity = "0";
+            document.body.appendChild(textArea);
+            textArea.select();
+            const ok = document.execCommand("copy");
+            document.body.removeChild(textArea);
+            return ok;
         } catch (err) {
             console.error("Kopyalama hatası:", err);
             return false;
