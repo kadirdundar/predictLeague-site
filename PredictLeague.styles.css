@@ -1,3 +1,89 @@
+/* /Components/MoneyScale.razor.rz.scp.css */
+.ms-figure[b-vje9eloev5] {
+    margin: 14px 0 12px;
+    border: 2px solid rgba(32, 30, 29, 0.4);
+    background: #fbfaf9;
+    padding: 12px 12px 10px;
+}
+
+.ms-title[b-vje9eloev5] {
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: #ae1800;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.ms-svg[b-vje9eloev5] {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ms-ground[b-vje9eloev5] {
+    stroke: rgba(32, 30, 29, 0.45);
+    stroke-width: 1.5;
+}
+
+.ms-person[b-vje9eloev5] {
+    fill: #201e1d;
+}
+
+.ms-pointer[b-vje9eloev5] {
+    stroke: #201e1d;
+    stroke-width: 1;
+    stroke-dasharray: 2 2;
+}
+
+.ms-front[b-vje9eloev5] {
+    fill: #7fa96a;
+    stroke: #3f5e33;
+    stroke-width: 1;
+}
+
+.ms-top[b-vje9eloev5] {
+    fill: #a9cb95;
+    stroke: #3f5e33;
+    stroke-width: 1;
+}
+
+.ms-side[b-vje9eloev5] {
+    fill: #5e8a4c;
+    stroke: #3f5e33;
+    stroke-width: 1;
+}
+
+.ms-band[b-vje9eloev5] {
+    stroke: rgba(47, 74, 38, 0.45);
+    stroke-width: 0.75;
+}
+
+.ms-label[b-vje9eloev5] {
+    font-size: 10px;
+    font-weight: 700;
+    fill: rgba(32, 30, 29, 0.7);
+}
+
+.ms-label-strong[b-vje9eloev5] {
+    fill: #201e1d;
+    font-weight: 800;
+}
+
+.ms-facts[b-vje9eloev5] {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: rgba(32, 30, 29, 0.85);
+}
+
+.ms-facts li + li[b-vje9eloev5] {
+    border-top: 1px solid rgba(32, 30, 29, 0.12);
+    padding-top: 3px;
+    margin-top: 3px;
+}
 /* /Layout/MainLayout.razor.rz.scp.css */
 .page[b-fkfdux23fq] {
     position: relative;
