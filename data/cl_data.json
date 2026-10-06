@@ -7,7 +7,8 @@
       "country": "GRC",
       "rating": 76,
       "primaryColor": "#FFCC00",
-      "logoUrl": "images/logos/team_606.png"
+      "logoUrl": "images/logos/team_606.png",
+      "uefaId": "50129"
     },
     {
       "id": 42,
@@ -16,7 +17,8 @@
       "country": "ENG",
       "rating": 90,
       "primaryColor": "#EF0107",
-      "logoUrl": "images/logos/team_42.png"
+      "logoUrl": "images/logos/team_42.png",
+      "uefaId": "52280"
     },
     {
       "id": 66,
@@ -25,7 +27,8 @@
       "country": "ENG",
       "rating": 83,
       "primaryColor": "#670E36",
-      "logoUrl": "images/logos/team_66.png"
+      "logoUrl": "images/logos/team_66.png",
+      "uefaId": "52683"
     },
     {
       "id": 530,
@@ -34,7 +37,8 @@
       "country": "ESP",
       "rating": 87,
       "primaryColor": "#CB3524",
-      "logoUrl": "images/logos/team_530.png"
+      "logoUrl": "images/logos/team_530.png",
+      "uefaId": "50124"
     },
     {
       "id": 529,
@@ -43,7 +47,8 @@
       "country": "ESP",
       "rating": 91,
       "primaryColor": "#004D98",
-      "logoUrl": "images/logos/team_529.png"
+      "logoUrl": "images/logos/team_529.png",
+      "uefaId": "50080"
     },
     {
       "id": 157,
@@ -52,7 +57,8 @@
       "country": "DEU",
       "rating": 92,
       "primaryColor": "#DC052D",
-      "logoUrl": "images/logos/team_157.png"
+      "logoUrl": "images/logos/team_157.png",
+      "uefaId": "50037"
     },
     {
       "id": 327,
@@ -61,7 +67,8 @@
       "country": "NOR",
       "rating": 76,
       "primaryColor": "#FFCC00",
-      "logoUrl": "images/logos/team_327.png"
+      "logoUrl": "images/logos/team_327.png",
+      "uefaId": "59333"
     },
     {
       "id": 165,
@@ -70,7 +77,8 @@
       "country": "DEU",
       "rating": 86,
       "primaryColor": "#FDE100",
-      "logoUrl": "images/logos/team_165.png"
+      "logoUrl": "images/logos/team_165.png",
+      "uefaId": "52758"
     },
     {
       "id": 569,
@@ -79,7 +87,8 @@
       "country": "BEL",
       "rating": 79,
       "primaryColor": "#002B49",
-      "logoUrl": "images/logos/team_569.png"
+      "logoUrl": "images/logos/team_569.png",
+      "uefaId": "50043"
     },
     {
       "id": 897,
@@ -88,7 +97,8 @@
       "country": "ITA",
       "rating": 77,
       "primaryColor": "#003A70",
-      "logoUrl": "images/logos/team_897.png"
+      "logoUrl": "images/logos/team_897.png",
+      "uefaId": "79946"
     },
     {
       "id": 611,
@@ -97,7 +107,8 @@
       "country": "TUR",
       "rating": 82,
       "primaryColor": "#002D72",
-      "logoUrl": "images/logos/team_611.png"
+      "logoUrl": "images/logos/team_611.png",
+      "uefaId": "52692"
     },
     {
       "id": 209,
@@ -106,7 +117,8 @@
       "country": "NLD",
       "rating": 80,
       "primaryColor": "#E30613",
-      "logoUrl": "images/logos/team_209.png"
+      "logoUrl": "images/logos/team_209.png",
+      "uefaId": "52749"
     },
     {
       "id": 645,
@@ -115,7 +127,8 @@
       "country": "TUR",
       "rating": 82,
       "primaryColor": "#A90432",
-      "logoUrl": "images/logos/team_645.png"
+      "logoUrl": "images/logos/team_645.png",
+      "uefaId": "50067"
     },
     {
       "id": 505,
@@ -124,7 +137,8 @@
       "country": "ITA",
       "rating": 89,
       "primaryColor": "#0066B3",
-      "logoUrl": "images/logos/team_505.png"
+      "logoUrl": "images/logos/team_505.png",
+      "uefaId": "50138"
     },
     {
       "id": 1026,
@@ -133,7 +147,8 @@
       "country": "AUT",
       "rating": 75,
       "primaryColor": "#000000",
-      "logoUrl": "images/logos/team_1026.png"
+      "logoUrl": "images/logos/team_1026.png",
+      "uefaId": "63405"
     },
     {
       "id": 116,
@@ -142,7 +157,8 @@
       "country": "FRA",
       "rating": 79,
       "primaryColor": "#ED1C24",
-      "logoUrl": "images/logos/team_116.png"
+      "logoUrl": "images/logos/team_116.png",
+      "uefaId": "52277"
     },
     {
       "id": 79,
@@ -151,7 +167,8 @@
       "country": "FRA",
       "rating": 81,
       "primaryColor": "#E01E12",
-      "logoUrl": "images/logos/team_79.png"
+      "logoUrl": "images/logos/team_79.png",
+      "uefaId": "75797"
     },
     {
       "id": 40,
@@ -160,7 +177,8 @@
       "country": "ENG",
       "rating": 91,
       "primaryColor": "#C8102E",
-      "logoUrl": "images/logos/team_40.png"
+      "logoUrl": "images/logos/team_40.png",
+      "uefaId": "7889"
     },
     {
       "id": 50,
@@ -169,7 +187,8 @@
       "country": "ENG",
       "rating": 94,
       "primaryColor": "#6CABDD",
-      "logoUrl": "images/logos/team_50.png"
+      "logoUrl": "images/logos/team_50.png",
+      "uefaId": "52919"
     },
     {
       "id": 33,
@@ -178,7 +197,8 @@
       "country": "ENG",
       "rating": 85,
       "primaryColor": "#DA291C",
-      "logoUrl": "images/logos/team_33.png"
+      "logoUrl": "images/logos/team_33.png",
+      "uefaId": "52682"
     },
     {
       "id": 492,
@@ -187,7 +207,8 @@
       "country": "ITA",
       "rating": 86,
       "primaryColor": "#12A0D7",
-      "logoUrl": "images/logos/team_492.png"
+      "logoUrl": "images/logos/team_492.png",
+      "uefaId": "50136"
     },
     {
       "id": 197,
@@ -196,7 +217,8 @@
       "country": "NLD",
       "rating": 82,
       "primaryColor": "#DA291C",
-      "logoUrl": "images/logos/team_197.png"
+      "logoUrl": "images/logos/team_197.png",
+      "uefaId": "50062"
     },
     {
       "id": 85,
@@ -205,7 +227,8 @@
       "country": "FRA",
       "rating": 92,
       "primaryColor": "#004170",
-      "logoUrl": "images/logos/team_85.png"
+      "logoUrl": "images/logos/team_85.png",
+      "uefaId": "52747"
     },
     {
       "id": 212,
@@ -214,7 +237,8 @@
       "country": "POR",
       "rating": 83,
       "primaryColor": "#003882",
-      "logoUrl": "images/logos/team_212.png"
+      "logoUrl": "images/logos/team_212.png",
+      "uefaId": "50064"
     },
     {
       "id": 173,
@@ -223,7 +247,8 @@
       "country": "DEU",
       "rating": 84,
       "primaryColor": "#DD013F",
-      "logoUrl": "images/logos/team_173.png"
+      "logoUrl": "images/logos/team_173.png",
+      "uefaId": "2603790"
     },
     {
       "id": 543,
@@ -232,7 +257,8 @@
       "country": "ESP",
       "rating": 82,
       "primaryColor": "#00954C",
-      "logoUrl": "images/logos/team_543.png"
+      "logoUrl": "images/logos/team_543.png",
+      "uefaId": "52265"
     },
     {
       "id": 541,
@@ -241,7 +267,8 @@
       "country": "ESP",
       "rating": 94,
       "primaryColor": "#FEBE10",
-      "logoUrl": "images/logos/team_541.png"
+      "logoUrl": "images/logos/team_541.png",
+      "uefaId": "50051"
     },
     {
       "id": 497,
@@ -250,7 +277,8 @@
       "country": "ITA",
       "rating": 84,
       "primaryColor": "#8E1F2F",
-      "logoUrl": "images/logos/team_497.png"
+      "logoUrl": "images/logos/team_497.png",
+      "uefaId": "50137"
     },
     {
       "id": 4160,
@@ -259,7 +287,8 @@
       "country": "AZE",
       "rating": 72,
       "primaryColor": "#003366",
-      "logoUrl": "images/logos/team_4160.png"
+      "logoUrl": "images/logos/team_4160.png",
+      "uefaId": "2609356"
     },
     {
       "id": 550,
@@ -268,7 +297,8 @@
       "country": "UKR",
       "rating": 78,
       "primaryColor": "#FF6600",
-      "logoUrl": "images/logos/team_550.png"
+      "logoUrl": "images/logos/team_550.png",
+      "uefaId": "52707"
     },
     {
       "id": 560,
@@ -277,7 +307,8 @@
       "country": "CZE",
       "rating": 78,
       "primaryColor": "#D81E05",
-      "logoUrl": "images/logos/team_560.png"
+      "logoUrl": "images/logos/team_560.png",
+      "uefaId": "52498"
     },
     {
       "id": 571,
@@ -286,7 +317,8 @@
       "country": "SVK",
       "rating": 74,
       "primaryColor": "#009EE0",
-      "logoUrl": "images/logos/team_571.png"
+      "logoUrl": "images/logos/team_571.png",
+      "uefaId": "52797"
     },
     {
       "id": 228,
@@ -295,7 +327,8 @@
       "country": "POR",
       "rating": 84,
       "primaryColor": "#008057",
-      "logoUrl": "images/logos/team_228.png"
+      "logoUrl": "images/logos/team_228.png",
+      "uefaId": "50149"
     },
     {
       "id": 172,
@@ -304,7 +337,8 @@
       "country": "DEU",
       "rating": 81,
       "primaryColor": "#E30613",
-      "logoUrl": "images/logos/team_172.png"
+      "logoUrl": "images/logos/team_172.png",
+      "uefaId": "50107"
     },
     {
       "id": 339,
@@ -313,7 +347,8 @@
       "country": "NOR",
       "rating": 74,
       "primaryColor": "#002B49",
-      "logoUrl": "images/logos/team_339.png"
+      "logoUrl": "images/logos/team_339.png",
+      "uefaId": "52319"
     },
     {
       "id": 533,
@@ -322,70 +357,38 @@
       "country": "ESP",
       "rating": 82,
       "primaryColor": "#FFD100",
-      "logoUrl": "images/logos/team_533.png"
+      "logoUrl": "images/logos/team_533.png",
+      "uefaId": "70691"
     }
   ],
   "matches": [
-    {
-      "id": 1,
-      "homeTeamId": 541,
-      "awayTeamId": 505,
-      "week": 1,
-      "homeGoals": 2,
-      "awayGoals": 1,
-      "isFinished": true
-    },
-    {
-      "id": 2,
-      "homeTeamId": 228,
-      "awayTeamId": 645,
-      "week": 1,
-      "homeGoals": 3,
-      "awayGoals": 1,
-      "isFinished": true
-    },
     {
       "id": 3,
       "homeTeamId": 569,
       "awayTeamId": 66,
       "week": 1,
+      "kickoff": "2026-09-08T16:45:00Z",
       "homeGoals": 2,
       "awayGoals": 3,
       "isFinished": true
     },
     {
-      "id": 4,
-      "homeTeamId": 529,
-      "awayTeamId": 209,
+      "id": 17,
+      "homeTeamId": 606,
+      "awayTeamId": 1026,
       "week": 1,
-      "homeGoals": 5,
-      "awayGoals": 1,
-      "isFinished": true
-    },
-    {
-      "id": 5,
-      "homeTeamId": 157,
-      "awayTeamId": 327,
-      "week": 1,
-      "homeGoals": 5,
-      "awayGoals": 0,
-      "isFinished": true
-    },
-    {
-      "id": 6,
-      "homeTeamId": 33,
-      "awayTeamId": 4160,
-      "week": 1,
-      "homeGoals": 4,
-      "awayGoals": 0,
-      "isFinished": true
-    },
-    {
-      "id": 7,
-      "homeTeamId": 611,
-      "awayTeamId": 497,
-      "week": 1,
+      "kickoff": "2026-09-08T16:45:00Z",
       "homeGoals": 1,
+      "awayGoals": 0,
+      "isFinished": true
+    },
+    {
+      "id": 1,
+      "homeTeamId": 541,
+      "awayTeamId": 505,
+      "week": 1,
+      "kickoff": "2026-09-08T19:00:00Z",
+      "homeGoals": 2,
       "awayGoals": 1,
       "isFinished": true
     },
@@ -394,6 +397,7 @@
       "homeTeamId": 79,
       "awayTeamId": 543,
       "week": 1,
+      "kickoff": "2026-09-08T19:00:00Z",
       "homeGoals": 2,
       "awayGoals": 3,
       "isFinished": true
@@ -403,26 +407,9 @@
       "homeTeamId": 212,
       "awayTeamId": 50,
       "week": 1,
+      "kickoff": "2026-09-08T19:00:00Z",
       "homeGoals": 0,
       "awayGoals": 2,
-      "isFinished": true
-    },
-    {
-      "id": 10,
-      "homeTeamId": 492,
-      "awayTeamId": 42,
-      "week": 1,
-      "homeGoals": 0,
-      "awayGoals": 1,
-      "isFinished": true
-    },
-    {
-      "id": 11,
-      "homeTeamId": 897,
-      "awayTeamId": 173,
-      "week": 1,
-      "homeGoals": 4,
-      "awayGoals": 1,
       "isFinished": true
     },
     {
@@ -430,8 +417,19 @@
       "homeTeamId": 165,
       "awayTeamId": 533,
       "week": 1,
+      "kickoff": "2026-09-08T19:00:00Z",
       "homeGoals": 3,
       "awayGoals": 2,
+      "isFinished": true
+    },
+    {
+      "id": 4,
+      "homeTeamId": 529,
+      "awayTeamId": 209,
+      "week": 1,
+      "kickoff": "2026-09-09T16:45:00Z",
+      "homeGoals": 5,
+      "awayGoals": 1,
       "isFinished": true
     },
     {
@@ -439,7 +437,28 @@
       "homeTeamId": 172,
       "awayTeamId": 339,
       "week": 1,
+      "kickoff": "2026-09-09T16:45:00Z",
       "homeGoals": 3,
+      "awayGoals": 1,
+      "isFinished": true
+    },
+    {
+      "id": 2,
+      "homeTeamId": 228,
+      "awayTeamId": 645,
+      "week": 1,
+      "kickoff": "2026-09-09T19:00:00Z",
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "isFinished": true
+    },
+    {
+      "id": 10,
+      "homeTeamId": 492,
+      "awayTeamId": 42,
+      "week": 1,
+      "kickoff": "2026-09-09T19:00:00Z",
+      "homeGoals": 0,
       "awayGoals": 1,
       "isFinished": true
     },
@@ -448,6 +467,7 @@
       "homeTeamId": 40,
       "awayTeamId": 530,
       "week": 1,
+      "kickoff": "2026-09-09T19:00:00Z",
       "homeGoals": 2,
       "awayGoals": 1,
       "isFinished": true
@@ -457,7 +477,18 @@
       "homeTeamId": 85,
       "awayTeamId": 571,
       "week": 1,
+      "kickoff": "2026-09-09T19:00:00Z",
       "homeGoals": 6,
+      "awayGoals": 1,
+      "isFinished": true
+    },
+    {
+      "id": 7,
+      "homeTeamId": 611,
+      "awayTeamId": 497,
+      "week": 1,
+      "kickoff": "2026-09-10T16:45:00Z",
+      "homeGoals": 1,
       "awayGoals": 1,
       "isFinished": true
     },
@@ -466,17 +497,39 @@
       "homeTeamId": 197,
       "awayTeamId": 550,
       "week": 1,
+      "kickoff": "2026-09-10T16:45:00Z",
       "homeGoals": 1,
       "awayGoals": 1,
       "isFinished": true
     },
     {
-      "id": 17,
-      "homeTeamId": 606,
-      "awayTeamId": 1026,
+      "id": 5,
+      "homeTeamId": 157,
+      "awayTeamId": 327,
       "week": 1,
-      "homeGoals": 1,
+      "kickoff": "2026-09-10T19:00:00Z",
+      "homeGoals": 5,
       "awayGoals": 0,
+      "isFinished": true
+    },
+    {
+      "id": 6,
+      "homeTeamId": 33,
+      "awayTeamId": 4160,
+      "week": 1,
+      "kickoff": "2026-09-10T19:00:00Z",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "isFinished": true
+    },
+    {
+      "id": 11,
+      "homeTeamId": 897,
+      "awayTeamId": 173,
+      "week": 1,
+      "kickoff": "2026-09-10T19:00:00Z",
+      "homeGoals": 4,
+      "awayGoals": 1,
       "isFinished": true
     },
     {
@@ -484,24 +537,27 @@
       "homeTeamId": 560,
       "awayTeamId": 116,
       "week": 1,
+      "kickoff": "2026-09-10T19:00:00Z",
       "homeGoals": 2,
       "awayGoals": 3,
       "isFinished": true
     },
     {
-      "id": 19,
-      "homeTeamId": 533,
-      "awayTeamId": 33,
+      "id": 25,
+      "homeTeamId": 116,
+      "awayTeamId": 228,
       "week": 2,
+      "kickoff": "2026-10-13T16:45:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 20,
+      "id": 58,
       "homeTeamId": 4160,
-      "awayTeamId": 492,
+      "awayTeamId": 560,
       "week": 2,
+      "kickoff": "2026-10-13T16:45:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -511,60 +567,7 @@
       "homeTeamId": 339,
       "awayTeamId": 157,
       "week": 2,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 22,
-      "homeTeamId": 560,
-      "awayTeamId": 66,
-      "week": 2,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 23,
-      "homeTeamId": 1026,
-      "awayTeamId": 40,
-      "week": 2,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 24,
-      "homeTeamId": 543,
-      "awayTeamId": 897,
-      "week": 2,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 25,
-      "homeTeamId": 116,
-      "awayTeamId": 228,
-      "week": 2,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 26,
-      "homeTeamId": 42,
-      "awayTeamId": 541,
-      "week": 2,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 27,
-      "homeTeamId": 209,
-      "awayTeamId": 173,
-      "week": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -574,51 +577,7 @@
       "homeTeamId": 505,
       "awayTeamId": 569,
       "week": 2,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 29,
-      "homeTeamId": 530,
-      "awayTeamId": 611,
-      "week": 2,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 30,
-      "homeTeamId": 497,
-      "awayTeamId": 571,
-      "week": 2,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 31,
-      "homeTeamId": 327,
-      "awayTeamId": 165,
-      "week": 2,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 32,
-      "homeTeamId": 212,
-      "awayTeamId": 197,
-      "week": 2,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 33,
-      "homeTeamId": 550,
-      "awayTeamId": 606,
-      "week": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -628,15 +587,87 @@
       "homeTeamId": 645,
       "awayTeamId": 529,
       "week": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 35,
-      "homeTeamId": 172,
+      "id": 41,
+      "homeTeamId": 42,
       "awayTeamId": 79,
       "week": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 64,
+      "homeTeamId": 533,
+      "awayTeamId": 492,
+      "week": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 105,
+      "homeTeamId": 530,
+      "awayTeamId": 33,
+      "week": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 127,
+      "homeTeamId": 173,
+      "awayTeamId": 197,
+      "week": 2,
+      "kickoff": "2026-10-13T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 23,
+      "homeTeamId": 1026,
+      "awayTeamId": 40,
+      "week": 2,
+      "kickoff": "2026-10-14T16:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 97,
+      "homeTeamId": 209,
+      "awayTeamId": 897,
+      "week": 2,
+      "kickoff": "2026-10-14T16:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 31,
+      "homeTeamId": 327,
+      "awayTeamId": 165,
+      "week": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 33,
+      "homeTeamId": 550,
+      "awayTeamId": 606,
+      "week": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -646,6 +677,47 @@
       "homeTeamId": 50,
       "awayTeamId": 85,
       "week": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 74,
+      "homeTeamId": 66,
+      "awayTeamId": 611,
+      "week": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 79,
+      "homeTeamId": 543,
+      "awayTeamId": 212,
+      "week": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 141,
+      "homeTeamId": 571,
+      "awayTeamId": 172,
+      "week": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 143,
+      "homeTeamId": 497,
+      "awayTeamId": 541,
+      "week": 2,
+      "kickoff": "2026-10-14T19:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -655,6 +727,7 @@
       "homeTeamId": 4160,
       "awayTeamId": 165,
       "week": 3,
+      "kickoff": "2026-10-20T16:45:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -664,78 +737,27 @@
       "homeTeamId": 611,
       "awayTeamId": 560,
       "week": 3,
+      "kickoff": "2026-10-20T16:45:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 39,
-      "homeTeamId": 541,
+      "id": 30,
+      "homeTeamId": 497,
+      "awayTeamId": 571,
+      "week": 3,
+      "kickoff": "2026-10-20T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 32,
+      "homeTeamId": 212,
       "awayTeamId": 197,
       "week": 3,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 40,
-      "homeTeamId": 529,
-      "awayTeamId": 897,
-      "week": 3,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 41,
-      "homeTeamId": 42,
-      "awayTeamId": 79,
-      "week": 3,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 42,
-      "homeTeamId": 606,
-      "awayTeamId": 497,
-      "week": 3,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 43,
-      "homeTeamId": 33,
-      "awayTeamId": 157,
-      "week": 3,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 44,
-      "homeTeamId": 327,
-      "awayTeamId": 1026,
-      "week": 3,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 45,
-      "homeTeamId": 569,
-      "awayTeamId": 116,
-      "week": 3,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 46,
-      "homeTeamId": 173,
-      "awayTeamId": 550,
-      "week": 3,
+      "kickoff": "2026-10-20T19:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -745,105 +767,77 @@
       "homeTeamId": 172,
       "awayTeamId": 530,
       "week": 3,
+      "kickoff": "2026-10-20T19:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 48,
-      "homeTeamId": 571,
-      "awayTeamId": 543,
+      "id": 84,
+      "homeTeamId": 40,
+      "awayTeamId": 533,
       "week": 3,
+      "kickoff": "2026-10-20T19:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 49,
-      "homeTeamId": 212,
-      "awayTeamId": 492,
+      "id": 113,
+      "homeTeamId": 492,
+      "awayTeamId": 327,
       "week": 3,
+      "kickoff": "2026-10-20T19:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 50,
-      "homeTeamId": 645,
-      "awayTeamId": 66,
-      "week": 3,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 51,
-      "homeTeamId": 505,
-      "awayTeamId": 40,
-      "week": 3,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 52,
-      "homeTeamId": 339,
-      "awayTeamId": 209,
-      "week": 3,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 53,
-      "homeTeamId": 533,
-      "awayTeamId": 85,
-      "week": 3,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 54,
+      "id": 117,
       "homeTeamId": 50,
-      "awayTeamId": 228,
+      "awayTeamId": 606,
       "week": 3,
+      "kickoff": "2026-10-20T19:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 55,
-      "homeTeamId": 606,
+      "id": 125,
+      "homeTeamId": 85,
+      "awayTeamId": 529,
+      "week": 3,
+      "kickoff": "2026-10-20T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 130,
+      "homeTeamId": 897,
+      "awayTeamId": 33,
+      "week": 3,
+      "kickoff": "2026-10-21T16:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 140,
+      "homeTeamId": 79,
       "awayTeamId": 645,
-      "week": 4,
+      "week": 3,
+      "kickoff": "2026-10-21T16:45:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 56,
-      "homeTeamId": 339,
-      "awayTeamId": 197,
-      "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 57,
-      "homeTeamId": 529,
-      "awayTeamId": 50,
-      "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 58,
-      "homeTeamId": 4160,
-      "awayTeamId": 560,
-      "week": 4,
+      "id": 45,
+      "homeTeamId": 569,
+      "awayTeamId": 116,
+      "week": 3,
+      "kickoff": "2026-10-21T19:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -852,70 +846,8 @@
       "id": 59,
       "homeTeamId": 228,
       "awayTeamId": 1026,
-      "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 60,
-      "homeTeamId": 543,
-      "awayTeamId": 42,
-      "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 61,
-      "homeTeamId": 40,
-      "awayTeamId": 116,
-      "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 62,
-      "homeTeamId": 550,
-      "awayTeamId": 611,
-      "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 63,
-      "homeTeamId": 897,
-      "awayTeamId": 85,
-      "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 64,
-      "homeTeamId": 533,
-      "awayTeamId": 492,
-      "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 65,
-      "homeTeamId": 209,
-      "awayTeamId": 212,
-      "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 66,
-      "homeTeamId": 569,
-      "awayTeamId": 327,
-      "week": 4,
+      "week": 3,
+      "kickoff": "2026-10-21T19:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -924,7 +856,78 @@
       "id": 67,
       "homeTeamId": 541,
       "awayTeamId": 173,
+      "week": 3,
+      "kickoff": "2026-10-21T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 123,
+      "homeTeamId": 66,
+      "awayTeamId": 339,
+      "week": 3,
+      "kickoff": "2026-10-21T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 128,
+      "homeTeamId": 505,
+      "awayTeamId": 550,
+      "week": 3,
+      "kickoff": "2026-10-21T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 131,
+      "homeTeamId": 543,
+      "awayTeamId": 209,
+      "week": 3,
+      "kickoff": "2026-10-21T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 137,
+      "homeTeamId": 157,
+      "awayTeamId": 42,
+      "week": 3,
+      "kickoff": "2026-10-21T19:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 90,
+      "homeTeamId": 645,
+      "awayTeamId": 172,
       "week": 4,
+      "kickoff": "2026-11-03T17:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 99,
+      "homeTeamId": 550,
+      "awayTeamId": 228,
+      "week": 4,
+      "kickoff": "2026-11-03T17:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 53,
+      "homeTeamId": 533,
+      "awayTeamId": 85,
+      "week": 4,
+      "kickoff": "2026-11-03T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -934,24 +937,7 @@
       "homeTeamId": 530,
       "awayTeamId": 157,
       "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 69,
-      "homeTeamId": 79,
-      "awayTeamId": 571,
-      "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 70,
-      "homeTeamId": 66,
-      "awayTeamId": 165,
-      "week": 4,
+      "kickoff": "2026-11-03T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -961,33 +947,7 @@
       "homeTeamId": 33,
       "awayTeamId": 497,
       "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 72,
-      "homeTeamId": 505,
-      "awayTeamId": 172,
-      "week": 4,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 73,
-      "homeTeamId": 228,
-      "awayTeamId": 33,
-      "week": 5,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 74,
-      "homeTeamId": 66,
-      "awayTeamId": 611,
-      "week": 5,
+      "kickoff": "2026-11-03T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -996,16 +956,68 @@
       "id": 75,
       "homeTeamId": 209,
       "awayTeamId": 505,
-      "week": 5,
+      "week": 4,
+      "kickoff": "2026-11-03T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 76,
-      "homeTeamId": 4160,
-      "awayTeamId": 529,
-      "week": 5,
+      "id": 87,
+      "homeTeamId": 327,
+      "awayTeamId": 79,
+      "week": 4,
+      "kickoff": "2026-11-03T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 94,
+      "homeTeamId": 1026,
+      "awayTeamId": 571,
+      "week": 4,
+      "kickoff": "2026-11-03T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 106,
+      "homeTeamId": 529,
+      "awayTeamId": 66,
+      "week": 4,
+      "kickoff": "2026-11-03T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 108,
+      "homeTeamId": 606,
+      "awayTeamId": 541,
+      "week": 4,
+      "kickoff": "2026-11-04T17:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 132,
+      "homeTeamId": 611,
+      "awayTeamId": 40,
+      "week": 4,
+      "kickoff": "2026-11-04T17:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 49,
+      "homeTeamId": 212,
+      "awayTeamId": 492,
+      "week": 4,
+      "kickoff": "2026-11-04T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1014,25 +1026,108 @@
       "id": 77,
       "homeTeamId": 197,
       "awayTeamId": 569,
-      "week": 5,
+      "week": 4,
+      "kickoff": "2026-11-04T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 78,
-      "homeTeamId": 541,
+      "id": 107,
+      "homeTeamId": 173,
+      "awayTeamId": 50,
+      "week": 4,
+      "kickoff": "2026-11-04T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 109,
+      "homeTeamId": 165,
+      "awayTeamId": 543,
+      "week": 4,
+      "kickoff": "2026-11-04T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 114,
+      "homeTeamId": 560,
+      "awayTeamId": 42,
+      "week": 4,
+      "kickoff": "2026-11-04T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 124,
+      "homeTeamId": 116,
+      "awayTeamId": 897,
+      "week": 4,
+      "kickoff": "2026-11-04T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 138,
+      "homeTeamId": 339,
+      "awayTeamId": 4160,
+      "week": 4,
+      "kickoff": "2026-11-04T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 44,
+      "homeTeamId": 327,
       "awayTeamId": 1026,
       "week": 5,
+      "kickoff": "2026-11-24T17:45:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 79,
-      "homeTeamId": 543,
+      "id": 50,
+      "homeTeamId": 645,
+      "awayTeamId": 66,
+      "week": 5,
+      "kickoff": "2026-11-24T17:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 39,
+      "homeTeamId": 541,
+      "awayTeamId": 197,
+      "week": 5,
+      "kickoff": "2026-11-24T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 48,
+      "homeTeamId": 571,
+      "awayTeamId": 543,
+      "week": 5,
+      "kickoff": "2026-11-24T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 65,
+      "homeTeamId": 209,
       "awayTeamId": 212,
       "week": 5,
+      "kickoff": "2026-11-24T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1042,15 +1137,7 @@
       "homeTeamId": 42,
       "awayTeamId": 165,
       "week": 5,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 81,
-      "homeTeamId": 157,
-      "awayTeamId": 560,
-      "week": 5,
+      "kickoff": "2026-11-24T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1060,6 +1147,7 @@
       "homeTeamId": 173,
       "awayTeamId": 116,
       "week": 5,
+      "kickoff": "2026-11-24T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1069,51 +1157,7 @@
       "homeTeamId": 50,
       "awayTeamId": 492,
       "week": 5,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 84,
-      "homeTeamId": 40,
-      "awayTeamId": 533,
-      "week": 5,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 85,
-      "homeTeamId": 530,
-      "awayTeamId": 339,
-      "week": 5,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 86,
-      "homeTeamId": 571,
-      "awayTeamId": 550,
-      "week": 5,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 87,
-      "homeTeamId": 327,
-      "awayTeamId": 79,
-      "week": 5,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 88,
-      "homeTeamId": 85,
-      "awayTeamId": 497,
-      "week": 5,
+      "kickoff": "2026-11-24T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1123,24 +1167,227 @@
       "homeTeamId": 897,
       "awayTeamId": 606,
       "week": 5,
+      "kickoff": "2026-11-24T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 90,
-      "homeTeamId": 645,
+      "id": 76,
+      "homeTeamId": 4160,
+      "awayTeamId": 529,
+      "week": 5,
+      "kickoff": "2026-11-25T17:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 129,
+      "homeTeamId": 560,
+      "awayTeamId": 533,
+      "week": 5,
+      "kickoff": "2026-11-25T17:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 62,
+      "homeTeamId": 550,
+      "awayTeamId": 611,
+      "week": 5,
+      "kickoff": "2026-11-25T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 72,
+      "homeTeamId": 505,
       "awayTeamId": 172,
       "week": 5,
+      "kickoff": "2026-11-25T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 91,
-      "homeTeamId": 197,
-      "awayTeamId": 172,
+      "id": 73,
+      "homeTeamId": 228,
+      "awayTeamId": 33,
+      "week": 5,
+      "kickoff": "2026-11-25T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 85,
+      "homeTeamId": 530,
+      "awayTeamId": 339,
+      "week": 5,
+      "kickoff": "2026-11-25T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 88,
+      "homeTeamId": 85,
+      "awayTeamId": 497,
+      "week": 5,
+      "kickoff": "2026-11-25T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 93,
+      "homeTeamId": 569,
+      "awayTeamId": 40,
+      "week": 5,
+      "kickoff": "2026-11-25T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 121,
+      "homeTeamId": 79,
+      "awayTeamId": 157,
+      "week": 5,
+      "kickoff": "2026-11-25T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 52,
+      "homeTeamId": 339,
+      "awayTeamId": 209,
       "week": 6,
+      "kickoff": "2026-12-08T17:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 110,
+      "homeTeamId": 533,
+      "awayTeamId": 4160,
+      "week": 6,
+      "kickoff": "2026-12-08T17:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 55,
+      "homeTeamId": 606,
+      "awayTeamId": 645,
+      "week": 6,
+      "kickoff": "2026-12-08T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 57,
+      "homeTeamId": 529,
+      "awayTeamId": 50,
+      "week": 6,
+      "kickoff": "2026-12-08T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 81,
+      "homeTeamId": 157,
+      "awayTeamId": 560,
+      "week": 6,
+      "kickoff": "2026-12-08T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 115,
+      "homeTeamId": 33,
+      "awayTeamId": 173,
+      "week": 6,
+      "kickoff": "2026-12-08T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 122,
+      "homeTeamId": 497,
+      "awayTeamId": 228,
+      "week": 6,
+      "kickoff": "2026-12-08T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 136,
+      "homeTeamId": 492,
+      "awayTeamId": 569,
+      "week": 6,
+      "kickoff": "2026-12-08T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 142,
+      "homeTeamId": 66,
+      "awayTeamId": 85,
+      "week": 6,
+      "kickoff": "2026-12-08T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 24,
+      "homeTeamId": 543,
+      "awayTeamId": 897,
+      "week": 6,
+      "kickoff": "2026-12-09T17:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 86,
+      "homeTeamId": 571,
+      "awayTeamId": 550,
+      "week": 6,
+      "kickoff": "2026-12-09T17:45:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 26,
+      "homeTeamId": 42,
+      "awayTeamId": 541,
+      "week": 6,
+      "kickoff": "2026-12-09T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 35,
+      "homeTeamId": 172,
+      "awayTeamId": 79,
+      "week": 6,
+      "kickoff": "2026-12-09T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1150,69 +1397,7 @@
       "homeTeamId": 165,
       "awayTeamId": 505,
       "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 93,
-      "homeTeamId": 569,
-      "awayTeamId": 40,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 94,
-      "homeTeamId": 1026,
-      "awayTeamId": 571,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 95,
-      "homeTeamId": 85,
-      "awayTeamId": 645,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 96,
-      "homeTeamId": 42,
-      "awayTeamId": 4160,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 97,
-      "homeTeamId": 209,
-      "awayTeamId": 897,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 98,
-      "homeTeamId": 212,
-      "awayTeamId": 560,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 99,
-      "homeTeamId": 550,
-      "awayTeamId": 228,
-      "week": 6,
+      "kickoff": "2026-12-09T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1222,96 +1407,7 @@
       "homeTeamId": 116,
       "awayTeamId": 327,
       "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 101,
-      "homeTeamId": 497,
-      "awayTeamId": 79,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 102,
-      "homeTeamId": 157,
-      "awayTeamId": 543,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 103,
-      "homeTeamId": 492,
-      "awayTeamId": 339,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 104,
-      "homeTeamId": 611,
-      "awayTeamId": 533,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 105,
-      "homeTeamId": 530,
-      "awayTeamId": 33,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 106,
-      "homeTeamId": 529,
-      "awayTeamId": 66,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 107,
-      "homeTeamId": 173,
-      "awayTeamId": 50,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 108,
-      "homeTeamId": 606,
-      "awayTeamId": 541,
-      "week": 6,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 109,
-      "homeTeamId": 165,
-      "awayTeamId": 543,
-      "week": 7,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 110,
-      "homeTeamId": 533,
-      "awayTeamId": 4160,
-      "week": 7,
+      "kickoff": "2026-12-09T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1320,7 +1416,8 @@
       "id": 111,
       "homeTeamId": 1026,
       "awayTeamId": 611,
-      "week": 7,
+      "week": 6,
+      "kickoff": "2026-12-09T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1329,61 +1426,18 @@
       "id": 112,
       "homeTeamId": 40,
       "awayTeamId": 212,
-      "week": 7,
+      "week": 6,
+      "kickoff": "2026-12-09T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 113,
-      "homeTeamId": 492,
-      "awayTeamId": 327,
-      "week": 7,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 114,
-      "homeTeamId": 560,
-      "awayTeamId": 42,
-      "week": 7,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 115,
-      "homeTeamId": 33,
-      "awayTeamId": 173,
-      "week": 7,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 116,
-      "homeTeamId": 550,
-      "awayTeamId": 541,
-      "week": 7,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 117,
-      "homeTeamId": 50,
-      "awayTeamId": 606,
-      "week": 7,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 118,
-      "homeTeamId": 571,
-      "awayTeamId": 505,
-      "week": 7,
+      "id": 120,
+      "homeTeamId": 197,
+      "awayTeamId": 530,
+      "week": 6,
+      "kickoff": "2026-12-09T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1393,60 +1447,77 @@
       "homeTeamId": 645,
       "awayTeamId": 209,
       "week": 7,
+      "kickoff": "2027-01-19T17:45:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 120,
-      "homeTeamId": 197,
+      "id": 133,
+      "homeTeamId": 327,
       "awayTeamId": 530,
       "week": 7,
+      "kickoff": "2027-01-19T17:45:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 121,
+      "id": 42,
+      "homeTeamId": 606,
+      "awayTeamId": 497,
+      "week": 7,
+      "kickoff": "2027-01-19T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 51,
+      "homeTeamId": 505,
+      "awayTeamId": 40,
+      "week": 7,
+      "kickoff": "2027-01-19T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 69,
       "homeTeamId": 79,
-      "awayTeamId": 157,
+      "awayTeamId": 571,
       "week": 7,
+      "kickoff": "2027-01-19T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 122,
-      "homeTeamId": 497,
-      "awayTeamId": 228,
-      "week": 7,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 123,
+      "id": 70,
       "homeTeamId": 66,
-      "awayTeamId": 339,
+      "awayTeamId": 165,
       "week": 7,
+      "kickoff": "2027-01-19T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 124,
-      "homeTeamId": 116,
-      "awayTeamId": 897,
+      "id": 78,
+      "homeTeamId": 541,
+      "awayTeamId": 1026,
       "week": 7,
+      "kickoff": "2027-01-19T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 125,
-      "homeTeamId": 85,
-      "awayTeamId": 529,
+      "id": 98,
+      "homeTeamId": 212,
+      "awayTeamId": 560,
       "week": 7,
+      "kickoff": "2027-01-19T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1456,69 +1527,257 @@
       "homeTeamId": 172,
       "awayTeamId": 569,
       "week": 7,
+      "kickoff": "2027-01-19T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 127,
-      "homeTeamId": 173,
-      "awayTeamId": 197,
-      "week": 8,
+      "id": 20,
+      "homeTeamId": 4160,
+      "awayTeamId": 492,
+      "week": 7,
+      "kickoff": "2027-01-20T17:45:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 128,
-      "homeTeamId": 505,
-      "awayTeamId": 550,
-      "week": 8,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 129,
-      "homeTeamId": 560,
+      "id": 104,
+      "homeTeamId": 611,
       "awayTeamId": 533,
-      "week": 8,
+      "week": 7,
+      "kickoff": "2027-01-20T17:45:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 130,
+      "id": 43,
+      "homeTeamId": 33,
+      "awayTeamId": 157,
+      "week": 7,
+      "kickoff": "2027-01-20T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 46,
+      "homeTeamId": 173,
+      "awayTeamId": 550,
+      "week": 7,
+      "kickoff": "2027-01-20T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 56,
+      "homeTeamId": 339,
+      "awayTeamId": 197,
+      "week": 7,
+      "kickoff": "2027-01-20T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 60,
+      "homeTeamId": 543,
+      "awayTeamId": 42,
+      "week": 7,
+      "kickoff": "2027-01-20T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 63,
       "homeTeamId": 897,
+      "awayTeamId": 85,
+      "week": 7,
+      "kickoff": "2027-01-20T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 135,
+      "homeTeamId": 116,
+      "awayTeamId": 50,
+      "week": 7,
+      "kickoff": "2027-01-20T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 144,
+      "homeTeamId": 228,
+      "awayTeamId": 529,
+      "week": 7,
+      "kickoff": "2027-01-20T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 19,
+      "homeTeamId": 533,
       "awayTeamId": 33,
       "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 131,
-      "homeTeamId": 543,
-      "awayTeamId": 209,
+      "id": 22,
+      "homeTeamId": 560,
+      "awayTeamId": 66,
       "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 132,
-      "homeTeamId": 611,
-      "awayTeamId": 40,
+      "id": 27,
+      "homeTeamId": 209,
+      "awayTeamId": 173,
       "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
     },
     {
-      "id": 133,
-      "homeTeamId": 327,
-      "awayTeamId": 530,
+      "id": 29,
+      "homeTeamId": 530,
+      "awayTeamId": 611,
       "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 40,
+      "homeTeamId": 529,
+      "awayTeamId": 897,
+      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 54,
+      "homeTeamId": 50,
+      "awayTeamId": 228,
+      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 61,
+      "homeTeamId": 40,
+      "awayTeamId": 116,
+      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 66,
+      "homeTeamId": 569,
+      "awayTeamId": 327,
+      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 91,
+      "homeTeamId": 197,
+      "awayTeamId": 172,
+      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 95,
+      "homeTeamId": 85,
+      "awayTeamId": 645,
+      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 96,
+      "homeTeamId": 42,
+      "awayTeamId": 4160,
+      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 101,
+      "homeTeamId": 497,
+      "awayTeamId": 79,
+      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 102,
+      "homeTeamId": 157,
+      "awayTeamId": 543,
+      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 103,
+      "homeTeamId": 492,
+      "awayTeamId": 339,
+      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 116,
+      "homeTeamId": 550,
+      "awayTeamId": 541,
+      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
+      "homeGoals": null,
+      "awayGoals": null,
+      "isFinished": false
+    },
+    {
+      "id": 118,
+      "homeTeamId": 571,
+      "awayTeamId": 505,
+      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1528,42 +1787,7 @@
       "homeTeamId": 1026,
       "awayTeamId": 212,
       "week": 8,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 135,
-      "homeTeamId": 116,
-      "awayTeamId": 50,
-      "week": 8,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 136,
-      "homeTeamId": 492,
-      "awayTeamId": 569,
-      "week": 8,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 137,
-      "homeTeamId": 157,
-      "awayTeamId": 42,
-      "week": 8,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 138,
-      "homeTeamId": 339,
-      "awayTeamId": 4160,
-      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
@@ -1573,51 +1797,7 @@
       "homeTeamId": 165,
       "awayTeamId": 606,
       "week": 8,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 140,
-      "homeTeamId": 79,
-      "awayTeamId": 645,
-      "week": 8,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 141,
-      "homeTeamId": 571,
-      "awayTeamId": 172,
-      "week": 8,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 142,
-      "homeTeamId": 66,
-      "awayTeamId": 85,
-      "week": 8,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 143,
-      "homeTeamId": 497,
-      "awayTeamId": 541,
-      "week": 8,
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
-    },
-    {
-      "id": 144,
-      "homeTeamId": 228,
-      "awayTeamId": 529,
-      "week": 8,
+      "kickoff": "2027-01-27T20:00:00Z",
       "homeGoals": null,
       "awayGoals": null,
       "isFinished": false
