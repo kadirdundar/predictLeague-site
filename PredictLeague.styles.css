@@ -1258,3 +1258,202 @@ input[type=range][b-sqmwahb4xx]::-moz-range-thumb {
     max-width: 90vw;
     text-align: center;
 }
+
+.fs-guide-link[b-sqmwahb4xx] {
+    color: #ae1800;
+    font-weight: 800;
+    text-decoration: none;
+}
+/* /Pages/MoneySize.razor.rz.scp.css */
+/* Same paper-and-ink look as the finance game */
+.mz-outer[b-lhwjexizcr] {
+    position: fixed;
+    inset: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    background: #d7d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 50;
+    font-family: 'Archivo', system-ui, -apple-system, sans-serif;
+    color: #201e1d;
+}
+
+.mz-shell[b-lhwjexizcr] {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100%;
+    background: #f3f2f2;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+}
+
+.mz-topbar[b-lhwjexizcr] {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f3f2f2;
+    border-bottom: 2px solid rgba(32, 30, 29, 0.4);
+    padding: 14px 18px 12px;
+}
+
+.mz-brand[b-lhwjexizcr] {
+    font-size: 13px;
+    letter-spacing: .08em;
+    font-weight: 800;
+    color: #201e1d;
+    text-decoration: none;
+}
+
+.mz-lang[b-lhwjexizcr] {
+    border: 1px solid rgba(32, 30, 29, 0.3);
+    background: none;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 7px;
+    cursor: pointer;
+    color: #201e1d;
+}
+
+.mz-content[b-lhwjexizcr] {
+    padding: 24px 18px 60px;
+}
+
+.mz-badge[b-lhwjexizcr] {
+    font-size: 11px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: #ae1800;
+    font-weight: 800;
+}
+
+.mz-title[b-lhwjexizcr] {
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: -.03em;
+    font-weight: 800;
+    margin: 8px 0 12px;
+}
+
+.mz-desc[b-lhwjexizcr] {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(32, 30, 29, 0.8);
+    margin: 0 0 18px;
+}
+
+.mz-field[b-lhwjexizcr] {
+    border-top: 2px solid rgba(32, 30, 29, 0.4);
+    padding: 12px 0 14px;
+}
+
+.mz-label[b-lhwjexizcr] {
+    display: block;
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgba(32, 30, 29, 0.6);
+    margin-bottom: 8px;
+}
+
+.mz-input-wrap[b-lhwjexizcr] {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    border-bottom: 2px solid #201e1d;
+    margin-bottom: 10px;
+}
+
+.mz-input[b-lhwjexizcr] {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    font-family: inherit;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: #201e1d;
+    padding: 4px 0;
+    outline: none;
+}
+
+.mz-unit[b-lhwjexizcr] {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ae1800;
+}
+
+.mz-chips[b-lhwjexizcr] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.mz-chip[b-lhwjexizcr] {
+    border: 1px solid rgba(32, 30, 29, 0.3);
+    background: none;
+    color: rgba(32, 30, 29, 0.75);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.mz-chip:hover[b-lhwjexizcr],
+.mz-chip.active[b-lhwjexizcr] {
+    background: #201e1d;
+    color: #f3f2f2;
+    border-color: #201e1d;
+}
+
+.mz-hint[b-lhwjexizcr] {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ae1800;
+}
+
+.mz-converted[b-lhwjexizcr] {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 4px;
+}
+
+.mz-source[b-lhwjexizcr] {
+    font-size: 10.5px;
+    line-height: 1.4;
+    color: rgba(32, 30, 29, 0.55);
+    margin: 4px 0 0;
+}
+
+.mz-guide[b-lhwjexizcr] {
+    margin-top: 28px;
+    border-top: 2px solid rgba(32, 30, 29, 0.4);
+}
+
+.mz-guide h2[b-lhwjexizcr] {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -.01em;
+    margin: 22px 0 8px;
+}
+
+.mz-guide p[b-lhwjexizcr] {
+    font-size: 13px;
+    line-height: 1.55;
+    color: rgba(32, 30, 29, 0.8);
+    margin: 0 0 10px;
+}
+
+.mz-more a[b-lhwjexizcr] {
+    color: #ae1800;
+    font-weight: 800;
+    text-decoration: none;
+}
