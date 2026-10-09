@@ -57,6 +57,9 @@ window.predictLeagueShare = {
         if (data && data.kind === 'receipt') {
             return this.drawReceiptCanvas(data);
         }
+        if (data && data.kind === 'size') {
+            return this.drawSizeCanvas(data);
+        }
 
         const W = 1080;
         const H = 1350;
@@ -536,6 +539,105 @@ window.predictLeagueShare = {
 
         this.cachedCanvas = canvas;
         return canvas;
+    },
+
+    // Money size card (1080 x 1350): the amount, a one-line comparison and the to-scale drawing
+    drawSizeCanvas: function (d) {
+        const W = 1080, H = 1350, M = 72;
+        const canvas = document.createElement('canvas');
+        canvas.width = W;
+        canvas.height = H;
+        const ctx = canvas.getContext('2d');
+        const ink = '#201e1d', red = '#ae1800', muted = 'rgba(32, 30, 29, 0.65)', rule = 'rgba(32, 30, 29, 0.4)';
+        const font = (weight, size) => `${weight} ${size}px "Archivo", system-ui, sans-serif`;
+
+        ctx.fillStyle = '#f3f2f2';
+        ctx.fillRect(0, 0, W, H);
+
+        ctx.fillStyle = ink;
+        ctx.font = font(800, 34);
+        ctx.textAlign = 'left';
+        ctx.fillText(d.brand, M, 118);
+        ctx.fillStyle = red;
+        ctx.font = font(800, 26);
+        ctx.textAlign = 'right';
+        ctx.fillText(d.badge, W - M, 116);
+        ctx.fillStyle = rule;
+        ctx.fillRect(M, 146, W - 2 * M, 3);
+
+        // Amount: as large as fits on one line
+        ctx.textAlign = 'left';
+        ctx.fillStyle = ink;
+        let size = 120;
+        do { ctx.font = font(800, size); size -= 4; } while (ctx.measureText(d.amount).width > W - 2 * M && size > 40);
+        ctx.fillText(d.amount, M, 290);
+
+        ctx.fillStyle = red;
+        ctx.font = font(800, 58);
+        let y = 376;
+        for (const line of this.wrapText(ctx, d.headline, W - 2 * M, 2)) { ctx.fillText(line, M, y); y += 66; }
+
+        this.drawMoneyScale(ctx, M, y + 10, W - 2 * M, 1000 - y, d.scaleSideM,
+            { side: d.scaleSide, person: d.personLabel, personHeight: d.personHeight });
+
+        ctx.textAlign = 'left'; // drawMoneyScale leaves the alignment centred
+        ctx.fillStyle = muted;
+        ctx.font = font(600, 30);
+        let fy = 1070;
+        for (const fact of d.facts) {
+            ctx.fillText(this.truncateText(ctx, fact, W - 2 * M), M, fy);
+            fy += 44;
+        }
+
+        ctx.fillStyle = '#ec3013';
+        ctx.fillRect(0, H - 118, W, 118);
+        ctx.fillStyle = '#ffffff';
+        ctx.font = font(700, 24);
+        const urlWidth = ctx.measureText(d.url).width;
+        ctx.textAlign = 'right';
+        ctx.fillText(d.url, W - M, H - 50);
+        ctx.font = font(800, 32);
+        ctx.textAlign = 'left';
+        ctx.fillText(this.truncateText(ctx, d.cta, W - 2 * M - urlWidth - 28), M, H - 48);
+
+        this.cachedCanvas = canvas;
+        return canvas;
+    },
+
+    // True when the browser can hand an image file to the system share sheet (most phones, Chrome/Safari on desktop)
+    canShareFiles: function () {
+        try {
+            const probe = new File([new Blob(['x'], { type: 'image/png' })], 'probe.png', { type: 'image/png' });
+            return !!(navigator.canShare && navigator.canShare({ files: [probe] }));
+        } catch (e) {
+            return false;
+        }
+    },
+
+    // Sends the card image, text and link together through the system share sheet, so the recipient sees the
+    // picture itself instead of a bare link. Returns 'shared', 'cancelled' or 'unsupported'.
+    shareNative: async function (cardData, fileName, title, text, url) {
+        try {
+            const canvas = await this.drawCardCanvas(cardData);
+            const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
+            if (!blob) return 'unsupported';
+            const file = new File([blob], fileName || 'stagesimulator.png', { type: 'image/png' });
+            // The link goes inside the text: several apps drop the separate url field when files are attached
+            const message = [text, url].filter(Boolean).join(' ');
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                await navigator.share({ files: [file], title: title || 'StageSimulator', text: message });
+                return 'shared';
+            }
+            if (navigator.share) {
+                await navigator.share({ title: title || 'StageSimulator', text: text || '', url: url });
+                return 'shared';
+            }
+            return 'unsupported';
+        } catch (err) {
+            if (err && err.name === 'AbortError') return 'cancelled';
+            console.warn('Paylaşım hatası:', err);
+            return 'unsupported';
+        }
     },
 
     // Kart önizlemesini render edip DataURL olarak döndürme
