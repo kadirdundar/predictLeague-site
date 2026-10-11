@@ -50,14 +50,14 @@
         {
           "@type": "ListItem",
           "position": 1,
-          "name": "PredictLeague",
-          "item": "https://www.stagesimulator.com"
+          "name": "StageSimulator",
+          "item": "https://www.stagesimulator.com/simulators/"
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Fikstürler",
-          "item": "https://www.stagesimulator.com/fixtures/"
+          "name": "Futbol",
+          "item": "https://www.stagesimulator.com/"
         },
         {
           "@type": "ListItem",
@@ -301,6 +301,7 @@ a { color: inherit; text-decoration: none; }
 
 .pl-breadcrumb {
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
   align-items: center;
   font-size: 11px;
@@ -309,6 +310,8 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-breadcrumb a:hover { color: var(--pl-accent); }
 .pl-breadcrumb span { opacity: 0.45; }
+.pl-try-also { font-size: 12px; color: var(--pl-muted); margin: 4px 0 0; }
+.pl-try-also a { color: var(--pl-accent); font-weight: 600; text-decoration: none; }
 
 /* Hero Card */
 .pl-hero-card {
@@ -699,15 +702,7 @@ a { color: inherit; text-decoration: none; }
     </header>
 
     <div class="pl-main">
-      <nav class="pl-breadcrumb" aria-label="Breadcrumb">
-        <a href="/">Ana Sayfa</a>
-        <span>/</span>
-        <a href="/fixtures/">Fikstürler</a>
-        <span>/</span>
-        <a href="/fixtures/europa-league/">UEL</a>
-        <span>/</span>
-        <span>Salzburg</span>
-      </nav>
+      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/">Futbol</a> <span>/</span> <a href="/fixtures/europa-league/">UEL</a> <span>/</span> <span>Salzburg</span></nav>
 
       <section class="pl-hero-card">
         <div class="pl-hero-header">
@@ -1065,17 +1060,12 @@ a { color: inherit; text-decoration: none; }
         </a>
         
       </div>
+      <p class="pl-try-also">Bunu da dene: <a href="/money-size/1-milyar-dolar/">1 milyar dolar yan yana dursa ne kadar yer kaplar? →</a></p>
     </div>
 
     <footer class="pl-footer">
-      <p>© 2026 PredictLeague · Monte Carlo Standings Predictor</p>
-      <div style="margin-top: 6px;">
-        <a href="/">Simülatör</a> ·
-        <a href="/fixtures/">Tüm Fikstürler</a> ·
-        <a href="/guide/swiss-format-points-needed/">Format Rehberi</a> ·
-        <a href="/simulators/">Tüm Simülatörler</a> ·
-        <a href="/privacy/">Gizlilik</a>
-      </div>
+      <p>© 2026 StageSimulator · PredictLeague</p>
+      <div style="margin-top: 6px;"><a href="/">Futbol</a> · <a href="/fixtures/">Fikstürler</a> · <a href="/finance/">Finans</a> · <a href="/money-size/">Paranın Boyutu</a> · <a href="/simulators/">Tüm Simülatörler</a> · <a href="/privacy/">Gizlilik</a></div>
     </footer>
   </div>
 </body>

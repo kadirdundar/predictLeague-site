@@ -39,11 +39,11 @@
       "url": "https://www.stagesimulator.com/guide/swiss-format-points-needed/",
       "author": {
         "@type": "Organization",
-        "name": "PredictLeague"
+        "name": "StageSimulator"
       },
       "publisher": {
         "@type": "Organization",
-        "name": "PredictLeague",
+        "name": "StageSimulator",
         "logo": {
           "@type": "ImageObject",
           "url": "https://www.stagesimulator.com/icon-192.png"
@@ -51,6 +51,29 @@
       },
       "datePublished": "2026-09-01",
       "dateModified": "2026-10-11"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "StageSimulator",
+          "item": "https://www.stagesimulator.com/simulators/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Futbol",
+          "item": "https://www.stagesimulator.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Puan Barajları Rehberi",
+          "item": "https://www.stagesimulator.com/guide/swiss-format-points-needed/"
+        }
+      ]
     },
     {
       "@type": "FAQPage",
@@ -295,6 +318,7 @@ a { color: inherit; text-decoration: none; }
 
 .pl-breadcrumb {
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
   align-items: center;
   font-size: 11px;
@@ -303,6 +327,8 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-breadcrumb a:hover { color: var(--pl-accent); }
 .pl-breadcrumb span { opacity: 0.45; }
+.pl-try-also { font-size: 12px; color: var(--pl-muted); margin: 4px 0 0; }
+.pl-try-also a { color: var(--pl-accent); font-weight: 600; text-decoration: none; }
 
 /* Hero Card */
 .pl-hero-card {
@@ -692,13 +718,7 @@ a { color: inherit; text-decoration: none; }
     </header>
 
     <div class="pl-main pl-prose">
-      <nav class="pl-breadcrumb">
-        <a href="/">Ana Sayfa</a>
-        <span>/</span>
-        <span>Rehber</span>
-        <span>/</span>
-        <span>Format & Puan Barajları</span>
-      </nav>
+      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/">Futbol</a> <span>/</span> <span>Puan Barajları Rehberi</span></nav>
 
       <section class="pl-hero-card">
         <h1 style="font-size: 16px; font-weight: 800; color: var(--pl-ink);">İlk 8 İçin Kaç Puan Gerekir? UEFA Lig Aşaması Puan Barajları 2026/27</h1>
@@ -779,14 +799,8 @@ a { color: inherit; text-decoration: none; }
     </div>
 
     <footer class="pl-footer">
-      <p>© 2026 PredictLeague · Monte Carlo Standings Predictor</p>
-      <div style="margin-top: 6px;">
-        <a href="/">Ana Sayfa</a> ·
-        <a href="/fixtures/">Fikstürler</a> ·
-        <a href="/guide/swiss-format-points-needed/">Format Rehberi</a> ·
-        <a href="/simulators/">Tüm Simülatörler</a> ·
-        <a href="/privacy/">Gizlilik</a>
-      </div>
+      <p>© 2026 StageSimulator · PredictLeague</p>
+      <div style="margin-top: 6px;"><a href="/">Futbol</a> · <a href="/fixtures/">Fikstürler</a> · <a href="/finance/">Finans</a> · <a href="/money-size/">Paranın Boyutu</a> · <a href="/simulators/">Tüm Simülatörler</a> · <a href="/privacy/">Gizlilik</a></div>
     </footer>
   </div>
 </body>

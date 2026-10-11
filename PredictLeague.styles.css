@@ -1288,6 +1288,17 @@ input[type=range][b-sqmwahb4xx]::-moz-range-thumb {
     font-weight: 800;
     text-decoration: none;
 }
+
+.fs-guide p.fs-guide-links[b-sqmwahb4xx] {
+    margin-top: 22px;
+    font-size: 12px;
+}
+
+.fs-guide-links a[b-sqmwahb4xx] {
+    color: rgba(32, 30, 29, 0.7);
+    font-weight: 600;
+    text-decoration: none;
+}
 /* /Pages/MoneySize.razor.rz.scp.css */
 /* Same paper-and-ink look as the finance game */
 .mz-outer[b-lhwjexizcr] {
@@ -1479,6 +1490,17 @@ input[type=range][b-sqmwahb4xx]::-moz-range-thumb {
 .mz-more a[b-lhwjexizcr] {
     color: #ae1800;
     font-weight: 800;
+    text-decoration: none;
+}
+
+.mz-guide p.mz-links[b-lhwjexizcr] {
+    margin-top: 22px;
+    font-size: 12px;
+}
+
+.mz-links a[b-lhwjexizcr] {
+    color: rgba(32, 30, 29, 0.7);
+    font-weight: 600;
     text-decoration: none;
 }
 
