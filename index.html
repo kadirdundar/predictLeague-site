@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     
     <!-- Primary Meta Tags -->
     <title>PredictLeague — Europa League Simulator, Champions League & Conference League Predictor 2026/27</title>
@@ -78,25 +78,41 @@
     <meta name="apple-mobile-web-app-title" content="PredictLeague" />
     <link rel="manifest" href="manifest.json" />
     <link rel="apple-touch-icon" sizes="192x192" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
     <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
     <script src="/js/analytics.js" async></script>
     
     <base href="/" />
+    <!-- Filled at build time with preload links for the .NET runtime files, so they download in parallel with the page -->
+    <link href="_framework/dotnet.0j9zyjglgn.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-/Oji7wPg0bEf8GL6plg2h9DApuZx2Q/8ttaqEvbGwRI=" />
     
-    <!-- Performance & Preload Optimizations -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" href="css/app.css" as="style" />
-    <link rel="preload" href="css/cl-theme.css" as="style" />
-    
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Everything the first paint needs comes from this origin: no third-party CSS or font requests -->
+    <link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/icons.css" />
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/cl-theme.css" />
     <link href="PredictLeague.styles.css" rel="stylesheet" />
+    <script type="importmap">{
+  "imports": {
+    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.w3qd1tpl0e.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.0j9zyjglgn.js",
+    "./_framework/dotnet.native.js": "./_framework/dotnet.native.q38003gvqi.js",
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.azrfhwb804.js"
+  },
+  "scopes": {},
+  "integrity": {
+    "./_framework/blazor.webassembly.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
+    "./_framework/blazor.webassembly.w3qd1tpl0e.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
+    "./_framework/dotnet.0j9zyjglgn.js": "sha256-/Oji7wPg0bEf8GL6plg2h9DApuZx2Q/8ttaqEvbGwRI=",
+    "./_framework/dotnet.js": "sha256-/Oji7wPg0bEf8GL6plg2h9DApuZx2Q/8ttaqEvbGwRI=",
+    "./_framework/dotnet.native.js": "sha256-BtUMevCTTpUK4I5d68LtBZlJdGIQC7fk+oNnjyzuFR4=",
+    "./_framework/dotnet.native.q38003gvqi.js": "sha256-BtUMevCTTpUK4I5d68LtBZlJdGIQC7fk+oNnjyzuFR4=",
+    "./_framework/dotnet.runtime.azrfhwb804.js": "sha256-muN076HgyOCoAaid7zD7a2/GN7aQ7tmK/BzdnKgw78g=",
+    "./_framework/dotnet.runtime.js": "sha256-muN076HgyOCoAaid7zD7a2/GN7aQ7tmK/BzdnKgw78g="
+  }
+}</script>
 
     <!-- Schema.org JSON-LD (WebApplication + FAQPage for Google Rich Snippets) -->
     <script type="application/ld+json">
@@ -237,6 +253,9 @@
                                 <a href="/fixtures/conference-league/" style="color: #059669; font-weight: 600; text-decoration: none; background: #ECFDF5; border: 1px solid #A7F3D0; padding: 4px 10px; border-radius: 8px; font-size: 11.5px;">🟢 Conference League Simulator & Fikstür</a>
                                 <a href="/guide/swiss-format-points-needed/" style="color: #0F172A; font-weight: 600; text-decoration: none; background: #F1F5F9; border: 1px solid #CBD5E1; padding: 4px 10px; border-radius: 8px; font-size: 11.5px;">📖 2026/27 Format Rehberi</a>
                                 <a href="/teams/" style="color: #0F172A; font-weight: 600; text-decoration: none; background: #F1F5F9; border: 1px solid #CBD5E1; padding: 4px 10px; border-radius: 8px; font-size: 11.5px;">👥 100+ Takım Simülasyon Sayfaları</a>
+                                <a href="/en/fixtures/champions-league/" hreflang="en" style="color: #0F172A; font-weight: 600; text-decoration: none; background: #F1F5F9; border: 1px solid #CBD5E1; padding: 4px 10px; border-radius: 8px; font-size: 11.5px;">🇬🇧 Champions League Standings</a>
+                                <a href="/en/fixtures/europa-league/" hreflang="en" style="color: #0F172A; font-weight: 600; text-decoration: none; background: #F1F5F9; border: 1px solid #CBD5E1; padding: 4px 10px; border-radius: 8px; font-size: 11.5px;">🇬🇧 Europa League Standings</a>
+                                <a href="/en/fixtures/conference-league/" hreflang="en" style="color: #0F172A; font-weight: 600; text-decoration: none; background: #F1F5F9; border: 1px solid #CBD5E1; padding: 4px 10px; border-radius: 8px; font-size: 11.5px;">🇬🇧 Conference League Standings</a>
                             </div>
                         </div>
 
@@ -336,8 +355,8 @@
         }
       }(window.location));
     </script>
-    <script src="js/share.js"></script>
-    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="js/share.js" defer></script>
+    <script src="_framework/blazor.webassembly.w3qd1tpl0e.js"></script>
     <!-- Cloudflare Web Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5ea3236666c34c3dbd894419a28924d4"}'></script>
     <!-- End Cloudflare Web Analytics -->

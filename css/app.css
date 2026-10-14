@@ -8,6 +8,11 @@ h1:focus {
     outline: none;
 }
 
+/* Pinch zoom stays available; this only drops the double-tap zoom (and its delay) on controls */
+a, button, input, select, label, [role="button"] {
+    touch-action: manipulation;
+}
+
 a, .btn-link {
     color: #0071c1;
 }

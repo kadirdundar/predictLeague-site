@@ -3,28 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>UEFA Europa League Simulator & Standings Predictor 2026/27 — PredictLeague</title>
-  <meta name="description" content="Simulate UEFA Europa League 2026/27 36-team single league stage standings. Predict match results, calculate Top 8 and Play-off probabilities with 1,000 Monte Carlo runs." />
-  <meta name="keywords" content="europa league simulator, europa league predictor simulator, uel predictor, europa league standings calculator, europa league fixtures 2026/27, UEFA Avrupa Ligi simülatörü" />
+  <title>Avrupa Ligi Puan Durumu 2026/27 ve Tur İhtimalleri</title>
+  <meta name="description" content="Avrupa Ligi 2026/27 lig aşaması güncel puan durumu, maç sonuçları ve fikstür. Her takımın İlk 8 ve play-off ihtimali simülasyonla hesaplandı; kendi skor tahmininle simülatörde dene." />
+  <meta name="keywords" content="Avrupa Ligi puan durumu, Avrupa Ligi fikstürü, Avrupa Ligi tur ihtimalleri, UEFA Europa League standings, UEFA Europa League simulator, UEL predictor 2026/27" />
   <link rel="canonical" href="https://www.stagesimulator.com/fixtures/europa-league/" />
+  <link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/fixtures/europa-league/" />
+  <link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/fixtures/europa-league/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/fixtures/europa-league/" />
   
   
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.stagesimulator.com/fixtures/europa-league/" />
-  <meta property="og:title" content="UEFA Europa League Simulator & Standings Predictor 2026/27 — PredictLeague" />
-  <meta property="og:description" content="Simulate UEFA Europa League 2026/27 36-team single league stage standings. Predict match results, calculate Top 8 and Play-off probabilities with 1,000 Monte Carlo runs." />
+  <meta property="og:title" content="Avrupa Ligi Puan Durumu 2026/27 ve Tur İhtimalleri" />
+  <meta property="og:description" content="Avrupa Ligi 2026/27 lig aşaması güncel puan durumu, maç sonuçları ve fikstür. Her takımın İlk 8 ve play-off ihtimali simülasyonla hesaplandı; kendi skor tahmininle simülatörde dene." />
   <meta property="og:image" content="https://www.stagesimulator.com/og/football.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://www.stagesimulator.com/og/football.png" />
   
-  <meta name="twitter:title" content="UEFA Europa League Simulator & Standings Predictor 2026/27 — PredictLeague" />
-  <meta name="twitter:description" content="Simulate UEFA Europa League 2026/27 36-team single league stage standings. Predict match results, calculate Top 8 and Play-off probabilities with 1,000 Monte Carlo runs." />
+  <meta name="twitter:title" content="Avrupa Ligi Puan Durumu 2026/27 ve Tur İhtimalleri" />
+  <meta name="twitter:description" content="Avrupa Ligi 2026/27 lig aşaması güncel puan durumu, maç sonuçları ve fikstür. Her takımın İlk 8 ve play-off ihtimali simülasyonla hesaplandı; kendi skor tahmininle simülatörde dene." />
   
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/fonts.css" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <script src="/js/analytics.js" async></script>
   
@@ -81,10 +83,18 @@
         },
         {
           "@type": "Question",
+          "name": "Avrupa Ligi puan durumunda kim lider, kimlerin tur ihtimali en yüksek?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "18 maç sonunda Juventus 3 puanla zirvede. Modele göre İlk 8 ihtimali en yüksek takımlar: Benfica (%83), Juventus (%80), Bayer Leverkusen (%77)."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "UEFA Europa League lig aşamasında ilk 8 ve play-off için kaç puan gerekir?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "UEFA Europa League lig aşamasında (8 maç, en fazla 24 puan) İlk 8 için 16 puan, Play-off (9-24) için 10 puan %90 ihtimalle yeterlidir. 15 puan İlk 8, 10 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-11)."
+            "text": "UEFA Europa League lig aşamasında (8 maç, en fazla 24 puan) İlk 8 için 16 puan, Play-off (9-24) için 10 puan %90 ihtimalle yeterlidir. 15 puan İlk 8, 10 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-13)."
           }
         },
         {
@@ -111,7 +121,7 @@
 
   --pl-ink: #0F172A;
   --pl-ink-soft: #334155;
-  --pl-muted: #64748B;
+  --pl-muted: #5B6B80;
   --pl-muted-2: #94A3B8;
   --pl-muted-3: #CBD5E1;
   --pl-faint: #E2E8F0;
@@ -144,6 +154,11 @@
   --pl-playoff-bg: #FEF3C7;
   --pl-elim: #EF4444;
   --pl-elim-bg: #FEE2E2;
+
+  /* Darker shades of the result colours for small text (WCAG AA 4.5:1 on the light badge backgrounds) */
+  --pl-win-text: #047857;
+  --pl-loss-text: #B91C1C;
+  --pl-amber-text: #B45309;
 
   --pl-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
   --pl-shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
@@ -296,6 +311,7 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-breadcrumb a:hover { color: var(--pl-accent); }
 .pl-breadcrumb span { opacity: 0.45; }
+.pl-breadcrumb span[aria-current] { opacity: 1; color: var(--pl-ink-soft); }
 .pl-try-also { font-size: 12px; color: var(--pl-muted); margin: 4px 0 0; }
 .pl-try-also a { color: var(--pl-accent); font-weight: 600; text-decoration: none; }
 
@@ -388,8 +404,9 @@ a { color: inherit; text-decoration: none; }
   font-weight: 800;
   color: var(--pl-ink);
 }
-.pl-stat-box .val.top8 { color: var(--pl-top8); }
-.pl-stat-box .val.playoff { color: var(--pl-playoff); }
+.pl-stat-box .val.top8 { color: var(--pl-win-text); }
+.pl-stat-box .val.playoff { color: var(--pl-amber-text); }
+.pl-stat-box .val.elim { color: var(--pl-loss-text); }
 
 .pl-large-cta {
   display: flex;
@@ -479,7 +496,7 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-venue-tag.away {
   background: #FEF3C7;
-  color: #D97706;
+  color: var(--pl-amber-text);
   border: 1px solid #FDE68A;
 }
 
@@ -516,17 +533,17 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-diff-badge.diff-easy {
   background: var(--pl-win-bg);
-  color: var(--pl-win);
+  color: var(--pl-win-text);
   border: 1px solid var(--pl-win-border);
 }
 .pl-diff-badge.diff-med {
   background: #FEF3C7;
-  color: #D97706;
+  color: var(--pl-amber-text);
   border: 1px solid #FDE68A;
 }
 .pl-diff-badge.diff-hard {
   background: var(--pl-loss-bg);
-  color: var(--pl-loss);
+  color: var(--pl-loss-text);
   border: 1px solid var(--pl-loss-border);
 }
 
@@ -568,6 +585,28 @@ a { color: inherit; text-decoration: none; }
   color: var(--pl-ink);
   margin: 0;
 }
+.pl-standings-wrap { background: var(--pl-card-bg); border: 1px solid var(--pl-border); border-radius: var(--pl-radius-lg); overflow: hidden; }
+.pl-standings { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+.pl-standings caption { caption-side: top; text-align: left; padding: 10px 12px 6px; font-size: 11px; color: var(--pl-muted); }
+.pl-standings th { font-size: 10px; font-weight: 700; color: var(--pl-muted); text-transform: uppercase; padding: 6px 4px; border-bottom: 1px solid var(--pl-border); text-align: right; }
+.pl-standings th abbr { text-decoration: none; cursor: help; }
+.pl-standings td { padding: 6px 4px; border-bottom: 1px solid var(--pl-border-3); text-align: right; color: var(--pl-ink-soft); }
+.pl-standings th:nth-child(2), .pl-standings td.team { text-align: left; }
+.pl-standings td.team span { display: flex; align-items: center; gap: 6px; min-width: 0; font-weight: 600; }
+.pl-standings td.team a { color: var(--pl-ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 140px; }
+.pl-standings td.pos { text-align: center; font-weight: 800; width: 26px; border-left: 3px solid transparent; }
+.pl-standings td.pts { font-weight: 800; color: var(--pl-ink); }
+.pl-standings td.pct, .pl-standings th:nth-child(n+6) { color: var(--pl-muted); padding-right: 10px; }
+.pl-standings tr.z-top8 td.pos { border-left-color: var(--pl-top8); }
+.pl-standings tr.z-po td.pos { border-left-color: var(--pl-playoff); }
+.pl-standings tr.z-out td.pos { border-left-color: var(--pl-elim); }
+.pl-table-note { font-size: 11px; color: var(--pl-muted); line-height: 1.5; margin: 6px 2px 0; }
+.pl-key { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin: 0 4px 0 2px; }
+.pl-key.z-top8 { background: var(--pl-top8); }
+.pl-key.z-po { background: var(--pl-playoff); }
+.pl-key.z-out { background: var(--pl-elim); }
+.pl-forecast { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.pl-forecast-note { font-size: 11px; color: var(--pl-muted); margin: 0; line-height: 1.45; }
 .pl-thr-table th, .pl-thr-table td {
   padding: 6px 8px;
   border-bottom: 1px solid var(--pl-border);
@@ -676,7 +715,7 @@ a { color: inherit; text-decoration: none; }
     <header class="pl-topbar">
       <a href="/" class="pl-brand">
         <div class="pl-brand-badge">
-          <img src="/favicon.png" alt="PredictLeague" width="22" height="22" />
+          <img src="/favicon.png" alt="" width="22" height="22" />
         </div>
         <span>PredictLeague</span>
       </a>
@@ -687,13 +726,27 @@ a { color: inherit; text-decoration: none; }
     </header>
 
     <div class="pl-main">
-      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/">Futbol</a> <span>/</span> <a href="/fixtures/">Fikstürler</a> <span>/</span> <span>UEFA Europa League</span></nav>
+      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/">Futbol</a> <span>/</span> <a href="/fixtures/">Fikstürler</a> <span>/</span> <span aria-current="page">UEFA Europa League</span></nav>
 
       <section class="pl-hero-card">
-        <h1 style="font-size: 16px; font-weight: 800; color: var(--pl-ink);">UEFA Europa League Fikstürü & Puan Durumu</h1>
-        <p style="font-size: 12.5px; color: var(--pl-muted);">36 takımlı lig aşamasında oynanacak tüm haftalık maç programı, fikstür takvimi ve Monte Carlo simülasyonu.</p>
+        <h1 style="font-size: 16px; font-weight: 800; color: var(--pl-ink);">Avrupa Ligi Puan Durumu ve Fikstür 2026/27</h1>
+        <p style="font-size: 12.5px; color: var(--pl-muted);">UEFA Europa League 36 takımlı lig aşamasının güncel puan durumu, her takımın tur ihtimali ve haftalık maç programı.</p>
         <a href="https://www.stagesimulator.com/?comp=el" class="pl-large-cta">⚡ UEL Monte Carlo Simülatörünü Aç</a>
       </section>
+
+      <h2 class="pl-section-title" id="puan-durumu">📊 Avrupa Ligi Puan Durumu</h2>
+      <div class="pl-standings-wrap">
+        <table class="pl-standings">
+          <caption>18/144 maç oynandı · Son iki sütun: modelin tahmini</caption>
+          <thead><tr><th scope="col">#</th><th scope="col">Takım</th><th scope="col"><abbr title="Oynanan maç">O</abbr></th><th scope="col"><abbr title="Averaj">AV</abbr></th><th scope="col"><abbr title="Puan">P</abbr></th><th scope="col"><abbr title="İlk 8'de bitirme ihtimali (doğrudan Son 16)">İlk 8</abbr></th><th scope="col"><abbr title="İlk 24'te bitirme ihtimali (Son 16 ya da play-off)">Tur</abbr></th></tr></thead>
+          <tbody>
+            <tr class="z-top8"><td class="pos">1</td><td class="team"><span><img src="/images/logos/team_1005.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/juventus/">Juventus</a></span></td><td>1</td><td>+5</td><td class="pts">3</td><td class="pct">%80</td><td class="pct">&gt;%99</td></tr><tr class="z-top8"><td class="pos">2</td><td class="team"><span><img src="/images/logos/team_1001.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/crystal-palace/">Crystal Palace</a></span></td><td>1</td><td>+4</td><td class="pts">3</td><td class="pct">%44</td><td class="pct">%92</td></tr><tr class="z-top8"><td class="pos">3</td><td class="team"><span><img src="/images/logos/team_1022.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/sparta-praha/">Sparta Praha</a></span></td><td>1</td><td>+3</td><td class="pts">3</td><td class="pct">%32</td><td class="pct">%87</td></tr><tr class="z-top8"><td class="pos">4</td><td class="team"><span><img src="/images/logos/team_1028.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/besiktas/">Beşiktaş</a></span></td><td>1</td><td>+3</td><td class="pts">3</td><td class="pct">%36</td><td class="pct">%90</td></tr><tr class="z-top8"><td class="pos">5</td><td class="team"><span><img src="/images/logos/team_1024.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/union-sg/">Union SG</a></span></td><td>1</td><td>+3</td><td class="pts">3</td><td class="pct">%32</td><td class="pct">%86</td></tr><tr class="z-top8"><td class="pos">6</td><td class="team"><span><img src="/images/logos/team_1029.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/ferencvaros/">Ferencváros</a></span></td><td>1</td><td>+2</td><td class="pts">3</td><td class="pct">%16</td><td class="pct">%75</td></tr><tr class="z-top8"><td class="pos">7</td><td class="team"><span><img src="/images/logos/team_1027.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/benfica/">Benfica</a></span></td><td>1</td><td>+2</td><td class="pts">3</td><td class="pct">%83</td><td class="pct">&gt;%99</td></tr><tr class="z-top8"><td class="pos">8</td><td class="team"><span><img src="/images/logos/uefa_50109.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/bayer-leverkusen/">Bayer Leverkusen</a></span></td><td>1</td><td>+2</td><td class="pts">3</td><td class="pct">%77</td><td class="pct">%99</td></tr><tr class="z-po"><td class="pos">9</td><td class="team"><span><img src="/images/logos/team_1033.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/ofi-crete/">OFI Crete</a></span></td><td>1</td><td>+2</td><td class="pts">3</td><td class="pct">%6</td><td class="pct">%55</td></tr><tr class="z-po"><td class="pos">10</td><td class="team"><span><img src="/images/logos/team_1019.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/lyon/">Lyon</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%43</td><td class="pct">%93</td></tr><tr class="z-po"><td class="pos">11</td><td class="team"><span><img src="/images/logos/team_1002.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/bournemouth/">Bournemouth</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%43</td><td class="pct">%93</td></tr><tr class="z-po"><td class="pos">12</td><td class="team"><span><img src="/images/logos/team_1013.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/torreense/">Torreense</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%19</td><td class="pct">%77</td></tr><tr class="z-po"><td class="pos">13</td><td class="team"><span><img src="/images/logos/team_1021.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/olympiacos/">Olympiacos</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%25</td><td class="pct">%82</td></tr><tr class="z-po"><td class="pos">14</td><td class="team"><span><img src="/images/logos/team_1035.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/salzburg/">Salzburg</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%38</td><td class="pct">%90</td></tr><tr class="z-po"><td class="pos">15</td><td class="team"><span><img src="/images/logos/team_1003.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/sunderland/">Sunderland</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%24</td><td class="pct">%83</td></tr><tr class="z-po"><td class="pos">16</td><td class="team"><span><img src="/images/logos/team_1034.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/omonia-nicosia/">Omonia Nicosia</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%7</td><td class="pct">%56</td></tr><tr class="z-po"><td class="pos">17</td><td class="team"><span><img src="/images/logos/uefa_55031.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/rennes/">Rennes</a></span></td><td>1</td><td>+0</td><td class="pts">1</td><td class="pct">%23</td><td class="pct">%82</td></tr><tr class="z-po"><td class="pos">18</td><td class="team"><span><img src="/images/logos/team_1016.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/gnk-dinamo/">GNK Dinamo</a></span></td><td>1</td><td>+0</td><td class="pts">1</td><td class="pct">%13</td><td class="pct">%68</td></tr><tr class="z-po"><td class="pos">19</td><td class="team"><span><img src="/images/logos/team_1023.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/sturm-graz/">Sturm Graz</a></span></td><td>1</td><td>+0</td><td class="pts">1</td><td class="pct">%8</td><td class="pct">%57</td></tr><tr class="z-po"><td class="pos">20</td><td class="team"><span><img src="/images/logos/team_1017.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/hapoel-beer-sheva/">Hapoel Beer-Sheva</a></span></td><td>1</td><td>+0</td><td class="pts">1</td><td class="pct">%2</td><td class="pct">%30</td></tr><tr class="z-po"><td class="pos">21</td><td class="team"><span><img src="/images/logos/team_1030.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/jagiellonia/">Jagiellonia</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">%4</td><td class="pct">%40</td></tr><tr class="z-po"><td class="pos">22</td><td class="team"><span><img src="/images/logos/team_1006.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/real-sociedad/">Real Sociedad</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">%17</td><td class="pct">%76</td></tr><tr class="z-po"><td class="pos">23</td><td class="team"><span><img src="/images/logos/team_1025.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/anderlecht/">Anderlecht</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">%7</td><td class="pct">%52</td></tr><tr class="z-po"><td class="pos">24</td><td class="team"><span><img src="/images/logos/team_1032.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/lillestrom/">Lillestrøm</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">&lt;%1</td><td class="pct">%21</td></tr><tr class="z-out"><td class="pos">25</td><td class="team"><span><img src="/images/logos/team_1007.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/celta-vigo/">Celta Vigo</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">%10</td><td class="pct">%60</td></tr><tr class="z-out"><td class="pos">26</td><td class="team"><span><img src="/images/logos/team_1012.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/az-alkmaar/">AZ Alkmaar</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">%10</td><td class="pct">%63</td></tr><tr class="z-out"><td class="pos">27</td><td class="team"><span><img src="/images/logos/team_1018.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/levski-sofia/">Levski Sofia</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">%1</td><td class="pct">%26</td></tr><tr class="z-out"><td class="pos">28</td><td class="team"><span><img src="/images/logos/team_1015.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/celtic/">Celtic</a></span></td><td>1</td><td>-2</td><td class="pts">0</td><td class="pct">%6</td><td class="pct">%51</td></tr><tr class="z-out"><td class="pos">29</td><td class="team"><span><img src="/images/logos/team_1004.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/ac-milan/">AC Milan</a></span></td><td>1</td><td>-2</td><td class="pts">0</td><td class="pct">%47</td><td class="pct">%93</td></tr><tr class="z-out"><td class="pos">30</td><td class="team"><span><img src="/images/logos/team_1008.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/hoffenheim/">Hoffenheim</a></span></td><td>1</td><td>-2</td><td class="pts">0</td><td class="pct">%9</td><td class="pct">%58</td></tr><tr class="z-out"><td class="pos">31</td><td class="team"><span><img src="/images/logos/team_1014.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/celje/">Celje</a></span></td><td>1</td><td>-2</td><td class="pts">0</td><td class="pct">%3</td><td class="pct">%38</td></tr><tr class="z-out"><td class="pos">32</td><td class="team"><span><img src="/images/logos/team_1010.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/marseille/">Marseille</a></span></td><td>1</td><td>-3</td><td class="pts">0</td><td class="pct">%18</td><td class="pct">%75</td></tr><tr class="z-out"><td class="pos">33</td><td class="team"><span><img src="/images/logos/uefa_2610304.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/ararat-armenia/">Ararat-Armenia</a></span></td><td>1</td><td>-3</td><td class="pts">0</td><td class="pct">%1</td><td class="pct">%22</td></tr><tr class="z-out"><td class="pos">34</td><td class="team"><span><img src="/images/logos/team_1036.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/viktoria-plze/">Viktoria Plzeň</a></span></td><td>1</td><td>-3</td><td class="pts">0</td><td class="pct">%6</td><td class="pct">%50</td></tr><tr class="z-out"><td class="pos">35</td><td class="team"><span><img src="/images/logos/team_1031.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/lech-pozna/">Lech Poznań</a></span></td><td>1</td><td>-4</td><td class="pts">0</td><td class="pct">%3</td><td class="pct">%37</td></tr><tr class="z-out"><td class="pos">36</td><td class="team"><span><img src="/images/logos/team_1020.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/el/nec-nijmegen/">N.E.C. Nijmegen</a></span></td><td>1</td><td>-5</td><td class="pts">0</td><td class="pct">%4</td><td class="pct">%45</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="pl-table-note"><span class="pl-key z-top8"></span>1-8 Son 16 · <span class="pl-key z-po"></span>9-24 Play-off · <span class="pl-key z-out"></span>25-36 elenir. Oynanan 18 maçın sonucu sabit, kalan maçlar 4.000 kez simüle edildi (2026-10-13). Model, simülatörle aynı: takım güç puanına bağlı Poisson gol dağılımı. Eşitlikte UEFA kriterleri uygulanır; son kriter olarak güç puanı kullanılır.</p>
+
+      <h2 class="pl-section-title">📅 Avrupa Ligi Fikstürü ve Sonuçlar</h2>
 
       <section>
         
@@ -704,7 +757,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/el/ararat-armenia/" class="pl-opp-name" style="text-align: right;">Ararat-Armenia</a>
-                <img src="/images/logos/team_1026.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2610304.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span class="pl-score-box">1 - 4</span>
@@ -746,7 +799,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/el/bayer-leverkusen/" class="pl-opp-name" style="text-align: right;">Bayer Leverkusen</a>
-                <img src="/images/logos/team_1009.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50109.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span class="pl-score-box">2 - 0</span>
@@ -808,7 +861,7 @@ a { color: inherit; text-decoration: none; }
                 <span class="pl-score-box">0 - 0</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_1011.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_55031.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/el/rennes/" class="pl-opp-name">Rennes</a>
               </div>
             </div>
@@ -1011,7 +1064,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_1009.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50109.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/el/bayer-leverkusen/" class="pl-opp-name">Bayer Leverkusen</a>
               </div>
             </div>
@@ -1131,7 +1184,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/el/rennes/" class="pl-opp-name" style="text-align: right;">Rennes</a>
-                <img src="/images/logos/team_1011.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_55031.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -1207,7 +1260,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_1026.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2610304.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/el/ararat-armenia/" class="pl-opp-name">Ararat-Armenia</a>
               </div>
             </div>
@@ -1228,7 +1281,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_1011.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_55031.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/el/rennes/" class="pl-opp-name">Rennes</a>
               </div>
             </div>
@@ -1312,7 +1365,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_1009.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50109.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/el/bayer-leverkusen/" class="pl-opp-name">Bayer Leverkusen</a>
               </div>
             </div>
@@ -1320,7 +1373,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/el/ararat-armenia/" class="pl-opp-name" style="text-align: right;">Ararat-Armenia</a>
-                <img src="/images/logos/team_1026.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2610304.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -1523,7 +1576,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/el/rennes/" class="pl-opp-name" style="text-align: right;">Rennes</a>
-                <img src="/images/logos/team_1011.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_55031.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -1669,7 +1722,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_1026.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2610304.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/el/ararat-armenia/" class="pl-opp-name">Ararat-Armenia</a>
               </div>
             </div>
@@ -1705,7 +1758,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/el/bayer-leverkusen/" class="pl-opp-name" style="text-align: right;">Bayer Leverkusen</a>
-                <img src="/images/logos/team_1009.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50109.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -1802,7 +1855,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_1009.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50109.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/el/bayer-leverkusen/" class="pl-opp-name">Bayer Leverkusen</a>
               </div>
             </div>
@@ -1816,7 +1869,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_1026.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2610304.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/el/ararat-armenia/" class="pl-opp-name">Ararat-Armenia</a>
               </div>
             </div>
@@ -1970,7 +2023,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_1011.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_55031.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/el/rennes/" class="pl-opp-name">Rennes</a>
               </div>
             </div>
@@ -2013,7 +2066,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/el/rennes/" class="pl-opp-name" style="text-align: right;">Rennes</a>
-                <img src="/images/logos/team_1011.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_55031.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2097,7 +2150,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/el/ararat-armenia/" class="pl-opp-name" style="text-align: right;">Ararat-Armenia</a>
-                <img src="/images/logos/team_1026.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2610304.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2111,7 +2164,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/el/bayer-leverkusen/" class="pl-opp-name" style="text-align: right;">Bayer Leverkusen</a>
-                <img src="/images/logos/team_1009.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50109.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2370,7 +2423,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/el/ararat-armenia/" class="pl-opp-name" style="text-align: right;">Ararat-Armenia</a>
-                <img src="/images/logos/team_1026.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2610304.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2384,7 +2437,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/el/bayer-leverkusen/" class="pl-opp-name" style="text-align: right;">Bayer Leverkusen</a>
-                <img src="/images/logos/team_1009.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50109.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2426,7 +2479,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/el/rennes/" class="pl-opp-name" style="text-align: right;">Rennes</a>
-                <img src="/images/logos/team_1011.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_55031.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2621,7 +2674,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_1026.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2610304.png" alt="Ararat-Armenia" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/el/ararat-armenia/" class="pl-opp-name">Ararat-Armenia</a>
               </div>
             </div>
@@ -2635,7 +2688,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_1009.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50109.png" alt="Bayer Leverkusen" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/el/bayer-leverkusen/" class="pl-opp-name">Bayer Leverkusen</a>
               </div>
             </div>
@@ -2691,7 +2744,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_1011.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_55031.png" alt="Rennes" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/el/rennes/" class="pl-opp-name">Rennes</a>
               </div>
             </div>
@@ -2779,8 +2832,12 @@ a { color: inherit; text-decoration: none; }
           <p class="pl-faq-a">36 takım tek bir lig tablosunda yarışır ve her takım 8 maç (4 iç saha, 4 deplasman) oynar. İlk 8 doğrudan Son 16'ya kalır, 9-24 arası Play-off oynar, 25-36 arası elenir.</p>
         </div>
         <div class="pl-faq-unit">
+          <h3 class="pl-faq-q">Avrupa Ligi puan durumunda kim lider, kimlerin tur ihtimali en yüksek?</h3>
+          <p class="pl-faq-a">18 maç sonunda Juventus 3 puanla zirvede. Modele göre İlk 8 ihtimali en yüksek takımlar: Benfica (%83), Juventus (%80), Bayer Leverkusen (%77).</p>
+        </div>
+        <div class="pl-faq-unit">
           <h3 class="pl-faq-q">UEFA Europa League lig aşamasında ilk 8 ve play-off için kaç puan gerekir?</h3>
-          <p class="pl-faq-a">UEFA Europa League lig aşamasında (8 maç, en fazla 24 puan) İlk 8 için 16 puan, Play-off (9-24) için 10 puan %90 ihtimalle yeterlidir. 15 puan İlk 8, 10 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-11).</p>
+          <p class="pl-faq-a">UEFA Europa League lig aşamasında (8 maç, en fazla 24 puan) İlk 8 için 16 puan, Play-off (9-24) için 10 puan %90 ihtimalle yeterlidir. 15 puan İlk 8, 10 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-13).</p>
         </div>
         <div class="pl-faq-unit">
           <h3 class="pl-faq-q">UEFA Europa League maç sonuçlarını nasıl tahmin edip puan durumunu hesaplayabilirim?</h3>

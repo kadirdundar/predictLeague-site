@@ -1,0 +1,2375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Europa League Standings 2026/27 & Qualification Odds</title>
+  <meta name="description" content="Europa League 2026/27 league phase table, results and fixtures, with every team's chance of the top 8 and the play-off places from a Monte Carlo model. Try your own predictions in the simulator." />
+  <link rel="canonical" href="https://www.stagesimulator.com/en/fixtures/europa-league/" />
+  <link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/fixtures/europa-league/" />
+  <link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/fixtures/europa-league/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/fixtures/europa-league/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.stagesimulator.com/en/fixtures/europa-league/" />
+  <meta property="og:title" content="Europa League Standings 2026/27 & Qualification Odds" />
+  <meta property="og:description" content="Europa League 2026/27 league phase table, results and fixtures, with every team's chance of the top 8 and the play-off places from a Monte Carlo model. Try your own predictions in the simulator." />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:image" content="https://www.stagesimulator.com/og/football.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.stagesimulator.com/og/football.png" />
+  <meta name="twitter:title" content="Europa League Standings 2026/27 & Qualification Odds" />
+  <meta name="twitter:description" content="Europa League 2026/27 league phase table, results and fixtures, with every team's chance of the top 8 and the play-off places from a Monte Carlo model. Try your own predictions in the simulator." />
+
+  <link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <script src="/js/analytics.js" async></script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SportsOrganization",
+      "@id": "https://www.stagesimulator.com/en/fixtures/europa-league/#league",
+      "name": "UEFA Europa League",
+      "sport": "Soccer",
+      "url": "https://www.stagesimulator.com/en/fixtures/europa-league/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "StageSimulator",
+          "item": "https://www.stagesimulator.com/simulators/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Football",
+          "item": "https://www.stagesimulator.com/?lang=en"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "UEFA Europa League",
+          "item": "https://www.stagesimulator.com/en/fixtures/europa-league/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who leads the Europa League table, and who is most likely to qualify?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "After 18 matches Juventus lead with 3 points. The model's likeliest top-8 finishers: Benfica (83%), Juventus (80%), Bayer Leverkusen (77%)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the Europa League 2026/27 league phase work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "36 teams play in one table; each plays 8 matches (4 home, 4 away). The top 8 go straight to the round of 16, 9th to 24th play a knockout play-off and 25th to 36th are out."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many points are needed for the top 8 in the Europa League?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the UEFA Europa League league phase (8 matches, at most 24 points) 16 points are enough for the top 8 and 10 points for the play-off places (9-24) 90% of the time. 15 points give about an even chance of the top 8, 10 of the top 24. Source: 4,000 simulated league phases of the PredictLeague model, played matches included (2026-10-13)."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <style>
+  
+:root {
+  --pl-bg: #F1F3F6;
+  --pl-screen-bg: #FAFAFC;
+  --pl-card-bg: #FFFFFF;
+  --pl-card-subtle: #F6F7FA;
+  --pl-card-hover: #F1F3F8;
+
+  --pl-ink: #0F172A;
+  --pl-ink-soft: #334155;
+  --pl-muted: #5B6B80;
+  --pl-muted-2: #94A3B8;
+  --pl-muted-3: #CBD5E1;
+  --pl-faint: #E2E8F0;
+
+  --pl-border: #E8EAEE;
+  --pl-border-2: #DCDFE6;
+  --pl-border-3: #F1F3F7;
+  --pl-border-focus: #3B82F6;
+
+  --pl-accent: #2563EB;
+  --pl-accent-dark: #1D4ED8;
+  --pl-accent-subtle: #EFF6FF;
+  --pl-accent-border: #BFDBFE;
+
+  --pl-win: #10B981;
+  --pl-win-bg: #ECFDF5;
+  --pl-win-border: #A7F3D0;
+
+  --pl-draw: #64748B;
+  --pl-draw-bg: #F1F5F9;
+  --pl-draw-border: #E2E8F0;
+
+  --pl-loss: #EF4444;
+  --pl-loss-bg: #FEF2F2;
+  --pl-loss-border: #FECACA;
+
+  --pl-top8: #10B981;
+  --pl-top8-bg: #D1FAE5;
+  --pl-playoff: #D97706;
+  --pl-playoff-bg: #FEF3C7;
+  --pl-elim: #EF4444;
+  --pl-elim-bg: #FEE2E2;
+
+  /* Darker shades of the result colours for small text (WCAG AA 4.5:1 on the light badge backgrounds) */
+  --pl-win-text: #047857;
+  --pl-loss-text: #B91C1C;
+  --pl-amber-text: #B45309;
+
+  --pl-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
+  --pl-shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
+  --pl-shell-shadow: 0 20px 50px -12px rgba(15, 23, 42, 0.10), 0 0 0 1px rgba(15, 23, 42, 0.05);
+
+  --pl-radius-sm: 8px;
+  --pl-radius-md: 12px;
+  --pl-radius-lg: 16px;
+  --pl-radius-xl: 20px;
+  --pl-radius-pill: 9999px;
+  --pl-transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--pl-bg);
+  color: var(--pl-ink);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 12px 10px 48px;
+}
+
+@media (min-width: 560px) {
+  body {
+    padding: 24px 16px 64px;
+  }
+}
+
+a { color: inherit; text-decoration: none; }
+
+.pl-shell {
+  width: 100%;
+  max-width: 560px;
+  background: var(--pl-screen-bg);
+  border-radius: var(--pl-radius-xl);
+  box-shadow: var(--pl-shell-shadow);
+  border: 1px solid var(--pl-border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Topbar */
+.pl-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--pl-card-bg);
+  border-bottom: 1px solid var(--pl-border);
+}
+
+.pl-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+  color: var(--pl-ink);
+}
+
+.pl-brand-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--pl-radius-md);
+  background: var(--pl-card-subtle);
+  border: 1px solid var(--pl-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.pl-brand-badge img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.pl-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pl-btn-ghost {
+  height: 32px;
+  padding: 0 12px;
+  border-radius: var(--pl-radius-pill);
+  border: 1px solid var(--pl-border);
+  background: var(--pl-card-subtle);
+  color: var(--pl-ink-soft);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: var(--pl-transition);
+}
+.pl-btn-ghost:hover {
+  background: var(--pl-card-bg);
+  border-color: var(--pl-border-2);
+  color: var(--pl-ink);
+  box-shadow: var(--pl-shadow-sm);
+}
+
+.pl-btn-primary {
+  height: 32px;
+  padding: 0 14px;
+  border-radius: var(--pl-radius-pill);
+  background: var(--pl-accent);
+  color: #FFFFFF !important;
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+  transition: var(--pl-transition);
+}
+.pl-btn-primary:hover {
+  background: var(--pl-accent-dark);
+  transform: translateY(-1px);
+}
+
+/* Main Body */
+.pl-main {
+  padding: 14px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pl-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  font-size: 11px;
+  color: var(--pl-muted);
+  font-weight: 600;
+}
+.pl-breadcrumb a:hover { color: var(--pl-accent); }
+.pl-breadcrumb span { opacity: 0.45; }
+.pl-breadcrumb span[aria-current] { opacity: 1; color: var(--pl-ink-soft); }
+.pl-try-also { font-size: 12px; color: var(--pl-muted); margin: 4px 0 0; }
+.pl-try-also a { color: var(--pl-accent); font-weight: 600; text-decoration: none; }
+
+/* Hero Card */
+.pl-hero-card {
+  background: var(--pl-card-bg);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-lg);
+  padding: 16px;
+  box-shadow: var(--pl-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pl-hero-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pl-team-crest {
+  width: 48px;
+  height: 48px;
+  aspect-ratio: 1/1;
+  border-radius: var(--pl-radius-md);
+  background: var(--pl-card-subtle);
+  border: 1px solid var(--pl-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 6px;
+}
+.pl-team-crest img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pl-hero-meta h1 {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--pl-ink);
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+.pl-tags-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.pl-tag {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--pl-muted);
+  background: var(--pl-card-subtle);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-pill);
+  padding: 2px 8px;
+}
+
+/* Stat Grid */
+.pl-stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.pl-stat-box {
+  background: var(--pl-card-subtle);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-md);
+  padding: 8px 10px;
+  text-align: center;
+}
+.pl-stat-box .lbl {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--pl-muted);
+  margin-bottom: 2px;
+}
+.pl-stat-box .val {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--pl-ink);
+}
+.pl-stat-box .val.top8 { color: var(--pl-win-text); }
+.pl-stat-box .val.playoff { color: var(--pl-amber-text); }
+.pl-stat-box .val.elim { color: var(--pl-loss-text); }
+
+.pl-large-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: var(--pl-accent);
+  color: #FFFFFF !important;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 11px 16px;
+  border-radius: var(--pl-radius-md);
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.2);
+  transition: var(--pl-transition);
+}
+.pl-large-cta:hover {
+  background: var(--pl-accent-dark);
+  transform: translateY(-1px);
+}
+
+/* Section Titles */
+.pl-section-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--pl-muted);
+  margin: 4px 0 0 2px;
+}
+
+/* Match Items */
+.pl-match-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pl-match-card {
+  background: var(--pl-card-bg);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-lg);
+  padding: 10px 12px;
+  box-shadow: var(--pl-shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  transition: var(--pl-transition);
+}
+.pl-match-card:hover {
+  border-color: var(--pl-border-2);
+  box-shadow: var(--pl-shadow-md);
+}
+
+.pl-match-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+}
+
+.pl-week-pill {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--pl-muted);
+  background: var(--pl-card-subtle);
+  border: 1px solid var(--pl-border);
+  border-radius: 6px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+}
+
+.pl-venue-tag {
+  font-size: 9px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+.pl-venue-tag.home {
+  background: var(--pl-accent-subtle);
+  color: var(--pl-accent);
+  border: 1px solid var(--pl-accent-border);
+}
+.pl-venue-tag.away {
+  background: #FEF3C7;
+  color: var(--pl-amber-text);
+  border: 1px solid #FDE68A;
+}
+
+.pl-opp-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.pl-opp-crest {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.pl-opp-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--pl-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pl-opp-name:hover {
+  color: var(--pl-accent);
+}
+
+.pl-diff-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--pl-radius-pill);
+  flex-shrink: 0;
+}
+.pl-diff-badge.diff-easy {
+  background: var(--pl-win-bg);
+  color: var(--pl-win-text);
+  border: 1px solid var(--pl-win-border);
+}
+.pl-diff-badge.diff-med {
+  background: #FEF3C7;
+  color: var(--pl-amber-text);
+  border: 1px solid #FDE68A;
+}
+.pl-diff-badge.diff-hard {
+  background: var(--pl-loss-bg);
+  color: var(--pl-loss-text);
+  border: 1px solid var(--pl-loss-border);
+}
+
+.pl-score-box {
+  font-size: 12px;
+  font-weight: 800;
+  background: var(--pl-card-subtle);
+  border: 1px solid var(--pl-border);
+  padding: 2px 8px;
+  border-radius: 6px;
+  color: var(--pl-ink);
+}
+
+/* FAQ Card */
+.pl-faq-box {
+  background: var(--pl-card-bg);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-lg);
+  padding: 14px 16px;
+  box-shadow: var(--pl-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pl-faq-unit {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--pl-border-3);
+}
+.pl-faq-unit:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.pl-faq-q {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--pl-ink);
+  margin: 0;
+}
+.pl-standings-wrap { background: var(--pl-card-bg); border: 1px solid var(--pl-border); border-radius: var(--pl-radius-lg); overflow: hidden; }
+.pl-standings { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+.pl-standings caption { caption-side: top; text-align: left; padding: 10px 12px 6px; font-size: 11px; color: var(--pl-muted); }
+.pl-standings th { font-size: 10px; font-weight: 700; color: var(--pl-muted); text-transform: uppercase; padding: 6px 4px; border-bottom: 1px solid var(--pl-border); text-align: right; }
+.pl-standings th abbr { text-decoration: none; cursor: help; }
+.pl-standings td { padding: 6px 4px; border-bottom: 1px solid var(--pl-border-3); text-align: right; color: var(--pl-ink-soft); }
+.pl-standings th:nth-child(2), .pl-standings td.team { text-align: left; }
+.pl-standings td.team span { display: flex; align-items: center; gap: 6px; min-width: 0; font-weight: 600; }
+.pl-standings td.team a { color: var(--pl-ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 140px; }
+.pl-standings td.pos { text-align: center; font-weight: 800; width: 26px; border-left: 3px solid transparent; }
+.pl-standings td.pts { font-weight: 800; color: var(--pl-ink); }
+.pl-standings td.pct, .pl-standings th:nth-child(n+6) { color: var(--pl-muted); padding-right: 10px; }
+.pl-standings tr.z-top8 td.pos { border-left-color: var(--pl-top8); }
+.pl-standings tr.z-po td.pos { border-left-color: var(--pl-playoff); }
+.pl-standings tr.z-out td.pos { border-left-color: var(--pl-elim); }
+.pl-table-note { font-size: 11px; color: var(--pl-muted); line-height: 1.5; margin: 6px 2px 0; }
+.pl-key { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin: 0 4px 0 2px; }
+.pl-key.z-top8 { background: var(--pl-top8); }
+.pl-key.z-po { background: var(--pl-playoff); }
+.pl-key.z-out { background: var(--pl-elim); }
+.pl-forecast { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.pl-forecast-note { font-size: 11px; color: var(--pl-muted); margin: 0; line-height: 1.45; }
+.pl-thr-table th, .pl-thr-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--pl-border);
+  text-align: left;
+}
+.pl-faq-a {
+  font-size: 12px;
+  color: var(--pl-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Teams Chips Grid */
+.pl-chips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  gap: 6px;
+}
+.pl-mini-chip {
+  background: var(--pl-card-bg);
+  border: 1px solid var(--pl-border);
+  border-radius: var(--pl-radius-md);
+  padding: 6px 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--pl-ink);
+  box-shadow: var(--pl-shadow-sm);
+  transition: var(--pl-transition);
+}
+.pl-mini-chip:hover {
+  background: var(--pl-card-subtle);
+  border-color: var(--pl-border-2);
+  color: var(--pl-accent);
+}
+.pl-mini-chip img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* Guide prose styles */
+.pl-prose h2 {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--pl-ink);
+  margin: 16px 0 6px;
+}
+.pl-prose p {
+  font-size: 12.5px;
+  color: var(--pl-muted);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.pl-prose ul {
+  margin-left: 18px;
+  margin-bottom: 12px;
+  color: var(--pl-muted);
+  font-size: 12px;
+}
+.pl-prose li { margin-bottom: 4px; }
+.pl-callout {
+  background: var(--pl-accent-subtle);
+  border-left: 3px solid var(--pl-accent);
+  padding: 10px 14px;
+  border-radius: 0 var(--pl-radius-sm) var(--pl-radius-sm) 0;
+  margin: 10px 0;
+}
+.pl-callout h3 {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--pl-accent);
+  margin-bottom: 2px;
+}
+.pl-callout p {
+  font-size: 12px;
+  color: var(--pl-ink-soft);
+  margin: 0;
+}
+
+/* Footer */
+.pl-footer {
+  margin-top: 6px;
+  padding: 14px 16px;
+  background: var(--pl-card-bg);
+  border-top: 1px solid var(--pl-border);
+  text-align: center;
+  font-size: 11px;
+  color: var(--pl-muted);
+}
+.pl-footer a {
+  color: var(--pl-accent);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 4px;
+}
+.pl-footer a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+</head>
+<body>
+  <div class="pl-shell">
+    <header class="pl-topbar">
+      <a href="/?lang=en" class="pl-brand">
+        <div class="pl-brand-badge">
+          <img src="/favicon.png" alt="" width="22" height="22" />
+        </div>
+        <span>PredictLeague</span>
+      </a>
+      <div class="pl-topbar-actions">
+        <a href="https://www.stagesimulator.com/?comp=el&lang=en" class="pl-btn-primary">⚡ Simulate</a>
+      </div>
+    </header>
+    <div class="pl-main">
+      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/?lang=en">Football</a> <span>/</span> <span aria-current="page">Europa League</span></nav>
+      <section class="pl-hero-card">
+        <h1 style="font-size: 16px; font-weight: 800; color: var(--pl-ink);">Europa League Standings & Fixtures 2026/27</h1>
+        <p style="font-size: 12.5px; color: var(--pl-muted);">The current UEFA Europa League league phase table, every team's qualification odds and the full match schedule.</p>
+        <a href="https://www.stagesimulator.com/?comp=el&lang=en" class="pl-large-cta">⚡ Open the UEL Monte Carlo Simulator</a>
+      </section>
+
+      <h2 class="pl-section-title" id="standings">📊 Europa League Standings</h2>
+      <div class="pl-standings-wrap">
+        <table class="pl-standings">
+          <caption>18/144 matches played · Last two columns: model odds</caption>
+          <thead><tr><th scope="col">#</th><th scope="col">Team</th><th scope="col"><abbr title="Played">P</abbr></th><th scope="col"><abbr title="Goal difference">GD</abbr></th><th scope="col"><abbr title="Points">Pts</abbr></th><th scope="col"><abbr title="Chance of finishing in the top 8 (straight to the round of 16)">Top 8</abbr></th><th scope="col"><abbr title="Chance of finishing in the top 24 (round of 16 or play-off)">Top 24</abbr></th></tr></thead>
+          <tbody>
+            <tr class="z-top8"><td class="pos">1</td><td class="team"><span><img src="/images/logos/team_1005.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/juventus/">Juventus</a></span></td><td>1</td><td>+5</td><td class="pts">3</td><td class="pct">80%</td><td class="pct">&gt;99%</td></tr><tr class="z-top8"><td class="pos">2</td><td class="team"><span><img src="/images/logos/team_1001.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/crystal-palace/">Crystal Palace</a></span></td><td>1</td><td>+4</td><td class="pts">3</td><td class="pct">44%</td><td class="pct">92%</td></tr><tr class="z-top8"><td class="pos">3</td><td class="team"><span><img src="/images/logos/team_1022.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/sparta-praha/">Sparta Praha</a></span></td><td>1</td><td>+3</td><td class="pts">3</td><td class="pct">32%</td><td class="pct">87%</td></tr><tr class="z-top8"><td class="pos">4</td><td class="team"><span><img src="/images/logos/team_1028.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/besiktas/">Beşiktaş</a></span></td><td>1</td><td>+3</td><td class="pts">3</td><td class="pct">36%</td><td class="pct">90%</td></tr><tr class="z-top8"><td class="pos">5</td><td class="team"><span><img src="/images/logos/team_1024.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/union-sg/">Union SG</a></span></td><td>1</td><td>+3</td><td class="pts">3</td><td class="pct">32%</td><td class="pct">86%</td></tr><tr class="z-top8"><td class="pos">6</td><td class="team"><span><img src="/images/logos/team_1029.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/ferencvaros/">Ferencváros</a></span></td><td>1</td><td>+2</td><td class="pts">3</td><td class="pct">16%</td><td class="pct">75%</td></tr><tr class="z-top8"><td class="pos">7</td><td class="team"><span><img src="/images/logos/team_1027.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/benfica/">Benfica</a></span></td><td>1</td><td>+2</td><td class="pts">3</td><td class="pct">83%</td><td class="pct">&gt;99%</td></tr><tr class="z-top8"><td class="pos">8</td><td class="team"><span><img src="/images/logos/uefa_50109.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/bayer-leverkusen/">Bayer Leverkusen</a></span></td><td>1</td><td>+2</td><td class="pts">3</td><td class="pct">77%</td><td class="pct">99%</td></tr><tr class="z-po"><td class="pos">9</td><td class="team"><span><img src="/images/logos/team_1033.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/ofi-crete/">OFI Crete</a></span></td><td>1</td><td>+2</td><td class="pts">3</td><td class="pct">6%</td><td class="pct">55%</td></tr><tr class="z-po"><td class="pos">10</td><td class="team"><span><img src="/images/logos/team_1019.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/lyon/">Lyon</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">43%</td><td class="pct">93%</td></tr><tr class="z-po"><td class="pos">11</td><td class="team"><span><img src="/images/logos/team_1002.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/bournemouth/">Bournemouth</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">43%</td><td class="pct">93%</td></tr><tr class="z-po"><td class="pos">12</td><td class="team"><span><img src="/images/logos/team_1013.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/torreense/">Torreense</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">19%</td><td class="pct">77%</td></tr><tr class="z-po"><td class="pos">13</td><td class="team"><span><img src="/images/logos/team_1021.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/olympiacos/">Olympiacos</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">25%</td><td class="pct">82%</td></tr><tr class="z-po"><td class="pos">14</td><td class="team"><span><img src="/images/logos/team_1035.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/salzburg/">Salzburg</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">38%</td><td class="pct">90%</td></tr><tr class="z-po"><td class="pos">15</td><td class="team"><span><img src="/images/logos/team_1003.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/sunderland/">Sunderland</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">24%</td><td class="pct">83%</td></tr><tr class="z-po"><td class="pos">16</td><td class="team"><span><img src="/images/logos/team_1034.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/omonia-nicosia/">Omonia Nicosia</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">7%</td><td class="pct">56%</td></tr><tr class="z-po"><td class="pos">17</td><td class="team"><span><img src="/images/logos/uefa_55031.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/rennes/">Rennes</a></span></td><td>1</td><td>+0</td><td class="pts">1</td><td class="pct">23%</td><td class="pct">82%</td></tr><tr class="z-po"><td class="pos">18</td><td class="team"><span><img src="/images/logos/team_1016.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/gnk-dinamo/">GNK Dinamo</a></span></td><td>1</td><td>+0</td><td class="pts">1</td><td class="pct">13%</td><td class="pct">68%</td></tr><tr class="z-po"><td class="pos">19</td><td class="team"><span><img src="/images/logos/team_1023.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/sturm-graz/">Sturm Graz</a></span></td><td>1</td><td>+0</td><td class="pts">1</td><td class="pct">8%</td><td class="pct">57%</td></tr><tr class="z-po"><td class="pos">20</td><td class="team"><span><img src="/images/logos/team_1017.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/hapoel-beer-sheva/">Hapoel Beer-Sheva</a></span></td><td>1</td><td>+0</td><td class="pts">1</td><td class="pct">2%</td><td class="pct">30%</td></tr><tr class="z-po"><td class="pos">21</td><td class="team"><span><img src="/images/logos/team_1030.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/jagiellonia/">Jagiellonia</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">4%</td><td class="pct">40%</td></tr><tr class="z-po"><td class="pos">22</td><td class="team"><span><img src="/images/logos/team_1006.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/real-sociedad/">Real Sociedad</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">17%</td><td class="pct">76%</td></tr><tr class="z-po"><td class="pos">23</td><td class="team"><span><img src="/images/logos/team_1025.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/anderlecht/">Anderlecht</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">7%</td><td class="pct">52%</td></tr><tr class="z-po"><td class="pos">24</td><td class="team"><span><img src="/images/logos/team_1032.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/lillestrom/">Lillestrøm</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">&lt;1%</td><td class="pct">21%</td></tr><tr class="z-out"><td class="pos">25</td><td class="team"><span><img src="/images/logos/team_1007.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/celta-vigo/">Celta Vigo</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">10%</td><td class="pct">60%</td></tr><tr class="z-out"><td class="pos">26</td><td class="team"><span><img src="/images/logos/team_1012.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/az-alkmaar/">AZ Alkmaar</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">10%</td><td class="pct">63%</td></tr><tr class="z-out"><td class="pos">27</td><td class="team"><span><img src="/images/logos/team_1018.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/levski-sofia/">Levski Sofia</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">1%</td><td class="pct">26%</td></tr><tr class="z-out"><td class="pos">28</td><td class="team"><span><img src="/images/logos/team_1015.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/celtic/">Celtic</a></span></td><td>1</td><td>-2</td><td class="pts">0</td><td class="pct">6%</td><td class="pct">51%</td></tr><tr class="z-out"><td class="pos">29</td><td class="team"><span><img src="/images/logos/team_1004.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/ac-milan/">AC Milan</a></span></td><td>1</td><td>-2</td><td class="pts">0</td><td class="pct">47%</td><td class="pct">93%</td></tr><tr class="z-out"><td class="pos">30</td><td class="team"><span><img src="/images/logos/team_1008.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/hoffenheim/">Hoffenheim</a></span></td><td>1</td><td>-2</td><td class="pts">0</td><td class="pct">9%</td><td class="pct">58%</td></tr><tr class="z-out"><td class="pos">31</td><td class="team"><span><img src="/images/logos/team_1014.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/celje/">Celje</a></span></td><td>1</td><td>-2</td><td class="pts">0</td><td class="pct">3%</td><td class="pct">38%</td></tr><tr class="z-out"><td class="pos">32</td><td class="team"><span><img src="/images/logos/team_1010.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/marseille/">Marseille</a></span></td><td>1</td><td>-3</td><td class="pts">0</td><td class="pct">18%</td><td class="pct">75%</td></tr><tr class="z-out"><td class="pos">33</td><td class="team"><span><img src="/images/logos/uefa_2610304.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/ararat-armenia/">Ararat-Armenia</a></span></td><td>1</td><td>-3</td><td class="pts">0</td><td class="pct">1%</td><td class="pct">22%</td></tr><tr class="z-out"><td class="pos">34</td><td class="team"><span><img src="/images/logos/team_1036.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/viktoria-plze/">Viktoria Plzeň</a></span></td><td>1</td><td>-3</td><td class="pts">0</td><td class="pct">6%</td><td class="pct">50%</td></tr><tr class="z-out"><td class="pos">35</td><td class="team"><span><img src="/images/logos/team_1031.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/lech-pozna/">Lech Poznań</a></span></td><td>1</td><td>-4</td><td class="pts">0</td><td class="pct">3%</td><td class="pct">37%</td></tr><tr class="z-out"><td class="pos">36</td><td class="team"><span><img src="/images/logos/team_1020.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/en/teams/el/nec-nijmegen/">N.E.C. Nijmegen</a></span></td><td>1</td><td>-5</td><td class="pts">0</td><td class="pct">4%</td><td class="pct">45%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="pl-table-note"><span class="pl-key z-top8"></span>1-8 round of 16 · <span class="pl-key z-po"></span>9-24 play-off · <span class="pl-key z-out"></span>25-36 out. The 18 matches played keep their real score; the rest were simulated 4,000 times (2026-10-13) with the simulator's model: Poisson goals driven by team ratings. Ties are broken with UEFA's criteria; the team rating stands in for the last ones.</p>
+
+      <h2 class="pl-section-title">📅 Europa League Fixtures & Results</h2>
+      <section>
+        
+        <div style="margin-bottom: 16px;">
+          <h3 class="pl-section-title" style="margin-bottom: 6px;">📅 Matchday 1</h3>
+          <div class="pl-match-list">
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ararat-armenia/" class="pl-opp-name" style="text-align: right;">Ararat-Armenia</a>
+                <img src="/images/logos/uefa_2610304.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">1 - 4</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1022.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/sparta-praha/" class="pl-opp-name">Sparta Praha</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/omonia-nicosia/" class="pl-opp-name" style="text-align: right;">Omonia Nicosia</a>
+                <img src="/images/logos/team_1034.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">1 - 0</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1007.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/celta-vigo/" class="pl-opp-name">Celta Vigo</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ac-milan/" class="pl-opp-name" style="text-align: right;">AC Milan</a>
+                <img src="/images/logos/team_1004.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">0 - 2</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1027.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/benfica/" class="pl-opp-name">Benfica</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/bayer-leverkusen/" class="pl-opp-name" style="text-align: right;">Bayer Leverkusen</a>
+                <img src="/images/logos/uefa_50109.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">2 - 0</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1014.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/celje/" class="pl-opp-name">Celje</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/hapoel-beer-sheva/" class="pl-opp-name" style="text-align: right;">Hapoel Beer-Sheva</a>
+                <img src="/images/logos/team_1017.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">0 - 0</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1016.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/gnk-dinamo/" class="pl-opp-name">GNK Dinamo</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/olympiacos/" class="pl-opp-name" style="text-align: right;">Olympiacos</a>
+                <img src="/images/logos/team_1021.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">2 - 1</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1030.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/jagiellonia/" class="pl-opp-name">Jagiellonia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/anderlecht/" class="pl-opp-name" style="text-align: right;">Anderlecht</a>
+                <img src="/images/logos/team_1025.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">1 - 2</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1019.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/lyon/" class="pl-opp-name">Lyon</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/sturm-graz/" class="pl-opp-name" style="text-align: right;">Sturm Graz</a>
+                <img src="/images/logos/team_1023.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">0 - 0</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/uefa_55031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/rennes/" class="pl-opp-name">Rennes</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/sunderland/" class="pl-opp-name" style="text-align: right;">Sunderland</a>
+                <img src="/images/logos/team_1003.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">1 - 0</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1012.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/az-alkmaar/" class="pl-opp-name">AZ Alkmaar</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/levski-sofia/" class="pl-opp-name" style="text-align: right;">Levski Sofia</a>
+                <img src="/images/logos/team_1018.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">0 - 1</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1035.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/salzburg/" class="pl-opp-name">Salzburg</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ofi-crete/" class="pl-opp-name" style="text-align: right;">OFI Crete</a>
+                <img src="/images/logos/team_1033.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">2 - 0</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1008.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/hoffenheim/" class="pl-opp-name">Hoffenheim</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/besiktas/" class="pl-opp-name" style="text-align: right;">Beşiktaş</a>
+                <img src="/images/logos/team_1028.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">4 - 1</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1010.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/marseille/" class="pl-opp-name">Marseille</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/juventus/" class="pl-opp-name" style="text-align: right;">Juventus</a>
+                <img src="/images/logos/team_1005.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">5 - 0</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1020.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/nec-nijmegen/" class="pl-opp-name">N.E.C. Nijmegen</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/crystal-palace/" class="pl-opp-name" style="text-align: right;">Crystal Palace</a>
+                <img src="/images/logos/team_1001.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">4 - 0</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/lech-pozna/" class="pl-opp-name">Lech Poznań</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/real-sociedad/" class="pl-opp-name" style="text-align: right;">Real Sociedad</a>
+                <img src="/images/logos/team_1006.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">1 - 2</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1002.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/bournemouth/" class="pl-opp-name">Bournemouth</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/celtic/" class="pl-opp-name" style="text-align: right;">Celtic</a>
+                <img src="/images/logos/team_1015.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">1 - 3</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1029.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ferencvaros/" class="pl-opp-name">Ferencváros</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/viktoria-plze/" class="pl-opp-name" style="text-align: right;">Viktoria Plzeň</a>
+                <img src="/images/logos/team_1036.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">0 - 3</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1024.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/union-sg/" class="pl-opp-name">Union SG</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/lillestrom/" class="pl-opp-name" style="text-align: right;">Lillestrøm</a>
+                <img src="/images/logos/team_1032.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span class="pl-score-box">1 - 2</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1013.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/torreense/" class="pl-opp-name">Torreense</a>
+              </div>
+            </div></div>
+        </div>
+        <div style="margin-bottom: 16px;">
+          <h3 class="pl-section-title" style="margin-bottom: 6px;">📅 Matchday 2</h3>
+          <div class="pl-match-list">
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/lyon/" class="pl-opp-name" style="text-align: right;">Lyon</a>
+                <img src="/images/logos/team_1019.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1001.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/crystal-palace/" class="pl-opp-name">Crystal Palace</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/union-sg/" class="pl-opp-name" style="text-align: right;">Union SG</a>
+                <img src="/images/logos/team_1024.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1006.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/real-sociedad/" class="pl-opp-name">Real Sociedad</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/salzburg/" class="pl-opp-name" style="text-align: right;">Salzburg</a>
+                <img src="/images/logos/team_1035.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1004.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ac-milan/" class="pl-opp-name">AC Milan</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/lech-pozna/" class="pl-opp-name" style="text-align: right;">Lech Poznań</a>
+                <img src="/images/logos/team_1031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/uefa_50109.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/bayer-leverkusen/" class="pl-opp-name">Bayer Leverkusen</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/celje/" class="pl-opp-name" style="text-align: right;">Celje</a>
+                <img src="/images/logos/team_1014.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1034.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/omonia-nicosia/" class="pl-opp-name">Omonia Nicosia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/torreense/" class="pl-opp-name" style="text-align: right;">Torreense</a>
+                <img src="/images/logos/team_1013.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1003.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/sunderland/" class="pl-opp-name">Sunderland</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/az-alkmaar/" class="pl-opp-name" style="text-align: right;">AZ Alkmaar</a>
+                <img src="/images/logos/team_1012.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1017.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/hapoel-beer-sheva/" class="pl-opp-name">Hapoel Beer-Sheva</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/sparta-praha/" class="pl-opp-name" style="text-align: right;">Sparta Praha</a>
+                <img src="/images/logos/team_1022.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1032.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/lillestrom/" class="pl-opp-name">Lillestrøm</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/benfica/" class="pl-opp-name" style="text-align: right;">Benfica</a>
+                <img src="/images/logos/team_1027.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1015.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/celtic/" class="pl-opp-name">Celtic</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/marseille/" class="pl-opp-name" style="text-align: right;">Marseille</a>
+                <img src="/images/logos/team_1010.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1021.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/olympiacos/" class="pl-opp-name">Olympiacos</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ferencvaros/" class="pl-opp-name" style="text-align: right;">Ferencváros</a>
+                <img src="/images/logos/team_1029.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1036.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/viktoria-plze/" class="pl-opp-name">Viktoria Plzeň</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/gnk-dinamo/" class="pl-opp-name" style="text-align: right;">GNK Dinamo</a>
+                <img src="/images/logos/team_1016.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1025.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/anderlecht/" class="pl-opp-name">Anderlecht</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/rennes/" class="pl-opp-name" style="text-align: right;">Rennes</a>
+                <img src="/images/logos/uefa_55031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1033.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ofi-crete/" class="pl-opp-name">OFI Crete</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/bournemouth/" class="pl-opp-name" style="text-align: right;">Bournemouth</a>
+                <img src="/images/logos/team_1002.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1023.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/sturm-graz/" class="pl-opp-name">Sturm Graz</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/celta-vigo/" class="pl-opp-name" style="text-align: right;">Celta Vigo</a>
+                <img src="/images/logos/team_1007.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1005.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/juventus/" class="pl-opp-name">Juventus</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/hoffenheim/" class="pl-opp-name" style="text-align: right;">Hoffenheim</a>
+                <img src="/images/logos/team_1008.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1028.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/besiktas/" class="pl-opp-name">Beşiktaş</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/nec-nijmegen/" class="pl-opp-name" style="text-align: right;">N.E.C. Nijmegen</a>
+                <img src="/images/logos/team_1020.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1018.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/levski-sofia/" class="pl-opp-name">Levski Sofia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/jagiellonia/" class="pl-opp-name" style="text-align: right;">Jagiellonia</a>
+                <img src="/images/logos/team_1030.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/uefa_2610304.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ararat-armenia/" class="pl-opp-name">Ararat-Armenia</a>
+              </div>
+            </div></div>
+        </div>
+        <div style="margin-bottom: 16px;">
+          <h3 class="pl-section-title" style="margin-bottom: 6px;">📅 Matchday 3</h3>
+          <div class="pl-match-list">
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/juventus/" class="pl-opp-name" style="text-align: right;">Juventus</a>
+                <img src="/images/logos/team_1005.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/uefa_55031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/rennes/" class="pl-opp-name">Rennes</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ferencvaros/" class="pl-opp-name" style="text-align: right;">Ferencváros</a>
+                <img src="/images/logos/team_1029.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1013.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/torreense/" class="pl-opp-name">Torreense</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/union-sg/" class="pl-opp-name" style="text-align: right;">Union SG</a>
+                <img src="/images/logos/team_1024.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1017.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/hapoel-beer-sheva/" class="pl-opp-name">Hapoel Beer-Sheva</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/gnk-dinamo/" class="pl-opp-name" style="text-align: right;">GNK Dinamo</a>
+                <img src="/images/logos/team_1016.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1020.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/nec-nijmegen/" class="pl-opp-name">N.E.C. Nijmegen</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/sturm-graz/" class="pl-opp-name" style="text-align: right;">Sturm Graz</a>
+                <img src="/images/logos/team_1023.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1010.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/marseille/" class="pl-opp-name">Marseille</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/lech-pozna/" class="pl-opp-name" style="text-align: right;">Lech Poznań</a>
+                <img src="/images/logos/team_1031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1003.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/sunderland/" class="pl-opp-name">Sunderland</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ofi-crete/" class="pl-opp-name" style="text-align: right;">OFI Crete</a>
+                <img src="/images/logos/team_1033.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/uefa_50109.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/bayer-leverkusen/" class="pl-opp-name">Bayer Leverkusen</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ararat-armenia/" class="pl-opp-name" style="text-align: right;">Ararat-Armenia</a>
+                <img src="/images/logos/uefa_2610304.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1012.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/az-alkmaar/" class="pl-opp-name">AZ Alkmaar</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/olympiacos/" class="pl-opp-name" style="text-align: right;">Olympiacos</a>
+                <img src="/images/logos/team_1021.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1022.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/sparta-praha/" class="pl-opp-name">Sparta Praha</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/celtic/" class="pl-opp-name" style="text-align: right;">Celtic</a>
+                <img src="/images/logos/team_1015.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1007.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/celta-vigo/" class="pl-opp-name">Celta Vigo</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/bournemouth/" class="pl-opp-name" style="text-align: right;">Bournemouth</a>
+                <img src="/images/logos/team_1002.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1004.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ac-milan/" class="pl-opp-name">AC Milan</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/celje/" class="pl-opp-name" style="text-align: right;">Celje</a>
+                <img src="/images/logos/team_1014.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1035.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/salzburg/" class="pl-opp-name">Salzburg</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/jagiellonia/" class="pl-opp-name" style="text-align: right;">Jagiellonia</a>
+                <img src="/images/logos/team_1030.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1025.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/anderlecht/" class="pl-opp-name">Anderlecht</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/omonia-nicosia/" class="pl-opp-name" style="text-align: right;">Omonia Nicosia</a>
+                <img src="/images/logos/team_1034.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1027.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/benfica/" class="pl-opp-name">Benfica</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/hoffenheim/" class="pl-opp-name" style="text-align: right;">Hoffenheim</a>
+                <img src="/images/logos/team_1008.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1019.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/lyon/" class="pl-opp-name">Lyon</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/lillestrom/" class="pl-opp-name" style="text-align: right;">Lillestrøm</a>
+                <img src="/images/logos/team_1032.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1006.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/real-sociedad/" class="pl-opp-name">Real Sociedad</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/besiktas/" class="pl-opp-name" style="text-align: right;">Beşiktaş</a>
+                <img src="/images/logos/team_1028.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1001.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/crystal-palace/" class="pl-opp-name">Crystal Palace</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/viktoria-plze/" class="pl-opp-name" style="text-align: right;">Viktoria Plzeň</a>
+                <img src="/images/logos/team_1036.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1018.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/levski-sofia/" class="pl-opp-name">Levski Sofia</a>
+              </div>
+            </div></div>
+        </div>
+        <div style="margin-bottom: 16px;">
+          <h3 class="pl-section-title" style="margin-bottom: 6px;">📅 Matchday 4</h3>
+          <div class="pl-match-list">
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ac-milan/" class="pl-opp-name" style="text-align: right;">AC Milan</a>
+                <img src="/images/logos/team_1004.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1029.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ferencvaros/" class="pl-opp-name">Ferencváros</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/real-sociedad/" class="pl-opp-name" style="text-align: right;">Real Sociedad</a>
+                <img src="/images/logos/team_1006.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1019.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/lyon/" class="pl-opp-name">Lyon</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/sparta-praha/" class="pl-opp-name" style="text-align: right;">Sparta Praha</a>
+                <img src="/images/logos/team_1022.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1002.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/bournemouth/" class="pl-opp-name">Bournemouth</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/rennes/" class="pl-opp-name" style="text-align: right;">Rennes</a>
+                <img src="/images/logos/uefa_55031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1021.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/olympiacos/" class="pl-opp-name">Olympiacos</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/anderlecht/" class="pl-opp-name" style="text-align: right;">Anderlecht</a>
+                <img src="/images/logos/team_1025.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1035.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/salzburg/" class="pl-opp-name">Salzburg</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/crystal-palace/" class="pl-opp-name" style="text-align: right;">Crystal Palace</a>
+                <img src="/images/logos/team_1001.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1008.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/hoffenheim/" class="pl-opp-name">Hoffenheim</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/lillestrom/" class="pl-opp-name" style="text-align: right;">Lillestrøm</a>
+                <img src="/images/logos/team_1032.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1036.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/viktoria-plze/" class="pl-opp-name">Viktoria Plzeň</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/levski-sofia/" class="pl-opp-name" style="text-align: right;">Levski Sofia</a>
+                <img src="/images/logos/team_1018.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1030.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/jagiellonia/" class="pl-opp-name">Jagiellonia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/nec-nijmegen/" class="pl-opp-name" style="text-align: right;">N.E.C. Nijmegen</a>
+                <img src="/images/logos/team_1020.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1034.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/omonia-nicosia/" class="pl-opp-name">Omonia Nicosia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/sturm-graz/" class="pl-opp-name" style="text-align: right;">Sturm Graz</a>
+                <img src="/images/logos/team_1023.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1014.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/celje/" class="pl-opp-name">Celje</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/benfica/" class="pl-opp-name" style="text-align: right;">Benfica</a>
+                <img src="/images/logos/team_1027.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/lech-pozna/" class="pl-opp-name">Lech Poznań</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/celtic/" class="pl-opp-name" style="text-align: right;">Celtic</a>
+                <img src="/images/logos/team_1015.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1028.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/besiktas/" class="pl-opp-name">Beşiktaş</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/celta-vigo/" class="pl-opp-name" style="text-align: right;">Celta Vigo</a>
+                <img src="/images/logos/team_1007.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1024.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/union-sg/" class="pl-opp-name">Union SG</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/torreense/" class="pl-opp-name" style="text-align: right;">Torreense</a>
+                <img src="/images/logos/team_1013.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/uefa_2610304.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ararat-armenia/" class="pl-opp-name">Ararat-Armenia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/hapoel-beer-sheva/" class="pl-opp-name" style="text-align: right;">Hapoel Beer-Sheva</a>
+                <img src="/images/logos/team_1017.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1033.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ofi-crete/" class="pl-opp-name">OFI Crete</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/sunderland/" class="pl-opp-name" style="text-align: right;">Sunderland</a>
+                <img src="/images/logos/team_1003.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1016.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/gnk-dinamo/" class="pl-opp-name">GNK Dinamo</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/bayer-leverkusen/" class="pl-opp-name" style="text-align: right;">Bayer Leverkusen</a>
+                <img src="/images/logos/uefa_50109.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1010.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/marseille/" class="pl-opp-name">Marseille</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/az-alkmaar/" class="pl-opp-name" style="text-align: right;">AZ Alkmaar</a>
+                <img src="/images/logos/team_1012.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1005.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/juventus/" class="pl-opp-name">Juventus</a>
+              </div>
+            </div></div>
+        </div>
+        <div style="margin-bottom: 16px;">
+          <h3 class="pl-section-title" style="margin-bottom: 6px;">📅 Matchday 5</h3>
+          <div class="pl-match-list">
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/olympiacos/" class="pl-opp-name" style="text-align: right;">Olympiacos</a>
+                <img src="/images/logos/team_1021.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1004.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ac-milan/" class="pl-opp-name">AC Milan</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/marseille/" class="pl-opp-name" style="text-align: right;">Marseille</a>
+                <img src="/images/logos/team_1010.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1018.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/levski-sofia/" class="pl-opp-name">Levski Sofia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/viktoria-plze/" class="pl-opp-name" style="text-align: right;">Viktoria Plzeň</a>
+                <img src="/images/logos/team_1036.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1027.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/benfica/" class="pl-opp-name">Benfica</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/union-sg/" class="pl-opp-name" style="text-align: right;">Union SG</a>
+                <img src="/images/logos/team_1024.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/lech-pozna/" class="pl-opp-name">Lech Poznań</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/gnk-dinamo/" class="pl-opp-name" style="text-align: right;">GNK Dinamo</a>
+                <img src="/images/logos/team_1016.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/uefa_50109.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/bayer-leverkusen/" class="pl-opp-name">Bayer Leverkusen</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/salzburg/" class="pl-opp-name" style="text-align: right;">Salzburg</a>
+                <img src="/images/logos/team_1035.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/uefa_2610304.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ararat-armenia/" class="pl-opp-name">Ararat-Armenia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/celta-vigo/" class="pl-opp-name" style="text-align: right;">Celta Vigo</a>
+                <img src="/images/logos/team_1007.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1002.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/bournemouth/" class="pl-opp-name">Bournemouth</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/besiktas/" class="pl-opp-name" style="text-align: right;">Beşiktaş</a>
+                <img src="/images/logos/team_1028.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1017.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/hapoel-beer-sheva/" class="pl-opp-name">Hapoel Beer-Sheva</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/juventus/" class="pl-opp-name" style="text-align: right;">Juventus</a>
+                <img src="/images/logos/team_1005.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1034.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/omonia-nicosia/" class="pl-opp-name">Omonia Nicosia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/lyon/" class="pl-opp-name" style="text-align: right;">Lyon</a>
+                <img src="/images/logos/team_1019.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1032.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/lillestrom/" class="pl-opp-name">Lillestrøm</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ferencvaros/" class="pl-opp-name" style="text-align: right;">Ferencváros</a>
+                <img src="/images/logos/team_1029.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1014.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/celje/" class="pl-opp-name">Celje</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/sparta-praha/" class="pl-opp-name" style="text-align: right;">Sparta Praha</a>
+                <img src="/images/logos/team_1022.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1012.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/az-alkmaar/" class="pl-opp-name">AZ Alkmaar</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/crystal-palace/" class="pl-opp-name" style="text-align: right;">Crystal Palace</a>
+                <img src="/images/logos/team_1001.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1006.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/real-sociedad/" class="pl-opp-name">Real Sociedad</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/sunderland/" class="pl-opp-name" style="text-align: right;">Sunderland</a>
+                <img src="/images/logos/team_1003.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1030.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/jagiellonia/" class="pl-opp-name">Jagiellonia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/hoffenheim/" class="pl-opp-name" style="text-align: right;">Hoffenheim</a>
+                <img src="/images/logos/team_1008.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1023.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/sturm-graz/" class="pl-opp-name">Sturm Graz</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/torreense/" class="pl-opp-name" style="text-align: right;">Torreense</a>
+                <img src="/images/logos/team_1013.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1015.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/celtic/" class="pl-opp-name">Celtic</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/nec-nijmegen/" class="pl-opp-name" style="text-align: right;">N.E.C. Nijmegen</a>
+                <img src="/images/logos/team_1020.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/uefa_55031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/rennes/" class="pl-opp-name">Rennes</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ofi-crete/" class="pl-opp-name" style="text-align: right;">OFI Crete</a>
+                <img src="/images/logos/team_1033.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1025.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/anderlecht/" class="pl-opp-name">Anderlecht</a>
+              </div>
+            </div></div>
+        </div>
+        <div style="margin-bottom: 16px;">
+          <h3 class="pl-section-title" style="margin-bottom: 6px;">📅 Matchday 6</h3>
+          <div class="pl-match-list">
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/az-alkmaar/" class="pl-opp-name" style="text-align: right;">AZ Alkmaar</a>
+                <img src="/images/logos/team_1012.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1023.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/sturm-graz/" class="pl-opp-name">Sturm Graz</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/rennes/" class="pl-opp-name" style="text-align: right;">Rennes</a>
+                <img src="/images/logos/uefa_55031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1016.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/gnk-dinamo/" class="pl-opp-name">GNK Dinamo</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/anderlecht/" class="pl-opp-name" style="text-align: right;">Anderlecht</a>
+                <img src="/images/logos/team_1025.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1008.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/hoffenheim/" class="pl-opp-name">Hoffenheim</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/jagiellonia/" class="pl-opp-name" style="text-align: right;">Jagiellonia</a>
+                <img src="/images/logos/team_1030.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1001.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/crystal-palace/" class="pl-opp-name">Crystal Palace</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/omonia-nicosia/" class="pl-opp-name" style="text-align: right;">Omonia Nicosia</a>
+                <img src="/images/logos/team_1034.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1015.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/celtic/" class="pl-opp-name">Celtic</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/hapoel-beer-sheva/" class="pl-opp-name" style="text-align: right;">Hapoel Beer-Sheva</a>
+                <img src="/images/logos/team_1017.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1005.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/juventus/" class="pl-opp-name">Juventus</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/marseille/" class="pl-opp-name" style="text-align: right;">Marseille</a>
+                <img src="/images/logos/team_1010.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1007.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/celta-vigo/" class="pl-opp-name">Celta Vigo</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ararat-armenia/" class="pl-opp-name" style="text-align: right;">Ararat-Armenia</a>
+                <img src="/images/logos/uefa_2610304.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1020.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/nec-nijmegen/" class="pl-opp-name">N.E.C. Nijmegen</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/bayer-leverkusen/" class="pl-opp-name" style="text-align: right;">Bayer Leverkusen</a>
+                <img src="/images/logos/uefa_50109.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1028.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/besiktas/" class="pl-opp-name">Beşiktaş</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/celje/" class="pl-opp-name" style="text-align: right;">Celje</a>
+                <img src="/images/logos/team_1014.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1021.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/olympiacos/" class="pl-opp-name">Olympiacos</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/real-sociedad/" class="pl-opp-name" style="text-align: right;">Real Sociedad</a>
+                <img src="/images/logos/team_1006.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1013.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/torreense/" class="pl-opp-name">Torreense</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/benfica/" class="pl-opp-name" style="text-align: right;">Benfica</a>
+                <img src="/images/logos/team_1027.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1033.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ofi-crete/" class="pl-opp-name">OFI Crete</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ac-milan/" class="pl-opp-name" style="text-align: right;">AC Milan</a>
+                <img src="/images/logos/team_1004.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1003.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/sunderland/" class="pl-opp-name">Sunderland</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/lyon/" class="pl-opp-name" style="text-align: right;">Lyon</a>
+                <img src="/images/logos/team_1019.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1024.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/union-sg/" class="pl-opp-name">Union SG</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/salzburg/" class="pl-opp-name" style="text-align: right;">Salzburg</a>
+                <img src="/images/logos/team_1035.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1022.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/sparta-praha/" class="pl-opp-name">Sparta Praha</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/lech-pozna/" class="pl-opp-name" style="text-align: right;">Lech Poznań</a>
+                <img src="/images/logos/team_1031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1029.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ferencvaros/" class="pl-opp-name">Ferencváros</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/bournemouth/" class="pl-opp-name" style="text-align: right;">Bournemouth</a>
+                <img src="/images/logos/team_1002.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1036.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/viktoria-plze/" class="pl-opp-name">Viktoria Plzeň</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/levski-sofia/" class="pl-opp-name" style="text-align: right;">Levski Sofia</a>
+                <img src="/images/logos/team_1018.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1032.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/lillestrom/" class="pl-opp-name">Lillestrøm</a>
+              </div>
+            </div></div>
+        </div>
+        <div style="margin-bottom: 16px;">
+          <h3 class="pl-section-title" style="margin-bottom: 6px;">📅 Matchday 7</h3>
+          <div class="pl-match-list">
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/olympiacos/" class="pl-opp-name" style="text-align: right;">Olympiacos</a>
+                <img src="/images/logos/team_1021.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1008.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/hoffenheim/" class="pl-opp-name">Hoffenheim</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/sturm-graz/" class="pl-opp-name" style="text-align: right;">Sturm Graz</a>
+                <img src="/images/logos/team_1023.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1033.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ofi-crete/" class="pl-opp-name">OFI Crete</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/besiktas/" class="pl-opp-name" style="text-align: right;">Beşiktaş</a>
+                <img src="/images/logos/team_1028.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1024.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/union-sg/" class="pl-opp-name">Union SG</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/real-sociedad/" class="pl-opp-name" style="text-align: right;">Real Sociedad</a>
+                <img src="/images/logos/team_1006.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1036.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/viktoria-plze/" class="pl-opp-name">Viktoria Plzeň</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ferencvaros/" class="pl-opp-name" style="text-align: right;">Ferencváros</a>
+                <img src="/images/logos/team_1029.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1005.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/juventus/" class="pl-opp-name">Juventus</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/jagiellonia/" class="pl-opp-name" style="text-align: right;">Jagiellonia</a>
+                <img src="/images/logos/team_1030.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1019.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/lyon/" class="pl-opp-name">Lyon</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/nec-nijmegen/" class="pl-opp-name" style="text-align: right;">N.E.C. Nijmegen</a>
+                <img src="/images/logos/team_1020.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1027.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/benfica/" class="pl-opp-name">Benfica</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/lillestrom/" class="pl-opp-name" style="text-align: right;">Lillestrøm</a>
+                <img src="/images/logos/team_1032.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1002.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/bournemouth/" class="pl-opp-name">Bournemouth</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ararat-armenia/" class="pl-opp-name" style="text-align: right;">Ararat-Armenia</a>
+                <img src="/images/logos/uefa_2610304.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1014.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/celje/" class="pl-opp-name">Celje</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/bayer-leverkusen/" class="pl-opp-name" style="text-align: right;">Bayer Leverkusen</a>
+                <img src="/images/logos/uefa_50109.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1035.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/salzburg/" class="pl-opp-name">Salzburg</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/az-alkmaar/" class="pl-opp-name" style="text-align: right;">AZ Alkmaar</a>
+                <img src="/images/logos/team_1012.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1016.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/gnk-dinamo/" class="pl-opp-name">GNK Dinamo</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/celtic/" class="pl-opp-name" style="text-align: right;">Celtic</a>
+                <img src="/images/logos/team_1015.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1010.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/marseille/" class="pl-opp-name">Marseille</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/rennes/" class="pl-opp-name" style="text-align: right;">Rennes</a>
+                <img src="/images/logos/uefa_55031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1034.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/omonia-nicosia/" class="pl-opp-name">Omonia Nicosia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/anderlecht/" class="pl-opp-name" style="text-align: right;">Anderlecht</a>
+                <img src="/images/logos/team_1025.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1003.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/sunderland/" class="pl-opp-name">Sunderland</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/lech-pozna/" class="pl-opp-name" style="text-align: right;">Lech Poznań</a>
+                <img src="/images/logos/team_1031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1013.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/torreense/" class="pl-opp-name">Torreense</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/crystal-palace/" class="pl-opp-name" style="text-align: right;">Crystal Palace</a>
+                <img src="/images/logos/team_1001.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1022.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/sparta-praha/" class="pl-opp-name">Sparta Praha</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/hapoel-beer-sheva/" class="pl-opp-name" style="text-align: right;">Hapoel Beer-Sheva</a>
+                <img src="/images/logos/team_1017.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1007.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/celta-vigo/" class="pl-opp-name">Celta Vigo</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/levski-sofia/" class="pl-opp-name" style="text-align: right;">Levski Sofia</a>
+                <img src="/images/logos/team_1018.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1004.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ac-milan/" class="pl-opp-name">AC Milan</a>
+              </div>
+            </div></div>
+        </div>
+        <div style="margin-bottom: 16px;">
+          <h3 class="pl-section-title" style="margin-bottom: 6px;">📅 Matchday 8</h3>
+          <div class="pl-match-list">
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/hoffenheim/" class="pl-opp-name" style="text-align: right;">Hoffenheim</a>
+                <img src="/images/logos/team_1008.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1029.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ferencvaros/" class="pl-opp-name">Ferencváros</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/salzburg/" class="pl-opp-name" style="text-align: right;">Salzburg</a>
+                <img src="/images/logos/team_1035.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1001.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/crystal-palace/" class="pl-opp-name">Crystal Palace</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/marseille/" class="pl-opp-name" style="text-align: right;">Marseille</a>
+                <img src="/images/logos/team_1010.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1025.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/anderlecht/" class="pl-opp-name">Anderlecht</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ofi-crete/" class="pl-opp-name" style="text-align: right;">OFI Crete</a>
+                <img src="/images/logos/team_1033.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/lech-pozna/" class="pl-opp-name">Lech Poznań</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/sunderland/" class="pl-opp-name" style="text-align: right;">Sunderland</a>
+                <img src="/images/logos/team_1003.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1018.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/levski-sofia/" class="pl-opp-name">Levski Sofia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/bournemouth/" class="pl-opp-name" style="text-align: right;">Bournemouth</a>
+                <img src="/images/logos/team_1002.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1017.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/hapoel-beer-sheva/" class="pl-opp-name">Hapoel Beer-Sheva</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/benfica/" class="pl-opp-name" style="text-align: right;">Benfica</a>
+                <img src="/images/logos/team_1027.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1012.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/az-alkmaar/" class="pl-opp-name">AZ Alkmaar</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/ac-milan/" class="pl-opp-name" style="text-align: right;">AC Milan</a>
+                <img src="/images/logos/team_1004.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/uefa_2610304.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/ararat-armenia/" class="pl-opp-name">Ararat-Armenia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/lyon/" class="pl-opp-name" style="text-align: right;">Lyon</a>
+                <img src="/images/logos/team_1019.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/uefa_50109.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/bayer-leverkusen/" class="pl-opp-name">Bayer Leverkusen</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/viktoria-plze/" class="pl-opp-name" style="text-align: right;">Viktoria Plzeň</a>
+                <img src="/images/logos/team_1036.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1030.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/jagiellonia/" class="pl-opp-name">Jagiellonia</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/union-sg/" class="pl-opp-name" style="text-align: right;">Union SG</a>
+                <img src="/images/logos/team_1024.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1015.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/celtic/" class="pl-opp-name">Celtic</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/gnk-dinamo/" class="pl-opp-name" style="text-align: right;">GNK Dinamo</a>
+                <img src="/images/logos/team_1016.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1023.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/sturm-graz/" class="pl-opp-name">Sturm Graz</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/sparta-praha/" class="pl-opp-name" style="text-align: right;">Sparta Praha</a>
+                <img src="/images/logos/team_1022.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/uefa_55031.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/rennes/" class="pl-opp-name">Rennes</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/celje/" class="pl-opp-name" style="text-align: right;">Celje</a>
+                <img src="/images/logos/team_1014.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1020.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/nec-nijmegen/" class="pl-opp-name">N.E.C. Nijmegen</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/omonia-nicosia/" class="pl-opp-name" style="text-align: right;">Omonia Nicosia</a>
+                <img src="/images/logos/team_1034.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1028.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/besiktas/" class="pl-opp-name">Beşiktaş</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/celta-vigo/" class="pl-opp-name" style="text-align: right;">Celta Vigo</a>
+                <img src="/images/logos/team_1007.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1032.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/lillestrom/" class="pl-opp-name">Lillestrøm</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/torreense/" class="pl-opp-name" style="text-align: right;">Torreense</a>
+                <img src="/images/logos/team_1013.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1021.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/olympiacos/" class="pl-opp-name">Olympiacos</a>
+              </div>
+            </div>
+            <div class="pl-match-card" style="padding: 8px 12px;">
+              <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
+                <a href="/en/teams/el/juventus/" class="pl-opp-name" style="text-align: right;">Juventus</a>
+                <img src="/images/logos/team_1005.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+              </div>
+              <div style="min-width: 48px; text-align: center;"><span style="color: var(--pl-muted); font-size: 11px; font-weight: 700;">vs</span></div>
+              <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
+                <img src="/images/logos/team_1006.png" alt="" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <a href="/en/teams/el/real-sociedad/" class="pl-opp-name">Real Sociedad</a>
+              </div>
+            </div></div>
+        </div>
+      </section>
+
+      <h2 class="pl-section-title">❓ Frequently Asked Questions</h2>
+      <div class="pl-faq-box">
+        
+        <div class="pl-faq-unit">
+          <h3 class="pl-faq-q">Who leads the Europa League table, and who is most likely to qualify?</h3>
+          <p class="pl-faq-a">After 18 matches Juventus lead with 3 points. The model's likeliest top-8 finishers: Benfica (83%), Juventus (80%), Bayer Leverkusen (77%).</p>
+        </div>
+        <div class="pl-faq-unit">
+          <h3 class="pl-faq-q">How does the Europa League 2026/27 league phase work?</h3>
+          <p class="pl-faq-a">36 teams play in one table; each plays 8 matches (4 home, 4 away). The top 8 go straight to the round of 16, 9th to 24th play a knockout play-off and 25th to 36th are out.</p>
+        </div>
+        <div class="pl-faq-unit">
+          <h3 class="pl-faq-q">How many points are needed for the top 8 in the Europa League?</h3>
+          <p class="pl-faq-a">In the UEFA Europa League league phase (8 matches, at most 24 points) 16 points are enough for the top 8 and 10 points for the play-off places (9-24) 90% of the time. 15 points give about an even chance of the top 8, 10 of the top 24. Source: 4,000 simulated league phases of the PredictLeague model, played matches included (2026-10-13).</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pl-footer">
+      <p>© 2026 StageSimulator · PredictLeague</p>
+      <div style="margin-top: 6px;"><a href="/en/fixtures/champions-league/">Champions League</a> · <a href="/en/fixtures/europa-league/">Europa League</a> · <a href="/en/fixtures/conference-league/">Conference League</a> · <a href="/?lang=en">Simulator</a> · <a href="/fixtures/europa-league/" hreflang="tr" lang="tr">Türkçe</a> · <a href="/privacy/">Privacy</a></div>
+    </footer>
+  </div>
+</body>
+</html>

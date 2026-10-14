@@ -82,7 +82,7 @@
       b.type = 'button';
       b.textContent = label;
       b.style.cssText = 'border:0;border-radius:10px;padding:9px 14px;font:700 13px "Plus Jakarta Sans",system-ui,sans-serif;cursor:pointer;' +
-        (primary ? 'background:#3B82F6;color:#fff;' : 'background:transparent;color:#CBD5E1;box-shadow:inset 0 0 0 1px #334155;');
+        (primary ? 'background:#2563EB;color:#fff;' : 'background:transparent;color:#CBD5E1;box-shadow:inset 0 0 0 1px #334155;');
       b.addEventListener('click', function () {
         saveChoice(value);
         bar.remove();

@@ -7,6 +7,9 @@
   <meta name="description" content="Iberia 1999'in Konferans Ligi lig aşaması: 6 maçlık fikstür, rakipler ve tur ihtimali. İlk 8 için 13 puan gerekiyor; kalan maçları tahmin et, 1.000 simülasyonla sıralamanı gör." />
   <meta name="keywords" content="Iberia 1999 fikstürü, Iberia 1999 UECL maçları, Iberia 1999 rakipleri, Iberia 1999 puan durumu, UEFA Conference League simülatörü, puan durumu hesaplama" />
   <link rel="canonical" href="https://www.stagesimulator.com/teams/ecl/iberia-1999/" />
+  <link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/teams/ecl/iberia-1999/" />
+  <link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/teams/ecl/iberia-1999/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/teams/ecl/iberia-1999/" />
   
   
   <meta property="og:type" content="website" />
@@ -22,9 +25,8 @@
   <meta name="twitter:title" content="Iberia 1999 Konferans Ligi 2026/27: Fikstür, Puan Durumu, Tur Şansı" />
   <meta name="twitter:description" content="Iberia 1999'in Konferans Ligi lig aşaması: 6 maçlık fikstür, rakipler ve tur ihtimali. İlk 8 için 13 puan gerekiyor; kalan maçları tahmin et, 1.000 simülasyonla sıralamanı gör." />
   
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/fonts.css" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <script src="/js/analytics.js" async></script>
   
@@ -37,7 +39,7 @@
       "@id": "https://www.stagesimulator.com/teams/ecl/iberia-1999/#team",
       "name": "Iberia 1999",
       "sport": "Soccer",
-      "logo": "https://www.stagesimulator.com/images/logos/team_4799.png",
+      "logo": "https://www.stagesimulator.com/images/logos/uefa_2605905.png",
       "url": "https://www.stagesimulator.com/teams/ecl/iberia-1999/",
       "memberOf": {
         "@type": "SportsOrganization",
@@ -78,6 +80,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Iberia 1999 Konferans Ligi'nde tur atlar mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Modele göre Iberia 1999'in İlk 8'e girip doğrudan Son 16'ya kalma ihtimali %3, ilk 24'te bitirip en az play-off oynama ihtimali %29, elenme ihtimali %71. Henüz maç oynamadı. Beklenen puan: 5,2. Oynanan 0 maçın sonucu sabit, kalan maçlar 4.000 kez simüle edildi (2026-10-13). Model, simülatörle aynı: takım güç puanına bağlı Poisson gol dağılımı."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Iberia 1999'in UEFA Conference League 2026/27 lig aşamasındaki rakipleri kimler?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -89,7 +99,7 @@
           "name": "Iberia 1999 ilk 8 veya play-off için kaç puana ihtiyaç duyar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "UEFA Conference League lig aşamasında (6 maç, en fazla 18 puan) İlk 8 için 13 puan, Play-off (9-24) için 8 puan %90 ihtimalle yeterlidir. 12 puan İlk 8, 7 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-11)."
+            "text": "UEFA Conference League lig aşamasında (6 maç, en fazla 18 puan) İlk 8 için 13 puan, Play-off (9-24) için 8 puan %90 ihtimalle yeterlidir. 12 puan İlk 8, 7 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-13)."
           }
         },
         {
@@ -125,7 +135,7 @@
 
   --pl-ink: #0F172A;
   --pl-ink-soft: #334155;
-  --pl-muted: #64748B;
+  --pl-muted: #5B6B80;
   --pl-muted-2: #94A3B8;
   --pl-muted-3: #CBD5E1;
   --pl-faint: #E2E8F0;
@@ -158,6 +168,11 @@
   --pl-playoff-bg: #FEF3C7;
   --pl-elim: #EF4444;
   --pl-elim-bg: #FEE2E2;
+
+  /* Darker shades of the result colours for small text (WCAG AA 4.5:1 on the light badge backgrounds) */
+  --pl-win-text: #047857;
+  --pl-loss-text: #B91C1C;
+  --pl-amber-text: #B45309;
 
   --pl-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
   --pl-shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
@@ -310,6 +325,7 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-breadcrumb a:hover { color: var(--pl-accent); }
 .pl-breadcrumb span { opacity: 0.45; }
+.pl-breadcrumb span[aria-current] { opacity: 1; color: var(--pl-ink-soft); }
 .pl-try-also { font-size: 12px; color: var(--pl-muted); margin: 4px 0 0; }
 .pl-try-also a { color: var(--pl-accent); font-weight: 600; text-decoration: none; }
 
@@ -402,8 +418,9 @@ a { color: inherit; text-decoration: none; }
   font-weight: 800;
   color: var(--pl-ink);
 }
-.pl-stat-box .val.top8 { color: var(--pl-top8); }
-.pl-stat-box .val.playoff { color: var(--pl-playoff); }
+.pl-stat-box .val.top8 { color: var(--pl-win-text); }
+.pl-stat-box .val.playoff { color: var(--pl-amber-text); }
+.pl-stat-box .val.elim { color: var(--pl-loss-text); }
 
 .pl-large-cta {
   display: flex;
@@ -493,7 +510,7 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-venue-tag.away {
   background: #FEF3C7;
-  color: #D97706;
+  color: var(--pl-amber-text);
   border: 1px solid #FDE68A;
 }
 
@@ -530,17 +547,17 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-diff-badge.diff-easy {
   background: var(--pl-win-bg);
-  color: var(--pl-win);
+  color: var(--pl-win-text);
   border: 1px solid var(--pl-win-border);
 }
 .pl-diff-badge.diff-med {
   background: #FEF3C7;
-  color: #D97706;
+  color: var(--pl-amber-text);
   border: 1px solid #FDE68A;
 }
 .pl-diff-badge.diff-hard {
   background: var(--pl-loss-bg);
-  color: var(--pl-loss);
+  color: var(--pl-loss-text);
   border: 1px solid var(--pl-loss-border);
 }
 
@@ -582,6 +599,28 @@ a { color: inherit; text-decoration: none; }
   color: var(--pl-ink);
   margin: 0;
 }
+.pl-standings-wrap { background: var(--pl-card-bg); border: 1px solid var(--pl-border); border-radius: var(--pl-radius-lg); overflow: hidden; }
+.pl-standings { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+.pl-standings caption { caption-side: top; text-align: left; padding: 10px 12px 6px; font-size: 11px; color: var(--pl-muted); }
+.pl-standings th { font-size: 10px; font-weight: 700; color: var(--pl-muted); text-transform: uppercase; padding: 6px 4px; border-bottom: 1px solid var(--pl-border); text-align: right; }
+.pl-standings th abbr { text-decoration: none; cursor: help; }
+.pl-standings td { padding: 6px 4px; border-bottom: 1px solid var(--pl-border-3); text-align: right; color: var(--pl-ink-soft); }
+.pl-standings th:nth-child(2), .pl-standings td.team { text-align: left; }
+.pl-standings td.team span { display: flex; align-items: center; gap: 6px; min-width: 0; font-weight: 600; }
+.pl-standings td.team a { color: var(--pl-ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 140px; }
+.pl-standings td.pos { text-align: center; font-weight: 800; width: 26px; border-left: 3px solid transparent; }
+.pl-standings td.pts { font-weight: 800; color: var(--pl-ink); }
+.pl-standings td.pct, .pl-standings th:nth-child(n+6) { color: var(--pl-muted); padding-right: 10px; }
+.pl-standings tr.z-top8 td.pos { border-left-color: var(--pl-top8); }
+.pl-standings tr.z-po td.pos { border-left-color: var(--pl-playoff); }
+.pl-standings tr.z-out td.pos { border-left-color: var(--pl-elim); }
+.pl-table-note { font-size: 11px; color: var(--pl-muted); line-height: 1.5; margin: 6px 2px 0; }
+.pl-key { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin: 0 4px 0 2px; }
+.pl-key.z-top8 { background: var(--pl-top8); }
+.pl-key.z-po { background: var(--pl-playoff); }
+.pl-key.z-out { background: var(--pl-elim); }
+.pl-forecast { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.pl-forecast-note { font-size: 11px; color: var(--pl-muted); margin: 0; line-height: 1.45; }
 .pl-thr-table th, .pl-thr-table td {
   padding: 6px 8px;
   border-bottom: 1px solid var(--pl-border);
@@ -691,7 +730,7 @@ a { color: inherit; text-decoration: none; }
     <header class="pl-topbar">
       <a href="/" class="pl-brand">
         <div class="pl-brand-badge">
-          <img src="/favicon.png" alt="PredictLeague" width="22" height="22" />
+          <img src="/favicon.png" alt="" width="22" height="22" />
         </div>
         <span>PredictLeague</span>
       </a>
@@ -702,12 +741,12 @@ a { color: inherit; text-decoration: none; }
     </header>
 
     <div class="pl-main">
-      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/">Futbol</a> <span>/</span> <a href="/fixtures/conference-league/">UECL</a> <span>/</span> <span>Iberia 1999</span></nav>
+      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/">Futbol</a> <span>/</span> <a href="/fixtures/conference-league/">UECL</a> <span>/</span> <span aria-current="page">Iberia 1999</span></nav>
 
       <section class="pl-hero-card">
         <div class="pl-hero-header">
           <div class="pl-team-crest">
-            <img src="/images/logos/team_4799.png" alt="Iberia 1999" width="36" height="36" onerror="this.src='/favicon.png';" />
+            <img src="/images/logos/uefa_2605905.png" alt="Iberia 1999" width="36" height="36" onerror="this.src='/favicon.png';" />
           </div>
           <div class="pl-hero-meta">
             <h1>Iberia 1999</h1>
@@ -733,6 +772,23 @@ a { color: inherit; text-decoration: none; }
           </div>
         </div>
 
+        <h2 class="pl-section-title" style="margin: 2px 0 0;">🎯 Iberia 1999 Tur İhtimali (Model)</h2>
+        <div class="pl-forecast">
+          <div class="pl-stat-box">
+            <div class="lbl">İlk 8</div>
+            <div class="val top8">%3</div>
+          </div>
+          <div class="pl-stat-box">
+            <div class="lbl">Play-off</div>
+            <div class="val playoff">%26</div>
+          </div>
+          <div class="pl-stat-box">
+            <div class="lbl">Elenme</div>
+            <div class="val elim">%71</div>
+          </div>
+        </div>
+        <p class="pl-forecast-note">Henüz maç oynamadı. Beklenen puan 5,2. Kalan maçlar simüle edildi (2026-10-13). <a href="/fixtures/conference-league/#puan-durumu" style="color: var(--pl-accent); font-weight: 600;">Konferans Ligi puan durumu →</a></p>
+
         <a href="https://www.stagesimulator.com/?comp=ecl&team=iberia-1999" class="pl-large-cta">
           <span>⚡ Iberia 1999 Maçlarını Simülatörde Tahmin Et</span>
         </a>
@@ -747,7 +803,7 @@ a { color: inherit; text-decoration: none; }
             <span class="pl-week-pill">H1</span>
             <span class="pl-venue-tag away">Deplasman</span>
             <div class="pl-opp-info">
-              <img class="pl-opp-crest" src="/images/logos/team_742.png" alt="Sint-Truidense" loading="lazy" width="22" height="22" onerror="this.src='/favicon.png';" />
+              <img class="pl-opp-crest" src="/images/logos/uefa_52883.png" alt="Sint-Truidense" loading="lazy" width="22" height="22" onerror="this.src='/favicon.png';" />
               <a href="/teams/ecl/sint-truidense/" class="pl-opp-name" title="Sint-Truidense Fikstürü">Sint-Truidense</a>
             </div>
           </div>
@@ -761,7 +817,7 @@ a { color: inherit; text-decoration: none; }
             <span class="pl-week-pill">H2</span>
             <span class="pl-venue-tag home">İç Saha</span>
             <div class="pl-opp-info">
-              <img class="pl-opp-crest" src="/images/logos/team_365.png" alt="Mjällby AIF" loading="lazy" width="22" height="22" onerror="this.src='/favicon.png';" />
+              <img class="pl-opp-crest" src="/images/logos/uefa_74233.png" alt="Mjällby AIF" loading="lazy" width="22" height="22" onerror="this.src='/favicon.png';" />
               <a href="/teams/ecl/mjallby-aif/" class="pl-opp-name" title="Mjällby AIF Fikstürü">Mjällby AIF</a>
             </div>
           </div>
@@ -817,7 +873,7 @@ a { color: inherit; text-decoration: none; }
             <span class="pl-week-pill">H6</span>
             <span class="pl-venue-tag away">Deplasman</span>
             <div class="pl-opp-info">
-              <img class="pl-opp-crest" src="/images/logos/team_641.png" alt="FK Jablonec" loading="lazy" width="22" height="22" onerror="this.src='/favicon.png';" />
+              <img class="pl-opp-crest" src="/images/logos/uefa_62169.png" alt="FK Jablonec" loading="lazy" width="22" height="22" onerror="this.src='/favicon.png';" />
               <a href="/teams/ecl/fk-jablonec/" class="pl-opp-name" title="FK Jablonec Fikstürü">FK Jablonec</a>
             </div>
           </div>
@@ -832,12 +888,16 @@ a { color: inherit; text-decoration: none; }
       <div class="pl-faq-box">
         
         <div class="pl-faq-unit">
+          <h3 class="pl-faq-q">Iberia 1999 Konferans Ligi'nde tur atlar mı?</h3>
+          <p class="pl-faq-a">Modele göre Iberia 1999'in İlk 8'e girip doğrudan Son 16'ya kalma ihtimali %3, ilk 24'te bitirip en az play-off oynama ihtimali %29, elenme ihtimali %71. Henüz maç oynamadı. Beklenen puan: 5,2. Oynanan 0 maçın sonucu sabit, kalan maçlar 4.000 kez simüle edildi (2026-10-13). Model, simülatörle aynı: takım güç puanına bağlı Poisson gol dağılımı.</p>
+        </div>
+        <div class="pl-faq-unit">
           <h3 class="pl-faq-q">Iberia 1999'in UEFA Conference League 2026/27 lig aşamasındaki rakipleri kimler?</h3>
           <p class="pl-faq-a">Iberia 1999'in 6 rakibi: <strong>Sint-Truidense, Mjällby AIF, FC Copenhagen, Getafe, Crvena Zvezda, FK Jablonec</strong> (3 iç saha, 3 deplasman).</p>
         </div>
         <div class="pl-faq-unit">
           <h3 class="pl-faq-q">Iberia 1999 ilk 8 veya play-off için kaç puana ihtiyaç duyar?</h3>
-          <p class="pl-faq-a">UEFA Conference League lig aşamasında (6 maç, en fazla 18 puan) İlk 8 için 13 puan, Play-off (9-24) için 8 puan %90 ihtimalle yeterlidir. 12 puan İlk 8, 7 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-11).</p>
+          <p class="pl-faq-a">UEFA Conference League lig aşamasında (6 maç, en fazla 18 puan) İlk 8 için 13 puan, Play-off (9-24) için 8 puan %90 ihtimalle yeterlidir. 12 puan İlk 8, 7 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-13).</p>
         </div>
         <div class="pl-faq-unit">
           <h3 class="pl-faq-q">Iberia 1999'in maç sonuçlarını nasıl tahmin edebilirim?</h3>
@@ -857,177 +917,177 @@ a { color: inherit; text-decoration: none; }
       <div class="pl-chips-grid">
         
         <a href="/teams/ecl/agf-aarhus/" class="pl-mini-chip" title="AGF Aarhus Fikstürü">
-          <img src="/images/logos/team_399.png" alt="AGF Aarhus" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_50019.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>AGF Aarhus</span>
         </a>
         
         <a href="/teams/ecl/as-monaco/" class="pl-mini-chip" title="AS Monaco Fikstürü">
-          <img src="/images/logos/team_91.png" alt="AS Monaco" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_91.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>AS Monaco</span>
         </a>
         
         <a href="/teams/ecl/ajax/" class="pl-mini-chip" title="Ajax Fikstürü">
-          <img src="/images/logos/team_194.png" alt="Ajax" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_194.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Ajax</span>
         </a>
         
         <a href="/teams/ecl/atalanta/" class="pl-mini-chip" title="Atalanta Fikstürü">
-          <img src="/images/logos/team_499.png" alt="Atalanta" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_499.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Atalanta</span>
         </a>
         
         <a href="/teams/ecl/borac-banja-luka/" class="pl-mini-chip" title="Borac Banja Luka Fikstürü">
-          <img src="/images/logos/team_3364.png" alt="Borac Banja Luka" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_3364.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Borac Banja Luka</span>
         </a>
         
         <a href="/teams/ecl/brighton/" class="pl-mini-chip" title="Brighton Fikstürü">
-          <img src="/images/logos/team_51.png" alt="Brighton" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_51.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Brighton</span>
         </a>
         
         <a href="/teams/ecl/cska-sofia/" class="pl-mini-chip" title="CSKA Sofia Fikstürü">
-          <img src="/images/logos/team_585.png" alt="CSKA Sofia" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_2608297.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>CSKA Sofia</span>
         </a>
         
         <a href="/teams/ecl/crvena-zvezda/" class="pl-mini-chip" title="Crvena Zvezda Fikstürü">
-          <img src="/images/logos/team_598.png" alt="Crvena Zvezda" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_598.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Crvena Zvezda</span>
         </a>
         
         <a href="/teams/ecl/fc-copenhagen/" class="pl-mini-chip" title="FC Copenhagen Fikstürü">
-          <img src="/images/logos/team_400.png" alt="FC Copenhagen" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_400.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>FC Copenhagen</span>
         </a>
         
         <a href="/teams/ecl/fc-lugano/" class="pl-mini-chip" title="FC Lugano Fikstürü">
-          <img src="/images/logos/team_606.png" alt="FC Lugano" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_606.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>FC Lugano</span>
         </a>
         
         <a href="/teams/ecl/fc-midtjylland/" class="pl-mini-chip" title="FC Midtjylland Fikstürü">
-          <img src="/images/logos/team_397.png" alt="FC Midtjylland" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_397.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>FC Midtjylland</span>
         </a>
         
         <a href="/teams/ecl/fc-thun/" class="pl-mini-chip" title="FC Thun Fikstürü">
-          <img src="/images/logos/team_1009.png" alt="FC Thun" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_80409.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>FC Thun</span>
         </a>
         
         <a href="/teams/ecl/fc-twente/" class="pl-mini-chip" title="FC Twente Fikstürü">
-          <img src="/images/logos/team_415.png" alt="FC Twente" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_415.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>FC Twente</span>
         </a>
         
         <a href="/teams/ecl/fk-jablonec/" class="pl-mini-chip" title="FK Jablonec Fikstürü">
-          <img src="/images/logos/team_641.png" alt="FK Jablonec" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_62169.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>FK Jablonec</span>
         </a>
         
         <a href="/teams/ecl/getafe/" class="pl-mini-chip" title="Getafe Fikstürü">
-          <img src="/images/logos/team_546.png" alt="Getafe" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_546.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Getafe</span>
         </a>
         
         <a href="/teams/ecl/hajduk-split/" class="pl-mini-chip" title="Hajduk Split Fikstürü">
-          <img src="/images/logos/team_622.png" alt="Hajduk Split" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_52359.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Hajduk Split</span>
         </a>
         
         <a href="/teams/ecl/hearts/" class="pl-mini-chip" title="Hearts Fikstürü">
-          <img src="/images/logos/team_254.png" alt="Hearts" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_254.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Hearts</span>
         </a>
         
         <a href="/teams/ecl/inter-escaldes/" class="pl-mini-chip" title="Inter Escaldes Fikstürü">
-          <img src="/images/logos/team_7464.png" alt="Inter Escaldes" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_63401.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Inter Escaldes</span>
         </a>
         
         <a href="/teams/ecl/kaa-gent/" class="pl-mini-chip" title="KAA Gent Fikstürü">
-          <img src="/images/logos/team_631.png" alt="KAA Gent" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_631.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>KAA Gent</span>
         </a>
         
         <a href="/teams/ecl/kf-egnatia/" class="pl-mini-chip" title="KF Egnatia Fikstürü">
-          <img src="/images/logos/team_7856.png" alt="KF Egnatia" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_88148.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>KF Egnatia</span>
         </a>
         
         <a href="/teams/ecl/kairat-almaty/" class="pl-mini-chip" title="Kairat Almaty Fikstürü">
-          <img src="/images/logos/team_563.png" alt="Kairat Almaty" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_79970.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Kairat Almaty</span>
         </a>
         
         <a href="/teams/ecl/kauno-zalgiris/" class="pl-mini-chip" title="Kauno Zalgiris Fikstürü">
-          <img src="/images/logos/team_3496.png" alt="Kauno Zalgiris" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_2605907.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Kauno Zalgiris</span>
         </a>
         
         <a href="/teams/ecl/kups-kuopio/" class="pl-mini-chip" title="KuPS Kuopio Fikstürü">
-          <img src="/images/logos/team_650.png" alt="KuPS Kuopio" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_52350.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>KuPS Kuopio</span>
         </a>
         
         <a href="/teams/ecl/lincoln-red-imps/" class="pl-mini-chip" title="Lincoln Red Imps Fikstürü">
-          <img src="/images/logos/team_1903.png" alt="Lincoln Red Imps" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_2605572.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Lincoln Red Imps</span>
         </a>
         
         <a href="/teams/ecl/mjallby-aif/" class="pl-mini-chip" title="Mjällby AIF Fikstürü">
-          <img src="/images/logos/team_365.png" alt="Mjällby AIF" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_74233.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Mjällby AIF</span>
         </a>
         
         <a href="/teams/ecl/nordsjlland/" class="pl-mini-chip" title="Nordsjælland Fikstürü">
-          <img src="/images/logos/team_398.png" alt="Nordsjælland" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_398.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Nordsjælland</span>
         </a>
         
         <a href="/teams/ecl/pafos-fc/" class="pl-mini-chip" title="Pafos FC Fikstürü">
-          <img src="/images/logos/team_3403.png" alt="Pafos FC" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_3403.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Pafos FC</span>
         </a>
         
         <a href="/teams/ecl/panathinaikos/" class="pl-mini-chip" title="Panathinaikos Fikstürü">
-          <img src="/images/logos/team_617.png" alt="Panathinaikos" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_617.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Panathinaikos</span>
         </a>
         
         <a href="/teams/ecl/riga-fc/" class="pl-mini-chip" title="Riga FC Fikstürü">
-          <img src="/images/logos/team_4158.png" alt="Riga FC" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_2607924.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Riga FC</span>
         </a>
         
         <a href="/teams/ecl/sc-braga/" class="pl-mini-chip" title="SC Braga Fikstürü">
-          <img src="/images/logos/team_217.png" alt="SC Braga" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_217.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>SC Braga</span>
         </a>
         
         <a href="/teams/ecl/sc-freiburg/" class="pl-mini-chip" title="SC Freiburg Fikstürü">
-          <img src="/images/logos/team_160.png" alt="SC Freiburg" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_160.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>SC Freiburg</span>
         </a>
         
         <a href="/teams/ecl/sk-brann/" class="pl-mini-chip" title="SK Brann Fikstürü">
-          <img src="/images/logos/team_328.png" alt="SK Brann" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_52770.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>SK Brann</span>
         </a>
         
         <a href="/teams/ecl/sint-truidense/" class="pl-mini-chip" title="Sint-Truidense Fikstürü">
-          <img src="/images/logos/team_742.png" alt="Sint-Truidense" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_52883.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Sint-Truidense</span>
         </a>
         
         <a href="/teams/ecl/trabzonspor/" class="pl-mini-chip" title="Trabzonspor Fikstürü">
-          <img src="/images/logos/team_610.png" alt="Trabzonspor" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_52731.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Trabzonspor</span>
         </a>
         
         <a href="/teams/ecl/univ-craiova/" class="pl-mini-chip" title="Univ. Craiova Fikstürü">
-          <img src="/images/logos/team_638.png" alt="Univ. Craiova" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_2606501.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Univ. Craiova</span>
         </a>
         

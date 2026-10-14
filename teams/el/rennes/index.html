@@ -7,6 +7,9 @@
   <meta name="description" content="Rennes'in Avrupa Ligi lig aşaması: 8 maçlık fikstür, rakipler ve tur ihtimali. İlk 8 için 16 puan gerekiyor; kalan maçları tahmin et, 1.000 simülasyonla sıralamanı gör." />
   <meta name="keywords" content="Rennes fikstürü, Rennes UEL maçları, Rennes rakipleri, Rennes puan durumu, UEFA Europa League simülatörü, puan durumu hesaplama" />
   <link rel="canonical" href="https://www.stagesimulator.com/teams/el/rennes/" />
+  <link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/teams/el/rennes/" />
+  <link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/teams/el/rennes/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/teams/el/rennes/" />
   
   
   <meta property="og:type" content="website" />
@@ -22,9 +25,8 @@
   <meta name="twitter:title" content="Rennes Avrupa Ligi 2026/27: Fikstür, Puan Durumu, Tur Şansı" />
   <meta name="twitter:description" content="Rennes'in Avrupa Ligi lig aşaması: 8 maçlık fikstür, rakipler ve tur ihtimali. İlk 8 için 16 puan gerekiyor; kalan maçları tahmin et, 1.000 simülasyonla sıralamanı gör." />
   
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/fonts.css" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <script src="/js/analytics.js" async></script>
   
@@ -37,7 +39,7 @@
       "@id": "https://www.stagesimulator.com/teams/el/rennes/#team",
       "name": "Rennes",
       "sport": "Soccer",
-      "logo": "https://www.stagesimulator.com/images/logos/team_1011.png",
+      "logo": "https://www.stagesimulator.com/images/logos/uefa_55031.png",
       "url": "https://www.stagesimulator.com/teams/el/rennes/",
       "memberOf": {
         "@type": "SportsOrganization",
@@ -78,6 +80,14 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Rennes Avrupa Ligi'nde tur atlar mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Modele göre Rennes'in İlk 8'e girip doğrudan Son 16'ya kalma ihtimali %23, ilk 24'te bitirip en az play-off oynama ihtimali %82, elenme ihtimali %18. Şu an 17. sırada (1 puan, 1 maç). Beklenen puan: 12,0. Oynanan 18 maçın sonucu sabit, kalan maçlar 4.000 kez simüle edildi (2026-10-13). Model, simülatörle aynı: takım güç puanına bağlı Poisson gol dağılımı."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Rennes'in UEFA Europa League 2026/27 lig aşamasındaki rakipleri kimler?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -89,7 +99,7 @@
           "name": "Rennes ilk 8 veya play-off için kaç puana ihtiyaç duyar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "UEFA Europa League lig aşamasında (8 maç, en fazla 24 puan) İlk 8 için 16 puan, Play-off (9-24) için 10 puan %90 ihtimalle yeterlidir. 15 puan İlk 8, 10 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-11)."
+            "text": "UEFA Europa League lig aşamasında (8 maç, en fazla 24 puan) İlk 8 için 16 puan, Play-off (9-24) için 10 puan %90 ihtimalle yeterlidir. 15 puan İlk 8, 10 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-13)."
           }
         },
         {
@@ -125,7 +135,7 @@
 
   --pl-ink: #0F172A;
   --pl-ink-soft: #334155;
-  --pl-muted: #64748B;
+  --pl-muted: #5B6B80;
   --pl-muted-2: #94A3B8;
   --pl-muted-3: #CBD5E1;
   --pl-faint: #E2E8F0;
@@ -158,6 +168,11 @@
   --pl-playoff-bg: #FEF3C7;
   --pl-elim: #EF4444;
   --pl-elim-bg: #FEE2E2;
+
+  /* Darker shades of the result colours for small text (WCAG AA 4.5:1 on the light badge backgrounds) */
+  --pl-win-text: #047857;
+  --pl-loss-text: #B91C1C;
+  --pl-amber-text: #B45309;
 
   --pl-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
   --pl-shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
@@ -310,6 +325,7 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-breadcrumb a:hover { color: var(--pl-accent); }
 .pl-breadcrumb span { opacity: 0.45; }
+.pl-breadcrumb span[aria-current] { opacity: 1; color: var(--pl-ink-soft); }
 .pl-try-also { font-size: 12px; color: var(--pl-muted); margin: 4px 0 0; }
 .pl-try-also a { color: var(--pl-accent); font-weight: 600; text-decoration: none; }
 
@@ -402,8 +418,9 @@ a { color: inherit; text-decoration: none; }
   font-weight: 800;
   color: var(--pl-ink);
 }
-.pl-stat-box .val.top8 { color: var(--pl-top8); }
-.pl-stat-box .val.playoff { color: var(--pl-playoff); }
+.pl-stat-box .val.top8 { color: var(--pl-win-text); }
+.pl-stat-box .val.playoff { color: var(--pl-amber-text); }
+.pl-stat-box .val.elim { color: var(--pl-loss-text); }
 
 .pl-large-cta {
   display: flex;
@@ -493,7 +510,7 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-venue-tag.away {
   background: #FEF3C7;
-  color: #D97706;
+  color: var(--pl-amber-text);
   border: 1px solid #FDE68A;
 }
 
@@ -530,17 +547,17 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-diff-badge.diff-easy {
   background: var(--pl-win-bg);
-  color: var(--pl-win);
+  color: var(--pl-win-text);
   border: 1px solid var(--pl-win-border);
 }
 .pl-diff-badge.diff-med {
   background: #FEF3C7;
-  color: #D97706;
+  color: var(--pl-amber-text);
   border: 1px solid #FDE68A;
 }
 .pl-diff-badge.diff-hard {
   background: var(--pl-loss-bg);
-  color: var(--pl-loss);
+  color: var(--pl-loss-text);
   border: 1px solid var(--pl-loss-border);
 }
 
@@ -582,6 +599,28 @@ a { color: inherit; text-decoration: none; }
   color: var(--pl-ink);
   margin: 0;
 }
+.pl-standings-wrap { background: var(--pl-card-bg); border: 1px solid var(--pl-border); border-radius: var(--pl-radius-lg); overflow: hidden; }
+.pl-standings { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+.pl-standings caption { caption-side: top; text-align: left; padding: 10px 12px 6px; font-size: 11px; color: var(--pl-muted); }
+.pl-standings th { font-size: 10px; font-weight: 700; color: var(--pl-muted); text-transform: uppercase; padding: 6px 4px; border-bottom: 1px solid var(--pl-border); text-align: right; }
+.pl-standings th abbr { text-decoration: none; cursor: help; }
+.pl-standings td { padding: 6px 4px; border-bottom: 1px solid var(--pl-border-3); text-align: right; color: var(--pl-ink-soft); }
+.pl-standings th:nth-child(2), .pl-standings td.team { text-align: left; }
+.pl-standings td.team span { display: flex; align-items: center; gap: 6px; min-width: 0; font-weight: 600; }
+.pl-standings td.team a { color: var(--pl-ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 140px; }
+.pl-standings td.pos { text-align: center; font-weight: 800; width: 26px; border-left: 3px solid transparent; }
+.pl-standings td.pts { font-weight: 800; color: var(--pl-ink); }
+.pl-standings td.pct, .pl-standings th:nth-child(n+6) { color: var(--pl-muted); padding-right: 10px; }
+.pl-standings tr.z-top8 td.pos { border-left-color: var(--pl-top8); }
+.pl-standings tr.z-po td.pos { border-left-color: var(--pl-playoff); }
+.pl-standings tr.z-out td.pos { border-left-color: var(--pl-elim); }
+.pl-table-note { font-size: 11px; color: var(--pl-muted); line-height: 1.5; margin: 6px 2px 0; }
+.pl-key { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin: 0 4px 0 2px; }
+.pl-key.z-top8 { background: var(--pl-top8); }
+.pl-key.z-po { background: var(--pl-playoff); }
+.pl-key.z-out { background: var(--pl-elim); }
+.pl-forecast { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.pl-forecast-note { font-size: 11px; color: var(--pl-muted); margin: 0; line-height: 1.45; }
 .pl-thr-table th, .pl-thr-table td {
   padding: 6px 8px;
   border-bottom: 1px solid var(--pl-border);
@@ -691,7 +730,7 @@ a { color: inherit; text-decoration: none; }
     <header class="pl-topbar">
       <a href="/" class="pl-brand">
         <div class="pl-brand-badge">
-          <img src="/favicon.png" alt="PredictLeague" width="22" height="22" />
+          <img src="/favicon.png" alt="" width="22" height="22" />
         </div>
         <span>PredictLeague</span>
       </a>
@@ -702,12 +741,12 @@ a { color: inherit; text-decoration: none; }
     </header>
 
     <div class="pl-main">
-      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/">Futbol</a> <span>/</span> <a href="/fixtures/europa-league/">UEL</a> <span>/</span> <span>Rennes</span></nav>
+      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/">Futbol</a> <span>/</span> <a href="/fixtures/europa-league/">UEL</a> <span>/</span> <span aria-current="page">Rennes</span></nav>
 
       <section class="pl-hero-card">
         <div class="pl-hero-header">
           <div class="pl-team-crest">
-            <img src="/images/logos/team_1011.png" alt="Rennes" width="36" height="36" onerror="this.src='/favicon.png';" />
+            <img src="/images/logos/uefa_55031.png" alt="Rennes" width="36" height="36" onerror="this.src='/favicon.png';" />
           </div>
           <div class="pl-hero-meta">
             <h1>Rennes</h1>
@@ -732,6 +771,23 @@ a { color: inherit; text-decoration: none; }
             <div class="val">4İ / 4D</div>
           </div>
         </div>
+
+        <h2 class="pl-section-title" style="margin: 2px 0 0;">🎯 Rennes Tur İhtimali (Model)</h2>
+        <div class="pl-forecast">
+          <div class="pl-stat-box">
+            <div class="lbl">İlk 8</div>
+            <div class="val top8">%23</div>
+          </div>
+          <div class="pl-stat-box">
+            <div class="lbl">Play-off</div>
+            <div class="val playoff">%59</div>
+          </div>
+          <div class="pl-stat-box">
+            <div class="lbl">Elenme</div>
+            <div class="val elim">%18</div>
+          </div>
+        </div>
+        <p class="pl-forecast-note">Şu an 17. sırada (1 puan, 1 maç). Beklenen puan 12,0. Kalan maçlar simüle edildi (2026-10-13). <a href="/fixtures/europa-league/#puan-durumu" style="color: var(--pl-accent); font-weight: 600;">Avrupa Ligi puan durumu →</a></p>
 
         <a href="https://www.stagesimulator.com/?comp=el&team=rennes" class="pl-large-cta">
           <span>⚡ Rennes Maçlarını Simülatörde Tahmin Et</span>
@@ -860,12 +916,16 @@ a { color: inherit; text-decoration: none; }
       <div class="pl-faq-box">
         
         <div class="pl-faq-unit">
+          <h3 class="pl-faq-q">Rennes Avrupa Ligi'nde tur atlar mı?</h3>
+          <p class="pl-faq-a">Modele göre Rennes'in İlk 8'e girip doğrudan Son 16'ya kalma ihtimali %23, ilk 24'te bitirip en az play-off oynama ihtimali %82, elenme ihtimali %18. Şu an 17. sırada (1 puan, 1 maç). Beklenen puan: 12,0. Oynanan 18 maçın sonucu sabit, kalan maçlar 4.000 kez simüle edildi (2026-10-13). Model, simülatörle aynı: takım güç puanına bağlı Poisson gol dağılımı.</p>
+        </div>
+        <div class="pl-faq-unit">
           <h3 class="pl-faq-q">Rennes'in UEFA Europa League 2026/27 lig aşamasındaki rakipleri kimler?</h3>
           <p class="pl-faq-a">Rennes'in 8 rakibi: <strong>Sturm Graz, OFI Crete, Juventus, Olympiacos, N.E.C. Nijmegen, GNK Dinamo, Omonia Nicosia, Sparta Praha</strong> (4 iç saha, 4 deplasman).</p>
         </div>
         <div class="pl-faq-unit">
           <h3 class="pl-faq-q">Rennes ilk 8 veya play-off için kaç puana ihtiyaç duyar?</h3>
-          <p class="pl-faq-a">UEFA Europa League lig aşamasında (8 maç, en fazla 24 puan) İlk 8 için 16 puan, Play-off (9-24) için 10 puan %90 ihtimalle yeterlidir. 15 puan İlk 8, 10 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-11).</p>
+          <p class="pl-faq-a">UEFA Europa League lig aşamasında (8 maç, en fazla 24 puan) İlk 8 için 16 puan, Play-off (9-24) için 10 puan %90 ihtimalle yeterlidir. 15 puan İlk 8, 10 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-13).</p>
         </div>
         <div class="pl-faq-unit">
           <h3 class="pl-faq-q">Rennes'in maç sonuçlarını nasıl tahmin edebilirim?</h3>
@@ -885,177 +945,177 @@ a { color: inherit; text-decoration: none; }
       <div class="pl-chips-grid">
         
         <a href="/teams/el/ac-milan/" class="pl-mini-chip" title="AC Milan Fikstürü">
-          <img src="/images/logos/team_1004.png" alt="AC Milan" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1004.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>AC Milan</span>
         </a>
         
         <a href="/teams/el/az-alkmaar/" class="pl-mini-chip" title="AZ Alkmaar Fikstürü">
-          <img src="/images/logos/team_1012.png" alt="AZ Alkmaar" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1012.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>AZ Alkmaar</span>
         </a>
         
         <a href="/teams/el/anderlecht/" class="pl-mini-chip" title="Anderlecht Fikstürü">
-          <img src="/images/logos/team_1025.png" alt="Anderlecht" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1025.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Anderlecht</span>
         </a>
         
         <a href="/teams/el/ararat-armenia/" class="pl-mini-chip" title="Ararat-Armenia Fikstürü">
-          <img src="/images/logos/team_1026.png" alt="Ararat-Armenia" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_2610304.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Ararat-Armenia</span>
         </a>
         
         <a href="/teams/el/bayer-leverkusen/" class="pl-mini-chip" title="Bayer Leverkusen Fikstürü">
-          <img src="/images/logos/team_1009.png" alt="Bayer Leverkusen" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/uefa_50109.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Bayer Leverkusen</span>
         </a>
         
         <a href="/teams/el/benfica/" class="pl-mini-chip" title="Benfica Fikstürü">
-          <img src="/images/logos/team_1027.png" alt="Benfica" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1027.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Benfica</span>
         </a>
         
         <a href="/teams/el/besiktas/" class="pl-mini-chip" title="Beşiktaş Fikstürü">
-          <img src="/images/logos/team_1028.png" alt="Beşiktaş" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1028.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Beşiktaş</span>
         </a>
         
         <a href="/teams/el/bournemouth/" class="pl-mini-chip" title="Bournemouth Fikstürü">
-          <img src="/images/logos/team_1002.png" alt="Bournemouth" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1002.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Bournemouth</span>
         </a>
         
         <a href="/teams/el/celje/" class="pl-mini-chip" title="Celje Fikstürü">
-          <img src="/images/logos/team_1014.png" alt="Celje" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1014.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Celje</span>
         </a>
         
         <a href="/teams/el/celta-vigo/" class="pl-mini-chip" title="Celta Vigo Fikstürü">
-          <img src="/images/logos/team_1007.png" alt="Celta Vigo" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1007.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Celta Vigo</span>
         </a>
         
         <a href="/teams/el/celtic/" class="pl-mini-chip" title="Celtic Fikstürü">
-          <img src="/images/logos/team_1015.png" alt="Celtic" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1015.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Celtic</span>
         </a>
         
         <a href="/teams/el/crystal-palace/" class="pl-mini-chip" title="Crystal Palace Fikstürü">
-          <img src="/images/logos/team_1001.png" alt="Crystal Palace" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1001.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Crystal Palace</span>
         </a>
         
         <a href="/teams/el/ferencvaros/" class="pl-mini-chip" title="Ferencváros Fikstürü">
-          <img src="/images/logos/team_1029.png" alt="Ferencváros" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1029.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Ferencváros</span>
         </a>
         
         <a href="/teams/el/gnk-dinamo/" class="pl-mini-chip" title="GNK Dinamo Fikstürü">
-          <img src="/images/logos/team_1016.png" alt="GNK Dinamo" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1016.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>GNK Dinamo</span>
         </a>
         
         <a href="/teams/el/hapoel-beer-sheva/" class="pl-mini-chip" title="Hapoel Beer-Sheva Fikstürü">
-          <img src="/images/logos/team_1017.png" alt="Hapoel Beer-Sheva" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1017.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Hapoel Beer-Sheva</span>
         </a>
         
         <a href="/teams/el/hoffenheim/" class="pl-mini-chip" title="Hoffenheim Fikstürü">
-          <img src="/images/logos/team_1008.png" alt="Hoffenheim" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1008.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Hoffenheim</span>
         </a>
         
         <a href="/teams/el/jagiellonia/" class="pl-mini-chip" title="Jagiellonia Fikstürü">
-          <img src="/images/logos/team_1030.png" alt="Jagiellonia" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1030.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Jagiellonia</span>
         </a>
         
         <a href="/teams/el/juventus/" class="pl-mini-chip" title="Juventus Fikstürü">
-          <img src="/images/logos/team_1005.png" alt="Juventus" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1005.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Juventus</span>
         </a>
         
         <a href="/teams/el/lech-pozna/" class="pl-mini-chip" title="Lech Poznań Fikstürü">
-          <img src="/images/logos/team_1031.png" alt="Lech Poznań" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1031.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Lech Poznań</span>
         </a>
         
         <a href="/teams/el/levski-sofia/" class="pl-mini-chip" title="Levski Sofia Fikstürü">
-          <img src="/images/logos/team_1018.png" alt="Levski Sofia" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1018.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Levski Sofia</span>
         </a>
         
         <a href="/teams/el/lillestrom/" class="pl-mini-chip" title="Lillestrøm Fikstürü">
-          <img src="/images/logos/team_1032.png" alt="Lillestrøm" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1032.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Lillestrøm</span>
         </a>
         
         <a href="/teams/el/lyon/" class="pl-mini-chip" title="Lyon Fikstürü">
-          <img src="/images/logos/team_1019.png" alt="Lyon" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1019.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Lyon</span>
         </a>
         
         <a href="/teams/el/marseille/" class="pl-mini-chip" title="Marseille Fikstürü">
-          <img src="/images/logos/team_1010.png" alt="Marseille" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1010.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Marseille</span>
         </a>
         
         <a href="/teams/el/nec-nijmegen/" class="pl-mini-chip" title="N.E.C. Nijmegen Fikstürü">
-          <img src="/images/logos/team_1020.png" alt="N.E.C. Nijmegen" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1020.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>N.E.C. Nijmegen</span>
         </a>
         
         <a href="/teams/el/ofi-crete/" class="pl-mini-chip" title="OFI Crete Fikstürü">
-          <img src="/images/logos/team_1033.png" alt="OFI Crete" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1033.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>OFI Crete</span>
         </a>
         
         <a href="/teams/el/olympiacos/" class="pl-mini-chip" title="Olympiacos Fikstürü">
-          <img src="/images/logos/team_1021.png" alt="Olympiacos" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1021.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Olympiacos</span>
         </a>
         
         <a href="/teams/el/omonia-nicosia/" class="pl-mini-chip" title="Omonia Nicosia Fikstürü">
-          <img src="/images/logos/team_1034.png" alt="Omonia Nicosia" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1034.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Omonia Nicosia</span>
         </a>
         
         <a href="/teams/el/real-sociedad/" class="pl-mini-chip" title="Real Sociedad Fikstürü">
-          <img src="/images/logos/team_1006.png" alt="Real Sociedad" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1006.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Real Sociedad</span>
         </a>
         
         <a href="/teams/el/salzburg/" class="pl-mini-chip" title="Salzburg Fikstürü">
-          <img src="/images/logos/team_1035.png" alt="Salzburg" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1035.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Salzburg</span>
         </a>
         
         <a href="/teams/el/sparta-praha/" class="pl-mini-chip" title="Sparta Praha Fikstürü">
-          <img src="/images/logos/team_1022.png" alt="Sparta Praha" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1022.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Sparta Praha</span>
         </a>
         
         <a href="/teams/el/sturm-graz/" class="pl-mini-chip" title="Sturm Graz Fikstürü">
-          <img src="/images/logos/team_1023.png" alt="Sturm Graz" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1023.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Sturm Graz</span>
         </a>
         
         <a href="/teams/el/sunderland/" class="pl-mini-chip" title="Sunderland Fikstürü">
-          <img src="/images/logos/team_1003.png" alt="Sunderland" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1003.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Sunderland</span>
         </a>
         
         <a href="/teams/el/torreense/" class="pl-mini-chip" title="Torreense Fikstürü">
-          <img src="/images/logos/team_1013.png" alt="Torreense" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1013.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Torreense</span>
         </a>
         
         <a href="/teams/el/union-sg/" class="pl-mini-chip" title="Union SG Fikstürü">
-          <img src="/images/logos/team_1024.png" alt="Union SG" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1024.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Union SG</span>
         </a>
         
         <a href="/teams/el/viktoria-plze/" class="pl-mini-chip" title="Viktoria Plzeň Fikstürü">
-          <img src="/images/logos/team_1036.png" alt="Viktoria Plzeň" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
+          <img src="/images/logos/team_1036.png" alt="" loading="lazy" width="16" height="16" onerror="this.src='/favicon.png';" />
           <span>Viktoria Plzeň</span>
         </a>
         

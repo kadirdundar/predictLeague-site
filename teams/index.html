@@ -22,9 +22,8 @@
   <meta name="twitter:title" content="Tüm Takımlar & Fikstür Rehberi 2026/27 | PredictLeague" />
   <meta name="twitter:description" content="Avrupa Kupaları 2026/27 sezonunda mücadele eden 100'ü aşkın takımın özel fikstür sayfaları, maç takvimi ve Monte Carlo simülatörleri." />
   
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/fonts.css" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <script src="/js/analytics.js" async></script>
   
@@ -76,7 +75,7 @@
 
   --pl-ink: #0F172A;
   --pl-ink-soft: #334155;
-  --pl-muted: #64748B;
+  --pl-muted: #5B6B80;
   --pl-muted-2: #94A3B8;
   --pl-muted-3: #CBD5E1;
   --pl-faint: #E2E8F0;
@@ -109,6 +108,11 @@
   --pl-playoff-bg: #FEF3C7;
   --pl-elim: #EF4444;
   --pl-elim-bg: #FEE2E2;
+
+  /* Darker shades of the result colours for small text (WCAG AA 4.5:1 on the light badge backgrounds) */
+  --pl-win-text: #047857;
+  --pl-loss-text: #B91C1C;
+  --pl-amber-text: #B45309;
 
   --pl-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
   --pl-shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
@@ -261,6 +265,7 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-breadcrumb a:hover { color: var(--pl-accent); }
 .pl-breadcrumb span { opacity: 0.45; }
+.pl-breadcrumb span[aria-current] { opacity: 1; color: var(--pl-ink-soft); }
 .pl-try-also { font-size: 12px; color: var(--pl-muted); margin: 4px 0 0; }
 .pl-try-also a { color: var(--pl-accent); font-weight: 600; text-decoration: none; }
 
@@ -353,8 +358,9 @@ a { color: inherit; text-decoration: none; }
   font-weight: 800;
   color: var(--pl-ink);
 }
-.pl-stat-box .val.top8 { color: var(--pl-top8); }
-.pl-stat-box .val.playoff { color: var(--pl-playoff); }
+.pl-stat-box .val.top8 { color: var(--pl-win-text); }
+.pl-stat-box .val.playoff { color: var(--pl-amber-text); }
+.pl-stat-box .val.elim { color: var(--pl-loss-text); }
 
 .pl-large-cta {
   display: flex;
@@ -444,7 +450,7 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-venue-tag.away {
   background: #FEF3C7;
-  color: #D97706;
+  color: var(--pl-amber-text);
   border: 1px solid #FDE68A;
 }
 
@@ -481,17 +487,17 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-diff-badge.diff-easy {
   background: var(--pl-win-bg);
-  color: var(--pl-win);
+  color: var(--pl-win-text);
   border: 1px solid var(--pl-win-border);
 }
 .pl-diff-badge.diff-med {
   background: #FEF3C7;
-  color: #D97706;
+  color: var(--pl-amber-text);
   border: 1px solid #FDE68A;
 }
 .pl-diff-badge.diff-hard {
   background: var(--pl-loss-bg);
-  color: var(--pl-loss);
+  color: var(--pl-loss-text);
   border: 1px solid var(--pl-loss-border);
 }
 
@@ -533,6 +539,28 @@ a { color: inherit; text-decoration: none; }
   color: var(--pl-ink);
   margin: 0;
 }
+.pl-standings-wrap { background: var(--pl-card-bg); border: 1px solid var(--pl-border); border-radius: var(--pl-radius-lg); overflow: hidden; }
+.pl-standings { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+.pl-standings caption { caption-side: top; text-align: left; padding: 10px 12px 6px; font-size: 11px; color: var(--pl-muted); }
+.pl-standings th { font-size: 10px; font-weight: 700; color: var(--pl-muted); text-transform: uppercase; padding: 6px 4px; border-bottom: 1px solid var(--pl-border); text-align: right; }
+.pl-standings th abbr { text-decoration: none; cursor: help; }
+.pl-standings td { padding: 6px 4px; border-bottom: 1px solid var(--pl-border-3); text-align: right; color: var(--pl-ink-soft); }
+.pl-standings th:nth-child(2), .pl-standings td.team { text-align: left; }
+.pl-standings td.team span { display: flex; align-items: center; gap: 6px; min-width: 0; font-weight: 600; }
+.pl-standings td.team a { color: var(--pl-ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 140px; }
+.pl-standings td.pos { text-align: center; font-weight: 800; width: 26px; border-left: 3px solid transparent; }
+.pl-standings td.pts { font-weight: 800; color: var(--pl-ink); }
+.pl-standings td.pct, .pl-standings th:nth-child(n+6) { color: var(--pl-muted); padding-right: 10px; }
+.pl-standings tr.z-top8 td.pos { border-left-color: var(--pl-top8); }
+.pl-standings tr.z-po td.pos { border-left-color: var(--pl-playoff); }
+.pl-standings tr.z-out td.pos { border-left-color: var(--pl-elim); }
+.pl-table-note { font-size: 11px; color: var(--pl-muted); line-height: 1.5; margin: 6px 2px 0; }
+.pl-key { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin: 0 4px 0 2px; }
+.pl-key.z-top8 { background: var(--pl-top8); }
+.pl-key.z-po { background: var(--pl-playoff); }
+.pl-key.z-out { background: var(--pl-elim); }
+.pl-forecast { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.pl-forecast-note { font-size: 11px; color: var(--pl-muted); margin: 0; line-height: 1.45; }
 .pl-thr-table th, .pl-thr-table td {
   padding: 6px 8px;
   border-bottom: 1px solid var(--pl-border);
@@ -641,7 +669,7 @@ a { color: inherit; text-decoration: none; }
     <header class="pl-topbar">
       <a href="/" class="pl-brand">
         <div class="pl-brand-badge">
-          <img src="/favicon.png" alt="PredictLeague" width="22" height="22" />
+          <img src="/favicon.png" alt="" width="22" height="22" />
         </div>
         <span>PredictLeague</span>
       </a>
@@ -652,7 +680,7 @@ a { color: inherit; text-decoration: none; }
     </header>
 
     <div class="pl-main">
-      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/">Futbol</a> <span>/</span> <span>Takımlar</span></nav>
+      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/">Futbol</a> <span>/</span> <span aria-current="page">Takımlar</span></nav>
 
       <div class="pl-hero-card">
         <h1 style="font-size: 16px; font-weight: 800; color: var(--pl-ink);">Tüm Takımlar & Fikstürler</h1>
@@ -666,7 +694,7 @@ a { color: inherit; text-decoration: none; }
           <div class="pl-chips-grid">
             
             <a href="/teams/cl/aek-athens/" class="pl-mini-chip" title="AEK Athens Fikstürü & Simülatörü">
-              <img src="/images/logos/team_606.png" alt="AEK Athens" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_50129.png" alt="AEK Athens" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>AEK Athens</span>
             </a>
             
@@ -711,7 +739,7 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/cl/como/" class="pl-mini-chip" title="Como Fikstürü & Simülatörü">
-              <img src="/images/logos/team_897.png" alt="Como" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_79946.png" alt="Como" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Como</span>
             </a>
             
@@ -806,7 +834,7 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/cl/sabah/" class="pl-mini-chip" title="Sabah Fikstürü & Simülatörü">
-              <img src="/images/logos/team_4160.png" alt="Sabah" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_2609356.png" alt="Sabah" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Sabah</span>
             </a>
             
@@ -821,7 +849,7 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/cl/slovan-bratislava/" class="pl-mini-chip" title="Slovan Bratislava Fikstürü & Simülatörü">
-              <img src="/images/logos/team_571.png" alt="Slovan Bratislava" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_52797.png" alt="Slovan Bratislava" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Slovan Bratislava</span>
             </a>
             
@@ -836,7 +864,7 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/cl/viking/" class="pl-mini-chip" title="Viking Fikstürü & Simülatörü">
-              <img src="/images/logos/team_339.png" alt="Viking" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_52319.png" alt="Viking" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Viking</span>
             </a>
             
@@ -868,12 +896,12 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/el/ararat-armenia/" class="pl-mini-chip" title="Ararat-Armenia Fikstürü & Simülatörü">
-              <img src="/images/logos/team_1026.png" alt="Ararat-Armenia" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_2610304.png" alt="Ararat-Armenia" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Ararat-Armenia</span>
             </a>
             
             <a href="/teams/el/bayer-leverkusen/" class="pl-mini-chip" title="Bayer Leverkusen Fikstürü & Simülatörü">
-              <img src="/images/logos/team_1009.png" alt="Bayer Leverkusen" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_50109.png" alt="Bayer Leverkusen" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Bayer Leverkusen</span>
             </a>
             
@@ -993,7 +1021,7 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/el/rennes/" class="pl-mini-chip" title="Rennes Fikstürü & Simülatörü">
-              <img src="/images/logos/team_1011.png" alt="Rennes" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_55031.png" alt="Rennes" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Rennes</span>
             </a>
             
@@ -1040,7 +1068,7 @@ a { color: inherit; text-decoration: none; }
           <div class="pl-chips-grid">
             
             <a href="/teams/ecl/agf-aarhus/" class="pl-mini-chip" title="AGF Aarhus Fikstürü & Simülatörü">
-              <img src="/images/logos/team_399.png" alt="AGF Aarhus" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_50019.png" alt="AGF Aarhus" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>AGF Aarhus</span>
             </a>
             
@@ -1070,7 +1098,7 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/ecl/cska-sofia/" class="pl-mini-chip" title="CSKA Sofia Fikstürü & Simülatörü">
-              <img src="/images/logos/team_585.png" alt="CSKA Sofia" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_2608297.png" alt="CSKA Sofia" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>CSKA Sofia</span>
             </a>
             
@@ -1095,7 +1123,7 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/ecl/fc-thun/" class="pl-mini-chip" title="FC Thun Fikstürü & Simülatörü">
-              <img src="/images/logos/team_1009.png" alt="FC Thun" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_80409.png" alt="FC Thun" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>FC Thun</span>
             </a>
             
@@ -1105,7 +1133,7 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/ecl/fk-jablonec/" class="pl-mini-chip" title="FK Jablonec Fikstürü & Simülatörü">
-              <img src="/images/logos/team_641.png" alt="FK Jablonec" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_62169.png" alt="FK Jablonec" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>FK Jablonec</span>
             </a>
             
@@ -1115,7 +1143,7 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/ecl/hajduk-split/" class="pl-mini-chip" title="Hajduk Split Fikstürü & Simülatörü">
-              <img src="/images/logos/team_622.png" alt="Hajduk Split" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_52359.png" alt="Hajduk Split" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Hajduk Split</span>
             </a>
             
@@ -1125,12 +1153,12 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/ecl/iberia-1999/" class="pl-mini-chip" title="Iberia 1999 Fikstürü & Simülatörü">
-              <img src="/images/logos/team_4799.png" alt="Iberia 1999" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_2605905.png" alt="Iberia 1999" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Iberia 1999</span>
             </a>
             
             <a href="/teams/ecl/inter-escaldes/" class="pl-mini-chip" title="Inter Escaldes Fikstürü & Simülatörü">
-              <img src="/images/logos/team_7464.png" alt="Inter Escaldes" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_63401.png" alt="Inter Escaldes" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Inter Escaldes</span>
             </a>
             
@@ -1140,32 +1168,32 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/ecl/kf-egnatia/" class="pl-mini-chip" title="KF Egnatia Fikstürü & Simülatörü">
-              <img src="/images/logos/team_7856.png" alt="KF Egnatia" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_88148.png" alt="KF Egnatia" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>KF Egnatia</span>
             </a>
             
             <a href="/teams/ecl/kairat-almaty/" class="pl-mini-chip" title="Kairat Almaty Fikstürü & Simülatörü">
-              <img src="/images/logos/team_563.png" alt="Kairat Almaty" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_79970.png" alt="Kairat Almaty" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Kairat Almaty</span>
             </a>
             
             <a href="/teams/ecl/kauno-zalgiris/" class="pl-mini-chip" title="Kauno Zalgiris Fikstürü & Simülatörü">
-              <img src="/images/logos/team_3496.png" alt="Kauno Zalgiris" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_2605907.png" alt="Kauno Zalgiris" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Kauno Zalgiris</span>
             </a>
             
             <a href="/teams/ecl/kups-kuopio/" class="pl-mini-chip" title="KuPS Kuopio Fikstürü & Simülatörü">
-              <img src="/images/logos/team_650.png" alt="KuPS Kuopio" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_52350.png" alt="KuPS Kuopio" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>KuPS Kuopio</span>
             </a>
             
             <a href="/teams/ecl/lincoln-red-imps/" class="pl-mini-chip" title="Lincoln Red Imps Fikstürü & Simülatörü">
-              <img src="/images/logos/team_1903.png" alt="Lincoln Red Imps" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_2605572.png" alt="Lincoln Red Imps" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Lincoln Red Imps</span>
             </a>
             
             <a href="/teams/ecl/mjallby-aif/" class="pl-mini-chip" title="Mjällby AIF Fikstürü & Simülatörü">
-              <img src="/images/logos/team_365.png" alt="Mjällby AIF" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_74233.png" alt="Mjällby AIF" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Mjällby AIF</span>
             </a>
             
@@ -1185,7 +1213,7 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/ecl/riga-fc/" class="pl-mini-chip" title="Riga FC Fikstürü & Simülatörü">
-              <img src="/images/logos/team_4158.png" alt="Riga FC" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_2607924.png" alt="Riga FC" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Riga FC</span>
             </a>
             
@@ -1200,22 +1228,22 @@ a { color: inherit; text-decoration: none; }
             </a>
             
             <a href="/teams/ecl/sk-brann/" class="pl-mini-chip" title="SK Brann Fikstürü & Simülatörü">
-              <img src="/images/logos/team_328.png" alt="SK Brann" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_52770.png" alt="SK Brann" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>SK Brann</span>
             </a>
             
             <a href="/teams/ecl/sint-truidense/" class="pl-mini-chip" title="Sint-Truidense Fikstürü & Simülatörü">
-              <img src="/images/logos/team_742.png" alt="Sint-Truidense" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_52883.png" alt="Sint-Truidense" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Sint-Truidense</span>
             </a>
             
             <a href="/teams/ecl/trabzonspor/" class="pl-mini-chip" title="Trabzonspor Fikstürü & Simülatörü">
-              <img src="/images/logos/team_610.png" alt="Trabzonspor" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_52731.png" alt="Trabzonspor" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Trabzonspor</span>
             </a>
             
             <a href="/teams/ecl/univ-craiova/" class="pl-mini-chip" title="Univ. Craiova Fikstürü & Simülatörü">
-              <img src="/images/logos/team_638.png" alt="Univ. Craiova" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
+              <img src="/images/logos/uefa_2606501.png" alt="Univ. Craiova" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" />
               <span>Univ. Craiova</span>
             </a>
             

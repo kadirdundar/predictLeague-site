@@ -3,28 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>UEFA Champions League Simulator & Standings Predictor 2026/27 — PredictLeague</title>
-  <meta name="description" content="Simulate UEFA Champions League 2026/27 36-team single league stage standings. Predict match results, calculate Top 8 and Play-off probabilities with 1,000 Monte Carlo runs." />
-  <meta name="keywords" content="champions league simulator, ucl predictor simulator, champions league standings calculator, champions league fixtures 2026/27, Şampiyonlar Ligi simülatörü" />
+  <title>Şampiyonlar Ligi Puan Durumu 2026/27 ve Tur İhtimalleri</title>
+  <meta name="description" content="Şampiyonlar Ligi 2026/27 lig aşaması güncel puan durumu, maç sonuçları ve fikstür. Her takımın İlk 8 ve play-off ihtimali simülasyonla hesaplandı; kendi skor tahmininle simülatörde dene." />
+  <meta name="keywords" content="Şampiyonlar Ligi puan durumu, Şampiyonlar Ligi fikstürü, Şampiyonlar Ligi tur ihtimalleri, UEFA Champions League standings, UEFA Champions League simulator, UCL predictor 2026/27" />
   <link rel="canonical" href="https://www.stagesimulator.com/fixtures/champions-league/" />
+  <link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/fixtures/champions-league/" />
+  <link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/fixtures/champions-league/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/fixtures/champions-league/" />
   
   
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.stagesimulator.com/fixtures/champions-league/" />
-  <meta property="og:title" content="UEFA Champions League Simulator & Standings Predictor 2026/27 — PredictLeague" />
-  <meta property="og:description" content="Simulate UEFA Champions League 2026/27 36-team single league stage standings. Predict match results, calculate Top 8 and Play-off probabilities with 1,000 Monte Carlo runs." />
+  <meta property="og:title" content="Şampiyonlar Ligi Puan Durumu 2026/27 ve Tur İhtimalleri" />
+  <meta property="og:description" content="Şampiyonlar Ligi 2026/27 lig aşaması güncel puan durumu, maç sonuçları ve fikstür. Her takımın İlk 8 ve play-off ihtimali simülasyonla hesaplandı; kendi skor tahmininle simülatörde dene." />
   <meta property="og:image" content="https://www.stagesimulator.com/og/football.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://www.stagesimulator.com/og/football.png" />
   
-  <meta name="twitter:title" content="UEFA Champions League Simulator & Standings Predictor 2026/27 — PredictLeague" />
-  <meta name="twitter:description" content="Simulate UEFA Champions League 2026/27 36-team single league stage standings. Predict match results, calculate Top 8 and Play-off probabilities with 1,000 Monte Carlo runs." />
+  <meta name="twitter:title" content="Şampiyonlar Ligi Puan Durumu 2026/27 ve Tur İhtimalleri" />
+  <meta name="twitter:description" content="Şampiyonlar Ligi 2026/27 lig aşaması güncel puan durumu, maç sonuçları ve fikstür. Her takımın İlk 8 ve play-off ihtimali simülasyonla hesaplandı; kendi skor tahmininle simülatörde dene." />
   
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/fonts.css" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <script src="/js/analytics.js" async></script>
   
@@ -81,6 +83,14 @@
         },
         {
           "@type": "Question",
+          "name": "Şampiyonlar Ligi puan durumunda kim lider, kimlerin tur ihtimali en yüksek?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "27 maç sonunda Barcelona 6 puanla zirvede. Modele göre İlk 8 ihtimali en yüksek takımlar: Real Madrid (%82), Barcelona (%80), Manchester City (%75)."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "UEFA Champions League lig aşamasında ilk 8 ve play-off için kaç puan gerekir?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -111,7 +121,7 @@
 
   --pl-ink: #0F172A;
   --pl-ink-soft: #334155;
-  --pl-muted: #64748B;
+  --pl-muted: #5B6B80;
   --pl-muted-2: #94A3B8;
   --pl-muted-3: #CBD5E1;
   --pl-faint: #E2E8F0;
@@ -144,6 +154,11 @@
   --pl-playoff-bg: #FEF3C7;
   --pl-elim: #EF4444;
   --pl-elim-bg: #FEE2E2;
+
+  /* Darker shades of the result colours for small text (WCAG AA 4.5:1 on the light badge backgrounds) */
+  --pl-win-text: #047857;
+  --pl-loss-text: #B91C1C;
+  --pl-amber-text: #B45309;
 
   --pl-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
   --pl-shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
@@ -296,6 +311,7 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-breadcrumb a:hover { color: var(--pl-accent); }
 .pl-breadcrumb span { opacity: 0.45; }
+.pl-breadcrumb span[aria-current] { opacity: 1; color: var(--pl-ink-soft); }
 .pl-try-also { font-size: 12px; color: var(--pl-muted); margin: 4px 0 0; }
 .pl-try-also a { color: var(--pl-accent); font-weight: 600; text-decoration: none; }
 
@@ -388,8 +404,9 @@ a { color: inherit; text-decoration: none; }
   font-weight: 800;
   color: var(--pl-ink);
 }
-.pl-stat-box .val.top8 { color: var(--pl-top8); }
-.pl-stat-box .val.playoff { color: var(--pl-playoff); }
+.pl-stat-box .val.top8 { color: var(--pl-win-text); }
+.pl-stat-box .val.playoff { color: var(--pl-amber-text); }
+.pl-stat-box .val.elim { color: var(--pl-loss-text); }
 
 .pl-large-cta {
   display: flex;
@@ -479,7 +496,7 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-venue-tag.away {
   background: #FEF3C7;
-  color: #D97706;
+  color: var(--pl-amber-text);
   border: 1px solid #FDE68A;
 }
 
@@ -516,17 +533,17 @@ a { color: inherit; text-decoration: none; }
 }
 .pl-diff-badge.diff-easy {
   background: var(--pl-win-bg);
-  color: var(--pl-win);
+  color: var(--pl-win-text);
   border: 1px solid var(--pl-win-border);
 }
 .pl-diff-badge.diff-med {
   background: #FEF3C7;
-  color: #D97706;
+  color: var(--pl-amber-text);
   border: 1px solid #FDE68A;
 }
 .pl-diff-badge.diff-hard {
   background: var(--pl-loss-bg);
-  color: var(--pl-loss);
+  color: var(--pl-loss-text);
   border: 1px solid var(--pl-loss-border);
 }
 
@@ -568,6 +585,28 @@ a { color: inherit; text-decoration: none; }
   color: var(--pl-ink);
   margin: 0;
 }
+.pl-standings-wrap { background: var(--pl-card-bg); border: 1px solid var(--pl-border); border-radius: var(--pl-radius-lg); overflow: hidden; }
+.pl-standings { width: 100%; border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; }
+.pl-standings caption { caption-side: top; text-align: left; padding: 10px 12px 6px; font-size: 11px; color: var(--pl-muted); }
+.pl-standings th { font-size: 10px; font-weight: 700; color: var(--pl-muted); text-transform: uppercase; padding: 6px 4px; border-bottom: 1px solid var(--pl-border); text-align: right; }
+.pl-standings th abbr { text-decoration: none; cursor: help; }
+.pl-standings td { padding: 6px 4px; border-bottom: 1px solid var(--pl-border-3); text-align: right; color: var(--pl-ink-soft); }
+.pl-standings th:nth-child(2), .pl-standings td.team { text-align: left; }
+.pl-standings td.team span { display: flex; align-items: center; gap: 6px; min-width: 0; font-weight: 600; }
+.pl-standings td.team a { color: var(--pl-ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 140px; }
+.pl-standings td.pos { text-align: center; font-weight: 800; width: 26px; border-left: 3px solid transparent; }
+.pl-standings td.pts { font-weight: 800; color: var(--pl-ink); }
+.pl-standings td.pct, .pl-standings th:nth-child(n+6) { color: var(--pl-muted); padding-right: 10px; }
+.pl-standings tr.z-top8 td.pos { border-left-color: var(--pl-top8); }
+.pl-standings tr.z-po td.pos { border-left-color: var(--pl-playoff); }
+.pl-standings tr.z-out td.pos { border-left-color: var(--pl-elim); }
+.pl-table-note { font-size: 11px; color: var(--pl-muted); line-height: 1.5; margin: 6px 2px 0; }
+.pl-key { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin: 0 4px 0 2px; }
+.pl-key.z-top8 { background: var(--pl-top8); }
+.pl-key.z-po { background: var(--pl-playoff); }
+.pl-key.z-out { background: var(--pl-elim); }
+.pl-forecast { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.pl-forecast-note { font-size: 11px; color: var(--pl-muted); margin: 0; line-height: 1.45; }
 .pl-thr-table th, .pl-thr-table td {
   padding: 6px 8px;
   border-bottom: 1px solid var(--pl-border);
@@ -676,7 +715,7 @@ a { color: inherit; text-decoration: none; }
     <header class="pl-topbar">
       <a href="/" class="pl-brand">
         <div class="pl-brand-badge">
-          <img src="/favicon.png" alt="PredictLeague" width="22" height="22" />
+          <img src="/favicon.png" alt="" width="22" height="22" />
         </div>
         <span>PredictLeague</span>
       </a>
@@ -687,13 +726,27 @@ a { color: inherit; text-decoration: none; }
     </header>
 
     <div class="pl-main">
-      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/">Futbol</a> <span>/</span> <a href="/fixtures/">Fikstürler</a> <span>/</span> <span>UEFA Champions League</span></nav>
+      <nav class="pl-breadcrumb" aria-label="Breadcrumb"><a href="/simulators/">StageSimulator</a> <span>/</span> <a href="/">Futbol</a> <span>/</span> <a href="/fixtures/">Fikstürler</a> <span>/</span> <span aria-current="page">UEFA Champions League</span></nav>
 
       <section class="pl-hero-card">
-        <h1 style="font-size: 16px; font-weight: 800; color: var(--pl-ink);">UEFA Champions League Fikstürü & Puan Durumu</h1>
-        <p style="font-size: 12.5px; color: var(--pl-muted);">36 takımlı lig aşamasında oynanacak tüm haftalık maç programı, fikstür takvimi ve Monte Carlo simülasyonu.</p>
+        <h1 style="font-size: 16px; font-weight: 800; color: var(--pl-ink);">Şampiyonlar Ligi Puan Durumu ve Fikstür 2026/27</h1>
+        <p style="font-size: 12.5px; color: var(--pl-muted);">UEFA Champions League 36 takımlı lig aşamasının güncel puan durumu, her takımın tur ihtimali ve haftalık maç programı.</p>
         <a href="https://www.stagesimulator.com/?comp=cl" class="pl-large-cta">⚡ UCL Monte Carlo Simülatörünü Aç</a>
       </section>
+
+      <h2 class="pl-section-title" id="puan-durumu">📊 Şampiyonlar Ligi Puan Durumu</h2>
+      <div class="pl-standings-wrap">
+        <table class="pl-standings">
+          <caption>27/144 maç oynandı · Son iki sütun: modelin tahmini</caption>
+          <thead><tr><th scope="col">#</th><th scope="col">Takım</th><th scope="col"><abbr title="Oynanan maç">O</abbr></th><th scope="col"><abbr title="Averaj">AV</abbr></th><th scope="col"><abbr title="Puan">P</abbr></th><th scope="col"><abbr title="İlk 8'de bitirme ihtimali (doğrudan Son 16)">İlk 8</abbr></th><th scope="col"><abbr title="İlk 24'te bitirme ihtimali (Son 16 ya da play-off)">Tur</abbr></th></tr></thead>
+          <tbody>
+            <tr class="z-top8"><td class="pos">1</td><td class="team"><span><img src="/images/logos/team_529.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/barcelona/">Barcelona</a></span></td><td>2</td><td>+7</td><td class="pts">6</td><td class="pct">%80</td><td class="pct">&gt;%99</td></tr><tr class="z-top8"><td class="pos">2</td><td class="team"><span><img src="/images/logos/team_228.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/sporting-cp/">Sporting CP</a></span></td><td>2</td><td>+4</td><td class="pts">6</td><td class="pct">%39</td><td class="pct">%96</td></tr><tr class="z-top8"><td class="pos">3</td><td class="team"><span><img src="/images/logos/team_42.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/arsenal/">Arsenal</a></span></td><td>2</td><td>+4</td><td class="pts">6</td><td class="pct">%69</td><td class="pct">&gt;%99</td></tr><tr class="z-top8"><td class="pos">4</td><td class="team"><span><img src="/images/logos/team_157.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/bayern-munchen/">Bayern München</a></span></td><td>2</td><td>+5</td><td class="pts">4</td><td class="pct">%61</td><td class="pct">%99</td></tr><tr class="z-top8"><td class="pos">5</td><td class="team"><span><img src="/images/logos/team_85.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/paris-saint-germain/">Paris Saint Germain</a></span></td><td>1</td><td>+5</td><td class="pts">3</td><td class="pct">%63</td><td class="pct">%98</td></tr><tr class="z-top8"><td class="pos">6</td><td class="team"><span><img src="/images/logos/uefa_79946.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/como/">Como</a></span></td><td>1</td><td>+3</td><td class="pts">3</td><td class="pct">%6</td><td class="pct">%60</td></tr><tr class="z-top8"><td class="pos">7</td><td class="team"><span><img src="/images/logos/team_33.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/manchester-united/">Manchester United</a></span></td><td>2</td><td>+2</td><td class="pts">3</td><td class="pct">%18</td><td class="pct">%82</td></tr><tr class="z-top8"><td class="pos">8</td><td class="team"><span><img src="/images/logos/team_172.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/vfb-stuttgart/">VfB Stuttgart</a></span></td><td>1</td><td>+2</td><td class="pts">3</td><td class="pct">%19</td><td class="pct">%82</td></tr><tr class="z-po"><td class="pos">9</td><td class="team"><span><img src="/images/logos/team_50.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/manchester-city/">Manchester City</a></span></td><td>1</td><td>+2</td><td class="pts">3</td><td class="pct">%75</td><td class="pct">&gt;%99</td></tr><tr class="z-po"><td class="pos">10</td><td class="team"><span><img src="/images/logos/team_533.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/villarreal/">Villarreal</a></span></td><td>2</td><td>+1</td><td class="pts">3</td><td class="pct">%11</td><td class="pct">%75</td></tr><tr class="z-po"><td class="pos">11</td><td class="team"><span><img src="/images/logos/team_66.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/aston-villa/">Aston Villa</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%23</td><td class="pct">%87</td></tr><tr class="z-po"><td class="pos">12</td><td class="team"><span><img src="/images/logos/team_543.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/real-betis/">Real Betis</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%22</td><td class="pct">%85</td></tr><tr class="z-po"><td class="pos">13</td><td class="team"><span><img src="/images/logos/team_530.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/atletico-madrid/">Atletico Madrid</a></span></td><td>2</td><td>+1</td><td class="pts">3</td><td class="pct">%34</td><td class="pct">%94</td></tr><tr class="z-po"><td class="pos">14</td><td class="team"><span><img src="/images/logos/team_165.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/borussia-dortmund/">Borussia Dortmund</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%46</td><td class="pct">%96</td></tr><tr class="z-po"><td class="pos">15</td><td class="team"><span><img src="/images/logos/team_40.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/liverpool/">Liverpool</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%71</td><td class="pct">&gt;%99</td></tr><tr class="z-po"><td class="pos">16</td><td class="team"><span><img src="/images/logos/team_541.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/real-madrid/">Real Madrid</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%82</td><td class="pct">&gt;%99</td></tr><tr class="z-po"><td class="pos">17</td><td class="team"><span><img src="/images/logos/uefa_50129.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/aek-athens/">AEK Athens</a></span></td><td>1</td><td>+1</td><td class="pts">3</td><td class="pct">%2</td><td class="pct">%44</td></tr><tr class="z-po"><td class="pos">18</td><td class="team"><span><img src="/images/logos/team_569.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/club-brugge-kv/">Club Brugge KV</a></span></td><td>2</td><td>+0</td><td class="pts">3</td><td class="pct">%5</td><td class="pct">%63</td></tr><tr class="z-po"><td class="pos">19</td><td class="team"><span><img src="/images/logos/team_116.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/lens/">Lens</a></span></td><td>2</td><td>-1</td><td class="pts">3</td><td class="pct">%4</td><td class="pct">%57</td></tr><tr class="z-po"><td class="pos">20</td><td class="team"><span><img src="/images/logos/team_173.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/rb-leipzig/">RB Leipzig</a></span></td><td>2</td><td>-2</td><td class="pts">3</td><td class="pct">%9</td><td class="pct">%74</td></tr><tr class="z-po"><td class="pos">21</td><td class="team"><span><img src="/images/logos/uefa_2609356.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/sabah/">Sabah</a></span></td><td>2</td><td>-2</td><td class="pts">3</td><td class="pct">&lt;%1</td><td class="pct">%20</td></tr><tr class="z-po"><td class="pos">22</td><td class="team"><span><img src="/images/logos/team_497.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/roma/">Roma</a></span></td><td>1</td><td>+0</td><td class="pts">1</td><td class="pct">%12</td><td class="pct">%75</td></tr><tr class="z-po"><td class="pos">23</td><td class="team"><span><img src="/images/logos/team_550.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/shakhtar-donetsk/">Shakhtar Donetsk</a></span></td><td>1</td><td>+0</td><td class="pts">1</td><td class="pct">%3</td><td class="pct">%46</td></tr><tr class="z-po"><td class="pos">24</td><td class="team"><span><img src="/images/logos/team_611.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/fenerbahce/">Fenerbahçe</a></span></td><td>1</td><td>+0</td><td class="pts">1</td><td class="pct">%8</td><td class="pct">%67</td></tr><tr class="z-out"><td class="pos">25</td><td class="team"><span><img src="/images/logos/team_197.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/psv-eindhoven/">PSV Eindhoven</a></span></td><td>2</td><td>-1</td><td class="pts">1</td><td class="pct">%3</td><td class="pct">%50</td></tr><tr class="z-out"><td class="pos">26</td><td class="team"><span><img src="/images/logos/uefa_52319.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/viking/">Viking</a></span></td><td>2</td><td>-2</td><td class="pts">1</td><td class="pct">&lt;%1</td><td class="pct">%21</td></tr><tr class="z-out"><td class="pos">27</td><td class="team"><span><img src="/images/logos/team_1026.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/lask/">LASK</a></span></td><td>1</td><td>-1</td><td class="pts">0</td><td class="pct">&lt;%1</td><td class="pct">%21</td></tr><tr class="z-out"><td class="pos">28</td><td class="team"><span><img src="/images/logos/team_505.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/inter/">Inter</a></span></td><td>2</td><td>-2</td><td class="pts">0</td><td class="pct">%11</td><td class="pct">%77</td></tr><tr class="z-out"><td class="pos">29</td><td class="team"><span><img src="/images/logos/team_212.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/porto/">Porto</a></span></td><td>1</td><td>-2</td><td class="pts">0</td><td class="pct">%7</td><td class="pct">%61</td></tr><tr class="z-out"><td class="pos">30</td><td class="team"><span><img src="/images/logos/team_560.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/slavia-praha/">Slavia Praha</a></span></td><td>2</td><td>-3</td><td class="pts">0</td><td class="pct">&lt;%1</td><td class="pct">%14</td></tr><tr class="z-out"><td class="pos">31</td><td class="team"><span><img src="/images/logos/team_492.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/napoli/">Napoli</a></span></td><td>2</td><td>-3</td><td class="pts">0</td><td class="pct">%8</td><td class="pct">%75</td></tr><tr class="z-out"><td class="pos">32</td><td class="team"><span><img src="/images/logos/team_79.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/lille/">Lille</a></span></td><td>2</td><td>-4</td><td class="pts">0</td><td class="pct">%1</td><td class="pct">%39</td></tr><tr class="z-out"><td class="pos">33</td><td class="team"><span><img src="/images/logos/team_209.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/feyenoord/">Feyenoord</a></span></td><td>1</td><td>-4</td><td class="pts">0</td><td class="pct">%4</td><td class="pct">%50</td></tr><tr class="z-out"><td class="pos">34</td><td class="team"><span><img src="/images/logos/team_645.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/galatasaray/">Galatasaray</a></span></td><td>2</td><td>-5</td><td class="pts">0</td><td class="pct">%2</td><td class="pct">%43</td></tr><tr class="z-out"><td class="pos">35</td><td class="team"><span><img src="/images/logos/uefa_52797.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/slovan-bratislava/">Slovan Bratislava</a></span></td><td>1</td><td>-5</td><td class="pts">0</td><td class="pct">&lt;%1</td><td class="pct">%22</td></tr><tr class="z-out"><td class="pos">36</td><td class="team"><span><img src="/images/logos/team_327.png" alt="" width="16" height="16" loading="lazy" onerror="this.src='/favicon.png';" /><a href="/teams/cl/bodo-glimt/">Bodø/Glimt</a></span></td><td>1</td><td>-5</td><td class="pts">0</td><td class="pct">%1</td><td class="pct">%29</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="pl-table-note"><span class="pl-key z-top8"></span>1-8 Son 16 · <span class="pl-key z-po"></span>9-24 Play-off · <span class="pl-key z-out"></span>25-36 elenir. Oynanan 27 maçın sonucu sabit, kalan maçlar 4.000 kez simüle edildi (2026-10-14). Model, simülatörle aynı: takım güç puanına bağlı Poisson gol dağılımı. Eşitlikte UEFA kriterleri uygulanır; son kriter olarak güç puanı kullanılır.</p>
+
+      <h2 class="pl-section-title">📅 Şampiyonlar Ligi Fikstürü ve Sonuçlar</h2>
 
       <section>
         
@@ -718,7 +771,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/aek-athens/" class="pl-opp-name" style="text-align: right;">AEK Athens</a>
-                <img src="/images/logos/team_606.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50129.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span class="pl-score-box">1 - 0</span>
@@ -808,7 +861,7 @@ a { color: inherit; text-decoration: none; }
                 <span class="pl-score-box">3 - 1</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_339.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52319.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/viking/" class="pl-opp-name">Viking</a>
               </div>
             </div>
@@ -864,7 +917,7 @@ a { color: inherit; text-decoration: none; }
                 <span class="pl-score-box">6 - 1</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_571.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52797.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/slovan-bratislava/" class="pl-opp-name">Slovan Bratislava</a>
               </div>
             </div>
@@ -920,7 +973,7 @@ a { color: inherit; text-decoration: none; }
                 <span class="pl-score-box">4 - 0</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_4160.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2609356.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/sabah/" class="pl-opp-name">Sabah</a>
               </div>
             </div>
@@ -928,7 +981,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/como/" class="pl-opp-name" style="text-align: right;">Como</a>
-                <img src="/images/logos/team_897.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_79946.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span class="pl-score-box">4 - 1</span>
@@ -977,7 +1030,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/sabah/" class="pl-opp-name" style="text-align: right;">Sabah</a>
-                <img src="/images/logos/team_4160.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2609356.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span class="pl-score-box">2 - 0</span>
@@ -991,7 +1044,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/viking/" class="pl-opp-name" style="text-align: right;">Viking</a>
-                <img src="/images/logos/team_339.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52319.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span class="pl-score-box">3 - 3</span>
@@ -1109,7 +1162,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_897.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_79946.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/como/" class="pl-opp-name">Como</a>
               </div>
             </div>
@@ -1137,7 +1190,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_606.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50129.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/aek-athens/" class="pl-opp-name">AEK Athens</a>
               </div>
             </div>
@@ -1187,7 +1240,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/slovan-bratislava/" class="pl-opp-name" style="text-align: right;">Slovan Bratislava</a>
-                <img src="/images/logos/team_571.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52797.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -1222,7 +1275,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/sabah/" class="pl-opp-name" style="text-align: right;">Sabah</a>
-                <img src="/images/logos/team_4160.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2609356.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -1256,7 +1309,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_571.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52797.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/slovan-bratislava/" class="pl-opp-name">Slovan Bratislava</a>
               </div>
             </div>
@@ -1326,7 +1379,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_606.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50129.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/aek-athens/" class="pl-opp-name">AEK Athens</a>
               </div>
             </div>
@@ -1348,7 +1401,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/como/" class="pl-opp-name" style="text-align: right;">Como</a>
-                <img src="/images/logos/team_897.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_79946.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -1424,7 +1477,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_339.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52319.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/viking/" class="pl-opp-name">Viking</a>
               </div>
             </div>
@@ -1585,7 +1638,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_571.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52797.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/slovan-bratislava/" class="pl-opp-name">Slovan Bratislava</a>
               </div>
             </div>
@@ -1607,7 +1660,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/aek-athens/" class="pl-opp-name" style="text-align: right;">AEK Athens</a>
-                <img src="/images/logos/team_606.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50129.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -1711,7 +1764,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_897.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_79946.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/como/" class="pl-opp-name">Como</a>
               </div>
             </div>
@@ -1719,13 +1772,13 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/viking/" class="pl-opp-name" style="text-align: right;">Viking</a>
-                <img src="/images/logos/team_339.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52319.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_4160.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2609356.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/sabah/" class="pl-opp-name">Sabah</a>
               </div>
             </div>
@@ -1782,7 +1835,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/slovan-bratislava/" class="pl-opp-name" style="text-align: right;">Slovan Bratislava</a>
-                <img src="/images/logos/team_571.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52797.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -1852,13 +1905,13 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/como/" class="pl-opp-name" style="text-align: right;">Como</a>
-                <img src="/images/logos/team_897.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_79946.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_606.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50129.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/aek-athens/" class="pl-opp-name">AEK Athens</a>
               </div>
             </div>
@@ -1866,7 +1919,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/sabah/" class="pl-opp-name" style="text-align: right;">Sabah</a>
-                <img src="/images/logos/team_4160.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2609356.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -1942,7 +1995,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_339.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52319.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/viking/" class="pl-opp-name">Viking</a>
               </div>
             </div>
@@ -1999,7 +2052,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/viking/" class="pl-opp-name" style="text-align: right;">Viking</a>
-                <img src="/images/logos/team_339.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52319.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2019,7 +2072,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_4160.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2609356.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/sabah/" class="pl-opp-name">Sabah</a>
               </div>
             </div>
@@ -2027,7 +2080,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/aek-athens/" class="pl-opp-name" style="text-align: right;">AEK Athens</a>
-                <img src="/images/logos/team_606.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50129.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2131,7 +2184,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_897.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_79946.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/como/" class="pl-opp-name">Como</a>
               </div>
             </div>
@@ -2139,7 +2192,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/slovan-bratislava/" class="pl-opp-name" style="text-align: right;">Slovan Bratislava</a>
-                <img src="/images/logos/team_571.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52797.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2286,7 +2339,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/aek-athens/" class="pl-opp-name" style="text-align: right;">AEK Athens</a>
-                <img src="/images/logos/team_606.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50129.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2320,7 +2373,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_571.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52797.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/slovan-bratislava/" class="pl-opp-name">Slovan Bratislava</a>
               </div>
             </div>
@@ -2384,7 +2437,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/sabah/" class="pl-opp-name" style="text-align: right;">Sabah</a>
-                <img src="/images/logos/team_4160.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2609356.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2440,7 +2493,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/viking/" class="pl-opp-name" style="text-align: right;">Viking</a>
-                <img src="/images/logos/team_339.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52319.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2468,7 +2521,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/como/" class="pl-opp-name" style="text-align: right;">Como</a>
-                <img src="/images/logos/team_897.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_79946.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2579,7 +2632,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_897.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_79946.png" alt="Como" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/como/" class="pl-opp-name">Como</a>
               </div>
             </div>
@@ -2663,7 +2716,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_4160.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_2609356.png" alt="Sabah" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/sabah/" class="pl-opp-name">Sabah</a>
               </div>
             </div>
@@ -2705,7 +2758,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_339.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52319.png" alt="Viking" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/viking/" class="pl-opp-name">Viking</a>
               </div>
             </div>
@@ -2727,7 +2780,7 @@ a { color: inherit; text-decoration: none; }
             <div class="pl-match-card" style="padding: 8px 12px;">
               <div style="display: flex; align-items: center; justify-content: flex-end; gap: 8px; flex: 1; min-width: 0;">
                 <a href="/teams/cl/slovan-bratislava/" class="pl-opp-name" style="text-align: right;">Slovan Bratislava</a>
-                <img src="/images/logos/team_571.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_52797.png" alt="Slovan Bratislava" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
               </div>
               <div style="min-width: 48px; text-align: center;">
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
@@ -2761,7 +2814,7 @@ a { color: inherit; text-decoration: none; }
                 <span style="color: var(--pl-muted-2); font-size: 11px; font-weight: 700;">vs</span>
               </div>
               <div style="display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0;">
-                <img src="/images/logos/team_606.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
+                <img src="/images/logos/uefa_50129.png" alt="AEK Athens" width="20" height="20" loading="lazy" onerror="this.src='/favicon.png';" />
                 <a href="/teams/cl/aek-athens/" class="pl-opp-name">AEK Athens</a>
               </div>
             </div>
@@ -2777,6 +2830,10 @@ a { color: inherit; text-decoration: none; }
         <div class="pl-faq-unit">
           <h3 class="pl-faq-q">UEFA Champions League 2026/27 lig aşaması formatı nasıl işler?</h3>
           <p class="pl-faq-a">36 takım tek bir lig tablosunda yarışır ve her takım 8 maç (4 iç saha, 4 deplasman) oynar. İlk 8 doğrudan Son 16'ya kalır, 9-24 arası Play-off oynar, 25-36 arası elenir.</p>
+        </div>
+        <div class="pl-faq-unit">
+          <h3 class="pl-faq-q">Şampiyonlar Ligi puan durumunda kim lider, kimlerin tur ihtimali en yüksek?</h3>
+          <p class="pl-faq-a">27 maç sonunda Barcelona 6 puanla zirvede. Modele göre İlk 8 ihtimali en yüksek takımlar: Real Madrid (%82), Barcelona (%80), Manchester City (%75).</p>
         </div>
         <div class="pl-faq-unit">
           <h3 class="pl-faq-q">UEFA Champions League lig aşamasında ilk 8 ve play-off için kaç puan gerekir?</h3>
