@@ -728,9 +728,9 @@
       "awayTeamId": 165,
       "week": 3,
       "kickoff": "2026-10-20T16:45:00Z",
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "isFinished": true
     },
     {
       "id": 38,
@@ -738,9 +738,9 @@
       "awayTeamId": 560,
       "week": 3,
       "kickoff": "2026-10-20T16:45:00Z",
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "isFinished": true
     },
     {
       "id": 30,
@@ -748,9 +748,9 @@
       "awayTeamId": 571,
       "week": 3,
       "kickoff": "2026-10-20T19:00:00Z",
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "isFinished": true
     },
     {
       "id": 32,
@@ -758,9 +758,9 @@
       "awayTeamId": 197,
       "week": 3,
       "kickoff": "2026-10-20T19:00:00Z",
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
+      "homeGoals": 0,
+      "awayGoals": 1,
+      "isFinished": true
     },
     {
       "id": 47,
@@ -768,9 +768,9 @@
       "awayTeamId": 530,
       "week": 3,
       "kickoff": "2026-10-20T19:00:00Z",
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
+      "homeGoals": 1,
+      "awayGoals": 1,
+      "isFinished": true
     },
     {
       "id": 84,
@@ -778,9 +778,9 @@
       "awayTeamId": 533,
       "week": 3,
       "kickoff": "2026-10-20T19:00:00Z",
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
+      "homeGoals": 4,
+      "awayGoals": 3,
+      "isFinished": true
     },
     {
       "id": 113,
@@ -788,9 +788,9 @@
       "awayTeamId": 327,
       "week": 3,
       "kickoff": "2026-10-20T19:00:00Z",
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
+      "homeGoals": 4,
+      "awayGoals": 3,
+      "isFinished": true
     },
     {
       "id": 117,
@@ -798,9 +798,9 @@
       "awayTeamId": 606,
       "week": 3,
       "kickoff": "2026-10-20T19:00:00Z",
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
+      "homeGoals": 5,
+      "awayGoals": 1,
+      "isFinished": true
     },
     {
       "id": 125,
@@ -808,9 +808,9 @@
       "awayTeamId": 529,
       "week": 3,
       "kickoff": "2026-10-20T19:00:00Z",
-      "homeGoals": null,
-      "awayGoals": null,
-      "isFinished": false
+      "homeGoals": 4,
+      "awayGoals": 2,
+      "isFinished": true
     },
     {
       "id": 130,
