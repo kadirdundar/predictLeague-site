@@ -83,7 +83,7 @@
           "name": "Kauno Zalgiris Konferans Ligi'nde tur atlar mı?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Modele göre Kauno Zalgiris'in İlk 8'e girip doğrudan Son 16'ya kalma ihtimali %2, ilk 24'te bitirip en az play-off oynama ihtimali %24, elenme ihtimali %76. Şu an 36. sırada (0 puan, 1 maç). Beklenen puan: 5,0. Oynanan 18 maçın sonucu sabit, kalan maçlar 4.000 kez simüle edildi (2026-10-15). Model, simülatörle aynı: takım güç puanına bağlı Poisson gol dağılımı."
+            "text": "Modele göre Kauno Zalgiris'in İlk 8'e girip doğrudan Son 16'ya kalma ihtimali <%1, ilk 24'te bitirip en az play-off oynama ihtimali %13, elenme ihtimali %87. Şu an 36. sırada (0 puan, 2 maç). Beklenen puan: 3,8. Oynanan 36 maçın sonucu sabit, kalan maçlar 4.000 kez simüle edildi (2026-10-23). Model, simülatörle aynı: takım güç puanına bağlı Poisson gol dağılımı."
           }
         },
         {
@@ -99,7 +99,7 @@
           "name": "Kauno Zalgiris ilk 8 veya play-off için kaç puana ihtiyaç duyar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "UEFA Conference League lig aşamasında (6 maç, en fazla 18 puan) İlk 8 için 13 puan, Play-off (9-24) için 8 puan %90 ihtimalle yeterlidir. 12 puan İlk 8, 7 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-15)."
+            "text": "UEFA Conference League lig aşamasında (6 maç, en fazla 18 puan) İlk 8 için 13 puan, Play-off (9-24) için 8 puan %90 ihtimalle yeterlidir. 12 puan İlk 8, 7 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-23)."
           }
         },
         {
@@ -776,18 +776,18 @@ a { color: inherit; text-decoration: none; }
         <div class="pl-forecast">
           <div class="pl-stat-box">
             <div class="lbl">İlk 8</div>
-            <div class="val top8">%2</div>
+            <div class="val top8">&lt;%1</div>
           </div>
           <div class="pl-stat-box">
             <div class="lbl">Play-off</div>
-            <div class="val playoff">%23</div>
+            <div class="val playoff">%13</div>
           </div>
           <div class="pl-stat-box">
             <div class="lbl">Elenme</div>
-            <div class="val elim">%76</div>
+            <div class="val elim">%87</div>
           </div>
         </div>
-        <p class="pl-forecast-note">Şu an 36. sırada (0 puan, 1 maç). Beklenen puan 5,0. Kalan maçlar simüle edildi (2026-10-15). <a href="/fixtures/conference-league/#puan-durumu" style="color: var(--pl-accent); font-weight: 600;">Konferans Ligi puan durumu →</a></p>
+        <p class="pl-forecast-note">Şu an 36. sırada (0 puan, 2 maç). Beklenen puan 3,8. Kalan maçlar simüle edildi (2026-10-23). <a href="/fixtures/conference-league/#puan-durumu" style="color: var(--pl-accent); font-weight: 600;">Konferans Ligi puan durumu →</a></p>
 
         <a href="https://www.stagesimulator.com/?comp=ecl&team=kauno-zalgiris" class="pl-large-cta">
           <span>⚡ Kauno Zalgiris Maçlarını Simülatörde Tahmin Et</span>
@@ -822,7 +822,7 @@ a { color: inherit; text-decoration: none; }
             </div>
           </div>
           <div>
-            <span class="pl-diff-badge diff-med">Dengeli</span>
+            <span class="pl-score-box">1 - 4 (MS)</span>
           </div>
         </div>
         
@@ -889,7 +889,7 @@ a { color: inherit; text-decoration: none; }
         
         <div class="pl-faq-unit">
           <h3 class="pl-faq-q">Kauno Zalgiris Konferans Ligi'nde tur atlar mı?</h3>
-          <p class="pl-faq-a">Modele göre Kauno Zalgiris'in İlk 8'e girip doğrudan Son 16'ya kalma ihtimali %2, ilk 24'te bitirip en az play-off oynama ihtimali %24, elenme ihtimali %76. Şu an 36. sırada (0 puan, 1 maç). Beklenen puan: 5,0. Oynanan 18 maçın sonucu sabit, kalan maçlar 4.000 kez simüle edildi (2026-10-15). Model, simülatörle aynı: takım güç puanına bağlı Poisson gol dağılımı.</p>
+          <p class="pl-faq-a">Modele göre Kauno Zalgiris'in İlk 8'e girip doğrudan Son 16'ya kalma ihtimali &lt;%1, ilk 24'te bitirip en az play-off oynama ihtimali %13, elenme ihtimali %87. Şu an 36. sırada (0 puan, 2 maç). Beklenen puan: 3,8. Oynanan 36 maçın sonucu sabit, kalan maçlar 4.000 kez simüle edildi (2026-10-23). Model, simülatörle aynı: takım güç puanına bağlı Poisson gol dağılımı.</p>
         </div>
         <div class="pl-faq-unit">
           <h3 class="pl-faq-q">Kauno Zalgiris'in UEFA Conference League 2026/27 lig aşamasındaki rakipleri kimler?</h3>
@@ -897,7 +897,7 @@ a { color: inherit; text-decoration: none; }
         </div>
         <div class="pl-faq-unit">
           <h3 class="pl-faq-q">Kauno Zalgiris ilk 8 veya play-off için kaç puana ihtiyaç duyar?</h3>
-          <p class="pl-faq-a">UEFA Conference League lig aşamasında (6 maç, en fazla 18 puan) İlk 8 için 13 puan, Play-off (9-24) için 8 puan %90 ihtimalle yeterlidir. 12 puan İlk 8, 7 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-15).</p>
+          <p class="pl-faq-a">UEFA Conference League lig aşamasında (6 maç, en fazla 18 puan) İlk 8 için 13 puan, Play-off (9-24) için 8 puan %90 ihtimalle yeterlidir. 12 puan İlk 8, 7 puan Play-off için yaklaşık yarı yarıya şans verir. Kaynak: PredictLeague modelinin 4.000 lig simülasyonu, oynanmış maçlar dahil (2026-10-23).</p>
         </div>
         <div class="pl-faq-unit">
           <h3 class="pl-faq-q">Kauno Zalgiris'in maç sonuçlarını nasıl tahmin edebilirim?</h3>
