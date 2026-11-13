@@ -1299,6 +1299,75 @@ input[type=range][b-sqmwahb4xx]::-moz-range-thumb {
     font-weight: 600;
     text-decoration: none;
 }
+
+/* Small print under a slider or a price */
+.fs-field-hint[b-sqmwahb4xx] {
+    font-size: 11px;
+    line-height: 1.45;
+    color: rgba(32, 30, 29, 0.65);
+    margin: 8px 0 0;
+}
+
+.fs-item-note[b-sqmwahb4xx] {
+    font-size: 11px;
+    color: rgba(32, 30, 29, 0.65);
+    margin-top: 3px;
+}
+
+/* Outcome range (Monte Carlo) under the portfolio result */
+.fs-band-box[b-sqmwahb4xx] {
+    border: 2px solid rgba(32, 30, 29, 0.4);
+    padding: 16px;
+    margin: -8px 0 20px;
+}
+
+.fs-band-grid[b-sqmwahb4xx] {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 10px 0 12px;
+}
+
+.fs-band-cell[b-sqmwahb4xx] {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+    border-top: 3px solid rgba(32, 30, 29, 0.4);
+    padding-top: 8px;
+}
+
+.fs-band-cell:first-child[b-sqmwahb4xx] { border-top-color: #ae1800; }
+.fs-band-cell:last-child[b-sqmwahb4xx] { border-top-color: #201e1d; }
+
+.fs-band-lbl[b-sqmwahb4xx] {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    color: rgba(32, 30, 29, 0.65);
+}
+
+.fs-band-cell strong[b-sqmwahb4xx] {
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    font-variant-numeric: tabular-nums;
+    overflow-wrap: anywhere;
+}
+
+.fs-band-real[b-sqmwahb4xx] {
+    font-size: 11px;
+    color: rgba(32, 30, 29, 0.65);
+    font-variant-numeric: tabular-nums;
+}
+
+.fs-band-note[b-sqmwahb4xx] {
+    font-size: 11px;
+    line-height: 1.5;
+    color: rgba(32, 30, 29, 0.7);
+    margin: 0;
+}
 /* /Pages/MoneySize.razor.rz.scp.css */
 /* Same paper-and-ink look as the finance game */
 .mz-outer[b-lhwjexizcr] {

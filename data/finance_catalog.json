@@ -1,0 +1,58 @@
+{
+  "categories": [
+    { "en": "Everyday", "tr": "Günlük" },
+    { "en": "Life & Invest", "tr": "Yaşam & Yatırım" },
+    { "en": "Ultra Luxury", "tr": "Ultra Lüks" }
+  ],
+  "earner": {
+    "name": "Elon Musk",
+    "fromWorth": 342000000000, "fromDate": "2025-03-07", "fromLabelTr": "Forbes 2025 listesi (Mart 2025)", "fromLabelEn": "Forbes 2025 list (March 2025)",
+    "toWorth": 849700000000, "toDate": "2026-11-08", "toLabelTr": "Forbes anlık liste (8 Kasım 2026)", "toLabelEn": "Forbes real-time list (8 November 2026)"
+  },
+  "celebrities": [
+    { "id": "musk", "name": "Elon Musk", "worth": 850000000000, "asOf": "2026-11", "source": "Forbes", "noteEn": "Electric vehicles, artificial intelligence, and global tech empires.", "noteTr": "Elektrikli otomobiller, yapay zeka ve küresel teknoloji şirketleri." },
+    { "id": "bezos", "name": "Jeff Bezos", "worth": 245000000000, "asOf": "2026-09", "noteEn": "Two-day shipping, one very large yacht.", "noteTr": "Aynı gün teslimat ve devasa bir mega yat." },
+    { "id": "zuck", "name": "Mark Zuckerberg", "worth": 205000000000, "asOf": "2026-09", "noteEn": "Runs a metaverse and a Hawaii compound.", "noteTr": "Metaverse vizyonu ve Hawaii'de devasa bir yerleşke." },
+    { "id": "arnault", "name": "Bernard Arnault", "worth": 180000000000, "asOf": "2026-09", "noteEn": "Owns the luggage you cannot afford.", "noteTr": "Lüks moda imparatorluğu ve vitrinine bakılamayan bavullar." },
+    { "id": "ulukaya", "name": "Hamdi Ulukaya", "worth": 13500000000, "asOf": "2026-03", "source": "Forbes", "noteEn": "Bought an old yogurt plant, built Chobani.", "noteTr": "Eski bir yoğurt fabrikasını alıp Chobani'yi kurdu." },
+    { "id": "ulker", "name": "Murat Ülker", "worth": 5300000000, "asOf": "2026-03", "source": "Forbes", "noteEn": "Biscuits and chocolate, from Istanbul to Godiva.", "noteTr": "Bisküvi ve çikolata; İstanbul'dan Godiva'ya." },
+    { "id": "swift", "name": "Taylor Swift", "worth": 1600000000, "asOf": "2026-09", "noteEn": "Re-recorded her way to a billion.", "noteTr": "Şarkılarını yeniden kaydederek milyarder olan pop ikonu." },
+    { "id": "ronaldo", "name": "Cristiano Ronaldo", "worth": 1400000000, "asOf": "2026-09", "noteEn": "Goals, sit-ups, Saudi salary.", "noteTr": "Goller, disiplin ve Suudi ligi kontratı." }
+  ],
+  "items": [
+    { "id": "phone", "nameEn": "Next-gen smartphone", "nameTr": "Yeni nesil akıllı telefon", "price": 1200, "category": 0 },
+    { "id": "console", "nameEn": "Game console + 5 games", "nameTr": "Oyun konsolu + 5 oyun", "price": 800, "category": 0 },
+    { "id": "sneakers", "nameEn": "Limited sneakers", "nameTr": "Koleksiyon spor ayakkabı", "price": 350, "category": 0 },
+    { "id": "espresso", "nameEn": "Espresso machine", "nameTr": "Profesyonel espresso makinesi", "price": 900, "category": 0 },
+    { "id": "bike", "nameEn": "Carbon road bike", "nameTr": "Karbon yol bisikleti", "price": 2400, "category": 0 },
+    { "id": "drone", "nameEn": "Cinema drone", "nameTr": "Sinema çekim dronu", "price": 1800, "category": 0 },
+    { "id": "laptop", "nameEn": "Loaded laptop", "nameTr": "Üst seviye iş/oyun bilgisayarı", "price": 3200, "category": 0 },
+    { "id": "trphone", "nameEn": "Flagship phone at Türkiye prices", "nameTr": "Türkiye fiyatıyla amiral gemisi telefon", "priceTry": 140000, "asOf": "2026-09", "category": 0 },
+    { "id": "watch", "nameEn": "Swiss dive watch", "nameTr": "İsviçre dalgıç saati", "price": 6500, "category": 0 },
+
+    { "id": "car", "nameEn": "Brand-new car", "nameTr": "Sıfır kilometre araba", "price": 35000, "category": 1 },
+    { "id": "tour", "nameEn": "Round-the-world trip", "nameTr": "Dünya turu seyahati", "price": 25000, "category": 1 },
+    { "id": "trcar", "nameEn": "Cheapest new car in Türkiye", "nameTr": "Türkiye'nin en ucuz sıfır arabası", "priceTry": 1350000, "asOf": "2026-11", "category": 1 },
+    { "id": "trev", "nameEn": "Turkish-made electric car", "nameTr": "Yerli elektrikli otomobil", "priceTry": 1900000, "asOf": "2026-10", "category": 1 },
+    { "id": "downpay", "nameEn": "House down payment", "nameTr": "Ev peşinatı", "price": 80000, "category": 1 },
+    { "id": "ev", "nameEn": "Electric performance sedan", "nameTr": "Elektrikli lüks sedan", "price": 95000, "category": 1 },
+    { "id": "mba", "nameEn": "MBA tuition, two years", "nameTr": "2 Yıllık MBA eğitimi", "price": 140000, "category": 1 },
+    { "id": "trflat", "nameEn": "Average Istanbul apartment", "nameTr": "İstanbul'da ortalama bir daire", "priceTry": 7500000, "asOf": "2026-09", "category": 1 },
+    { "id": "flat", "nameEn": "City apartment, cash", "nameTr": "Şehir merkezinde daire", "price": 320000, "category": 1 },
+    { "id": "house", "nameEn": "Detached house", "nameTr": "Müstakil villa", "price": 500000, "category": 1 },
+    { "id": "vineyard", "nameEn": "Small vineyard", "nameTr": "Butik üzüm bağı", "price": 1400000, "category": 1 },
+
+    { "id": "supercar", "nameEn": "Hypercar", "nameTr": "Hiper otomobil", "price": 3000000, "category": 2 },
+    { "id": "jet", "nameEn": "Private jet", "nameTr": "Özel jet", "price": 15000000, "category": 2 },
+    { "id": "island", "nameEn": "Private island", "nameTr": "Özel ada", "price": 50000000, "category": 2 },
+    { "id": "resort", "nameEn": "Private luxury resort", "nameTr": "Özel lüks tatil köyü", "price": 67000000, "category": 2 },
+    { "id": "picasso", "nameEn": "A Picasso", "nameTr": "Orijinal bir Picasso tablosu", "price": 120000000, "category": 2 },
+    { "id": "yacht", "nameEn": "Mega yacht, 110m", "nameTr": "110 metre mega yat", "price": 300000000, "category": 2 },
+    { "id": "tower", "nameEn": "Downtown skyscraper", "nameTr": "Şehir merkezinde gökdelen", "price": 800000000, "category": 2 },
+    { "id": "f1", "nameEn": "Formula 1 team", "nameTr": "Formula 1 takımı", "price": 900000000, "category": 2 },
+    { "id": "club", "nameEn": "European football club", "nameTr": "Avrupa futbol kulübü", "price": 1200000000, "category": 2 },
+    { "id": "nba", "nameEn": "NBA franchise", "nameTr": "NBA kulübü", "price": 4000000000, "category": 2 },
+    { "id": "airline", "nameEn": "Regional airline", "nameTr": "Bölgesel havayolu şirketi", "price": 6500000000, "category": 2 },
+    { "id": "bank", "nameEn": "Global investment bank", "nameTr": "Küresel yatırım bankası", "price": 25000000000, "category": 2 }
+  ]
+}

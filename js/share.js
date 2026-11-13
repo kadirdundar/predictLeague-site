@@ -60,6 +60,9 @@ window.predictLeagueShare = {
         if (data && data.kind === 'size') {
             return this.drawSizeCanvas(data);
         }
+        if (data && data.kind === 'stat') {
+            return this.drawStatCanvas(data);
+        }
 
         const W = 1080;
         const H = 1350;
@@ -587,6 +590,94 @@ window.predictLeagueShare = {
         for (const fact of d.facts) {
             ctx.fillText(this.truncateText(ctx, fact, W - 2 * M), M, fy);
             fy += 44;
+        }
+
+        ctx.fillStyle = '#ec3013';
+        ctx.fillRect(0, H - 118, W, 118);
+        ctx.fillStyle = '#ffffff';
+        ctx.font = font(700, 24);
+        const urlWidth = ctx.measureText(d.url).width;
+        ctx.textAlign = 'right';
+        ctx.fillText(d.url, W - M, H - 50);
+        ctx.font = font(800, 32);
+        ctx.textAlign = 'left';
+        ctx.fillText(this.truncateText(ctx, d.cta, W - 2 * M - urlWidth - 28), M, H - 48);
+
+        this.cachedCanvas = canvas;
+        return canvas;
+    },
+
+    // Money tools card (1080 x 1350): one big number, a punchline and a few label/value rows
+    // (salary compare, inflation, what-if, savings goal; data from Pages/ToolPageBase.cs CardData)
+    drawStatCanvas: function (d) {
+        const W = 1080, H = 1350, M = 72;
+        const canvas = document.createElement('canvas');
+        canvas.width = W;
+        canvas.height = H;
+        const ctx = canvas.getContext('2d');
+        const ink = '#201e1d', red = '#ae1800', muted = 'rgba(32, 30, 29, 0.65)', rule = 'rgba(32, 30, 29, 0.4)';
+        const font = (weight, size) => `${weight} ${size}px "Archivo", system-ui, sans-serif`;
+
+        ctx.fillStyle = '#f3f2f2';
+        ctx.fillRect(0, 0, W, H);
+        ctx.textBaseline = 'alphabetic';
+
+        ctx.fillStyle = ink;
+        ctx.font = font(800, 34);
+        ctx.textAlign = 'left';
+        ctx.fillText(d.brand, M, 118);
+        ctx.fillStyle = red;
+        ctx.font = font(800, 26);
+        ctx.textAlign = 'right';
+        ctx.fillText(d.badge || '', W - M, 116);
+        ctx.fillStyle = rule;
+        ctx.fillRect(M, 146, W - 2 * M, 3);
+
+        // What the number is about
+        ctx.textAlign = 'left';
+        ctx.fillStyle = muted;
+        ctx.font = font(700, 38);
+        let y = 236;
+        for (const line of this.wrapText(ctx, d.kicker, W - 2 * M, 2)) { ctx.fillText(line, M, y); y += 48; }
+
+        // The number: as large as fits on one line
+        ctx.fillStyle = ink;
+        let size = 150;
+        do { ctx.font = font(800, size); size -= 4; } while (ctx.measureText(d.big).width > W - 2 * M && size > 48);
+        y += size * 0.82 + 16;
+        ctx.fillText(d.big, M, y);
+
+        ctx.fillStyle = red;
+        ctx.font = font(800, 54);
+        y += 84;
+        for (const line of this.wrapText(ctx, d.headline, W - 2 * M, 3)) { ctx.fillText(line, M, y); y += 64; }
+
+        // Rows, spread over the space that is left above the note
+        const rows = (d.rows || []).slice(0, 5);
+        const noteY = H - 118 - 44;
+        const top = y + 6, step = Math.min(84, (noteY - 40 - top) / Math.max(1, rows.length));
+        ctx.fillStyle = rule;
+        ctx.fillRect(M, top, W - 2 * M, 3);
+        rows.forEach((r, i) => {
+            const ry = top + step * (i + 1) - step * 0.32;
+            ctx.fillStyle = ink;
+            ctx.font = font(800, 34);
+            ctx.textAlign = 'right';
+            ctx.fillText(r.value, W - M, ry);
+            const valueW = ctx.measureText(r.value).width;
+            ctx.font = font(600, 32);
+            ctx.fillStyle = muted;
+            ctx.textAlign = 'left';
+            ctx.fillText(this.truncateText(ctx, r.label, W - 2 * M - valueW - 30), M, ry);
+            ctx.fillStyle = 'rgba(32, 30, 29, 0.2)';
+            ctx.fillRect(M, top + step * (i + 1), W - 2 * M, 2);
+        });
+
+        if (d.note) {
+            ctx.fillStyle = muted;
+            ctx.font = font(600, 24);
+            ctx.textAlign = 'left';
+            ctx.fillText(this.truncateText(ctx, d.note, W - 2 * M), M, noteY);
         }
 
         ctx.fillStyle = '#ec3013';

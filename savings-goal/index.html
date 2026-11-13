@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <title>Birikim Hedefi Hesaplama: Ayda Ne Kadar Biriktirmeliyim? | StageSimulator</title>
+  <meta name="description" content="Hedef tutarını, süreyi ve yıllık getiriyi gir; hedefe ulaşmak için her ay ne kadar biriktirmen gerektiğini gör. Enflasyona göre düzeltme seçeneğiyle." />
+  <link rel="canonical" href="https://www.stagesimulator.com/savings-goal/" />
+  <base href="/" />
+  <!-- Blazor shell: the build fills these with the runtime preload and the fingerprinted file names (.NET 10) -->
+  <link href="_framework/dotnet.b1puojk0qu.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-P15my2i2OWM0qI46AByd8JaHvC2jF+3q7cKrrMKpG0c=" />
+  <script type="importmap">{
+  "imports": {
+    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.w3qd1tpl0e.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.b1puojk0qu.js",
+    "./_framework/dotnet.native.js": "./_framework/dotnet.native.6ilbvndvcf.js",
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.v2rwe8u38b.js"
+  },
+  "scopes": {},
+  "integrity": {
+    "./_framework/blazor.webassembly.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
+    "./_framework/blazor.webassembly.w3qd1tpl0e.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
+    "./_framework/dotnet.b1puojk0qu.js": "sha256-P15my2i2OWM0qI46AByd8JaHvC2jF+3q7cKrrMKpG0c=",
+    "./_framework/dotnet.js": "sha256-P15my2i2OWM0qI46AByd8JaHvC2jF+3q7cKrrMKpG0c=",
+    "./_framework/dotnet.native.6ilbvndvcf.js": "sha256-YvNi2Q+yHnXi8iT7ROza0OEWWv2tCpuTI2Ggaeura3U=",
+    "./_framework/dotnet.native.js": "sha256-YvNi2Q+yHnXi8iT7ROza0OEWWv2tCpuTI2Ggaeura3U=",
+    "./_framework/dotnet.runtime.js": "sha256-6SBqDbLLy460Bxd7wMZoiO97hZfLTuF+HRhWT3elS7U=",
+    "./_framework/dotnet.runtime.v2rwe8u38b.js": "sha256-6SBqDbLLy460Bxd7wMZoiO97hZfLTuF+HRhWT3elS7U="
+  }
+}</script>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.stagesimulator.com/savings-goal/" />
+  <meta property="og:title" content="Birikim Hedefi Hesaplama: Ayda Ne Kadar Biriktirmeliyim? | StageSimulator" />
+  <meta property="og:description" content="Hedef tutarını, süreyi ve yıllık getiriyi gir; hedefe ulaşmak için her ay ne kadar biriktirmen gerektiğini gör. Enflasyona göre düzeltme seçeneğiyle." />
+  <meta property="og:image" content="https://www.stagesimulator.com/og/simulators.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.stagesimulator.com/og/simulators.png" />
+  <link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/icons.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/tools.css" />
+  <link href="PredictLeague.styles.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <script src="/js/analytics.js" async></script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Birikim Hedefi",
+      "url": "https://www.stagesimulator.com/savings-goal/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Aylık birikim nasıl hesaplanıyor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bileşik getiri formülünün tersi kullanılır: aylık = (hedef − başlangıç × (1 + i)ⁿ) × i / ((1 + i)ⁿ − 1). Burada i aylık getiri (yıllık getiri / 12), n ay sayısıdır. Getiri her yıl aynı varsayılır; vergi ve masraf yoktur. Yatırım tavsiyesi değildir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Enflasyon hedefi nasıl etkiler?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bugün 5 milyon TL ile alınabilenler, yıllar sonra daha fazla paraya mal olur. \"Bugünün alım gücüyle\" seçeneğinde hedef her yıl enflasyon kadar büyütülür ve gereken aylık birikim buna göre hesaplanır."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <style>
+    body { margin: 0; background: #d7d3d3; font-family: 'Archivo', system-ui, sans-serif; color: #201e1d; }
+    .tks-shell { max-width: 480px; margin: 0 auto; background: #f3f2f2; min-height: 100vh; padding: 24px 18px 60px; box-sizing: border-box; }
+    .tks-shell h1 { font-size: 32px; line-height: 1.05; letter-spacing: -.03em; margin: 8px 0 12px; }
+    .tks-shell h2 { font-size: 18px; margin: 22px 0 8px; }
+    .tks-shell p { font-size: 13.5px; line-height: 1.55; color: rgba(32, 30, 29, 0.8); margin: 0 0 10px; }
+    .tks-shell a { color: #ae1800; font-weight: 800; }
+    .tks-links { margin-top: 22px; font-size: 12px !important; }
+    .tks-links a { color: rgba(32, 30, 29, 0.7); font-weight: 600; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="tks-shell">
+      <div class="tk-badge">Tersine bileşik getiri hesabı</div>
+      <h1>Hedefim için ayda ne kadar biriktirmeliyim?</h1>
+      <p>Kısa cevap: sıfırdan başlayıp yıllık %35 getiriyle 10 yılda 5 milyon TL için ayda yaklaşık 4.782 TL biriktirmek gerekir; getiri hiç olmasaydı ayda 41.667 TL gerekirdi. Hedefini, süreni ve getiri varsayımını kendin seç.</p>
+      <h2>Hedefe göre aylık birikim (yıllık %35 getiriyle)</h2>
+      <div style="overflow-x: auto;"><table class="tk-table"><thead><tr><th>Hedef</th><th>5 yılda</th><th>10 yılda</th><th>20 yılda</th></tr></thead><tbody><tr><td>1 milyon TL</td><td>6.324 TL</td><td>957 TL</td><td>30 TL</td></tr><tr><td>5 milyon TL</td><td>31.619 TL</td><td>4.782 TL</td><td>148 TL</td></tr><tr><td>10 milyon TL</td><td>63.237 TL</td><td>9.564 TL</td><td>295 TL</td></tr><tr><td>50 milyon TL</td><td>316.182 TL</td><td>47.818 TL</td><td>1.472 TL</td></tr></tbody></table></div>
+      <p>Tablodaki getiri bir örnektir, tahmin değildir. Hedefi bugünün alım gücüyle de girebilirsin: o zaman tutar her yıl enflasyon kadar büyütülür.</p>
+      <p><a href="/finance/?mode=future">Tersini dene: ayda şu kadar biriktirirsem ne olur? →</a></p>
+      <h2>Aylık birikim nasıl hesaplanıyor?</h2><p>Bileşik getiri formülünün tersi kullanılır: aylık = (hedef − başlangıç × (1 + i)ⁿ) × i / ((1 + i)ⁿ − 1). Burada i aylık getiri (yıllık getiri / 12), n ay sayısıdır. Getiri her yıl aynı varsayılır; vergi ve masraf yoktur. Yatırım tavsiyesi değildir.</p><h2>Enflasyon hedefi nasıl etkiler?</h2><p>Bugün 5 milyon TL ile alınabilenler, yıllar sonra daha fazla paraya mal olur. "Bugünün alım gücüyle" seçeneğinde hedef her yıl enflasyon kadar büyütülür ve gereken aylık birikim buna göre hesaplanır.</p>
+      <p class="tks-links"><a href="/salary/">Maaş Karşılaştırıcı</a> · <a href="/inflation/">Enflasyon Hesaplama</a> · <a href="/what-if/">Ya O Gün Alsaydım</a></p>
+      <p class="tks-links"><a href="/">Futbol</a> · <a href="/fixtures/">Fikstürler</a> · <a href="/finance/">Finans</a> · <a href="/money-size/">Paranın Boyutu</a> · <a href="/inflation/">Enflasyon</a> · <a href="/simulators/">Tüm Simülatörler</a> · <a href="/privacy/">Gizlilik</a></p>
+    </div>
+  </div>
+
+  <script src="/js/share.js"></script>
+  <script src="_framework/blazor.webassembly.w3qd1tpl0e.js"></script>
+</body>
+</html>

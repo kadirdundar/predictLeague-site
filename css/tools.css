@@ -1,0 +1,411 @@
+/* Shared look of the small money tools (/salary/, /inflation/, /what-if/, /savings-goal/): the same paper-and-ink
+   style as the finance game and Money Size. Global on purpose: the pages share Components/ToolShell.razor, and the
+   static shells written by scripts/generate_seo_pages.py use the same classes before Blazor starts. */
+.tk-outer {
+    position: fixed;
+    inset: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    background: #d7d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 50;
+    font-family: 'Archivo', system-ui, -apple-system, sans-serif;
+    color: #201e1d;
+}
+
+.tk-shell {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100%;
+    background: #f3f2f2;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+}
+
+.tk-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f3f2f2;
+    border-bottom: 2px solid rgba(32, 30, 29, 0.4);
+    padding: 14px 18px 12px;
+}
+
+.tk-brand {
+    font-size: 13px;
+    letter-spacing: .08em;
+    font-weight: 800;
+    color: #201e1d;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.tk-lang {
+    border: 1px solid rgba(32, 30, 29, 0.3);
+    background: none;
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 7px;
+    cursor: pointer;
+    color: #201e1d;
+}
+
+.tk-content { padding: 24px 18px 60px; }
+
+.tk-badge {
+    font-size: 11px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: #ae1800;
+    font-weight: 800;
+}
+
+.tk-title {
+    font-size: 32px;
+    line-height: 1.05;
+    letter-spacing: -.03em;
+    font-weight: 800;
+    margin: 8px 0 12px;
+}
+
+.tk-desc {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(32, 30, 29, 0.8);
+    margin: 0 0 18px;
+}
+
+.tk-field {
+    border-top: 2px solid rgba(32, 30, 29, 0.4);
+    padding: 12px 0 14px;
+}
+
+.tk-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgba(32, 30, 29, 0.65);
+    margin-bottom: 8px;
+}
+
+.tk-label strong {
+    font-size: 15px;
+    letter-spacing: 0;
+    color: #201e1d;
+    font-variant-numeric: tabular-nums;
+}
+
+.tk-input-wrap {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    border-bottom: 2px solid #201e1d;
+    margin-bottom: 10px;
+}
+
+.tk-input-wrap:focus-within { border-bottom-color: #ec3013; }
+
+.tk-input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: #201e1d;
+    padding: 4px 0;
+    outline: none;
+}
+
+.tk-unit {
+    font-size: 18px;
+    font-weight: 800;
+    color: #ae1800;
+}
+
+.tk-select-row {
+    display: flex;
+    gap: 8px;
+}
+
+.tk-select {
+    flex: 1;
+    min-width: 0;
+    border: 2px solid rgba(32, 30, 29, 0.4);
+    border-radius: 0;
+    background: #f3f2f2;
+    color: #201e1d;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 9px 8px;
+}
+
+.tk-select:focus-visible,
+.tk-chip:focus-visible,
+.tk-lang:focus-visible,
+.tk-share:focus-visible {
+    outline: 2px solid #ec3013;
+    outline-offset: 2px;
+}
+
+.tk-range {
+    width: 100%;
+    accent-color: #ec3013;
+    margin: 2px 0 8px;
+}
+
+.tk-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tk-chip {
+    border: 1px solid rgba(32, 30, 29, 0.3);
+    background: none;
+    color: rgba(32, 30, 29, 0.75);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tk-chip:hover,
+.tk-chip.active {
+    background: #201e1d;
+    color: #f3f2f2;
+    border-color: #201e1d;
+}
+
+.tk-hint {
+    font-size: 11px;
+    line-height: 1.45;
+    color: rgba(32, 30, 29, 0.65);
+    margin: 8px 0 0;
+}
+
+.tk-warn {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ae1800;
+    margin: 12px 0;
+}
+
+/* Result block */
+.tk-result {
+    border: 2px solid rgba(32, 30, 29, 0.4);
+    background: #eae9e9;
+    padding: 16px;
+    margin: 6px 0 12px;
+}
+
+.tk-result-lbl {
+    font-size: 10px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(32, 30, 29, 0.65);
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.tk-result-main {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.05;
+    letter-spacing: -.03em;
+    margin: 6px 0 6px;
+    font-variant-numeric: tabular-nums;
+    overflow-wrap: anywhere;
+}
+
+.tk-result-sub {
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(32, 30, 29, 0.8);
+    margin: 0;
+}
+
+.tk-punch {
+    border-top: 2px solid rgba(32, 30, 29, 0.4);
+    margin-top: 12px;
+    padding-top: 12px;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.tk-punch strong { color: #ae1800; font-weight: 800; }
+
+.tk-rows { margin: 0 0 12px; }
+
+.tk-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    border-bottom: 1px solid rgba(32, 30, 29, 0.2);
+    padding: 9px 0;
+    font-size: 13px;
+}
+
+.tk-row span { color: rgba(32, 30, 29, 0.8); }
+
+.tk-row strong {
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+}
+
+/* Comparison bars (what-if) */
+.tk-bar-row {
+    border-bottom: 1px solid rgba(32, 30, 29, 0.2);
+    padding: 10px 0;
+}
+
+.tk-bar-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.tk-bar-head strong {
+    font-size: 16px;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+}
+
+.tk-bar-track {
+    height: 10px;
+    background: rgba(32, 30, 29, 0.12);
+    margin: 6px 0 5px;
+}
+
+.tk-bar-fill {
+    height: 100%;
+    min-width: 2px;
+    background: #201e1d;
+}
+
+.tk-bar-row.best .tk-bar-fill { background: #ec3013; }
+.tk-bar-row.bench .tk-bar-fill { background: rgba(32, 30, 29, 0.45); }
+
+.tk-bar-note {
+    font-size: 11px;
+    line-height: 1.4;
+    color: rgba(32, 30, 29, 0.7);
+}
+
+.tk-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.tk-table th,
+.tk-table td {
+    text-align: left;
+    padding: 6px 4px;
+    border-bottom: 1px solid rgba(32, 30, 29, 0.2);
+    font-variant-numeric: tabular-nums;
+}
+
+.tk-table th {
+    font-size: 9.5px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: rgba(32, 30, 29, 0.65);
+}
+
+.tk-share {
+    width: 100%;
+    border: 0;
+    background: #ec3013;
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 13px 12px;
+    margin: 6px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.tk-source {
+    font-size: 10.5px;
+    line-height: 1.45;
+    color: rgba(32, 30, 29, 0.65);
+    margin: 6px 0 0;
+}
+
+.tk-guide {
+    margin-top: 28px;
+    border-top: 2px solid rgba(32, 30, 29, 0.4);
+}
+
+.tk-guide h2 {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -.01em;
+    margin: 22px 0 8px;
+}
+
+.tk-guide p {
+    font-size: 13px;
+    line-height: 1.55;
+    color: rgba(32, 30, 29, 0.8);
+    margin: 0 0 10px;
+}
+
+.tk-guide a,
+.tk-content a.tk-more {
+    color: #ae1800;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.tk-guide p.tk-links {
+    margin-top: 22px;
+    font-size: 12px;
+}
+
+.tk-guide .tk-links a {
+    color: rgba(32, 30, 29, 0.7);
+    font-weight: 600;
+}
+
+.tk-toast {
+    position: fixed;
+    left: 50%;
+    bottom: calc(24px + env(safe-area-inset-bottom));
+    transform: translateX(-50%);
+    z-index: 210;
+    background: #201e1d;
+    color: #f3f2f2;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 14px;
+    max-width: 90vw;
+    text-align: center;
+}
