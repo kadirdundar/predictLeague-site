@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <title>Taksit Erime Hesaplama: Enflasyonda Sabit Borç Nasıl Erir?</title>
+  <meta name="description" content="Sabit kredi veya taksit ödemesinin enflasyon karşısında bugünün parasıyla kaça düşeceğini ve maaşındaki payının nasıl eriyeceğini ay ay simüle et." />
+  <link rel="canonical" href="https://www.stagesimulator.com/loan-erosion/" />
+  <base href="/" />
+  <!-- Blazor shell: the build fills these with the runtime preload and the fingerprinted file names (.NET 10) -->
+  <link href="_framework/dotnet.zy0t6y18bf.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-1bdvAN/Z/l+bTIzUZ1+dm1XJBpUYHmqQVyds7mzg0dg=" />
+  <script type="importmap">{
+  "imports": {
+    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.w3qd1tpl0e.js",
+    "./_framework/dotnet.native.js": "./_framework/dotnet.native.6ilbvndvcf.js",
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.v2rwe8u38b.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.zy0t6y18bf.js"
+  },
+  "scopes": {},
+  "integrity": {
+    "./_framework/blazor.webassembly.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
+    "./_framework/blazor.webassembly.w3qd1tpl0e.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
+    "./_framework/dotnet.js": "sha256-1bdvAN/Z/l+bTIzUZ1+dm1XJBpUYHmqQVyds7mzg0dg=",
+    "./_framework/dotnet.native.6ilbvndvcf.js": "sha256-YvNi2Q+yHnXi8iT7ROza0OEWWv2tCpuTI2Ggaeura3U=",
+    "./_framework/dotnet.native.js": "sha256-YvNi2Q+yHnXi8iT7ROza0OEWWv2tCpuTI2Ggaeura3U=",
+    "./_framework/dotnet.runtime.js": "sha256-6SBqDbLLy460Bxd7wMZoiO97hZfLTuF+HRhWT3elS7U=",
+    "./_framework/dotnet.runtime.v2rwe8u38b.js": "sha256-6SBqDbLLy460Bxd7wMZoiO97hZfLTuF+HRhWT3elS7U=",
+    "./_framework/dotnet.zy0t6y18bf.js": "sha256-1bdvAN/Z/l+bTIzUZ1+dm1XJBpUYHmqQVyds7mzg0dg="
+  }
+}</script>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.stagesimulator.com/loan-erosion/" />
+  <meta property="og:title" content="Taksit Erime Hesaplama: Enflasyonda Sabit Borç Nasıl Erir?" />
+  <meta property="og:description" content="Sabit kredi veya taksit ödemesinin enflasyon karşısında bugünün parasıyla kaça düşeceğini ve maaşındaki payının nasıl eriyeceğini ay ay simüle et." />
+  <meta property="og:image" content="https://www.stagesimulator.com/og/loan-erosion.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.stagesimulator.com/og/loan-erosion.png" />
+  <link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/icons.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/tools.css" />
+  <link href="PredictLeague.styles.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <script src="/js/analytics.js" async></script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Taksit Erime Simülatörü",
+      "url": "https://www.stagesimulator.com/loan-erosion/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Enflasyonda sabit taksit neden erir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TL cinsinden sabit taksitli bir kredi ya da senet öderken bankaya her ay aynı nominal rakamı yatırırsın; fakat fiyatlar ve gelirler enflasyonla büyüdükçe o sabit rakamın satın alma gücü her ay küçülür."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Taksitin bugünkü değeri nasıl hesaplanıyor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yıllık enflasyon oranından (E) aylık bileşik enflasyon i = (1 + E)^(1/12) − 1 bulunur. m'inci aydaki taksitin bugünkü alım gücü = Taksit / (1 + i)^m formülüyle hesaplanır. Maaş payı sütunu, gelirinin yılda enflasyon kadar arttığını (reel alım gücünü koruduğunu) varsayar. Yatırım ya da kredi tavsiyesi değildir."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <style>
+    body { margin: 0; background: #d7d3d3; font-family: 'Archivo', system-ui, sans-serif; color: #201e1d; }
+    .tks-shell { max-width: 480px; margin: 0 auto; background: #f3f2f2; min-height: 100vh; padding: 24px 18px 60px; box-sizing: border-box; }
+    .tks-shell h1 { font-size: 32px; line-height: 1.05; letter-spacing: -.03em; margin: 8px 0 12px; }
+    .tks-shell h2 { font-size: 18px; margin: 22px 0 8px; }
+    .tks-shell p { font-size: 13.5px; line-height: 1.55; color: rgba(32, 30, 29, 0.8); margin: 0 0 10px; }
+    .tks-shell a { color: #ae1800; font-weight: 800; }
+    .tks-links { margin-top: 22px; font-size: 12px !important; }
+    .tks-links a { color: rgba(32, 30, 29, 0.7); font-weight: 600; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="tks-shell">
+      <div class="tk-badge">Enflasyonda sabit borç</div>
+      <h1>Sabit taksitin enflasyonda nasıl erir?</h1>
+      <p>Kısa cevap: yıllık %35 enflasyon ortamında ayda 25.000 TL sabit kredi taksiti, 1. yılın sonunda bugünün 18.519 TL'sine, 3. yılın (36. ay) sonunda <strong>10.161 TL</strong>'ye düşer. 36 ayda kağıt üzerinde 900.000 TL ödenir ama bugünün alım gücüyle toplam yük 585.962 TL olur (borcun <strong>%34,9</strong> kadarı enflasyonda erir). Kendi taksitini, maaşını ve vadesini gir.</p>
+      <h2>25.000 TL sabit taksitin yıllık %35 enflasyonla erime tablosu</h2>
+      <p>Başlangıçta 50.000 TL net maaşın %50'si olan sabit bir taksitin yıllar içindeki reel değeri:</p>
+      <div style="overflow-x: auto;"><table class="tk-table"><thead><tr><th>Dönem</th><th>Ödenen Taksit</th><th>Bugünkü Alım Gücü</th><th>Maaştaki Payı</th></tr></thead><tbody><tr><td>1. ay</td><td>25.000 TL</td><td>24.383 TL</td><td>%48,8</td></tr><tr><td>6. ay</td><td>25.000 TL</td><td>21.517 TL</td><td>%43</td></tr><tr><td>12. ay (1. yıl)</td><td>25.000 TL</td><td>18.519 TL</td><td>%37</td></tr><tr><td>24. ay (2. yıl)</td><td>25.000 TL</td><td>13.717 TL</td><td>%27,4</td></tr><tr><td>36. ay (3. yıl)</td><td>25.000 TL</td><td>10.161 TL</td><td>%20,3</td></tr><tr><td>48. ay (4. yıl)</td><td>25.000 TL</td><td>7.527 TL</td><td>%15,1</td></tr><tr><td>60. ay (5. yıl)</td><td>25.000 TL</td><td>5.575 TL</td><td>%11,2</td></tr></tbody></table></div>
+      <p><a href="/minimum-wage/">Asgari Ücret Zaman Makinesi: Geçmiş maaşlar kaç altın alıyordu? →</a></p>
+      <h2>Enflasyonda sabit taksit neden erir?</h2><p>TL cinsinden sabit taksitli bir kredi ya da senet öderken bankaya her ay aynı nominal rakamı yatırırsın; fakat fiyatlar ve gelirler enflasyonla büyüdükçe o sabit rakamın satın alma gücü her ay küçülür.</p><h2>Taksitin bugünkü değeri nasıl hesaplanıyor?</h2><p>Yıllık enflasyon oranından (E) aylık bileşik enflasyon i = (1 + E)^(1/12) − 1 bulunur. m'inci aydaki taksitin bugünkü alım gücü = Taksit / (1 + i)^m formülüyle hesaplanır. Maaş payı sütunu, gelirinin yılda enflasyon kadar arttığını (reel alım gücünü koruduğunu) varsayar. Yatırım ya da kredi tavsiyesi değildir.</p>
+      <p class="tks-links"><a href="/salary/">Maaş Karşılaştırıcı</a> · <a href="/inflation/">Enflasyon Hesaplama</a> · <a href="/minimum-wage/">Asgari Ücret</a> · <a href="/what-if/">Ya O Gün Alsaydım</a> · <a href="/savings-goal/">Birikim Hedefi</a></p>
+      <p class="tks-links"><a href="/">Futbol</a> · <a href="/fixtures/">Fikstürler</a> · <a href="/finance/">Finans</a> · <a href="/money-size/">Paranın Boyutu</a> · <a href="/inflation/">Enflasyon</a> · <a href="/simulators/">Tüm Simülatörler</a> · <a href="/privacy/">Gizlilik</a></p>
+    </div>
+  </div>
+
+  <script src="/js/share.js"></script>
+  <script src="_framework/blazor.webassembly.w3qd1tpl0e.js"></script>
+</body>
+</html>
