@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>Ücretsiz Simülatörler: Futbol Puan Durumu ve Finans Oyunu | StageSimulator</title>
   <meta name="description" content="StageSimulator'da ücretsiz, oyunlaştırılmış simülatörler: Şampiyonlar Ligi, Avrupa Ligi ve Konferans Ligi puan durumu tahmini ile birikimini ya da bir milyarderin servetini harcadığın finans oyunu." />
+  <meta name="theme-color" content="#F1F3F6" />
   <link rel="canonical" href="https://www.stagesimulator.com/simulators/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.stagesimulator.com/simulators/" />
@@ -16,6 +17,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://www.stagesimulator.com/og/simulators.png" />
   <link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/css/fonts.css" />
   <link rel="icon" type="image/png" href="/favicon.png" />
   <script src="/js/analytics.js" async></script>
@@ -50,6 +52,42 @@
           "position": 3,
           "name": "Paranın Boyutu",
           "url": "https://www.stagesimulator.com/money-size/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Enflasyon Zaman Makinesi",
+          "url": "https://www.stagesimulator.com/inflation/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Asgari Ücret Zaman Makinesi",
+          "url": "https://www.stagesimulator.com/minimum-wage/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Ya O Gün Alsaydım",
+          "url": "https://www.stagesimulator.com/what-if/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Taksit Erime Simülatörü",
+          "url": "https://www.stagesimulator.com/loan-erosion/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Maaş Karşılaştırıcı",
+          "url": "https://www.stagesimulator.com/salary/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Birikim Hedefi",
+          "url": "https://www.stagesimulator.com/savings-goal/"
         }
       ]
     },
@@ -61,7 +99,7 @@
           "name": "StageSimulator'da hangi simülatörler var?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "UEFA lig aşaması için puan durumu tahmini yapan PredictLeague, birikimini ya da bir milyarderin servetini harcadığın finans oyunu Spend It All, bir tutarın banknot olarak ne kadar yer kapladığını gösteren Paranın Boyutu ve altı para aracı: Enflasyon Zaman Makinesi, Asgari Ücret Zaman Makinesi, Ya O Gün Alsaydım, Taksit Erime Simülatörü, Maaş Karşılaştırıcı ve Birikim Hedefi. Yenileri eklendikçe bu sayfada listelenir."
+            "text": "UEFA lig aşaması için puan durumu tahmini yapan PredictLeague, birikimini ya da bir milyarderin servetini harcadığın finans oyunu Spend It All, bir tutarın banknot olarak ne kadar yer kapladığını gösteren Paranın Boyutu ve 6 para aracı: Enflasyon Zaman Makinesi, Asgari Ücret Zaman Makinesi, Ya O Gün Alsaydım, Taksit Erime Simülatörü, Maaş Karşılaştırıcı ve Birikim Hedefi. Yenileri eklendikçe bu sayfada listelenir."
           }
         },
         {
@@ -675,105 +713,281 @@ a { color: inherit; text-decoration: none; }
   text-decoration: underline;
 }
 
-  .pl-sim-links { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
-  </style>
+body { display: block; padding: 0; background: var(--pl-bg); }
+.sh-wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+.sh-top { position: sticky; top: 0; z-index: 10; background: rgba(241, 243, 246, 0.85);
+  backdrop-filter: saturate(180%) blur(12px); -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--pl-border); }
+.sh-top .sh-wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 60px; }
+.sh-nav { display: flex; gap: 4px; }
+.sh-nav a { font-size: 13px; font-weight: 600; color: var(--pl-ink-soft); padding: 7px 12px; border-radius: var(--pl-radius-pill); transition: var(--pl-transition); }
+.sh-nav a:hover { background: var(--pl-card-bg); color: var(--pl-ink); }
+@media (max-width: 560px) { .sh-nav a.sh-nav-x { display: none; } .sh-nav a { padding: 7px 10px; } }
+
+.sh-hero { padding: 48px 0 28px; }
+.sh-eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: var(--pl-accent);
+  background: var(--pl-accent-subtle); border: 1px solid var(--pl-accent-border); border-radius: var(--pl-radius-pill); padding: 4px 12px; }
+.sh-eyebrow i { width: 6px; height: 6px; border-radius: 50%; background: var(--pl-win); box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2); }
+.sh-hero h1 { font-family: 'Archivo', 'Plus Jakarta Sans', system-ui, sans-serif; font-size: clamp(32px, 6vw, 56px); line-height: 1.04;
+  font-weight: 800; letter-spacing: -0.035em; margin: 16px 0 14px; max-width: 760px; text-wrap: balance; }
+.sh-hero h1 em { font-style: normal; background: linear-gradient(90deg, #2563EB, #7C3AED 55%, #DB2777);
+  -webkit-background-clip: text; background-clip: text; color: transparent; }
+.sh-hero p.sh-lead { font-size: clamp(15px, 2vw, 18px); color: var(--pl-muted); max-width: 620px; line-height: 1.55; }
+.sh-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 28px; max-width: 720px; }
+.sh-stat { background: var(--pl-card-bg); border: 1px solid var(--pl-border); border-radius: var(--pl-radius-md); padding: 12px 14px; box-shadow: var(--pl-shadow-sm); }
+.sh-stat b { display: block; font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.sh-stat span { font-size: 12px; color: var(--pl-muted); font-weight: 600; }
+@media (max-width: 560px) { .sh-hero { padding: 32px 0 20px; } .sh-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.sh-section { padding: 28px 0 8px; scroll-margin-top: 72px; }
+.sh-section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.sh-section-head h2 { font-family: 'Archivo', sans-serif; font-size: 24px; font-weight: 800; letter-spacing: -0.02em; }
+.sh-section-head p { font-size: 13px; color: var(--pl-muted); }
+
+/* Featured football card */
+.sh-feature { position: relative; overflow: hidden; border-radius: 24px; color: #E2E8F0; padding: 28px;
+  background: radial-gradient(120% 140% at 100% 0%, #1E3A8A 0%, #0F172A 55%, #020617 100%);
+  box-shadow: 0 24px 48px -20px rgba(15, 23, 42, 0.45); display: grid; grid-template-columns: 1.25fr 1fr; gap: 28px; align-items: center; }
+.sh-feature::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+  background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 32px 32px; mask-image: linear-gradient(90deg, transparent, #000 70%); -webkit-mask-image: linear-gradient(90deg, transparent, #000 70%); }
+.sh-feature > * { position: relative; z-index: 1; }
+.sh-tag { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+  color: #93C5FD; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(147, 197, 253, 0.25); border-radius: var(--pl-radius-pill); padding: 4px 10px; }
+.sh-feature h3 { font-family: 'Archivo', sans-serif; font-size: clamp(26px, 4vw, 34px); font-weight: 800; letter-spacing: -0.03em; color: #FFFFFF; margin: 14px 0 8px; line-height: 1.1; }
+.sh-feature p { font-size: 15px; line-height: 1.6; color: #CBD5E1; max-width: 520px; }
+.sh-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 22px; }
+.sh-chips a { font-size: 12.5px; font-weight: 600; color: #E2E8F0; border: 1px solid rgba(226, 232, 240, 0.18); background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--pl-radius-pill); padding: 6px 12px; transition: var(--pl-transition); }
+.sh-chips a:hover { background: rgba(255, 255, 255, 0.14); color: #FFFFFF; }
+.sh-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; padding: 12px 20px; border-radius: var(--pl-radius-pill);
+  background: #FFFFFF; color: #0F172A !important; transition: var(--pl-transition); }
+.sh-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 20px -6px rgba(255, 255, 255, 0.4); }
+.sh-btn span { transition: transform 0.15s; }
+.sh-btn:hover span { transform: translateX(3px); }
+.sh-zones { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(226, 232, 240, 0.12); border-radius: 18px; padding: 18px; }
+.sh-zones h4 { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #94A3B8; margin-bottom: 12px; }
+.sh-zone { display: grid; grid-template-columns: 54px 1fr auto; align-items: center; gap: 10px; font-size: 13px; padding: 8px 0; border-top: 1px solid rgba(226, 232, 240, 0.08); }
+.sh-zone:first-of-type { border-top: 0; }
+.sh-zone .pos { font-variant-numeric: tabular-nums; color: #94A3B8; font-weight: 600; }
+.sh-zone .bar { height: 8px; border-radius: 4px; background: var(--c); width: var(--w); }
+.sh-zone b { color: #FFFFFF; font-weight: 700; font-size: 12.5px; }
+.sh-zones .sh-big { margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(226, 232, 240, 0.12); font-size: 13px; color: #CBD5E1; line-height: 1.5; }
+.sh-zones .sh-big strong { display: block; font-family: 'Archivo', sans-serif; font-size: 30px; color: #FFFFFF; letter-spacing: -0.02em; line-height: 1.1; }
+@media (max-width: 760px) { .sh-feature { grid-template-columns: 1fr; padding: 22px; gap: 20px; border-radius: 20px; } }
+
+/* Medium game cards */
+.sh-duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 14px; }
+@media (max-width: 760px) { .sh-duo { grid-template-columns: 1fr; } }
+.sh-game { position: relative; display: flex; flex-direction: column; gap: 10px; padding: 24px; border-radius: 20px; border: 1px solid var(--pl-border);
+  background: linear-gradient(160deg, var(--bg1), var(--bg2)); box-shadow: var(--pl-shadow-sm); transition: var(--pl-transition); overflow: hidden; }
+.sh-game:hover { transform: translateY(-3px); box-shadow: 0 18px 36px -18px rgba(15, 23, 42, 0.3); border-color: var(--pl-border-2); }
+.sh-game .emo { font-size: 30px; line-height: 1; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 16px;
+  background: rgba(255, 255, 255, 0.75); box-shadow: var(--pl-shadow-sm); }
+.sh-game h3 { font-family: 'Archivo', sans-serif; font-size: 22px; font-weight: 800; letter-spacing: -0.02em; margin-top: 4px; }
+.sh-game p { font-size: 14px; color: var(--pl-ink-soft); line-height: 1.55; }
+.sh-game .go { margin-top: auto; padding-top: 6px; font-size: 13.5px; font-weight: 700; color: var(--fg); }
+.sh-game .go span { display: inline-block; transition: transform 0.15s; }
+.sh-game:hover .go span { transform: translateX(4px); }
+.sh-pill { align-self: flex-start; font-size: 11px; font-weight: 700; color: var(--fg); background: rgba(255, 255, 255, 0.7); border-radius: var(--pl-radius-pill); padding: 3px 10px; }
+
+/* Tool grid */
+.sh-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 900px) { .sh-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .sh-grid { grid-template-columns: 1fr; gap: 10px; } }
+.sh-tool { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 18px; background: var(--pl-card-bg); border: 1px solid var(--pl-border);
+  border-radius: 18px; box-shadow: var(--pl-shadow-sm); transition: var(--pl-transition); }
+.sh-tool::before { content: ""; position: absolute; left: 18px; right: 18px; top: 0; height: 3px; border-radius: 0 0 3px 3px; background: var(--c); opacity: 0; transition: opacity 0.15s; }
+.sh-tool:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--c) 35%, var(--pl-border)); box-shadow: 0 14px 28px -16px rgba(15, 23, 42, 0.28); }
+.sh-tool:hover::before { opacity: 1; }
+.sh-tool-head { display: flex; align-items: center; gap: 12px; }
+.sh-tool .ico { flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; font-size: 22px;
+  background: color-mix(in srgb, var(--c) 12%, #FFFFFF); border: 1px solid color-mix(in srgb, var(--c) 22%, #FFFFFF); }
+.sh-tool h3 { font-size: 15px; font-weight: 800; letter-spacing: -0.01em; line-height: 1.25; }
+.sh-tool small { display: block; font-size: 11.5px; font-weight: 600; color: color-mix(in srgb, var(--c) 80%, #0F172A); margin-top: 2px; }
+.sh-tool p { font-size: 13px; color: var(--pl-muted); line-height: 1.55; }
+.sh-tool .go { margin-top: auto; padding-top: 4px; font-size: 13px; font-weight: 700; color: var(--pl-ink-soft); }
+.sh-tool:hover .go { color: color-mix(in srgb, var(--c) 85%, #0F172A); }
+.sh-tool .go span { display: inline-block; transition: transform 0.15s; }
+.sh-tool:hover .go span { transform: translateX(4px); }
+@media (max-width: 560px) { .sh-tool p { font-size: 12.5px; } }
+
+/* Promise strip + FAQ */
+.sh-promise { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 36px; }
+.sh-promise div { display: flex; gap: 12px; align-items: flex-start; padding: 16px; border-radius: 16px; background: var(--pl-card-subtle); border: 1px dashed var(--pl-border-2); }
+.sh-promise b { display: block; font-size: 14px; }
+.sh-promise span { font-size: 12.5px; color: var(--pl-muted); line-height: 1.5; }
+.sh-promise i { font-style: normal; font-size: 20px; }
+@media (max-width: 760px) { .sh-promise { grid-template-columns: 1fr; } }
+.sh-faq { display: grid; gap: 10px; }
+.sh-faq details { background: var(--pl-card-bg); border: 1px solid var(--pl-border); border-radius: 14px; padding: 0 18px; box-shadow: var(--pl-shadow-sm); }
+.sh-faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 0; }
+.sh-faq summary::-webkit-details-marker { display: none; }
+.sh-faq summary h3 { font-size: 14.5px; font-weight: 700; }
+.sh-faq summary::after { content: "+"; font-size: 20px; font-weight: 500; color: var(--pl-muted); transition: transform 0.2s; }
+.sh-faq details[open] summary::after { transform: rotate(45deg); }
+.sh-faq details p { font-size: 13.5px; color: var(--pl-muted); line-height: 1.65; padding: 0 0 16px; }
+.sh-faq a, .sh-promise a { color: var(--pl-accent); font-weight: 600; }
+.sh-foot { margin-top: 48px; border-top: 1px solid var(--pl-border); background: var(--pl-card-bg); }
+.sh-foot .pl-footer { border: 0; background: transparent; margin: 0; padding: 22px 16px; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--pl-border-focus); outline-offset: 3px; border-radius: 8px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
 </head>
 <body>
-  <div class="pl-shell">
-    <header class="pl-topbar">
+  <header class="sh-top">
+    <div class="sh-wrap">
       <a href="/simulators/" class="pl-brand">
         <div class="pl-brand-badge">
           <img src="/favicon.png" alt="StageSimulator" width="22" height="22" />
         </div>
         <span>StageSimulator</span>
       </a>
-    </header>
+      <nav class="sh-nav" aria-label="Bölümler">
+        <a href="#futbol">Futbol</a>
+        <a href="#oyunlar" class="sh-nav-x">Oyunlar</a>
+        <a href="#para">Para araçları</a>
+      </nav>
+    </div>
+  </header>
 
-    <div class="pl-main">
-      <section class="pl-hero-card">
-        <h1 style="font-size: 16px; font-weight: 800; color: var(--pl-ink);">Oyunlaştırılmış Simülatörler</h1>
-        <p style="font-size: 12.5px; color: var(--pl-muted);">Bir senaryo seç, sonucunu tahmin et, simülasyon ne olacağını göstersin. Hepsi ücretsiz, üyelik yok.</p>
-      </section>
+  <main class="sh-wrap">
+    <section class="sh-hero">
+      <span class="sh-eyebrow"><i aria-hidden="true"></i>Ücretsiz · üyelik yok · anında sonuç</span>
+      <h1>Tahmin et, simüle et, <em>sonucu gör.</em></h1>
+      <p class="sh-lead">Futbol puan durumundan enflasyona, birikimden milyarder servetine: bir senaryo seç, sayıları gir, simülasyon ne olacağını saniyeler içinde göstersin.</p>
+      <div class="sh-stats">
+        <div class="sh-stat"><b>9</b><span>simülatör</span></div>
+        <div class="sh-stat"><b>108</b><span>Avrupa kulübü</span></div>
+        <div class="sh-stat"><b>1.000</b><span>senaryo / tahmin</span></div>
+        <div class="sh-stat"><b>20+</b><span>yıllık Türkiye verisi</span></div>
+      </div>
+    </section>
 
-      <section class="pl-hero-card">
-        <h2 style="font-size: 15px; font-weight: 800; color: var(--pl-ink); margin: 0 0 4px;">⚽ PredictLeague — UEFA puan durumu simülatörü</h2>
-        <p style="font-size: 12.5px; color: var(--pl-muted); margin: 0 0 10px; line-height: 1.5;">Takımını seç, kalan maçların skorunu tahmin et; diğer maçlar 1.000 kez simüle edilir ve İlk 8, Play-off ve eleme turu ihtimalini görürsün. Şampiyonlar Ligi'nde İlk 8 için 17 puan %90 ihtimalle yetiyor.</p>
-        <div class="pl-sim-links">
-          <a href="/fixtures/champions-league/" class="pl-mini-chip"><span>Şampiyonlar Ligi</span></a>
-          <a href="/fixtures/europa-league/" class="pl-mini-chip"><span>Avrupa Ligi</span></a>
-          <a href="/fixtures/conference-league/" class="pl-mini-chip"><span>Konferans Ligi</span></a>
-          <a href="/teams/" class="pl-mini-chip"><span>108 takım</span></a>
-          <a href="/guide/swiss-format-points-needed/" class="pl-mini-chip"><span>Kaç puan gerekir?</span></a>
+    <section id="futbol" class="sh-section" aria-labelledby="futbol-h">
+      <div class="sh-section-head"><h2 id="futbol-h">⚽ Futbol</h2><p>UEFA lig aşaması</p></div>
+      <div class="sh-feature">
+        <div>
+          <span class="sh-tag">PredictLeague · Monte Carlo</span>
+          <h3>UEFA puan durumu simülatörü</h3>
+          <p>Takımını seç, kalan maçların skorunu tahmin et; diğer maçlar 1.000 kez simüle edilir ve İlk 8, Play-off ve eleme ihtimalini anında görürsün.</p>
+          <div class="sh-chips">
+            <a href="/fixtures/champions-league/">Şampiyonlar Ligi</a>
+            <a href="/fixtures/europa-league/">Avrupa Ligi</a>
+            <a href="/fixtures/conference-league/">Konferans Ligi</a>
+            <a href="/teams/">108 takım</a>
+            <a href="/guide/swiss-format-points-needed/">Kaç puan gerekir?</a>
+          </div>
+          <a href="/" class="sh-btn">Futbol simülatörünü aç <span aria-hidden="true">→</span></a>
         </div>
-        <a href="/" class="pl-large-cta">⚡ Futbol simülatörünü aç</a>
-      </section>
-
-      <section class="pl-hero-card">
-        <h2 style="font-size: 15px; font-weight: 800; color: var(--pl-ink); margin: 0 0 4px;">💸 Spend It All — finans oyunu</h2>
-        <p style="font-size: 12.5px; color: var(--pl-muted); margin: 0 0 10px; line-height: 1.5;">İki mod: <strong>Gelecekteki Ben</strong>'de aylık birikiminin bileşik getiriyle yıllar içinde ne kadar büyüyeceğini görürsün; <strong>Zengin Modu</strong>'nda bir milyarderin servetini yatlar, adalar ve daha fazlasıyla sıfırlamaya çalışırsın.</p>
-        <a href="/finance/" class="pl-large-cta">💸 Finans oyununu aç</a>
-      </section>
-
-      <section class="pl-hero-card">
-        <h2 style="font-size: 15px; font-weight: 800; color: var(--pl-ink); margin: 0 0 4px;">📦 Paranın Boyutu — ölçekli para hesaplayıcı</h2>
-        <p style="font-size: 12.5px; color: var(--pl-muted); margin: 0 0 10px; line-height: 1.5;">Bir tutar gir; TL ya da dolar olarak banknotlarla ne kadar yer kapladığını, kaç kilo ve kaç valiz ettiğini bir insanın yanında ölçekli gör. 1 milyon TL bir valize sığar, 1 milyar TL bir insan boyunda.</p>
-        <a href="/money-size/" class="pl-large-cta">📦 Paranın boyutunu hesapla</a>
-      </section>
-
-      <section class="pl-hero-card">
-        <h2 style="font-size: 15px; font-weight: 800; color: var(--pl-ink); margin: 0 0 4px;">⏳ Enflasyon Zaman Makinesi</h2>
-        <p style="font-size: 12.5px; color: var(--pl-muted); margin: 0 0 10px; line-height: 1.5;">Geçmişteki bir TL tutarının bugün kaç TL'ye denk geldiğini TÜİK TÜFE verisiyle hesapla: 2005'ten bugüne ay ay enflasyon.</p>
-        <a href="/inflation/" class="pl-large-cta">⏳ Enflasyonu hesapla</a>
-      </section>
-
-      <section class="pl-hero-card">
-        <h2 style="font-size: 15px; font-weight: 800; color: var(--pl-ink); margin: 0 0 4px;">🪙 Asgari Ücret Zaman Makinesi</h2>
-        <p style="font-size: 12.5px; color: var(--pl-muted); margin: 0 0 10px; line-height: 1.5;">2005'ten bugüne yıllara göre net asgari ücretle (ya da kendi maaşınla) kaç çeyrek altın, kaç gram altın ve kaç dolar alındığını karşılaştır.</p>
-        <a href="/minimum-wage/" class="pl-large-cta">🪙 Asgari ücreti karşılaştır</a>
-      </section>
-
-      <section class="pl-hero-card">
-        <h2 style="font-size: 15px; font-weight: 800; color: var(--pl-ink); margin: 0 0 4px;">📈 Ya O Gün Alsaydım</h2>
-        <p style="font-size: 12.5px; color: var(--pl-muted); margin: 0 0 10px; line-height: 1.5;">Geçmişte bir tarihte paranla dolar, altın ya da BIST 100 alsaydın bugün kaç TL ederdi? Enflasyonla karşılaştırmalı.</p>
-        <a href="/what-if/" class="pl-large-cta">📈 Ya o gün alsaydım?</a>
-      </section>
-
-      <section class="pl-hero-card">
-        <h2 style="font-size: 15px; font-weight: 800; color: var(--pl-ink); margin: 0 0 4px;">📉 Taksit Erime Simülatörü</h2>
-        <p style="font-size: 12.5px; color: var(--pl-muted); margin: 0 0 10px; line-height: 1.5;">Sabit kredi ya da taksit ödemesinin enflasyon karşısında bugünün alım gücüyle kaça düşeceğini ve maaşındaki payının nasıl eriyeceğini ay ay gör.</p>
-        <a href="/loan-erosion/" class="pl-large-cta">📉 Taksit erimesini hesapla</a>
-      </section>
-
-      <section class="pl-hero-card">
-        <h2 style="font-size: 15px; font-weight: 800; color: var(--pl-ink); margin: 0 0 4px;">💼 Maaş Karşılaştırıcı</h2>
-        <p style="font-size: 12.5px; color: var(--pl-muted); margin: 0 0 10px; line-height: 1.5;">Maaşını gir: bir telefonu, arabayı ya da evi kaç ayda alabileceğini ve Elon Musk'ın aynı parayı kaç saniyede kazandığını gör.</p>
-        <a href="/salary/" class="pl-large-cta">💼 Maaşını karşılaştır</a>
-      </section>
-
-      <section class="pl-hero-card">
-        <h2 style="font-size: 15px; font-weight: 800; color: var(--pl-ink); margin: 0 0 4px;">🎯 Birikim Hedefi</h2>
-        <p style="font-size: 12.5px; color: var(--pl-muted); margin: 0 0 10px; line-height: 1.5;">Hedef tutarını ve süreyi seç; bileşik getiriyle o tutara ulaşmak için her ay ne kadar biriktirmen gerektiğini gör.</p>
-        <a href="/savings-goal/" class="pl-large-cta">🎯 Hedefini hesapla</a>
-      </section>
-
-      <h2 class="pl-section-title">❓ Sıkça Sorulan Sorular</h2>
-      <div class="pl-faq-box">
-        
-        <div class="pl-faq-unit">
-          <h3 class="pl-faq-q">StageSimulator'da hangi simülatörler var?</h3>
-          <p class="pl-faq-a">UEFA lig aşaması için puan durumu tahmini yapan <a href="/">PredictLeague</a>, birikimini ya da bir milyarderin servetini harcadığın finans oyunu <a href="/finance/">Spend It All</a>, bir tutarın banknot olarak ne kadar yer kapladığını gösteren <a href="/money-size/">Paranın Boyutu</a> ve altı para aracı: <a href="/inflation/">Enflasyon Zaman Makinesi</a>, <a href="/minimum-wage/">Asgari Ücret Zaman Makinesi</a>, <a href="/what-if/">Ya O Gün Alsaydım</a>, <a href="/loan-erosion/">Taksit Erime Simülatörü</a>, <a href="/salary/">Maaş Karşılaştırıcı</a> ve <a href="/savings-goal/">Birikim Hedefi</a>. Yenileri eklendikçe bu sayfada listelenir.</p>
-        </div>
-        <div class="pl-faq-unit">
-          <h3 class="pl-faq-q">Simülatörler ücretsiz mi, üye olmak gerekiyor mu?</h3>
-          <p class="pl-faq-a">Hepsi ücretsiz ve üyelik gerektirmez. Girdiğin veriler yalnızca kendi tarayıcında saklanır; ayrıntılar <a href="/privacy/">gizlilik politikasında</a>.</p>
+        <div class="sh-zones" aria-label="Lig aşaması bölgeleri">
+          <h4>36 takım, 3 kader</h4>
+          <div class="sh-zone"><span class="pos">1–8</span><div class="bar" style="--c: var(--pl-top8); --w: 50%;"></div><b>Son 16</b></div>
+          <div class="sh-zone"><span class="pos">9–24</span><div class="bar" style="--c: var(--pl-playoff); --w: 100%;"></div><b>Play-off</b></div>
+          <div class="sh-zone"><span class="pos">25–36</span><div class="bar" style="--c: var(--pl-elim); --w: 75%;"></div><b>Elenme</b></div>
+          <div class="sh-big"><strong>17 puan</strong>Şampiyonlar Ligi'nde İlk 8 için %90 ihtimalle yetiyor.</div>
         </div>
       </div>
+    </section>
+
+    <section id="oyunlar" class="sh-section" aria-labelledby="oyunlar-h">
+      <div class="sh-section-head"><h2 id="oyunlar-h">🎮 Para oyunları</h2><p>Oyna, paylaş</p></div>
+      <div class="sh-duo">
+        <a href="/finance/" class="sh-game" style="--bg1: #ECFDF5; --bg2: #D1FAE5; --fg: #047857;">
+          <div class="emo" aria-hidden="true">💸</div>
+          <span class="sh-pill">Finans oyunu · 2 mod</span>
+          <h3>Spend It All</h3>
+          <p><strong>Gelecekteki Ben</strong>'de aylık birikiminin bileşik getiriyle yıllar içinde ne kadar büyüyeceğini gör; <strong>Zengin Modu</strong>'nda bir milyarderin servetini yatlar ve adalarla sıfırlamaya çalış.</p>
+          <div class="go">Finans oyununu aç <span aria-hidden="true">→</span></div>
+        </a>
+        <a href="/money-size/" class="sh-game" style="--bg1: #FFFBEB; --bg2: #FEF3C7; --fg: #B45309;">
+          <div class="emo" aria-hidden="true">📦</div>
+          <span class="sh-pill">Ölçekli hesaplayıcı</span>
+          <h3>Paranın Boyutu</h3>
+          <p>Bir tutar gir; banknotlarla ne kadar yer kapladığını, kaç kilo ve kaç valiz ettiğini bir insanın yanında ölçekli gör. 1 milyon TL bir valize sığar, 1 milyar TL bir insan boyunda.</p>
+          <div class="go">Paranın boyutunu hesapla <span aria-hidden="true">→</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="para" class="sh-section" aria-labelledby="para-h">
+      <div class="sh-section-head"><h2 id="para-h">🧮 Para araçları</h2><p>Türkiye verisiyle</p></div>
+      <div class="sh-grid">
+          <a href="/inflation/" class="sh-tool" style="--c: #7C3AED;">
+            <div class="sh-tool-head">
+              <div class="ico" aria-hidden="true">⏳</div>
+              <div><h3>Enflasyon Zaman Makinesi</h3><small>TÜFE · 2005'ten bugüne</small></div>
+            </div>
+            <p>Geçmişteki bir TL tutarının bugün kaç TL'ye denk geldiğini TÜİK TÜFE verisiyle ay ay hesapla.</p>
+            <div class="go">Enflasyonu hesapla <span aria-hidden="true">→</span></div>
+          </a>
+          <a href="/minimum-wage/" class="sh-tool" style="--c: #CA8A04;">
+            <div class="sh-tool-head">
+              <div class="ico" aria-hidden="true">🪙</div>
+              <div><h3>Asgari Ücret Zaman Makinesi</h3><small>Altın · dolar · yıllar</small></div>
+            </div>
+            <p>Yıllara göre net asgari ücretle (ya da kendi maaşınla) kaç çeyrek altın, gram altın ve dolar alındığını karşılaştır.</p>
+            <div class="go">Asgari ücreti karşılaştır <span aria-hidden="true">→</span></div>
+          </a>
+          <a href="/what-if/" class="sh-tool" style="--c: #059669;">
+            <div class="sh-tool-head">
+              <div class="ico" aria-hidden="true">📈</div>
+              <div><h3>Ya O Gün Alsaydım</h3><small>Dolar · altın · BIST 100</small></div>
+            </div>
+            <p>Geçmişte bir tarihte paranla dolar, altın ya da BIST 100 alsaydın bugün kaç TL ederdi? Enflasyonla karşılaştırmalı.</p>
+            <div class="go">Ya o gün alsaydım? <span aria-hidden="true">→</span></div>
+          </a>
+          <a href="/loan-erosion/" class="sh-tool" style="--c: #DC2626;">
+            <div class="sh-tool-head">
+              <div class="ico" aria-hidden="true">📉</div>
+              <div><h3>Taksit Erime Simülatörü</h3><small>Kredi · taksit · alım gücü</small></div>
+            </div>
+            <p>Sabit taksidin enflasyon karşısında bugünün alım gücüyle kaça düşeceğini ve maaşındaki payının nasıl eriyeceğini gör.</p>
+            <div class="go">Taksit erimesini hesapla <span aria-hidden="true">→</span></div>
+          </a>
+          <a href="/salary/" class="sh-tool" style="--c: #0891B2;">
+            <div class="sh-tool-head">
+              <div class="ico" aria-hidden="true">💼</div>
+              <div><h3>Maaş Karşılaştırıcı</h3><small>Kaç ayda alırsın?</small></div>
+            </div>
+            <p>Maaşını gir: bir telefonu, arabayı ya da evi kaç ayda alabileceğini ve Elon Musk'ın aynı parayı kaç saniyede kazandığını gör.</p>
+            <div class="go">Maaşını karşılaştır <span aria-hidden="true">→</span></div>
+          </a>
+          <a href="/savings-goal/" class="sh-tool" style="--c: #DB2777;">
+            <div class="sh-tool-head">
+              <div class="ico" aria-hidden="true">🎯</div>
+              <div><h3>Birikim Hedefi</h3><small>Bileşik getiri</small></div>
+            </div>
+            <p>Hedef tutarını ve süreyi seç; bileşik getiriyle o tutara ulaşmak için her ay ne kadar biriktirmen gerektiğini gör.</p>
+            <div class="go">Hedefini hesapla <span aria-hidden="true">→</span></div>
+          </a>
+      </div>
+    </section>
+
+    <div class="sh-promise">
+      <div><i aria-hidden="true">🆓</i><p><b>Tamamen ücretsiz</b><span>Üyelik, kayıt ya da ödeme yok.</span></p></div>
+      <div><i aria-hidden="true">🔒</i><p><b>Veriler sende kalır</b><span>Girdiklerin yalnızca tarayıcında saklanır. <a href="/privacy/">Gizlilik</a></span></p></div>
+      <div><i aria-hidden="true">🔗</i><p><b>Paylaşılabilir</b><span>Senaryonu bir bağlantıyla arkadaşlarına gönder.</span></p></div>
     </div>
 
-    <footer class="pl-footer">
+    <section class="sh-section" aria-labelledby="sss-h">
+      <div class="sh-section-head"><h2 id="sss-h">Sıkça sorulan sorular</h2></div>
+      <div class="sh-faq">
+        <details open>
+          <summary><h3>StageSimulator'da hangi simülatörler var?</h3></summary>
+          <p>UEFA lig aşaması için puan durumu tahmini yapan <a href="/">PredictLeague</a>, birikimini ya da bir milyarderin servetini harcadığın finans oyunu <a href="/finance/">Spend It All</a>, bir tutarın banknot olarak ne kadar yer kapladığını gösteren <a href="/money-size/">Paranın Boyutu</a> ve 6 para aracı: <a href="/inflation/">Enflasyon Zaman Makinesi</a>, <a href="/minimum-wage/">Asgari Ücret Zaman Makinesi</a>, <a href="/what-if/">Ya O Gün Alsaydım</a>, <a href="/loan-erosion/">Taksit Erime Simülatörü</a>, <a href="/salary/">Maaş Karşılaştırıcı</a> ve <a href="/savings-goal/">Birikim Hedefi</a>. Yenileri eklendikçe bu sayfada listelenir.</p>
+        </details>
+        <details>
+          <summary><h3>Simülatörler ücretsiz mi, üye olmak gerekiyor mu?</h3></summary>
+          <p>Hepsi ücretsiz ve üyelik gerektirmez. Girdiğin veriler yalnızca kendi tarayıcında saklanır; ayrıntılar <a href="/privacy/">gizlilik politikasında</a>.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <div class="sh-foot"><footer class="pl-footer">
       <p>© 2026 StageSimulator</p>
       <div style="margin-top: 6px;"><a href="/">Futbol</a> · <a href="/fixtures/">Fikstürler</a> · <a href="/finance/">Finans</a> · <a href="/money-size/">Paranın Boyutu</a> · <a href="/inflation/">Enflasyon</a> · <a href="/simulators/">Tüm Simülatörler</a> · <a href="/privacy/">Gizlilik</a></div>
-    </footer>
-  </div>
+    </footer></div>
 </body>
 </html>
