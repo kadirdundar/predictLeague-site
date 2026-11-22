@@ -2043,9 +2043,14 @@
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/100-bin-tl/</loc>
@@ -2103,63 +2108,113 @@
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/100-bin-dolar/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/100-bin-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/100k-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/100000-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/100-mil-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/100k-dollars/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/1-milyon-dolar/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyon-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-million-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-million-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-millon-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-million-dollars/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/10-milyon-dolar/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/10-milyon-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/10-million-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/10-millionen-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/10-millones-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/10-million-dollars/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/100-milyon-dolar/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/100-milyon-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/100-million-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/100-millionen-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/100-millones-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/100-million-dollars/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/1-milyar-dolar/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyar-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-billion-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-milliarde-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1000-millones-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-billion-dollars/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/1-milyon-euro/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyon-euro/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-million-euros/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-million-euro/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-millon-euros/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-million-euros/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/1-milyar-euro/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyar-euro/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-billion-euros/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-milliarde-euro/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1000-millones-euros/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-billion-euros/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/1-kg-altin/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-kg-altin/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-kg-oro/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-kg-gold/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/100-kg-altin/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/100-kg-altin/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/100-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/100-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/100-kg-oro/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/100-kg-gold/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/1-ton-altin/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-ton-altin/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-ton-gold/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-tonne-gold/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-tonelada-oro/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-ton-gold/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/money-size/10-ton-altin/</loc>
@@ -2184,6 +2239,369 @@
         <lastmod>2026-11-21</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/money-size/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/money-size/100k-dollars/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/100-bin-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/100k-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/100000-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/100-mil-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/100k-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/money-size/1-million-dollars/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyon-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-million-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-million-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-millon-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-million-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/money-size/10-million-dollars/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/10-milyon-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/10-million-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/10-millionen-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/10-millones-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/10-million-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/money-size/100-million-dollars/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/100-milyon-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/100-million-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/100-millionen-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/100-millones-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/100-million-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/money-size/1-billion-dollars/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyar-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-billion-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-milliarde-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1000-millones-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-billion-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/money-size/1-million-euros/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyon-euro/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-million-euros/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-million-euro/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-millon-euros/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-million-euros/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/money-size/1-billion-euros/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyar-euro/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-billion-euros/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-milliarde-euro/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1000-millones-euros/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-billion-euros/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/money-size/1-kg-gold/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-kg-altin/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-kg-oro/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-kg-gold/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/money-size/100-kg-gold/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/100-kg-altin/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/100-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/100-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/100-kg-oro/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/100-kg-gold/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/money-size/1-ton-gold/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-ton-altin/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-ton-gold/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-tonne-gold/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-tonelada-oro/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-ton-gold/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/money-size/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/money-size/100000-dollar/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/100-bin-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/100k-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/100000-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/100-mil-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/100k-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/money-size/1-million-dollar/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyon-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-million-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-million-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-millon-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-million-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/money-size/10-millionen-dollar/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/10-milyon-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/10-million-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/10-millionen-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/10-millones-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/10-million-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/money-size/100-millionen-dollar/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/100-milyon-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/100-million-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/100-millionen-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/100-millones-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/100-million-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/money-size/1-milliarde-dollar/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyar-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-billion-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-milliarde-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1000-millones-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-billion-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/money-size/1-million-euro/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyon-euro/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-million-euros/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-million-euro/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-millon-euros/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-million-euros/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/money-size/1-milliarde-euro/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyar-euro/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-billion-euros/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-milliarde-euro/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1000-millones-euros/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-billion-euros/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/money-size/1-kg-gold/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-kg-altin/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-kg-oro/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-kg-gold/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/money-size/100-kg-gold/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/100-kg-altin/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/100-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/100-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/100-kg-oro/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/100-kg-gold/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/money-size/1-tonne-gold/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-ton-altin/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-ton-gold/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-tonne-gold/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-tonelada-oro/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-ton-gold/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/money-size/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/money-size/100-mil-dolares/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/100-bin-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/100k-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/100000-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/100-mil-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/100k-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/money-size/1-millon-dolares/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyon-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-million-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-million-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-millon-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-million-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/money-size/10-millones-dolares/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/10-milyon-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/10-million-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/10-millionen-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/10-millones-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/10-million-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/money-size/100-millones-dolares/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/100-milyon-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/100-million-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/100-millionen-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/100-millones-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/100-million-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/money-size/1000-millones-dolares/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyar-dolar/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-billion-dollars/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-milliarde-dollar/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1000-millones-dolares/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-billion-dollars/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/money-size/1-millon-euros/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyon-euro/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-million-euros/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-million-euro/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-millon-euros/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-million-euros/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/money-size/1000-millones-euros/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-milyar-euro/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-billion-euros/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-milliarde-euro/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1000-millones-euros/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-billion-euros/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/money-size/1-kg-oro/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-kg-altin/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-kg-oro/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-kg-gold/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/money-size/100-kg-oro/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/100-kg-altin/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/100-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/100-kg-gold/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/100-kg-oro/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/100-kg-gold/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/money-size/1-tonelada-oro/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/money-size/1-ton-altin/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/money-size/1-ton-gold/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/money-size/1-tonne-gold/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/money-size/1-tonelada-oro/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/money-size/1-ton-gold/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/finance/</loc>
