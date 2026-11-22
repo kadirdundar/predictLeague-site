@@ -395,6 +395,51 @@
     font-weight: 600;
 }
 
+.tk-next {
+    margin-top: 16px;
+    border: 1.5px solid rgba(32, 30, 29, 0.22);
+    background: #fff;
+    padding: 12px 14px 10px;
+}
+
+.tk-next-lbl {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(32, 30, 29, 0.55);
+    margin-bottom: 6px;
+}
+
+.tk-next-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 0;
+    border-top: 1px solid rgba(32, 30, 29, 0.12);
+    color: #201e1d;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.35;
+    text-decoration: none;
+}
+
+.tk-next-link:first-of-type {
+    border-top: 0;
+    padding-top: 4px;
+}
+
+.tk-next-link span:last-child {
+    color: #ae1800;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.tk-next-link:hover {
+    color: #ae1800;
+}
+
 .tk-toast {
     position: fixed;
     left: 50%;
