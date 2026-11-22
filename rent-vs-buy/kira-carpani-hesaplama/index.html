@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <title>Kira Çarpanı ve Konut Amortisman Süresi Hesaplama</title>
+  <meta name="description" content="6 milyon TL ev (30.000 TL aylık kira): 200 ay (16,7 yıl) amortisman. 10 yıllık Ev + Kira (9,7 milyon TL) vs Altın/Borsa (8,6 milyon TL) karşılaştırması." />
+  <link rel="canonical" href="https://www.stagesimulator.com/rent-vs-buy/kira-carpani-hesaplama/" />
+  <base href="/" />
+  <!-- Blazor shell: the build fills these with the runtime preload and the fingerprinted file names (.NET 10) -->
+  <link href="_framework/dotnet.fh1wvgcrae.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-ffGsTXk0AVuc3Hp5KNeYp6iLND5VRhWe7Qv/MPCIfdE=" />
+  <script type="importmap">{
+  "imports": {
+    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.w3qd1tpl0e.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.fh1wvgcrae.js",
+    "./_framework/dotnet.native.js": "./_framework/dotnet.native.6ilbvndvcf.js",
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.v2rwe8u38b.js"
+  },
+  "scopes": {},
+  "integrity": {
+    "./_framework/blazor.webassembly.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
+    "./_framework/blazor.webassembly.w3qd1tpl0e.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
+    "./_framework/dotnet.fh1wvgcrae.js": "sha256-ffGsTXk0AVuc3Hp5KNeYp6iLND5VRhWe7Qv/MPCIfdE=",
+    "./_framework/dotnet.js": "sha256-ffGsTXk0AVuc3Hp5KNeYp6iLND5VRhWe7Qv/MPCIfdE=",
+    "./_framework/dotnet.native.6ilbvndvcf.js": "sha256-YvNi2Q+yHnXi8iT7ROza0OEWWv2tCpuTI2Ggaeura3U=",
+    "./_framework/dotnet.native.js": "sha256-YvNi2Q+yHnXi8iT7ROza0OEWWv2tCpuTI2Ggaeura3U=",
+    "./_framework/dotnet.runtime.js": "sha256-6SBqDbLLy460Bxd7wMZoiO97hZfLTuF+HRhWT3elS7U=",
+    "./_framework/dotnet.runtime.v2rwe8u38b.js": "sha256-6SBqDbLLy460Bxd7wMZoiO97hZfLTuF+HRhWT3elS7U="
+  }
+}</script>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.stagesimulator.com/rent-vs-buy/kira-carpani-hesaplama/" />
+  <meta property="og:title" content="Kira Çarpanı ve Konut Amortisman Süresi Hesaplama" />
+  <meta property="og:description" content="6 milyon TL ev (30.000 TL aylık kira): 200 ay (16,7 yıl) amortisman. 10 yıllık Ev + Kira (9,7 milyon TL) vs Altın/Borsa (8,6 milyon TL) karşılaştırması." />
+  <meta property="og:image" content="https://www.stagesimulator.com/og/rent-vs-buy.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.stagesimulator.com/og/rent-vs-buy.png" />
+  <link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/fonts.css" />
+  <link rel="stylesheet" href="/css/icons.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/tools.css" />
+  <link href="PredictLeague.styles.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <script src="/js/analytics.js" async></script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Ev Almak mı Yatırım mı?",
+      "url": "https://www.stagesimulator.com/rent-vs-buy/kira-carpani-hesaplama/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "TRY"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kira çarpanı (konut amortisman süresi) nasıl hesaplanır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "6 milyon TL değerinde ve ayda 30.000 TL kira getiren konutun kira çarpanı 200 ay (16,7 yıl amortisman süresi, yıllık %6 kira getirisi) düzeyindedir. 10 yıl sonunda kira geliri yatırıma eklendiğinde bugünün parasıyla Ev + Kira 9,7 milyon TL, aynı sermayeyle altın/borsa portföyü ise 8,6 milyon TL olur (Ev alıp kiraya vermek 1,1 milyon TL önde)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kira çarpanı (konut amortisman süresi) nedir, nasıl hesaplanır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kira çarpanı, evin satış fiyatının aylık kira gelirine bölünmesiyle bulunan ay sayısıdır; 12'ye bölündüğünde konutun kendi bedelini kira geliriyle kaç yılda amorti ettiğini gösterir. Örneğin 5.000.000 TL fiyatlı ve 25.000 TL kiralı bir evin kira çarpanı 200 ay (16,7 yıl) olur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ev alıp kiraya vermek mi, altın ve hisse senedi mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gayrimenkul hem ana varlığın değerini enflasyon karşısında korur hem de her yıl enflasyonla artan düzenli aylık kira nakit akışı üretir. Elde edilen aylık kira geliri de altın veya temettü hisselerine eklendiğinde bileşik büyüme sağlar."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <style>
+    body { margin: 0; background: #d7d3d3; font-family: 'Archivo', system-ui, sans-serif; color: #201e1d; }
+    .tks-shell { max-width: 480px; margin: 0 auto; background: #f3f2f2; min-height: 100vh; padding: 24px 18px 60px; box-sizing: border-box; }
+    .tks-shell h1 { font-size: 32px; line-height: 1.05; letter-spacing: -.03em; margin: 8px 0 12px; }
+    .tks-shell h2 { font-size: 18px; margin: 22px 0 8px; }
+    .tks-shell p { font-size: 13.5px; line-height: 1.55; color: rgba(32, 30, 29, 0.8); margin: 0 0 10px; }
+    .tks-shell a { color: #ae1800; font-weight: 800; }
+    .tks-links { margin-top: 22px; font-size: 12px !important; }
+    .tks-links a { color: rgba(32, 30, 29, 0.7); font-weight: 600; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="tks-shell">
+      <div class="tk-badge">Kira amortismanı · Konut vs. Altın & Borsa</div>
+      <h1>Kira çarpanı (konut amortisman süresi) nasıl hesaplanır?</h1>
+      <p>Kısa cevap: 6 milyon TL değerinde ve ayda 30.000 TL kira getiren konutun kira çarpanı 200 ay (16,7 yıl amortisman süresi, yıllık %6 kira getirisi) düzeyindedir. 10 yıl sonunda kira geliri yatırıma eklendiğinde bugünün parasıyla Ev + Kira 9,7 milyon TL, aynı sermayeyle altın/borsa portföyü ise 8,6 milyon TL olur (Ev alıp kiraya vermek 1,1 milyon TL önde). <a href="/rent-vs-buy/">Kendi ev fiyatını ve kira gelirini gir →</a></p>
+      <h2>Kira çarpanı hesaplama: 10 yıllık kira geliri ve net varlık karşılaştırma tablosu</h2>
+      <div style="overflow-x: auto;"><table class="tk-table"><thead><tr><th>Yıl</th><th>Aylık Kira</th><th>Kira Birikimi (Reel)</th><th>Ev + Kira (Bugünkü Değer)</th><th>Altın / Borsa (Bugünkü Değer)</th></tr></thead><tbody><tr><td>1. yıl</td><td>30.000 TL</td><td>312.591 TL</td><td>6,3 milyon TL</td><td>6,2 milyon TL</td></tr><tr><td>2. yıl</td><td>40.500 TL</td><td>636.760 TL</td><td>6,6 milyon TL</td><td>6,5 milyon TL</td></tr><tr><td>3. yıl</td><td>54.675 TL</td><td>972.934 TL</td><td>7 milyon TL</td><td>6,7 milyon TL</td></tr><tr><td>5. yıl</td><td>99.645 TL</td><td>1,7 milyon TL</td><td>7,7 milyon TL</td><td>7,2 milyon TL</td></tr><tr><td>7. yıl</td><td>181.603 TL</td><td>2,4 milyon TL</td><td>8,4 milyon TL</td><td>7,7 milyon TL</td></tr><tr><td>10. yıl</td><td>446.812 TL</td><td>3,7 milyon TL</td><td>9,7 milyon TL</td><td>8,6 milyon TL</td></tr></tbody></table></div>
+      <h2>Diğer konut ve kira çarpanı senaryoları</h2>
+      <p><a href="/rent-vs-buy/3-milyon-tl-ev/">3 milyon TL ev</a> · <a href="/rent-vs-buy/5-milyon-tl-ev/">5 milyon TL ev</a> · <a href="/rent-vs-buy/7-5-milyon-tl-ev/">7,5 milyon TL ev</a> · <a href="/rent-vs-buy/10-milyon-tl-ev/">10 milyon TL ev</a> · <a href="/rent-vs-buy/ev-alip-kiraya-vermek/">Ev alıp kiraya vermek</a> · <strong>Kira çarpanı hesaplama</strong></p>
+      <h2>Kira çarpanı (konut amortisman süresi) nasıl hesaplanır?</h2><p>6 milyon TL değerinde ve ayda 30.000 TL kira getiren konutun kira çarpanı 200 ay (16,7 yıl amortisman süresi, yıllık %6 kira getirisi) düzeyindedir. 10 yıl sonunda kira geliri yatırıma eklendiğinde bugünün parasıyla Ev + Kira 9,7 milyon TL, aynı sermayeyle altın/borsa portföyü ise 8,6 milyon TL olur (Ev alıp kiraya vermek 1,1 milyon TL önde).</p><h2>Kira çarpanı (konut amortisman süresi) nedir, nasıl hesaplanır?</h2><p>Kira çarpanı, evin satış fiyatının aylık kira gelirine bölünmesiyle bulunan ay sayısıdır; 12'ye bölündüğünde konutun kendi bedelini kira geliriyle kaç yılda amorti ettiğini gösterir. Örneğin 5.000.000 TL fiyatlı ve 25.000 TL kiralı bir evin kira çarpanı 200 ay (16,7 yıl) olur.</p><h2>Ev alıp kiraya vermek mi, altın ve hisse senedi mi?</h2><p>Gayrimenkul hem ana varlığın değerini enflasyon karşısında korur hem de her yıl enflasyonla artan düzenli aylık kira nakit akışı üretir. Elde edilen aylık kira geliri de altın veya temettü hisselerine eklendiğinde bileşik büyüme sağlar.</p>
+      <p class="tks-links"><a href="/salary/">Maaş Karşılaştırıcı</a> · <a href="/inflation/">Enflasyon Hesaplama</a> · <a href="/minimum-wage/">Asgari Ücret</a> · <a href="/what-if/">Ya O Gün Alsaydım</a> · <a href="/loan-erosion/">Taksit Erime</a> · <a href="/passive-income/">Pasif Gelir</a> · <a href="/savings-goal/">Birikim Hedefi</a></p>
+      <p class="tks-links"><a href="/">Futbol</a> · <a href="/fixtures/">Fikstürler</a> · <a href="/finance/">Finans</a> · <a href="/money-size/">Paranın Boyutu</a> · <a href="/inflation/">Enflasyon</a> · <a href="/simulators/">Tüm Simülatörler</a> · <a href="/privacy/">Gizlilik</a></p>
+    </div>
+  </div>
+
+  <script src="/js/share.js"></script>
+  <script src="_framework/blazor.webassembly.w3qd1tpl0e.js"></script>
+</body>
+</html>
