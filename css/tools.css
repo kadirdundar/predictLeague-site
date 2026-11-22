@@ -352,6 +352,38 @@
     gap: 8px;
 }
 
+.tk-actions {
+    display: flex;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+.tk-actions .tk-share {
+    flex: 1.25;
+    margin: 0;
+}
+
+.tk-dl {
+    flex: 1;
+    border: 2px solid #201e1d;
+    background: #fff;
+    color: #201e1d;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 11px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.tk-dl:hover {
+    background: #201e1d;
+    color: #f3f2f2;
+}
+
 .tk-source {
     font-size: 10.5px;
     line-height: 1.45;

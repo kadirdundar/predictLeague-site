@@ -1590,6 +1590,38 @@ input[type=range][b-sqmwahb4xx]::-moz-range-thumb {
     gap: 8px;
 }
 
+.mz-actions[b-lhwjexizcr] {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0 6px;
+}
+
+.mz-actions .mz-share[b-lhwjexizcr] {
+    flex: 1.25;
+    margin: 0;
+}
+
+.mz-dl[b-lhwjexizcr] {
+    flex: 1;
+    border: 2px solid #201e1d;
+    background: #fff;
+    color: #201e1d;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 11px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.mz-dl:hover[b-lhwjexizcr] {
+    background: #201e1d;
+    color: #f3f2f2;
+}
+
 .mz-next[b-lhwjexizcr] {
     margin-top: 14px;
     border: 1.5px solid rgba(32, 30, 29, 0.22);

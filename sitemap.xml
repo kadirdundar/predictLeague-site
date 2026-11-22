@@ -2605,63 +2605,477 @@
     </url>
     <url>
         <loc>https://www.stagesimulator.com/finance/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/finance/elon-musk/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/elon-musk/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/finance/jeff-bezos/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/jeff-bezos/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/finance/mark-zuckerberg/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/mark-zuckerberg/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/finance/bernard-arnault/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/bernard-arnault/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/finance/hamdi-ulukaya/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/hamdi-ulukaya/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/finance/murat-ulker/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/murat-ulker/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/finance/taylor-swift/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/taylor-swift/" />
     </url>
     <url>
         <loc>https://www.stagesimulator.com/finance/cristiano-ronaldo/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/cristiano-ronaldo/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/finance/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/finance/elon-musk/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/elon-musk/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/finance/jeff-bezos/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/jeff-bezos/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/finance/mark-zuckerberg/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/mark-zuckerberg/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/finance/bernard-arnault/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/bernard-arnault/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/finance/hamdi-ulukaya/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/hamdi-ulukaya/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/finance/murat-ulker/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/murat-ulker/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/finance/taylor-swift/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/taylor-swift/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/en/finance/cristiano-ronaldo/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/cristiano-ronaldo/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/finance/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/finance/elon-musk/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/elon-musk/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/finance/jeff-bezos/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/jeff-bezos/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/finance/mark-zuckerberg/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/mark-zuckerberg/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/finance/bernard-arnault/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/bernard-arnault/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/finance/hamdi-ulukaya/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/hamdi-ulukaya/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/finance/murat-ulker/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/murat-ulker/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/finance/taylor-swift/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/taylor-swift/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/de/finance/cristiano-ronaldo/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/cristiano-ronaldo/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/finance/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/finance/elon-musk/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/elon-musk/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/elon-musk/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/finance/jeff-bezos/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/jeff-bezos/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/jeff-bezos/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/finance/mark-zuckerberg/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/mark-zuckerberg/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/mark-zuckerberg/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/finance/bernard-arnault/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/bernard-arnault/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/bernard-arnault/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/finance/hamdi-ulukaya/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/hamdi-ulukaya/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/hamdi-ulukaya/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/finance/murat-ulker/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/murat-ulker/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/murat-ulker/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/finance/taylor-swift/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/taylor-swift/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/taylor-swift/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/es/finance/cristiano-ronaldo/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://www.stagesimulator.com/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.stagesimulator.com/en/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.stagesimulator.com/de/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="es" href="https://www.stagesimulator.com/es/finance/cristiano-ronaldo/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://www.stagesimulator.com/en/finance/cristiano-ronaldo/" />
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/salary/</loc>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.stagesimulator.com/salary/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <loc>https://www.stagesimulator.com/salary/asgari-ucret/</loc>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/salary/40-bin-tl/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/salary/50-bin-tl/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/salary/75-bin-tl/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/salary/100-bin-tl/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/salary/150-bin-tl/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/salary/200-bin-tl/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/salary/ev-kac-yilda-alinir/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/salary/araba-kac-ayda-alinir/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/salary/elektrikli-araba-kac-ayda-alinir/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/salary/telefon-kac-ayda-alinir/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/salary/mega-yat-kac-yilda-alinir/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://www.stagesimulator.com/inflation/</loc>
@@ -3097,8 +3511,68 @@
     </url>
     <url>
         <loc>https://www.stagesimulator.com/savings-goal/</loc>
-        <lastmod>2026-11-21</lastmod>
+        <lastmod>2026-11-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/savings-goal/1-milyon-tl/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/savings-goal/2-milyon-tl/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/savings-goal/5-milyon-tl/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/savings-goal/10-milyon-tl/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/savings-goal/50-milyon-tl/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/savings-goal/ev-pesinati/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/savings-goal/araba-parasi/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/savings-goal/100-bin-dolar/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/savings-goal/500-bin-dolar/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.stagesimulator.com/savings-goal/1-milyon-dolar/</loc>
+        <lastmod>2026-11-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>
