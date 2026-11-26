@@ -607,6 +607,40 @@ a { color: inherit; text-decoration: none; }
 .pl-footer a:hover {
   text-decoration: underline;
 }
+
+:root {
+  --pl-bg: #F5F5F7; --pl-screen-bg: #F5F5F7; --pl-card-bg: #FFFFFF; --pl-card-subtle: #F2F2F5; --pl-card-hover: #EDEDF0;
+  --pl-ink: #1D1D1F; --pl-ink-soft: #424245; --pl-muted: #6E6E73; --pl-muted-2: #86868B;
+  --pl-border: rgba(60, 60, 67, 0.12); --pl-border-2: rgba(60, 60, 67, 0.2); --pl-border-3: rgba(60, 60, 67, 0.1);
+  --pl-accent: #0071E3; --pl-accent-dark: #0077ED; --pl-accent-subtle: rgba(0, 113, 227, 0.1); --pl-accent-border: rgba(0, 113, 227, 0.25);
+  --pl-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px -12px rgba(0, 0, 0, 0.1);
+  --pl-shadow-md: 0 2px 4px rgba(0, 0, 0, 0.04), 0 16px 32px -16px rgba(0, 0, 0, 0.18);
+  --pl-shell-shadow: none; --pl-radius-lg: 18px; --pl-radius-xl: 22px;
+  --ap-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ap-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --ap-nav: rgba(245, 245, 247, 0.8);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pl-bg: #000000; --pl-screen-bg: #000000; --pl-card-bg: #1C1C1E; --pl-card-subtle: #2C2C2E; --pl-card-hover: #2C2C2E;
+    --pl-ink: #F5F5F7; --pl-ink-soft: #D1D1D6; --pl-muted: #A1A1A6; --pl-muted-2: #8E8E93;
+    --pl-border: rgba(84, 84, 88, 0.5); --pl-border-2: rgba(84, 84, 88, 0.7); --pl-border-3: rgba(84, 84, 88, 0.4);
+    --pl-accent: #2997FF; --pl-accent-dark: #47A6FF; --pl-accent-subtle: rgba(41, 151, 255, 0.16); --pl-accent-border: rgba(41, 151, 255, 0.35);
+    --pl-shadow-sm: none; --pl-shadow-md: none; --ap-nav: rgba(22, 22, 23, 0.8);
+    color-scheme: dark;
+  }
+}
+body { font-family: var(--ap-font); letter-spacing: -0.01em; }
+.pl-shell { background: var(--pl-bg); border: 0; max-width: 680px; }
+.pl-topbar { background: var(--ap-nav); -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px); }
+.pl-brand { font-weight: 600; font-size: 17px; letter-spacing: -0.02em; }
+.pl-brand-badge { border: 0; background: transparent; }
+.pl-btn-primary, .pl-large-cta { border-radius: 980px; box-shadow: none; font-weight: 500; letter-spacing: -0.01em; }
+.pl-btn-primary:hover, .pl-large-cta:hover { transform: none; }
+.pl-hero-card, .pl-faq-box { border: 0; }
+.pl-prose h2, .pl-section-title { font-family: var(--ap-display); letter-spacing: -0.02em; }
+.pl-section-title { text-transform: none; font-size: 20px; color: var(--pl-ink); font-weight: 700; }
+.pl-footer { background: transparent; }
 </style>
 </head>
 <body>

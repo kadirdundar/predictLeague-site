@@ -15,11 +15,11 @@
   
   <base href="/" />
   <!-- Blazor shell: the build fills these with the runtime preload and the fingerprinted file names (.NET 10) -->
-  <link href="_framework/dotnet.gcg65sm2rz.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-wHJCBW+VSOGzRl5TeCVPloJVfmYtdTMCzavrsGklJ0Y=" />
+  <link href="_framework/dotnet.j6ws4p7bfs.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-FbbF6M+DHBbq9Rbe0rrz1fbmwb5860+LMPsQQtghsnQ=" />
   <script type="importmap">{
   "imports": {
     "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.w3qd1tpl0e.js",
-    "./_framework/dotnet.js": "./_framework/dotnet.gcg65sm2rz.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.j6ws4p7bfs.js",
     "./_framework/dotnet.native.js": "./_framework/dotnet.native.6ilbvndvcf.js",
     "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.v2rwe8u38b.js"
   },
@@ -27,8 +27,8 @@
   "integrity": {
     "./_framework/blazor.webassembly.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
     "./_framework/blazor.webassembly.w3qd1tpl0e.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
-    "./_framework/dotnet.gcg65sm2rz.js": "sha256-wHJCBW+VSOGzRl5TeCVPloJVfmYtdTMCzavrsGklJ0Y=",
-    "./_framework/dotnet.js": "sha256-wHJCBW+VSOGzRl5TeCVPloJVfmYtdTMCzavrsGklJ0Y=",
+    "./_framework/dotnet.j6ws4p7bfs.js": "sha256-FbbF6M+DHBbq9Rbe0rrz1fbmwb5860+LMPsQQtghsnQ=",
+    "./_framework/dotnet.js": "sha256-FbbF6M+DHBbq9Rbe0rrz1fbmwb5860+LMPsQQtghsnQ=",
     "./_framework/dotnet.native.6ilbvndvcf.js": "sha256-YvNi2Q+yHnXi8iT7ROza0OEWWv2tCpuTI2Ggaeura3U=",
     "./_framework/dotnet.native.js": "sha256-YvNi2Q+yHnXi8iT7ROza0OEWWv2tCpuTI2Ggaeura3U=",
     "./_framework/dotnet.runtime.js": "sha256-6SBqDbLLy460Bxd7wMZoiO97hZfLTuF+HRhWT3elS7U=",
@@ -85,75 +85,75 @@
   </script>
   
   <style>
-    body { margin: 0; background: #d7d3d3; font-family: 'Archivo', system-ui, -apple-system, sans-serif; color: #201e1d; }
-    .fs-outer { min-height: 100vh; background: #d7d3d3; display: flex; justify-content: center; }
-    .fs-shell { width: 100%; max-width: 480px; background: #f3f2f2; min-height: 100vh; box-shadow: 0 0 35px rgba(0,0,0,0.12); display: flex; flex-direction: column; }
+    body { margin: 0; background: #F5F5F7; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: #1D1D1F; }
+    .fs-outer { min-height: 100vh; background: #F5F5F7; display: flex; justify-content: center; }
+    .fs-shell { width: 100%; max-width: 640px; background: #F5F5F7; min-height: 100vh;  display: flex; flex-direction: column; }
     /* Mirrors .fs-guide in Pages/FinanceSimulator.razor.css (scoped CSS does not reach this static shell) */
-    .fs-guide { margin-top: 34px; border-top: 2px solid rgba(32, 30, 29, 0.4); padding-top: 6px; }
-    .fs-guide h2 { font-size: 18px; font-weight: 800; letter-spacing: -.01em; color: #201e1d; margin: 22px 0 8px; }
-    .fs-guide h3 { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #ae1800; font-weight: 800; margin: 16px 0 6px; }
-    .fs-guide p { font-size: 13px; line-height: 1.55; color: rgba(32, 30, 29, 0.8); margin: 0 0 10px; }
+    .fs-guide { margin-top: 34px; border-top: 1px solid rgba(60, 60, 67, 0.4); padding-top: 6px; }
+    .fs-guide h2 { font-size: 18px; font-weight: 800; letter-spacing: -.01em; color: #1D1D1F; margin: 22px 0 8px; }
+    .fs-guide h3 { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #0071E3; font-weight: 800; margin: 16px 0 6px; }
+    .fs-guide p { font-size: 13px; line-height: 1.55; color: #6E6E73; margin: 0 0 10px; }
     .fs-guide-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 8px; }
-    .fs-guide-table th, .fs-guide-table td { text-align: left; padding: 7px 0; border-bottom: 1px solid rgba(32, 30, 29, 0.2); }
-    .fs-guide-table th { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: rgba(32, 30, 29, 0.55); }
+    .fs-guide-table th, .fs-guide-table td { text-align: left; padding: 7px 0; border-bottom: 1px solid rgba(60, 60, 67, 0.2); }
+    .fs-guide-table th { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: #6E6E73; }
     .fs-guide-table td:not(:first-child), .fs-guide-table th:not(:first-child) { text-align: right; font-weight: 700; }
     .fs-guide p.fs-guide-links { margin-top: 22px; font-size: 12px; }
-    .fs-guide-links a { color: rgba(32, 30, 29, 0.7); font-weight: 600; text-decoration: none; }
+    .fs-guide-links a { color: #6E6E73; font-weight: 600; text-decoration: none; }
   </style>
 </head>
 <body>
   <div id="app">
-    <div class="fs-outer" style="position: fixed; inset: 0; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; background: #d7d3d3; display: flex; justify-content: center; align-items: flex-start; z-index: 50;">
-      <div class="fs-shell" style="width: 100%; max-width: 480px; background: #f3f2f2; min-height: 100%; box-shadow: 0 0 35px rgba(0,0,0,0.12); display: flex; flex-direction: column; margin: 0 auto; box-sizing: border-box;">
+    <div class="fs-outer" style="position: fixed; inset: 0; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; background: #F5F5F7; display: flex; justify-content: center; align-items: flex-start; z-index: 50;">
+      <div class="fs-shell" style="width: 100%; max-width: 640px; background: #F5F5F7; min-height: 100%;  display: flex; flex-direction: column; margin: 0 auto; box-sizing: border-box;">
         
         <!-- Top App Navigation -->
-        <div class="fs-topbar" style="position: sticky; top: 0; z-index: 40; background: #f3f2f2; border-bottom: 2px solid rgba(32, 30, 29, 0.4); padding: 14px 18px 12px; display: flex; align-items: center; justify-content: space-between;">
-          <span style="font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #201e1d; font-weight: 800;">SPEND IT ALL</span>
-          <span style="font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: rgba(32, 30, 29, 0.55); font-weight: 600;">Başlangıç</span>
+        <div class="fs-topbar" style="position: sticky; top: 0; z-index: 40; background: #F5F5F7; border-bottom: 1px solid rgba(60, 60, 67, 0.4); padding: 14px 18px 12px; display: flex; align-items: center; justify-content: space-between;">
+          <span style="font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #1D1D1F; font-weight: 800;">SPEND IT ALL</span>
+          <span style="font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #6E6E73; font-weight: 600;">Başlangıç</span>
         </div>
 
         <!-- Hero Content -->
         <div class="fs-content" style="padding: 24px 18px 40px; flex: 1;">
-          <div style="font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #ae1800; font-weight: 800; margin-bottom: 8px;">Finansal Oyunlaştırma Simülatörü</div>
-          <h1 style="font-size: 52px; line-height: .92; letter-spacing: -.035em; font-weight: 800; margin: 8px 0 14px; color: #201e1d;">TÜMÜNÜ<br />HARCA</h1>
-          <p style="font-size: 14px; line-height: 1.5; color: rgba(32, 30, 29, 0.8); max-width: 36ch; margin-bottom: 22px;">
+          <div style="font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #0071E3; font-weight: 800; margin-bottom: 8px;">Finansal Oyunlaştırma Simülatörü</div>
+          <h1 style="font-size: 52px; line-height: .92; letter-spacing: -.035em; font-weight: 800; margin: 8px 0 14px; color: #1D1D1F;">TÜMÜNÜ<br />HARCA</h1>
+          <p style="font-size: 14px; line-height: 1.5; color: #6E6E73; max-width: 36ch; margin-bottom: 22px;">
             Büyük bir serveti eritmenin iki farklı yolu: Biri on yıl sonraki senin birikimin, diğeri ise dünyanın en zengin teknoloji devlerinin cüzdanı.
           </p>
-          <hr style="border: 0; border-top: 2px solid rgba(32, 30, 29, 0.4); margin: 0 0 16px 0;" />
+          <hr style="border: 0; border-top: 1px solid rgba(60, 60, 67, 0.4); margin: 0 0 16px 0;" />
 
           <!-- Mode 1: Future Me -->
-          <a href="/finance?mode=future" style="display: block; width: 100%; text-align: left; border: 0; border-top: 2px solid rgba(32, 30, 29, 0.4); background: none; padding: 20px 0; color: inherit; text-decoration: none;">
+          <a href="/finance?mode=future" style="display: block; width: 100%; text-align: left; border: 0; border-top: 1px solid rgba(60, 60, 67, 0.4); background: none; padding: 20px 0; color: inherit; text-decoration: none;">
             <div style="display: flex; align-items: baseline; gap: 10px;">
-              <span style="font-weight: 800; font-size: 14px; color: #ec3013;">01</span>
-              <span style="font-weight: 800; font-size: 24px; letter-spacing: -.02em; color: #201e1d;">Gelecekteki Ben (Future Me)</span>
-              <span style="margin-left: auto; font-size: 22px; color: #ec3013;">→</span>
+              <span style="font-weight: 800; font-size: 14px; color: #0071E3;">01</span>
+              <span style="font-weight: 800; font-size: 24px; letter-spacing: -.02em; color: #1D1D1F;">Gelecekteki Ben (Future Me)</span>
+              <span style="margin-left: auto; font-size: 22px; color: #0071E3;">→</span>
             </div>
-            <p style="font-size: 13px; color: rgba(32, 30, 29, 0.6); margin: 8px 0 0; padding-right: 28px; line-height: 1.45;">
+            <p style="font-size: 13px; color: #6E6E73; margin: 8px 0 0; padding-right: 28px; line-height: 1.45;">
               Aylık birikimini ve vadesini belirle, bileşik getirinin gücünü izle, sonra biriken parayı çarçur et.
             </p>
           </a>
 
           <!-- Mode 2: Get Rich Mode -->
-          <a href="/finance?mode=rich" style="display: block; width: 100%; text-align: left; border: 0; border-top: 2px solid rgba(32, 30, 29, 0.4); border-bottom: 2px solid rgba(32, 30, 29, 0.4); background: none; padding: 20px 0; color: inherit; text-decoration: none;">
+          <a href="/finance?mode=rich" style="display: block; width: 100%; text-align: left; border: 0; border-top: 1px solid rgba(60, 60, 67, 0.4); border-bottom: 1px solid rgba(60, 60, 67, 0.4); background: none; padding: 20px 0; color: inherit; text-decoration: none;">
             <div style="display: flex; align-items: baseline; gap: 10px;">
-              <span style="font-weight: 800; font-size: 14px; color: #ec3013;">02</span>
-              <span style="font-weight: 800; font-size: 24px; letter-spacing: -.02em; color: #201e1d;">Zengin Modu (Get Rich Mode)</span>
-              <span style="margin-left: auto; font-size: 22px; color: #ec3013;">→</span>
+              <span style="font-weight: 800; font-size: 14px; color: #0071E3;">02</span>
+              <span style="font-weight: 800; font-size: 24px; letter-spacing: -.02em; color: #1D1D1F;">Zengin Modu (Get Rich Mode)</span>
+              <span style="margin-left: auto; font-size: 22px; color: #0071E3;">→</span>
             </div>
-            <p style="font-size: 13px; color: rgba(32, 30, 29, 0.6); margin: 8px 0 0; padding-right: 28px; line-height: 1.45;">
+            <p style="font-size: 13px; color: #6E6E73; margin: 8px 0 0; padding-right: 28px; line-height: 1.45;">
               Bir milyarderin bilançosunu ödünç al ve bakiyeyi sıfırlamaya çalış. Mega yatlar ve özel adalar dahil.
             </p>
           </a>
 
           <!-- Stats Grid -->
-          <div style="display: flex; margin-top: 26px; border: 2px solid rgba(32, 30, 29, 0.4);">
-            <div style="flex: 1; padding: 14px; border-right: 2px solid rgba(32, 30, 29, 0.4);">
+          <div style="display: flex; margin-top: 26px; border: 1px solid rgba(60, 60, 67, 0.4);">
+            <div style="flex: 1; padding: 14px; border-right: 2px solid rgba(60, 60, 67, 0.4);">
               <div style="font-weight: 800; font-size: 24px; line-height: 1; margin-bottom: 4px;">32</div>
-              <div style="font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: rgba(32, 30, 29, 0.55); font-weight: 700;">Alınabilecek Şey</div>
+              <div style="font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: #6E6E73; font-weight: 700;">Alınabilecek Şey</div>
             </div>
             <div style="flex: 1; padding: 14px;">
               <div style="font-weight: 800; font-size: 24px; line-height: 1; margin-bottom: 4px;">8</div>
-              <div style="font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: rgba(32, 30, 29, 0.55); font-weight: 700;">Milyarder Cüzdanı</div>
+              <div style="font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: #6E6E73; font-weight: 700;">Milyarder Cüzdanı</div>
             </div>
           </div>
 
@@ -177,7 +177,7 @@
             <p>Oyunda kullanılan yaklaşık servet değerleri ve her birinin kaç özel jete denk geldiği:</p>
             <table class="fs-guide-table">
               <thead><tr><th>Kişi</th><th>Servet</th><th>Özel jet</th><th>Asgari ücretle</th><th>Kaynak</th></tr></thead>
-              <tbody><tr><td><a href="/finance/elon-musk/" style="color: #ae1800; font-weight: 800; text-decoration: none;">Elon Musk</a></td><td>$850B</td><td>56,666</td><td>127,9 milyon yıl</td><td>Forbes, Kasım 2026</td></tr><tr><td><a href="/finance/jeff-bezos/" style="color: #ae1800; font-weight: 800; text-decoration: none;">Jeff Bezos</a></td><td>$245B</td><td>16,333</td><td>36,9 milyon yıl</td><td>Yaklaşık tahmin, Eylül 2026</td></tr><tr><td><a href="/finance/mark-zuckerberg/" style="color: #ae1800; font-weight: 800; text-decoration: none;">Mark Zuckerberg</a></td><td>$205B</td><td>13,666</td><td>30,8 milyon yıl</td><td>Yaklaşık tahmin, Eylül 2026</td></tr><tr><td><a href="/finance/bernard-arnault/" style="color: #ae1800; font-weight: 800; text-decoration: none;">Bernard Arnault</a></td><td>$180B</td><td>12,000</td><td>27,1 milyon yıl</td><td>Yaklaşık tahmin, Eylül 2026</td></tr><tr><td><a href="/finance/hamdi-ulukaya/" style="color: #ae1800; font-weight: 800; text-decoration: none;">Hamdi Ulukaya</a></td><td>$13.5B</td><td>900</td><td>2 milyon yıl</td><td>Forbes, Mart 2026</td></tr><tr><td><a href="/finance/murat-ulker/" style="color: #ae1800; font-weight: 800; text-decoration: none;">Murat Ülker</a></td><td>$5.3B</td><td>353</td><td>797.231 yıl</td><td>Forbes, Mart 2026</td></tr><tr><td><a href="/finance/taylor-swift/" style="color: #ae1800; font-weight: 800; text-decoration: none;">Taylor Swift</a></td><td>$1.6B</td><td>106</td><td>240.673 yıl</td><td>Yaklaşık tahmin, Eylül 2026</td></tr><tr><td><a href="/finance/cristiano-ronaldo/" style="color: #ae1800; font-weight: 800; text-decoration: none;">Cristiano Ronaldo</a></td><td>$1.4B</td><td>93</td><td>210.589 yıl</td><td>Yaklaşık tahmin, Eylül 2026</td></tr></tbody>
+              <tbody><tr><td><a href="/finance/elon-musk/" style="color: #0071E3; font-weight: 800; text-decoration: none;">Elon Musk</a></td><td>$850B</td><td>56,666</td><td>127,9 milyon yıl</td><td>Forbes, Kasım 2026</td></tr><tr><td><a href="/finance/jeff-bezos/" style="color: #0071E3; font-weight: 800; text-decoration: none;">Jeff Bezos</a></td><td>$245B</td><td>16,333</td><td>36,9 milyon yıl</td><td>Yaklaşık tahmin, Eylül 2026</td></tr><tr><td><a href="/finance/mark-zuckerberg/" style="color: #0071E3; font-weight: 800; text-decoration: none;">Mark Zuckerberg</a></td><td>$205B</td><td>13,666</td><td>30,8 milyon yıl</td><td>Yaklaşık tahmin, Eylül 2026</td></tr><tr><td><a href="/finance/bernard-arnault/" style="color: #0071E3; font-weight: 800; text-decoration: none;">Bernard Arnault</a></td><td>$180B</td><td>12,000</td><td>27,1 milyon yıl</td><td>Yaklaşık tahmin, Eylül 2026</td></tr><tr><td><a href="/finance/hamdi-ulukaya/" style="color: #0071E3; font-weight: 800; text-decoration: none;">Hamdi Ulukaya</a></td><td>$13.5B</td><td>900</td><td>2 milyon yıl</td><td>Forbes, Mart 2026</td></tr><tr><td><a href="/finance/murat-ulker/" style="color: #0071E3; font-weight: 800; text-decoration: none;">Murat Ülker</a></td><td>$5.3B</td><td>353</td><td>797.231 yıl</td><td>Forbes, Mart 2026</td></tr><tr><td><a href="/finance/taylor-swift/" style="color: #0071E3; font-weight: 800; text-decoration: none;">Taylor Swift</a></td><td>$1.6B</td><td>106</td><td>240.673 yıl</td><td>Yaklaşık tahmin, Eylül 2026</td></tr><tr><td><a href="/finance/cristiano-ronaldo/" style="color: #0071E3; font-weight: 800; text-decoration: none;">Cristiano Ronaldo</a></td><td>$1.4B</td><td>93</td><td>210.589 yıl</td><td>Yaklaşık tahmin, Eylül 2026</td></tr></tbody>
             </table>
 
             <h2>Mağazada neler var, fiyatları ne kadar?</h2>
