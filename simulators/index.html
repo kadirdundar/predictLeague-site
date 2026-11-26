@@ -112,6 +112,18 @@
           "position": 13,
           "name": "Finansal Özgürlük (FIRE)",
           "url": "https://www.stagesimulator.com/passive-income/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "Araba mı Yatırım mı",
+          "url": "https://www.stagesimulator.com/car-vs-invest/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "Gelir Dilimi Hesaplama",
+          "url": "https://www.stagesimulator.com/income-percentile/"
         }
       ]
     },
@@ -123,7 +135,7 @@
           "name": "StageSimulator'da hangi simülatörler var?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "UEFA lig aşaması için puan durumu tahmini yapan PredictLeague, birikimini ya da bir milyarderin servetini harcadığın finans oyunu Spend It All, bir tutarın banknot olarak ne kadar yer kapladığını gösteren Paranın Boyutu ve 10 para aracı: Enflasyon Zaman Makinesi, Asgari Ücret Zaman Makinesi, Ya O Gün Alsaydım, Alışkanlık Maliyeti, Taksit Erime Simülatörü, Maaş Karşılaştırıcı, Brütten Nete & Maaş Erimesi, Birikim Hedefi, Ev Almak mı Yatırım mı ve Finansal Özgürlük (FIRE). Yenileri eklendikçe bu sayfada listelenir."
+            "text": "UEFA lig aşaması için puan durumu tahmini yapan PredictLeague, birikimini ya da bir milyarderin servetini harcadığın finans oyunu Spend It All, bir tutarın banknot olarak ne kadar yer kapladığını gösteren Paranın Boyutu ve 12 para aracı: Enflasyon Zaman Makinesi, Asgari Ücret Zaman Makinesi, Ya O Gün Alsaydım, Alışkanlık Maliyeti, Taksit Erime Simülatörü, Maaş Karşılaştırıcı, Brütten Nete & Maaş Erimesi, Birikim Hedefi, Ev Almak mı Yatırım mı, Finansal Özgürlük (FIRE), Araba mı Yatırım mı ve Gelir Dilimi Hesaplama. Yenileri eklendikçe bu sayfada listelenir."
           }
         },
         {
@@ -852,6 +864,7 @@ body { display: block; padding: 0; background: var(--pl-bg); }
 /* Tool grid */
 .sh-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 @media (max-width: 900px) { .sh-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 901px) { .sh-grid > .sh-tool:last-child:nth-child(3n+1) { grid-column: 1 / -1; } }
 @media (max-width: 560px) { .sh-grid { grid-template-columns: 1fr; gap: 10px; } }
 .sh-tool { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 18px; background: var(--pl-card-bg); border: 1px solid var(--pl-border);
   border-radius: 18px; box-shadow: var(--pl-shadow-sm); transition: var(--pl-transition); }
@@ -915,7 +928,7 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--pl-border-focu
       <h1>Tahmin et, simüle et, <em>sonucu gör.</em></h1>
       <p class="sh-lead">Futbol puan durumundan enflasyona, birikimden milyarder servetine: bir senaryo seç, sayıları gir, simülasyon ne olacağını saniyeler içinde göstersin.</p>
       <div class="sh-stats">
-        <div class="sh-stat"><b>13</b><span>simülatör</span></div>
+        <div class="sh-stat"><b>15</b><span>simülatör</span></div>
         <div class="sh-stat"><b>108</b><span>Avrupa kulübü</span></div>
         <div class="sh-stat"><b>1.000</b><span>senaryo / tahmin</span></div>
         <div class="sh-stat"><b>20+</b><span>yıllık Türkiye verisi</span></div>
@@ -1051,6 +1064,22 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--pl-border-focu
             <p>Kira geliri veya temettü hisseleriyle her ay istediğin pasif gelirle yaşamak için gereken sermayeyi ve kaç yılda ulaşacağını hesapla.</p>
             <div class="go">Pasif gelirini hesapla <span aria-hidden="true">→</span></div>
           </a>
+          <a href="/car-vs-invest/" class="sh-tool" style="--c: #2563EB;">
+            <div class="sh-tool-head">
+              <div class="ico" aria-hidden="true">🚗</div>
+              <div><h3>Araba mı Yatırım mı</h3><small>Kasko · MTV · yakıt · taksi</small></div>
+            </div>
+            <p>Arabanın yakıt, kasko, MTV, bakım ve değer kaybıyla gerçek aylık maliyetini gör; parayı yatırıp taksi ya da kiralık araç kullanmakla karşılaştır.</p>
+            <div class="go">Arabanın gerçek maliyetini gör <span aria-hidden="true">→</span></div>
+          </a>
+          <a href="/income-percentile/" class="sh-tool" style="--c: #9333EA;">
+            <div class="sh-tool-head">
+              <div class="ico" aria-hidden="true">📊</div>
+              <div><h3>Gelir Dilimi Hesaplama</h3><small>TÜİK · Dünya Bankası</small></div>
+            </div>
+            <p>Hanenin aylık gelirini gir: Türkiye'de ve dünyada yüzde kaçlık gelir diliminde olduğunu TÜİK ve Dünya Bankası verisiyle gör.</p>
+            <div class="go">Dilimini hesapla <span aria-hidden="true">→</span></div>
+          </a>
       </div>
     </section>
 
@@ -1065,7 +1094,7 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--pl-border-focu
       <div class="sh-faq">
         <details open>
           <summary><h3>StageSimulator'da hangi simülatörler var?</h3></summary>
-          <p>UEFA lig aşaması için puan durumu tahmini yapan <a href="/">PredictLeague</a>, birikimini ya da bir milyarderin servetini harcadığın finans oyunu <a href="/finance/">Spend It All</a>, bir tutarın banknot olarak ne kadar yer kapladığını gösteren <a href="/money-size/">Paranın Boyutu</a> ve 10 para aracı: <a href="/inflation/">Enflasyon Zaman Makinesi</a>, <a href="/minimum-wage/">Asgari Ücret Zaman Makinesi</a>, <a href="/what-if/">Ya O Gün Alsaydım</a>, <a href="/habit-cost/">Alışkanlık Maliyeti</a>, <a href="/loan-erosion/">Taksit Erime Simülatörü</a>, <a href="/salary/">Maaş Karşılaştırıcı</a>, <a href="/gross-to-net/">Brütten Nete & Maaş Erimesi</a>, <a href="/savings-goal/">Birikim Hedefi</a>, <a href="/rent-vs-buy/">Ev Almak mı Yatırım mı</a> ve <a href="/passive-income/">Finansal Özgürlük (FIRE)</a>. Yenileri eklendikçe bu sayfada listelenir.</p>
+          <p>UEFA lig aşaması için puan durumu tahmini yapan <a href="/">PredictLeague</a>, birikimini ya da bir milyarderin servetini harcadığın finans oyunu <a href="/finance/">Spend It All</a>, bir tutarın banknot olarak ne kadar yer kapladığını gösteren <a href="/money-size/">Paranın Boyutu</a> ve 12 para aracı: <a href="/inflation/">Enflasyon Zaman Makinesi</a>, <a href="/minimum-wage/">Asgari Ücret Zaman Makinesi</a>, <a href="/what-if/">Ya O Gün Alsaydım</a>, <a href="/habit-cost/">Alışkanlık Maliyeti</a>, <a href="/loan-erosion/">Taksit Erime Simülatörü</a>, <a href="/salary/">Maaş Karşılaştırıcı</a>, <a href="/gross-to-net/">Brütten Nete & Maaş Erimesi</a>, <a href="/savings-goal/">Birikim Hedefi</a>, <a href="/rent-vs-buy/">Ev Almak mı Yatırım mı</a>, <a href="/passive-income/">Finansal Özgürlük (FIRE)</a>, <a href="/car-vs-invest/">Araba mı Yatırım mı</a> ve <a href="/income-percentile/">Gelir Dilimi Hesaplama</a>. Yenileri eklendikçe bu sayfada listelenir.</p>
         </details>
         <details>
           <summary><h3>Simülatörler ücretsiz mi, üye olmak gerekiyor mu?</h3></summary>
