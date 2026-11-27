@@ -18,7 +18,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.bi-arrow-repeat::before { content: "\f130"; }
 .bi-arrow-right::before { content: "\f138"; }
+.bi-bullseye::before { content: "\f1de"; }
 .bi-check-circle-fill::before { content: "\f26a"; }
 .bi-check2::before { content: "\f272"; }
 .bi-chevron-down::before { content: "\f282"; }
@@ -35,5 +37,6 @@
 .bi-search::before { content: "\f52a"; }
 .bi-share::before { content: "\f52e"; }
 .bi-share-fill::before { content: "\f52d"; }
+.bi-shuffle::before { content: "\f544"; }
 .bi-twitter-x::before { content: "\f8db"; }
 .bi-whatsapp::before { content: "\f618"; }
