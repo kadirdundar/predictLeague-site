@@ -137,6 +137,13 @@
     margin-bottom: 12px;
 }
 
+/* A field that holds the dark timer panel (Components/RulerPicker, Night) lets the panel be the card */
+.tk-field:has(.pk-panel) {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+}
+
 .tk-label {
     display: flex;
     justify-content: space-between;
@@ -187,11 +194,6 @@
     color: var(--tk-ink-3);
 }
 
-.tk-select-row {
-    display: flex;
-    gap: 10px;
-}
-
 .tk-select {
     flex: 1;
     min-width: 0;
@@ -221,12 +223,6 @@
 .tk-next-link:focus-visible {
     outline: 3px solid var(--tk-accent-soft);
     outline-offset: 2px;
-}
-
-.tk-range {
-    width: 100%;
-    accent-color: var(--tk-accent);
-    margin: 4px 0 10px;
 }
 
 .tk-chips {
